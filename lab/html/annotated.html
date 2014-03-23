@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>PAMSIlab2: Lista klas</title>
+<title>PAMSI lab 3: Lista klas</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">PAMSIlab2
+   <div id="projectname">PAMSI lab 3
+   &#160;<span id="projectnumber">1</span>
    </div>
   </td>
  </tr>
@@ -60,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
     <ul class="tablist">
       <li class="current"><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
       <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarchia&#160;klas</span></a></li>
       <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
     </ul>
   </div>
@@ -69,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -85,13 +87,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <div class="contents">
 <div class="textblock">Tutaj znajdują się klasy, struktury, unie i interfejsy wraz z ich krótkimi opisami:</div><div class="directory">
 <table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="class_operacja.html" target="_self">Operacja</a></td><td class="desc">Deklaracja klasy <a class="el" href="class_operacja.html" title="Deklaracja klasy Operacja.">Operacja</a></td></tr>
+<tr id="row_0_" class="even"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="class_element_stosu.html" target="_self">ElementStosu</a></td><td class="desc">Definicja klasy <a class="el" href="class_element_stosu.html" title="Definicja klasy ElementStosu , opisujacej jeden z listowej implementacji klasy StosL.">ElementStosu</a> , opisujacej jeden z listowej implementacji klasy <a class="el" href="class_stos_l.html" title="Definicja klasy StosL dziedziczaca klase ElementStosu, majaca za zadanie dzialac na elementach stosu ...">StosL</a></td></tr>
+<tr id="row_1_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="class_kolejka.html" target="_self">Kolejka</a></td><td class="desc">Definicja klasy <a class="el" href="class_kolejka.html" title="Definicja klasy Kolejka.">Kolejka</a></td></tr>
+<tr id="row_2_" class="even"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="class_stos.html" target="_self">Stos</a></td><td class="desc">Definicja klasy <a class="el" href="class_stos.html" title="Definicja klasy Stos implementowanej tablicowo.">Stos</a> implementowanej tablicowo</td></tr>
+<tr id="row_3_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="class_stos_l.html" target="_self">StosL</a></td><td class="desc">Definicja klasy <a class="el" href="class_stos_l.html" title="Definicja klasy StosL dziedziczaca klase ElementStosu, majaca za zadanie dzialac na elementach stosu ...">StosL</a> dziedziczaca klase <a class="el" href="class_element_stosu.html" title="Definicja klasy ElementStosu , opisujacej jeden z listowej implementacji klasy StosL.">ElementStosu</a>, majaca za zadanie dzialac na elementach stosu zaimplementowanego listowo</td></tr>
+<tr id="row_4_" class="even"><td class="entry"><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classtablica.html" target="_self">tablica</a></td><td class="desc">Deklaracja klasy tablica</td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano N, 23 mar 2014 23:04:28 dla PAMSIlab2 programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano N, 16 mar 2014 19:34:10 dla PAMSI lab 3 programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
