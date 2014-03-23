@@ -1,7 +1,7 @@
-/*! \mainpage Dokumentacja zadania PAMSI lab 3
+/*! \mainpage Dokumentacja zadania PAMSI lab 4
  *
  * \author Witold Zimnicki
- * \date 16.3.2014
+ * \date 23.3.2014
  * 
  */
 
@@ -21,7 +21,7 @@ W funkcji main wykonywane sa nastepujace operacje:
 
 - Utworzona zostaje tablica z danymi z wybranego pliku wejsciowego (o roznych rozmiarach problemu).
 - Opcjonalnie Utworzone zostaja wybrane obiekty innych wybranych klas.
-- 50 razy wykonana jest petla z pomiarem czasu dla wykonywania sie ZAPELNIANIA stosu lub kolejki.
+- 50 razy wykonana jest petla z pomiarem czasu dla wykonywania sie wybranego sortowania.
 - Zostaje zatrzymany pomiar czasu oraz liczony jest dla kazdego wykonania algorytmu; liczona jest rowniez srednia czasu.
 
 Pola funkcji:
@@ -34,30 +34,28 @@ Pola funkcji:
 int main()
 {
 	
-	tablica tabliczka("sort.txt");
+	tablica tabliczka("sort_10000.txt");
 	
 	
 	int temp=0,sredni,delta,nr,j;
 	j=tabliczka.ZwrocIloscLiczb();
 	clock_t start, koniec;	
-
-	tabliczka.quicksort(0,j-1);
-	tabliczka.WyswietlTablice();
-for (nr=0;nr<50;nr++)
-{
-
-	start = clock(); // bie예cy czas systemowy w ms
-
 	
-	koniec = clock(); // bie예cy czas systemowy w ms
+	for (nr=0;nr<50;nr++)
+	{
+
+		start = clock(); // bie예cy czas systemowy w ms
+		tabliczka.heapsort();
+		koniec = clock(); // bie예cy czas systemowy w ms
+		
+		delta=(koniec - start);
+		cout<<endl<<"Czas pomiaru z "<<j<<" danymi dla powtorzenia nr: "<< nr+1<<" wynosi: "<<delta<<endl<<endl;
+		delta=temp+delta;
+		temp=delta;
+	}
+	sredni=delta/nr;
+	cout<<endl<<"SREDNI CZAS TO: "<<sredni<<endl;
 	
-	delta=(koniec - start);
-	cout<<endl<<"Czas pomiaru z "<<j<<" danymi dla powtorzenia nr: "<< nr+1<<" wynosi: "<<delta<<endl<<endl;
-	delta=temp+delta;
-	temp=delta;
-}
-sredni=delta/nr;
-cout<<endl<<"SREDNI CZAS TO: "<<sredni<<endl;
 	system("PAUSE");
 	return 0;
 }

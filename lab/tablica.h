@@ -14,11 +14,13 @@ using namespace std;
 *	Klasa tablica posiada pola oraz funkcje potrzebne do wykonywania dzialan na tablicach typu int.
 */
 
-class tablica: public Stos
+class tablica
 {
 	/*! Funkcja pomocnicza (dzielaca tablice na dwie czesci) do wykonania algorytmu quicksort.
 	*/
-	int partition (int p, int r);
+	int podziel (int poczatek, int rozmiar);
+
+	void merge( int low, int pivot, int high);
 	//! Pole przechowujace informacje o ilosci danych w tablicy g³ównej.
 	int IloscLiczb;
 	
@@ -48,7 +50,7 @@ public:
 	tablica();
 	/*! Funkcja wykonujaca algorytm quicksort.
 	*/
-	void quicksort(int p, int r);
+	void quicksort(int poczatek, int rozmiar);
 	/*! Funkcja wykonujaca algorytm 'sortowania babelkowego'.
 	*/
 	void sortuj_babel();
@@ -77,6 +79,10 @@ public:
 	void WypelnijKolejkeTablica(Kolejka &kolejeczka);
 	//! Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy StosL.
 	void WypelnijStosLTablica(StosL &stosikL);
+
+	
+	void mergesort( int low, int high);
+	void heapsort();
 };
 
 
