@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>PAMSIlab1: Dokumentacja klasy Operacja</title>
+<title>PAMSIlab2: Dokumentacja klasy Operacja</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">PAMSIlab1
+   <div id="projectname">PAMSIlab2
    </div>
   </td>
  </tr>
@@ -95,25 +95,163 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:a7e6093d955bb0588966312cecb428a31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#a7e6093d955bb0588966312cecb428a31">ZbadajIloscLiczb</a> (char napis[])</td></tr>
-<tr class="memdesc:a7e6093d955bb0588966312cecb428a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja badajaca ilosc liczb w obiekcie.  <a href="#a7e6093d955bb0588966312cecb428a31"></a><br/></td></tr>
-<tr class="memitem:add41237947be7e9cc07839b3e70ff298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#add41237947be7e9cc07839b3e70ff298">ZapiszLiczbyDoTablicy</a> (char napis[], int tab[])</td></tr>
-<tr class="memdesc:add41237947be7e9cc07839b3e70ff298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wczytujaca dane z pliku i zapisujaca je do tablicy.  <a href="#add41237947be7e9cc07839b3e70ff298"></a><br/></td></tr>
-<tr class="memitem:a78e9894e377bd620201beb6094a2ab0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#a78e9894e377bd620201beb6094a2ab0e">PomnozLiczby</a> (int liczba, int tab[], int Ilosc)</td></tr>
-<tr class="memdesc:a78e9894e377bd620201beb6094a2ab0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja mnozaca liczby tablicy przez liczbe.  <a href="#a78e9894e377bd620201beb6094a2ab0e"></a><br/></td></tr>
-<tr class="memitem:ab6ca0d6d500b7dd3ca4d8bdc243803b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#ab6ca0d6d500b7dd3ca4d8bdc243803b2">PorownajZgodnoscTablic</a> (int tab1[], int tab2[], int Ilosc)</td></tr>
-<tr class="memdesc:ab6ca0d6d500b7dd3ca4d8bdc243803b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdzajaca, czy dwie tablice sa sobie rowne.  <a href="#ab6ca0d6d500b7dd3ca4d8bdc243803b2"></a><br/></td></tr>
+<tr class="memitem:aeda82fb346a896654a129d1d8909f99b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#aeda82fb346a896654a129d1d8909f99b">ZapiszLiczbyDoTablicy</a> (char napis[])</td></tr>
+<tr class="memdesc:aeda82fb346a896654a129d1d8909f99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wczytujaca dane z pliku i zapisujaca je do tablicy.  <a href="#aeda82fb346a896654a129d1d8909f99b"></a><br/></td></tr>
+<tr class="memitem:adef44c6c22db9e27fadb0042744b96aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#adef44c6c22db9e27fadb0042744b96aa">PomnozLiczby</a> (int liczba)</td></tr>
+<tr class="memdesc:adef44c6c22db9e27fadb0042744b96aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja mnozaca liczby tablicy przez liczbe.  <a href="#adef44c6c22db9e27fadb0042744b96aa"></a><br/></td></tr>
+<tr class="memitem:a930719f173e9cefdf566d375fe67aed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#a930719f173e9cefdf566d375fe67aed4">WyswietlTablice</a> ()</td></tr>
+<tr class="memitem:a05598311475747f033ce66778f3dc2eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#a05598311475747f033ce66778f3dc2eb">Operacja</a> (int liczby)</td></tr>
+<tr class="memitem:a3517ebc671225d702dd7c7c967eacb51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#a3517ebc671225d702dd7c7c967eacb51">quicksort</a> (int p, int r)</td></tr>
+<tr class="memitem:ae916b87603564f66e3cdaaed84e52bc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#ae916b87603564f66e3cdaaed84e52bc9">sortuj_babel</a> ()</td></tr>
+<tr class="memitem:a5d6b45c528ad98b07d7abb02e8796e4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#a5d6b45c528ad98b07d7abb02e8796e4c">ZamienElementy</a> (int i, int j)</td></tr>
+<tr class="memitem:ab2ee14f5b071e6953f6cc7aee8e55d37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#ab2ee14f5b071e6953f6cc7aee8e55d37">OdwrocKolejnosc</a> ()</td></tr>
+<tr class="memitem:a6c9b63e6fc246871d8ec4f7283265260"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#a6c9b63e6fc246871d8ec4f7283265260">DodajElement</a> (int element)</td></tr>
+<tr class="memitem:aa9a5fb535e38b611fdebea4010642c64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#aa9a5fb535e38b611fdebea4010642c64">operator==</a> (int tab[])</td></tr>
+<tr class="memitem:a7862884a9d420cbf3f83e0bcffc56f96"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#a7862884a9d420cbf3f83e0bcffc56f96">operator+</a> (int tab[])</td></tr>
+<tr class="memitem:a62edaec813d592d7160fdb710d4f4aa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#a62edaec813d592d7160fdb710d4f4aa7">operator=</a> (int tab[])</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
 Atrybuty publiczne</h2></td></tr>
 <tr class="memitem:ad4afdd2ff75a6de4a3c97f4857fb658d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#ad4afdd2ff75a6de4a3c97f4857fb658d">IloscLiczb</a></td></tr>
-<tr class="memdesc:ad4afdd2ff75a6de4a3c97f4857fb658d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole przechowujace informacje o ilosci danych w obiekcie.  <a href="#ad4afdd2ff75a6de4a3c97f4857fb658d"></a><br/></td></tr>
+<tr class="memdesc:ad4afdd2ff75a6de4a3c97f4857fb658d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole przechowujace informacje o ilosci danych w tablicy g≥Ûwnej.  <a href="#ad4afdd2ff75a6de4a3c97f4857fb658d"></a><br/></td></tr>
+<tr class="memitem:aa0383d63cf39a1a14f48d2774652a067"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#aa0383d63cf39a1a14f48d2774652a067">IloscLiczb2</a></td></tr>
+<tr class="memdesc:aa0383d63cf39a1a14f48d2774652a067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole przechowujace informacje o ilosci danych w tablicy drugiej (stworzonej w zaleznosci od potrzeb w funkcji main).  <a href="#aa0383d63cf39a1a14f48d2774652a067"></a><br/></td></tr>
+<tr class="memitem:a3adb821f87615b08ecf5bca510e771cc"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operacja.html#a3adb821f87615b08ecf5bca510e771cc">TABLICA</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Opis szczeg√≥≈Çowy</h2>
 <div class="textblock"><p>Deklaracja klasy <a class="el" href="class_operacja.html" title="Deklaracja klasy Operacja.">Operacja</a>. </p>
-<p>Klasa <a class="el" href="class_operacja.html" title="Deklaracja klasy Operacja.">Operacja</a> wykonuje wszystkie potrzebne funkcje do analizowania wykonywania siÍ algorytmow. </p>
-</div><h2>Dokumentacja funkcji sk≈Çadowych</h2>
-<a class="anchor" id="a78e9894e377bd620201beb6094a2ab0e"></a>
+<p>Klasa <a class="el" href="class_operacja.html" title="Deklaracja klasy Operacja.">Operacja</a> posiada pola oraz funkcje potrzebne do wykonywania dzialan na tablicach typu int. </p>
+</div><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a05598311475747f033ce66778f3dc2eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Operacja::Operacja </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>liczby</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Konstruktor klasy <a class="el" href="class_operacja.html" title="Deklaracja klasy Operacja.">Operacja</a> tworzacy obiekt z tablica o okreslonej liczbie elementow.</p>
+<p>Argumenty i najwazniejsze pola konstruktora:</p>
+<ul>
+<li>liczby - ilosc liczb, ile zawierac bedzie glowna tablica po utworzeniu </li>
+</ul>
+
+</div>
+</div>
+<h2>Dokumentacja funkcji sk≈Çadowych</h2>
+<a class="anchor" id="a6c9b63e6fc246871d8ec4f7283265260"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * Operacja::DodajElement </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>element</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja dodajaca wybrany element typu int do tablicy.</p>
+<p>Argumenty i najwazniejsze pola funkcji:</p>
+<ul>
+<li>element - wybrany element typu int, ktory chcemy dodac do tablicy</li>
+<li>tabschow - tablica, do ktorej zostanie zapisana nowa tablica z nowym elementem</li>
+</ul>
+<dl class="section return"><dt>Zwraca</dt><dd>Nowa tablica z dodanym elementem </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab2ee14f5b071e6953f6cc7aee8e55d37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Operacja::OdwrocKolejnosc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja odwracajaca kolejnosc tablicy. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7862884a9d420cbf3f83e0bcffc56f96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * Operacja::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przeciazenie operatora dodawania (sklejania) dwoch tablic.</p>
+<p>Argumenty i najwazniejsze pola funkcji:</p>
+<ul>
+<li>tab - tablica, ktora bedzie dodana do glownej tablicy</li>
+<li>tabschow - tablica, do ktorej zostania zapisane dwie scalone tablice</li>
+</ul>
+<dl class="section return"><dt>Zwraca</dt><dd>Adres pierwszego elementu Nowej tablicy z dodana druga tablica </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a62edaec813d592d7160fdb710d4f4aa7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Operacja::operator= </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przeciazenie operatora przypisywania tablicy glownej innej tablicy.</p>
+<pre class="fragment">            Przeciazenie to powoduje nadpisanie glownej tablicy wybrana tablica, zarazem zrownujac liczby elementow obu tablic.
+</pre><p> Argumenty i najwazniejsze pola funkcji:</p>
+<ul>
+<li>tab - tablica, ktora nadpisze tablice glowna </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="aa9a5fb535e38b611fdebea4010642c64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Operacja::operator== </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przeciazenie operatora porownywania tablicy z tablicπ.</p>
+<p>Argumenty i najwazniejsze pola funkcji</p>
+<ul>
+<li>tab - tablica wczytana jako pierwsza do porownania</li>
+<li>prawda - pole logiczne, przechowujace informacje o spelnionym warunku</li>
+</ul>
+<dl class="section return"><dt>Zwraca</dt><dd>prawda, jesli jest pelna zgodnosc; falsz, jesli wystapi blad w porownywaniu </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adef44c6c22db9e27fadb0042744b96aa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -121,30 +259,14 @@ Atrybuty publiczne</h2></td></tr>
           <td class="memname">void Operacja::PomnozLiczby </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>liczba</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>liczba</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tab</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>Ilosc</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Funkcja mnozaca liczby tablicy przez liczbe. </p>
-<p>Argumenty funkcji:</p>
+<p>Argumenty i najwazniejsze pola funkcji</p>
 <ul>
 <li>liczba - liczba, przez ktora jest mnozony kazdy wyraz tablicy</li>
 <li>tab[] - tablica, na ktorej elementach bedzie wykonywane dzialanie</li>
@@ -153,27 +275,21 @@ Atrybuty publiczne</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab6ca0d6d500b7dd3ca4d8bdc243803b2"></a>
+<a class="anchor" id="a3517ebc671225d702dd7c7c967eacb51"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Operacja::PorownajZgodnoscTablic </td>
+          <td class="memname">void Operacja::quicksort </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tab1</em>[], </td>
+          <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tab2</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>Ilosc</em>&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -182,58 +298,81 @@ Atrybuty publiczne</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Funkcja wykonujaca algorytm quicksort. </p>
 
-<p>Funkcja sprawdzajaca, czy dwie tablice sa sobie rowne. </p>
-<p>Argumenty funkcji:</p>
+</div>
+</div>
+<a class="anchor" id="ae916b87603564f66e3cdaaed84e52bc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Operacja::sortuj_babel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja wykonujaca algorytm 'sortowania babelkowego'. </p>
+
+</div>
+</div>
+<a class="anchor" id="a930719f173e9cefdf566d375fe67aed4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Operacja::WyswietlTablice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja wyswietlajaca wyrazy tablicy klasy <a class="el" href="class_operacja.html" title="Deklaracja klasy Operacja.">Operacja</a>.</p>
+<p>Funkcja wyswietla wszystkie elementy tablicy glownej w zaleznosci od przechowywanej w polu IloscLiczb informacji o liczbie jej elementow. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5d6b45c528ad98b07d7abb02e8796e4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Operacja::ZamienElementy </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja zamieniajaca miejscami wybrane elementy tablicy.</p>
+<p>Argumenty i najwazniejsze pola funkcji:</p>
 <ul>
-<li>tab1[] - tablica wczytana jako pierwsza do porownania</li>
-<li>tab2[] - tablica wczytana jako druga do porownania</li>
-<li>Ilosc - ilosc danych wczytanych z pliku</li>
+<li>i - wybrany element pierwszej tablicy</li>
+<li>j - wybrany element drugiej tablicy </li>
 </ul>
-<dl class="section return"><dt>Zwraca</dt><dd>prawda, jesli jest pelna zgodnosc; blad, jesli wystapi blad w porownywaniu </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="add41237947be7e9cc07839b3e70ff298"></a>
+<a class="anchor" id="aeda82fb346a896654a129d1d8909f99b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Operacja::ZapiszLiczbyDoTablicy </td>
-          <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>napis</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tab</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Funkcja wczytujaca dane z pliku i zapisujaca je do tablicy. </p>
-<p>Argumenty funkcji:</p>
-<ul>
-<li>napis[] - tablica znakow bedaca nazwa wczytywanego pliku</li>
-<li>tab[] - tablica, do ktorej sa wczytywane dane z pliku Pola funkcji:</li>
-<li>Wej -bufor, do ktorego wczytany zostaje plik </li>
-</ul>
-
-</div>
-</div>
-<a class="anchor" id="a7e6093d955bb0588966312cecb428a31"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Operacja::ZbadajIloscLiczb </td>
           <td>(</td>
           <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>napis</em>[]</td><td>)</td>
@@ -242,12 +381,11 @@ Atrybuty publiczne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Funkcja badajaca ilosc liczb w obiekcie. </p>
-<p>Argument funkcji:</p>
+<p>Funkcja wczytujaca dane z pliku i zapisujaca je do tablicy. </p>
+<p>Argumenty i najwazniejsze pola funkcji</p>
 <ul>
 <li>napis[] - tablica znakow bedaca nazwa wczytywanego pliku Pola funkcji:</li>
-<li>Wej -bufor, do ktorego wczytany zostaje plik <dl class="section return"><dt>Zwraca</dt><dd>IloscLiczb - Ilosc liczb, ktora zawiera plik z danymi </dd></dl>
-</li>
+<li>Wej -bufor, do ktorego wczytany zostaje plik </li>
 </ul>
 
 </div>
@@ -263,18 +401,45 @@ Atrybuty publiczne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pole przechowujace informacje o ilosci danych w obiekcie. </p>
+<p>Pole przechowujace informacje o ilosci danych w tablicy g≥Ûwnej. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa0383d63cf39a1a14f48d2774652a067"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Operacja::IloscLiczb2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pole przechowujace informacje o ilosci danych w tablicy drugiej (stworzonej w zaleznosci od potrzeb w funkcji main). </p>
+
+</div>
+</div>
+<a class="anchor" id="a3adb821f87615b08ecf5bca510e771cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* Operacja::TABLICA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pole przechowujace glowna tablice klasy <a class="el" href="class_operacja.html" title="Deklaracja klasy Operacja.">Operacja</a>. </p>
 
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy zosta≈Ça wygenerowana z plik√≥w:<ul>
-<li>C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project42PAMSIlab1/Project42PAMSIlab1/<a class="el" href="operacja_8h_source.html">operacja.h</a></li>
-<li>C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project42PAMSIlab1/Project42PAMSIlab1/<a class="el" href="operacja_8cpp.html">operacja.cpp</a></li>
+<li>C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project43PAMSIlab2/Project43PAMSIlab2/<a class="el" href="operacja_8h_source.html">operacja.h</a></li>
+<li>C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project43PAMSIlab2/Project43PAMSIlab2/<a class="el" href="operacja_8cpp.html">operacja.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano N, 23 mar 2014 22:59:01 dla PAMSIlab1 programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano N, 23 mar 2014 23:04:28 dla PAMSIlab2 programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

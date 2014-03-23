@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>PAMSIlab1: Dokumentacja pliku C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project42PAMSIlab1/Project42PAMSIlab1/main.cpp</title>
+<title>PAMSIlab2: Dokumentacja pliku C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project43PAMSIlab2/Project43PAMSIlab2/main.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">PAMSIlab1
+   <div id="projectname">PAMSIlab2
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_46a313aaf94f9fbf32c5e49d39d8d1f8.html">Witek</a></li><li class="navelem"><a class="el" href="dir_ce3a0b20070760dc4d960351466a69b8.html">Documents</a></li><li class="navelem"><a class="el" href="dir_5a9cf0f240a09c02efbbe21fb1f52715.html">Visual Studio 2012</a></li><li class="navelem"><a class="el" href="dir_5fe2cc6d7cc9c41fa3380cf6ebb841c0.html">Projects</a></li><li class="navelem"><a class="el" href="dir_21512038a51651552fa1ba180076f859.html">Project42PAMSIlab1</a></li><li class="navelem"><a class="el" href="dir_77fb540bc4d6bfd163824cc8af70eb3a.html">Project42PAMSIlab1</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_46a313aaf94f9fbf32c5e49d39d8d1f8.html">Witek</a></li><li class="navelem"><a class="el" href="dir_ce3a0b20070760dc4d960351466a69b8.html">Documents</a></li><li class="navelem"><a class="el" href="dir_5a9cf0f240a09c02efbbe21fb1f52715.html">Visual Studio 2012</a></li><li class="navelem"><a class="el" href="dir_5fe2cc6d7cc9c41fa3380cf6ebb841c0.html">Projects</a></li><li class="navelem"><a class="el" href="dir_857f8727283eab3598d601994e36dd37.html">Project43PAMSIlab2</a></li><li class="navelem"><a class="el" href="dir_6d4b6fdb5c348f99ea9d46036f31158c.html">Project43PAMSIlab2</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Funkcje</h2></td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja main wykonujaca algorytm i prowadzaca statystyki na jej temat.  <a href="#ae66f6b31b5ad750f1fe042a706a4e3d4"></a><br/></td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja main wykonujaca zadane operacje na tablicy i liczaca sredni czas dzialania algorytmow.  <a href="#ae66f6b31b5ad750f1fe042a706a4e3d4"></a><br/></td></tr>
 </table>
 <h2>Dokumentacja funkcji</h2>
 <a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -112,21 +112,21 @@ Funkcje</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Funkcja main wykonujaca algorytm i prowadzaca statystyki na jej temat. </p>
+<p>Funkcja main wykonujaca zadane operacje na tablicy i liczaca sredni czas dzialania algorytmow. </p>
 <p>W funkcji main wykonywane sa nastepujace operacje:</p>
 <ul>
 <li>Zostaje utworzona operacja (obiekt klasy <a class="el" href="class_operacja.html" title="Deklaracja klasy Operacja.">Operacja</a>)</li>
-<li>Zostaje wczytany plik z danymi wejsciowymi</li>
-<li>Dane sa mnozone razy 2 (wlaczany jest pomiar czasu)</li>
+<li>Zostaje wczytany plik z danymi wejsciowymi, wczytujac je do tablicy "glownej" TABLICA[]</li>
+<li>Opcjonalnie wczytywana jest druga tablica pomocnicza (do wykonywania operacji np przypisania) i sprawdzony jest jej rozmiar (zapisany w j)</li>
 <li>Wczytywany jest plik z danymi sprawdzajacymi</li>
 <li>Wykonywanie jest sprawdzanie ich zgodnosci</li>
-<li>Zostaje zatrzymany pomiar czas oraz liczony jest dla kazdego wykonania algorytmu.</li>
+<li>Zostaje zatrzymany pomiar czasu oraz liczony jest dla kazdego wykonania algorytmu; liczona jest rowniez srednia czasu.</li>
 </ul>
 <p>Pola funkcji:</p>
 <ul>
-<li>*tablica 1, * tablica 2: dynamicznie alokowane tablice, w ktorych przechowywane sa dane wczytane z plikow</li>
+<li>*tablica 2: dynamicznie alokowana tablica pomocnicza, w ktorych przechowywane sa dane wczytane z plikow</li>
 <li>start, koniec - czasy: pocz¹tkowy oraz koñcowy pomiaru</li>
-<li>delta : roznica miedzy koncem, a poczatkiem; dlugosc trwania algorytmu </li>
+<li>delta : roznica miedzy koncem, a poczatkiem; dlugosc trwania algorytmu -sredni: czas sredni wykonywania sie algorytmu -nr: numer powtorzenia algorytmu </li>
 </ul>
 
 </div>
@@ -134,7 +134,7 @@ Funkcje</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano N, 23 mar 2014 22:59:01 dla PAMSIlab1 programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano N, 23 mar 2014 23:04:28 dla PAMSIlab2 programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
