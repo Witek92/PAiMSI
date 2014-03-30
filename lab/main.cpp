@@ -40,12 +40,14 @@ int main()
 	int temp=0,sredni,delta,nr,j;
 	j=tabliczka.ZwrocIloscLiczb();
 	clock_t start, koniec;	
-	
+	srand(time(NULL));
+
 	for (nr=0;nr<50;nr++)
 	{
 
 		start = clock(); // bie¿¹cy czas systemowy w ms
-		tabliczka.heapsort();
+		
+		tabliczka.quicksort_opt(0,j-1);
 		koniec = clock(); // bie¿¹cy czas systemowy w ms
 		
 		delta=(koniec - start);
