@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tablica',['tablica',['../classtablica.html',1,'']]]
+  ['tablicaa',['TablicaA',['../class_tablica_a.html',1,'']]]
 ];

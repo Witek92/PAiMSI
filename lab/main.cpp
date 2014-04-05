@@ -1,64 +1,51 @@
-/*! \mainpage Dokumentacja zadania PAMSI lab 4
+/*! \mainpage Dokumentacja zadania PAMSI lab 6
  *
  * \author Witold Zimnicki
- * \date 23.3.2014
+ * \date 5.4.2014
  * 
  */
 
+
 #include <iostream>
-#include <ctime>
-#include "tablica.h"
-#include "Stos.h"
-#include "Kolejka.h"
-#include "StosL.h"
-
-
+#include "tablicaA.h"
+#include <string>
 
 using namespace std;
-/*! \brief Funkcja main wykonujaca zadane operacje na tablicy, stosie i kolejce, oraz liczaca sredni czas dzialania algorytmow.
 
-W funkcji main wykonywane sa nastepujace operacje:
-
-- Utworzona zostaje tablica z danymi z wybranego pliku wejsciowego (o roznych rozmiarach problemu).
-- Opcjonalnie Utworzone zostaja wybrane obiekty innych wybranych klas.
-- 50 razy wykonana jest petla z pomiarem czasu dla wykonywania sie wybranego sortowania.
-- Zostaje zatrzymany pomiar czasu oraz liczony jest dla kazdego wykonania algorytmu; liczona jest rowniez srednia czasu.
-
-Pola funkcji:
-- start, koniec - czasy: pocz¹tkowy oraz koñcowy pomiaru
-- delta : roznica miedzy koncem, a poczatkiem; dlugosc trwania algorytmu
--sredni: czas sredni wykonywania sie algorytmu
--nr: numer powtorzenia algorytmu
+/*! \brief Glowna funkcja programu.
+	W funkcji main przedstawione jest przykladowe wykorzystanie funkcji klasy TablicaA , w celu zademonstrowania sposobu ich dzialania na utworzonej tablicy asocjacyjnej.
+	Skrocony przebieg przykladowego programu:
+	-Tworzona jest tablica asocjacyjna tabliczka
+	-Parami (litera alfabetu - liczba) dodawane sa pozycje do tablicy.
+	- Przykladowo usunieta jest jedna pozycja
+	- Wyswietlona jest tablica po powyzszych operacjach.
+	- Przykladowo zwrocona jest wartosc wybranego klucza.
+	- Zwrocona jest ilosc pozycji w tablicy asocjacyjnej.
 */
 
 int main()
 {
-	
-	tablica tabliczka("sort_10000.txt");
-	
-	
-	int temp=0,sredni,delta,nr,j;
-	j=tabliczka.ZwrocIloscLiczb();
-	clock_t start, koniec;	
-	srand(time(NULL));
-
-	for (nr=0;nr<50;nr++)
+	TablicaA<int> tabliczka;
+	string klucz;
+	int wartosc;
+	char k='a';
+	for (int i=1 ;i<=26;i++,k++)
 	{
-
-		start = clock(); // bie¿¹cy czas systemowy w ms
-		
-		tabliczka.quicksort_opt(0,j-1);
-		koniec = clock(); // bie¿¹cy czas systemowy w ms
-		
-		delta=(koniec - start);
-		cout<<endl<<"Czas pomiaru z "<<j<<" danymi dla powtorzenia nr: "<< nr+1<<" wynosi: "<<delta<<endl<<endl;
-		delta=temp+delta;
-		temp=delta;
+		klucz=k;
+		wartosc=i;
+		tabliczka.dodaj(klucz,wartosc);
 	}
-	sredni=delta/nr;
-	cout<<endl<<"SREDNI CZAS TO: "<<sredni<<endl;
-	
+
+	tabliczka.usun("e", 5);
+
+	cout<<"Tak wyglada tablica asocjacyjna po operacjach: "<<endl<<tabliczka;
+
+	klucz="j";
+	wartosc=tabliczka.pobierz(klucz);
+
+	cout<<endl<<"Tablica asocjacyjna zawiera: "<<tabliczka.IleElementow()<<" elementow!"<<endl;
+	cout<<"Pobrana wartosc klucza: "<<klucz<<" to: "<<wartosc<<endl;
+
 	system("PAUSE");
 	return 0;
 }
-
