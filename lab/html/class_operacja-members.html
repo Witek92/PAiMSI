@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>PoprawaPAMSIlab1: Składowe plików</title>
+<title>PoprawaPAMSIlab1: Lista składowych</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -36,8 +36,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
-      <li><a href="annotated.html"><span>Klasy</span></a></li>
-      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -58,17 +58,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
-      <li class="current"><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
     </ul>
   </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li class="current"><a href="globals.html"><span>All</span></a></li>
-      <li><a href="globals_func.html"><span>Funkcje</span></a></li>
-    </ul>
-  </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -83,17 +77,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Operacja Lista składowych</div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Tutaj znajduje się lista wszystkich składowych plików wraz z odnośnikami do plików, do których one należą:</div><ul>
-<li>main()
-: <a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main.cpp</a>
-</li>
-<li>WyswietlTablice()
-: <a class="el" href="operacja_8cpp.html#a4f45ead62a93f12bf227fae7303fb5d4">operacja.cpp</a>
-, <a class="el" href="operacja_8h.html#a4f45ead62a93f12bf227fae7303fb5d4">operacja.h</a>
-</li>
-</ul>
-</div><!-- contents -->
+
+<p>To jest kompletna lista składowych dla <a class="el" href="class_operacja.html">Operacja</a>, uwzględniająca wszystkie dziedziczone składowe.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="class_operacja.html#ad4afdd2ff75a6de4a3c97f4857fb658d">IloscLiczb</a></td><td class="entry"><a class="el" href="class_operacja.html">Operacja</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_operacja.html#a9af6bfee62f233a584f368a626e8329e">LicznikPowtorzen</a></td><td class="entry"><a class="el" href="class_operacja.html">Operacja</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_operacja.html#a3f6cb38d924c260711fad70fe0eed35f">PobierzIloscPowtorzen</a>()</td><td class="entry"><a class="el" href="class_operacja.html">Operacja</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_operacja.html#a26c10d244f0cd7b2c22e810476ee9380">PodajSrednia</a>()</td><td class="entry"><a class="el" href="class_operacja.html">Operacja</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_operacja.html#a78e9894e377bd620201beb6094a2ab0e">PomnozLiczby</a>(int liczba, int tab[], int Ilosc)</td><td class="entry"><a class="el" href="class_operacja.html">Operacja</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_operacja.html#ab6ca0d6d500b7dd3ca4d8bdc243803b2">PorownajZgodnoscTablic</a>(int tab1[], int tab2[], int Ilosc)</td><td class="entry"><a class="el" href="class_operacja.html">Operacja</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_operacja.html#aa568b17d05f31132b3d97eb5b7e93d61">Powtorzenia</a></td><td class="entry"><a class="el" href="class_operacja.html">Operacja</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_operacja.html#add41237947be7e9cc07839b3e70ff298">ZapiszLiczbyDoTablicy</a>(char napis[], int tab[])</td><td class="entry"><a class="el" href="class_operacja.html">Operacja</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_operacja.html#ab5c72112a43a8b5188ec8e60d77b493d">ZbadajIloscLiczb</a>(char napis[])</td><td class="entry"><a class="el" href="class_operacja.html">Operacja</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_operacja.html#a0be771c3a85d8a53d5dba677f8cc6959">ZmierzCzasKoniec</a>()</td><td class="entry"><a class="el" href="class_operacja.html">Operacja</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_operacja.html#a8a31476894d307c400f965dd3dfcbb46">ZmierzCzasStart</a>()</td><td class="entry"><a class="el" href="class_operacja.html">Operacja</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Wygenerowano Wt, 8 kwi 2014 16:01:21 dla PoprawaPAMSIlab1 programem &#160;<a href="http://www.doxygen.org/index.html">

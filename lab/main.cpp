@@ -1,51 +1,61 @@
-/*! \mainpage Dokumentacja zadania PAMSI lab 6
+/*! \mainpage POPRAWIONA Dokumentacja zadania PAMSI lab 1 
  *
  * \author Witold Zimnicki
- * \date 5.4.2014
+ * \date 8.4.2014
  * 
  */
 
-
 #include <iostream>
-#include "tablicaA.h"
-#include <string>
+#include "operacja.h"
+#include <fstream>
+#include <ctime>
+
+
 
 using namespace std;
+/*! \brief Funkcja main wykonujaca algorytm i prowadzaca statystyki na jej temat.
 
-/*! \brief Glowna funkcja programu.
-	W funkcji main przedstawione jest przykladowe wykorzystanie funkcji klasy TablicaA , w celu zademonstrowania sposobu ich dzialania na utworzonej tablicy asocjacyjnej.
-	Skrocony przebieg przykladowego programu:
-	-Tworzona jest tablica asocjacyjna tabliczka
-	-Parami (litera alfabetu - liczba) dodawane sa pozycje do tablicy.
-	- Przykladowo usunieta jest jedna pozycja
-	- Wyswietlona jest tablica po powyzszych operacjach.
-	- Przykladowo zwrocona jest wartosc wybranego klucza.
-	- Zwrocona jest ilosc pozycji w tablicy asocjacyjnej.
+W funkcji main wykonywane sa nastepujace operacje:
+
+- Zostaje utworzona operacja (obiekt klasy Operacja)
+- Zostaje wczytany plik z danymi wejsciowymi
+- Dane sa mnozone razy 2 (wlaczany jest pomiar czasu)
+- Mierzony jest czas wykonania algorytmu
+
+Pola funkcji:
+- *tablica 1, * tablica 2: dynamicznie alokowane tablice, w ktorych przechowywane sa dane wczytane z plikow
+
 */
 
 int main()
 {
-	TablicaA<int> tabliczka;
-	string klucz;
-	int wartosc;
-	char k='a';
-	for (int i=1 ;i<=26;i++,k++)
+	
+	Operacja Mnozenie;
+	
+	Mnozenie.PobierzIloscPowtorzen();
+	Mnozenie.ZbadajIloscLiczb("dane_wej.txt");
+	
+	int *tablica1=new int [Mnozenie.IloscLiczb];
+	int *tablica2=new int [Mnozenie.IloscLiczb];
+
+	Mnozenie.ZapiszLiczbyDoTablicy("dane_wej.txt", tablica1);
+	Mnozenie.ZapiszLiczbyDoTablicy("dane_spr.txt", tablica2);
+	
+	for (Mnozenie.LicznikPowtorzen=0;Mnozenie.LicznikPowtorzen<Mnozenie.Powtorzenia;Mnozenie.LicznikPowtorzen++)
 	{
-		klucz=k;
-		wartosc=i;
-		tabliczka.dodaj(klucz,wartosc);
+		Mnozenie.ZmierzCzasStart();
+		
+		Mnozenie.PomnozLiczby(2,tablica1,Mnozenie.IloscLiczb);
+		
+		Mnozenie.ZmierzCzasKoniec();
+
 	}
 
-	tabliczka.usun("e", 5);
-
-	cout<<"Tak wyglada tablica asocjacyjna po operacjach: "<<endl<<tabliczka;
-
-	klucz="j";
-	wartosc=tabliczka.pobierz(klucz);
-
-	cout<<endl<<"Tablica asocjacyjna zawiera: "<<tabliczka.IleElementow()<<" elementow!"<<endl;
-	cout<<"Pobrana wartosc klucza: "<<klucz<<" to: "<<wartosc<<endl;
+	Mnozenie.PodajSrednia();
+	delete [] tablica1;
+	delete [] tablica2;
 
 	system("PAUSE");
 	return 0;
 }
+
