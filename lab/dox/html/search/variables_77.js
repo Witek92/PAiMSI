@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wartosc',['wartosc',['../class_element_stosu.html#a78ebcb4f6af82fdcab2d8b458c4f05ab',1,'ElementStosu']]]
+  ['wartosc',['wartosc',['../class_wezel.html#ab26d2571cea51b8e4494fd8c39126416',1,'Wezel']]]
 ];

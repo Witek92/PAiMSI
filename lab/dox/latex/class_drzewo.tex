@@ -1,0 +1,94 @@
+\hypertarget{class_drzewo}{\section{Dokumentacja klasy Drzewo}
+\label{class_drzewo}\index{Drzewo@{Drzewo}}
+}
+
+
+Klasa \hyperlink{class_drzewo}{Drzewo} przedstawia drzewo binarne. Sklada sie z wielu wezlow.  
+
+
+
+
+{\ttfamily \#include $<$drzewo.\-h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_drzewo_a3cc4b6778603a1bb0d98c4435d5cf068}{Wyszukaj\-Wartosc} (string kluczyk)
+\begin{DoxyCompactList}\small\item\em Funkcja wyszukuje wartosc po kluczu. \end{DoxyCompactList}\item 
+\hyperlink{class_drzewo_a309a5197b6a02c761f046fc99136eebb}{Drzewo} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny, zeruje korzen. \end{DoxyCompactList}\item 
+bool \hyperlink{class_drzewo_a50373a0a15637acc4e8f961b1a53cb37}{dodaj} (int wartosc, string kluczyk)
+\begin{DoxyCompactList}\small\item\em Funkcja dodaje wybrana pare \-: klucz oraz wartosc. \end{DoxyCompactList}\item 
+void \hyperlink{class_drzewo_a3d58680a7f5d118119ca564c6a4b1018}{Wyswietlpokolei} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca elementy po kolei. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{class_drzewo}{Drzewo} przedstawia drzewo binarne. Sklada sie z wielu wezlow. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_drzewo_a309a5197b6a02c761f046fc99136eebb}{\index{Drzewo@{Drzewo}!Drzewo@{Drzewo}}
+\index{Drzewo@{Drzewo}!Drzewo@{Drzewo}}
+\subsubsection[{Drzewo}]{\setlength{\rightskip}{0pt plus 5cm}Drzewo\-::\-Drzewo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_drzewo_a309a5197b6a02c761f046fc99136eebb}
+
+
+Konstruktor domyslny, zeruje korzen. 
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_drzewo_a50373a0a15637acc4e8f961b1a53cb37}{\index{Drzewo@{Drzewo}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!Drzewo@{Drzewo}}
+\subsubsection[{dodaj}]{\setlength{\rightskip}{0pt plus 5cm}bool Drzewo\-::dodaj (
+\begin{DoxyParamCaption}
+\item[{int}]{wartosc, }
+\item[{string}]{kluczyk}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_a50373a0a15637acc4e8f961b1a53cb37}
+
+
+Funkcja dodaje wybrana pare \-: klucz oraz wartosc. 
+
+\begin{DoxyVerb}    Funkcja dodajaca element i klucz dziala nastepujaco: jezeli drzewo jest puste, to tworzy nowy wezel bedacy poczatkiem tego drzewa. Jezeli drzewo istnieje, po kolei sprawdzajac z lewej i prawej strony odpowiednie wartosci
+    tworza sie nowe wezly.
+\end{DoxyVerb}
+ Najwazniejsze pola i argumenty funkcji\-: -\/tmp -\/ wskaznik pomocniczny wskazujacy na korzen
+
+\begin{DoxyReturn}{Zwraca}
+true, jesli dodana zostala nowa wartosc; false, jesli dana para juz istnieje 
+\end{DoxyReturn}
+\hypertarget{class_drzewo_a3d58680a7f5d118119ca564c6a4b1018}{\index{Drzewo@{Drzewo}!Wyswietlpokolei@{Wyswietlpokolei}}
+\index{Wyswietlpokolei@{Wyswietlpokolei}!Drzewo@{Drzewo}}
+\subsubsection[{Wyswietlpokolei}]{\setlength{\rightskip}{0pt plus 5cm}void Drzewo\-::\-Wyswietlpokolei (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_drzewo_a3d58680a7f5d118119ca564c6a4b1018}
+
+
+Funkcja wyswietlajaca elementy po kolei. 
+
+\hypertarget{class_drzewo_a3cc4b6778603a1bb0d98c4435d5cf068}{\index{Drzewo@{Drzewo}!Wyszukaj\-Wartosc@{Wyszukaj\-Wartosc}}
+\index{Wyszukaj\-Wartosc@{Wyszukaj\-Wartosc}!Drzewo@{Drzewo}}
+\subsubsection[{Wyszukaj\-Wartosc}]{\setlength{\rightskip}{0pt plus 5cm}int Drzewo\-::\-Wyszukaj\-Wartosc (
+\begin{DoxyParamCaption}
+\item[{string}]{kluczyk}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_a3cc4b6778603a1bb0d98c4435d5cf068}
+
+
+Funkcja wyszukuje wartosc po kluczu. 
+
+\begin{DoxyReturn}{Zwraca}
+wartosc szukanego klucza. 
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project47\-P\-A\-M\-S\-Ilab7/\-Project47\-P\-A\-M\-S\-Ilab7/\hyperlink{drzewo_8h}{drzewo.\-h}\item 
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project47\-P\-A\-M\-S\-Ilab7/\-Project47\-P\-A\-M\-S\-Ilab7/\hyperlink{drzewo_8cpp}{drzewo.\-cpp}\end{DoxyCompactItemize}

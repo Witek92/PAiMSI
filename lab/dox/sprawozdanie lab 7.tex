@@ -1,0 +1,116 @@
+%\documentclass{article}
+\documentclass[12pt,a4paper,titlepage]{article}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{stmaryrd}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage[figuresright]{rotating}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{geometry}
+\usepackage{pslatex}
+\usepackage{ulem}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{Here}
+\usepackage{color}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\selectlanguage{polish}
+\definecolor{szary}{gray}{0.6}
+\setlength{\textwidth}{400pt}
+\lstset{numbers=left, numberstyle=\tiny, basicstyle=\scriptsize\ttfamily, breaklines=true, captionpos=b, tabsize=2}
+
+\makeindex
+
+\title{Laboratorium PAiMSI 7}
+\date{\today}
+\author{Witold Zimnicki - nr 200465}
+
+
+
+\usepackage{pgfplots}
+\usepackage{filecontents}
+\begin{filecontents*}{data1.csv}
+a,b,c,d
+10,0,0,0
+100,1,2,0
+1000,10,24,0
+3000,60,60,3
+5000,153,101,1
+6000,217,128,4
+8000,368,173,45
+10000,563,197,2
+20000,3385,427,4
+30000,10907,617,4
+40000,22097,922,4
+50000,38556,1053,9
+
+\end{filecontents*}
+
+
+
+
+\begin{document}
+
+	\maketitle
+	\pagestyle{empty}
+	\pagestyle{headings}
+	
+	Sprawozdanie przedstawia wykresy z zależnościami czasu od ilości danych dla wypełniania drzewa binarnego oraz tablicy mieszającej. Do tych struktur danych dodawane są losowe pary: kluczy oraz wartości.
+	\textbf{W sprawozdaniu znajdują się 2 wykresy:}\newline
+	
+	1. Czasy wypełniania drzewa binarnego dla różnych ilości danych. \newline
+	 
+	2. Czasy wypełniania tablicy mieszającej dla różnych ilości danych. \newline
+	
+	
+	
+
+	\begin{tikzpicture}
+		\begin{axis}[
+			title=\textbf{Drzewo binarne},
+			xlabel= N - rozmiar problemu,
+			ylabel=czas w ms,
+			xlabel style={sloped like x axis},
+			ylabel style={sloped}
+			]
+			\addplot table [x=a, y=b, col sep=comma] {data1.csv};
+
+
+		\end{axis}
+	\end{tikzpicture}
+		\newline
+		\newline
+		\begin{tikzpicture}
+		\begin{axis}[
+			title=\textbf{Tablica Mieszająca},
+			xlabel= N - rozmiar problemu,
+			ylabel=czas w ms,
+			xlabel style={sloped like x axis},
+			ylabel style={sloped}
+			]
+			\addplot table [x=a, y=c, col sep=comma] {data1.csv};
+			
+
+
+		\end{axis}
+	\end{tikzpicture}
+	
+	
+	
+\textbf{Wnioski: \newline	\newline}
+\textbf{-} Podsumowując, można stwierdzić, że zapełnianie drzewa binarnego przyjmuje postać zależności kwadratowej, natomiast tablicy mieszającej liniowej. \newline
+\newline
+ \textbf{-} Logiczną konsekwencją powyższego wniosku jest mniejsza złożoność czasowa struktury danych, jaką jest tablica mieszająca. \newline
+ 
+
+
+\end{document}
