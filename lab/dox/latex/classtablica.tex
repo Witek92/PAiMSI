@@ -23,7 +23,11 @@ void \hyperlink{classtablica_ad35970c518fe65267a08f80ac155b3b9}{Wyswietl\-Tablic
 \item 
 \hyperlink{classtablica_abc5414ba4d6321ecf744e38a809d9c8f}{tablica} ()
 \item 
-void \hyperlink{classtablica_a94d840f1063a31576890ef0510f8bcd1}{quicksort} (int poczatek, int rozmiar)
+void \hyperlink{classtablica_aa915314e36969b9067a5d983bc2e39b3}{quicksort\-\_\-pes} (int poczatek, int rozmiar)
+\item 
+void \hyperlink{classtablica_a5f6eaff3aa86715b597c312bb2930edd}{quicksort\-\_\-przecietny} (int poczatek, int rozmiar)
+\begin{DoxyCompactList}\small\item\em Przypadek przecietny funkcji quicksort. Srednia wartosc podzialu jest dobierana losowo. Zlozonosc czasowa wynosi\-: 2n$\ast$ln(n) \end{DoxyCompactList}\item 
+void \hyperlink{classtablica_ab46e04c21cfd60df1405cdb0b6d1d018}{quicksort\-\_\-opt} (int poczatek, int rozmiar)
 \item 
 void \hyperlink{classtablica_a12286c2881ab2db67e601b76c376f101}{sortuj\-\_\-babel} ()
 \item 
@@ -45,7 +49,7 @@ void \hyperlink{classtablica_a888da3562ae1d3200c8ab446685f6c18}{Wypelnij\-Kolejk
 \begin{DoxyCompactList}\small\item\em Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy \hyperlink{class_kolejka}{Kolejka}. \end{DoxyCompactList}\item 
 void \hyperlink{classtablica_ae97c0bebf2629c77fa9c34a6aaf40d4f}{Wypelnij\-Stos\-L\-Tablica} (\hyperlink{class_stos_l}{Stos\-L} \&stosik\-L)
 \begin{DoxyCompactList}\small\item\em Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy \hyperlink{class_stos_l}{Stos\-L}. \end{DoxyCompactList}\item 
-void \hyperlink{classtablica_a6755ce7af329824a291f065b236b20b6}{mergesort} (int poczatek, int rozmiar)
+void \hyperlink{classtablica_af28d198c35f8af79871f5018a9002a96}{mergesort} (int low, int high)
 \item 
 void \hyperlink{classtablica_abaa55fa9f758235ccb4794eac077d102}{heapsort} ()
 \end{DoxyCompactItemize}
@@ -82,7 +86,7 @@ Argumenty i najwazniejsze pola konstruktora\-:
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classtablica_abc5414ba4d6321ecf744e38a809d9c8f}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtablica_abc5414ba4d6321ecf744e38a809d9c8f}
 
 
 \subsection{Dokumentacja funkcji składowych}
@@ -124,14 +128,14 @@ Najwazniejsze argumenty i pola funkcji\-:
 \item szczyt, galaz -\/ indeksy szczytu, oraz galezi
 \item wskaznik -\/ przechowuje indeks elementu, na ktorym jest wykonywana operacja np przenoszania na szczyt
 \item schowek -\/ pole przechowujace wartosc w celu np spuszczenia ja na dol kopca 
-\end{DoxyItemize}\hypertarget{classtablica_a6755ce7af329824a291f065b236b20b6}{\index{tablica@{tablica}!mergesort@{mergesort}}
+\end{DoxyItemize}\hypertarget{classtablica_af28d198c35f8af79871f5018a9002a96}{\index{tablica@{tablica}!mergesort@{mergesort}}
 \index{mergesort@{mergesort}!tablica@{tablica}}
 \subsubsection[{mergesort}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::mergesort (
 \begin{DoxyParamCaption}
 \item[{int}]{poczatek, }
 \item[{int}]{rozmiar}
 \end{DoxyParamCaption}
-)}}\label{classtablica_a6755ce7af329824a291f065b236b20b6}
+)}}\label{classtablica_af28d198c35f8af79871f5018a9002a96}
 Mergesort rekurencyjnie sortuje elementy. Algorytm dziala nastepujaco\-: Tablica jest najpierw dzielona na pol. Nastepnie na kolejne polowki, itd. W podzielonych malych paczkach elementy sa indywidualnie odwracane w posortowana kolejnosc (za pomoca merge() ). Na koncu paczki laczone sa w jedna calosc zapisana w T\-A\-B\-L\-I\-C\-A. Rekurencja dziala dwufazowo\-: najpierw mergesort wykonywane jest na czesci od poczatku tablicy, do jej srodka; a ostatecznie na czesci od srodka do konca.
 
 Najwazniejsze pola i argumenty funkcji\-:
@@ -215,21 +219,41 @@ Argumenty i najwazniejsze pola funkcji
 \item liczba -\/ liczba, przez ktora jest mnozony kazdy wyraz tablicy
 \item tab\mbox{[}\mbox{]} -\/ tablica, na ktorej elementach bedzie wykonywane dzialanie
 \item Ilosc -\/ ilosc danych wczytanych z pliku 
-\end{DoxyItemize}\hypertarget{classtablica_a94d840f1063a31576890ef0510f8bcd1}{\index{tablica@{tablica}!quicksort@{quicksort}}
-\index{quicksort@{quicksort}!tablica@{tablica}}
-\subsubsection[{quicksort}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::quicksort (
+\end{DoxyItemize}\hypertarget{classtablica_ab46e04c21cfd60df1405cdb0b6d1d018}{\index{tablica@{tablica}!quicksort\-\_\-opt@{quicksort\-\_\-opt}}
+\index{quicksort\-\_\-opt@{quicksort\-\_\-opt}!tablica@{tablica}}
+\subsubsection[{quicksort\-\_\-opt}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::quicksort\-\_\-opt (
 \begin{DoxyParamCaption}
 \item[{int}]{poczatek, }
 \item[{int}]{rozmiar}
 \end{DoxyParamCaption}
-)}}\label{classtablica_a94d840f1063a31576890ef0510f8bcd1}
+)}}\label{classtablica_ab46e04c21cfd60df1405cdb0b6d1d018}
+\hypertarget{classtablica_aa915314e36969b9067a5d983bc2e39b3}{\index{tablica@{tablica}!quicksort\-\_\-pes@{quicksort\-\_\-pes}}
+\index{quicksort\-\_\-pes@{quicksort\-\_\-pes}!tablica@{tablica}}
+\subsubsection[{quicksort\-\_\-pes}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::quicksort\-\_\-pes (
+\begin{DoxyParamCaption}
+\item[{int}]{poczatek, }
+\item[{int}]{rozmiar}
+\end{DoxyParamCaption}
+)}}\label{classtablica_aa915314e36969b9067a5d983bc2e39b3}
 Funkcja wykonujaca algorytm quicksort.
 
 Sortowanie typu quicksort wykonywane jest rekurencyjnie. Dopoki wartosc poczatku tablicy jest mniejsza niz poszczegolny rozmiar czesci tablicy, wykonuje sie 'funkcja w funkcji'. Najpierw pierwsza -\/ od poczatku do punktu podzialu. Pozniej sortowana jest druga czesc, ktora jako argumenty przyjmuje wartosc pierwszego elementu drugiej czesci tablicy oraz ponownie jej rozmiary.
 
 Najwazniejsze pola i argumenty funkcji\-:
 
--\/punkt\-\_\-podzialu\-: jw pole przechowujace wyliczane przez rekurencje punkty podzialu. \hypertarget{classtablica_a12286c2881ab2db67e601b76c376f101}{\index{tablica@{tablica}!sortuj\-\_\-babel@{sortuj\-\_\-babel}}
+-\/punkt\-\_\-podzialu\-: jw pole przechowujace wyliczane przez rekurencje punkty podzialu. \hypertarget{classtablica_a5f6eaff3aa86715b597c312bb2930edd}{\index{tablica@{tablica}!quicksort\-\_\-przecietny@{quicksort\-\_\-przecietny}}
+\index{quicksort\-\_\-przecietny@{quicksort\-\_\-przecietny}!tablica@{tablica}}
+\subsubsection[{quicksort\-\_\-przecietny}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::quicksort\-\_\-przecietny (
+\begin{DoxyParamCaption}
+\item[{int}]{poczatek, }
+\item[{int}]{rozmiar}
+\end{DoxyParamCaption}
+)}}\label{classtablica_a5f6eaff3aa86715b597c312bb2930edd}
+
+
+Przypadek przecietny funkcji quicksort. Srednia wartosc podzialu jest dobierana losowo. Zlozonosc czasowa wynosi\-: 2n$\ast$ln(n) 
+
+\hypertarget{classtablica_a12286c2881ab2db67e601b76c376f101}{\index{tablica@{tablica}!sortuj\-\_\-babel@{sortuj\-\_\-babel}}
 \index{sortuj\-\_\-babel@{sortuj\-\_\-babel}!tablica@{tablica}}
 \subsubsection[{sortuj\-\_\-babel}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::sortuj\-\_\-babel (
 \begin{DoxyParamCaption}
@@ -315,5 +339,5 @@ Pole przechowujace glowna tablice klasy \hyperlink{class_operacja}{Operacja}.
 
 Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
 \item 
-C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project45\-P\-A\-M\-S\-Ilab4/\-Project44\-P\-A\-M\-S\-Ilab4/\hyperlink{tablica_8h}{tablica.\-h}\item 
-C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project45\-P\-A\-M\-S\-Ilab4/\-Project44\-P\-A\-M\-S\-Ilab4/\hyperlink{tablica_8cpp}{tablica.\-cpp}\end{DoxyCompactItemize}
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project45\-P\-A\-M\-S\-Ilab5/\-Project45\-P\-A\-M\-S\-Ilab5/\hyperlink{tablica_8h}{tablica.\-h}\item 
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project45\-P\-A\-M\-S\-Ilab5/\-Project45\-P\-A\-M\-S\-Ilab5/\hyperlink{tablica_8cpp}{tablica.\-cpp}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
-/*! \mainpage POPRAWIONA Dokumentacja zadania PAMSI lab 4
+/*! \mainpage POPRAWIONA Dokumentacja zadania PAMSI lab 5
  *
  * \author Witold Zimnicki
  * \date 23.4.2014

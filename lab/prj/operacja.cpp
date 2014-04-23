@@ -63,10 +63,12 @@ using namespace std;
 		cout<<"* - Mnozenie tablicy przez liczbe"<<endl;
 		cout<<"z - Zamien Elementy tablicy"<<endl;
 		cout<<"b - Sortowanie babelkowe tablicy"<<endl;
-		cout<<"q - sortowanie quicksort tablicy"<<endl;
+		cout<<"q - quicksort przypadek przecietny"<<endl;
+		cout<<"p - quicksort przypadek pesymistyczny"<<endl;
+		cout<<"o - quicksort przypadek optymistyczny"<<endl;
 		cout<<"m - sortowanie mergesort tablicy"<<endl;
 		cout<<"h - sortowanie heapsort tablicy"<<endl;
-		cout<<"o - Odwroc Kolejnosc tablicy"<<endl;
+		cout<<"r - Odwroc Kolejnosc tablicy"<<endl;
 		cout<<"d - Dodaj Element do tablicy "<<endl;
 		cout<<"s - zapelnij stos tablicowy"<<endl;
 		cout<<"l - zapelnij stos listowy"<<endl;
@@ -136,6 +138,19 @@ using namespace std;
 					sukces=true;
 					break;
 				}
+			case 2000000:
+				{
+					tabliczka2=tablica("sort_2000000.txt");
+					sukces=true;
+					break;
+				}
+			case 5000000:
+				{
+					tabliczka2=tablica("sort_5000000.txt");
+					sukces=true;
+					break;
+				}
+
 
 			default:
 				{
@@ -229,14 +244,25 @@ using namespace std;
 				}
 			case 'q':
 				{
-					tabliczka2.quicksort(0,tabliczka2.ZwrocIloscLiczb()-1);
+					tabliczka2.quicksort_przecietny(0,tabliczka2.ZwrocIloscLiczb()-1);
 					
 					break;
 				}
 			case 'o':
 				{
+					tabliczka2.quicksort_opt(0,tabliczka2.ZwrocIloscLiczb()-1);
+					break;
+				}
+			case 'p':
+				{
+					tabliczka2.quicksort_pes(0, tabliczka2.ZwrocIloscLiczb()-1);
+					break;
+				}
+
+
+			case 'r':
+				{
 					tabliczka2.OdwrocKolejnosc();
-				
 					break;
 				}
 			case 'd':
@@ -316,6 +342,6 @@ using namespace std;
 
 	void Operacja::PobierzRozmiarProblemu()
 	{
-		cout<<"Jak duzy problem wybierasz? (10, 100, 1000, 5000, 10000, 50000, 100000, 500 000):"<<endl;
+		cout<<"Jak duzy problem wybierasz? (10, 100, 1000, 5000, 10000, 50000, 100000, 500 000, 1 000 000, 2 000 000, 5 000 000):"<<endl;
 		cin>>rozmiar;
 	}

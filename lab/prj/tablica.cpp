@@ -1,6 +1,7 @@
 #include "tablica.h"
 #include <iostream>
 #include <fstream>
+#include <ctime>
 using namespace std;
 
 
@@ -53,10 +54,10 @@ using namespace std;
 		void tablica::ZamienElementy(int i, int j)
 		{
 			int schowek1, schowek2;
-			schowek1=TABLICA[i-1];
-			schowek2=TABLICA[j-1];
-			TABLICA[i-1]=schowek2;
-			TABLICA[j-1]=schowek1;
+			schowek1=TABLICA[i];
+			schowek2=TABLICA[j];
+			TABLICA[i]=schowek2;
+			TABLICA[j]=schowek1;
 		}
 
 		void tablica::OdwrocKolejnosc()
@@ -148,12 +149,6 @@ using namespace std;
 			}
 
 
-
-	tablica::tablica()
-	{
-
-	}
-
 								 
  /*!
 	Argumenty i najwazniejsze pola funkcji
@@ -199,7 +194,6 @@ using namespace std;
 	
 */
 
-		
 
 		void tablica::operator = (tablica &tabliczka)
 					{
@@ -269,7 +263,8 @@ void tablica::WypelnijStosLTablica(StosL &stosikL)
 			}
 }
 
-			//////////////////////////////////QUICKSORT///////////////////////////////
+			
+
 /*! Funkcja ta jest niezbedna czescia funkcji quicksort. Wyznacza ona punkt podzia³u tablicy. 
 W jednej czesci znajdowac sie beda liczby mniejsze od x (poczatkowego wyrazu TABLICA), a w 
 drugiej wieksze lub rowne.
@@ -286,10 +281,17 @@ Najwazniejsze pola i argumenty funkcji:
 
 */
 
-int tablica::podziel(int poczatek, int rozmiar)
+//////////////////////////////////QUICKSORT-PRZYPADEK PESYMISTYCZNY///////////////////////////////
+
+/*!
+	\brief Przypadek pesymistyczny funkcji quicksort.
+	Posiada najwieksza zlozonoscia czasowa z wszystkich wariantow quicksort wynoszaca: O(n)=n^2/2
+*/
+
+int tablica::podziel_pes(int poczatek, int rozmiar)
 		{
-			int x = TABLICA[poczatek]; 
-			int i = poczatek, j = rozmiar, w; 
+			int x = TABLICA[poczatek];
+			int i = poczatek, j = rozmiar, w;
 			while (true) 
 			{
 				while (TABLICA[j] > x) 
@@ -318,14 +320,93 @@ Najwazniejsze pola i argumenty funkcji:
 -punkt_podzialu: jw pole przechowujace wyliczane przez rekurencje punkty podzialu.
 */
 
-	void tablica::quicksort(int poczatek, int rozmiar) 
+	void tablica::quicksort_pes(int poczatek, int rozmiar) 
 	{
 		int punkt_podzialu;
 		if (poczatek < rozmiar)
 		{  
-			punkt_podzialu = podziel(poczatek,rozmiar); 
-			quicksort(poczatek,punkt_podzialu); 
-			quicksort(punkt_podzialu+1,rozmiar); 
+			punkt_podzialu = podziel_pes(poczatek,rozmiar); 
+			quicksort_pes(poczatek,punkt_podzialu); 
+			quicksort_pes(punkt_podzialu+1,rozmiar); 
+		}
+	}
+
+	///////////////////QUICKSORT - PRZYPADEK PRZECIETNY///////////////////////////
+		
+	/*!
+		\brief Przypadek przecietny funkcji quicksort.
+		Srednia wartosc podzialu jest dobierana losowo. Zlozonosc czasowa wynosi: 2n*ln(n)
+	*/
+	void tablica::quicksort_przecietny(int poczatek, int rozmiar) 
+	{
+		int i = poczatek, j = rozmiar;
+		int tmp;
+		int pivot = TABLICA[poczatek + rand() % (rozmiar - poczatek+1)];
+ 
+		while (i <= j) 
+		{
+				while (TABLICA[i] < pivot)
+					i++;
+				while (TABLICA[j] > pivot)
+					j--;
+				if (i <= j) 
+				{
+					tmp = TABLICA[i];
+					TABLICA[i] = TABLICA[j];
+					TABLICA[j] = tmp;
+					i++;
+					j--;
+				}
+		};
+	
+		if (poczatek < j)
+				quicksort_przecietny(poczatek, j);
+		if (i < rozmiar)
+				quicksort_przecietny(i, rozmiar);
+	 }
+
+
+	/////////////////////////////QUICKSORT- PRZYPADEK OPTYMISTYCZNY////////////////////////
+
+	/*! \brief Przypadek optymistyczny funkcji quicksort.
+
+		Element srodkowy podzialu wybierany jest dokladnie ze srodka. Zlozonosc czasowa tego wariantu: n*log2(n)
+	*/
+
+	int tablica::podziel_opt(int poczatek, int rozmiar)
+		{
+			
+			int przecietny=(poczatek+rozmiar)/2;
+
+			int x = TABLICA[przecietny];
+			int i = poczatek, j = rozmiar, w;
+			while (true) 
+			{
+				while (TABLICA[j] > x) 
+					j--;
+				while (TABLICA[i] < x) 
+					i++;
+				if (i < j) 
+				{
+					w = TABLICA[i];
+					TABLICA[i] = TABLICA[j];
+					TABLICA[j] = w;
+					i++;
+					j--;
+				}
+				else 
+					return j;
+			}
+		}
+
+	void tablica::quicksort_opt(int poczatek, int rozmiar) 
+	{
+		int punkt_podzialu;
+		if (poczatek < rozmiar)
+		{  
+			punkt_podzialu = podziel_opt(poczatek,rozmiar); 
+			quicksort_opt(poczatek,punkt_podzialu); 
+			quicksort_opt(punkt_podzialu+1,rozmiar); 
 		}
 	}
 	//////////////////////////////////////////////////////Sortowanie babelkowe/////////////////////////////////////////

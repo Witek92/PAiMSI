@@ -1,0 +1,158 @@
+%\documentclass{article}
+\documentclass[12pt,a4paper,titlepage]{article}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{stmaryrd}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage[figuresright]{rotating}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{geometry}
+\usepackage{pslatex}
+\usepackage{ulem}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{Here}
+\usepackage{color}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\selectlanguage{polish}
+\definecolor{szary}{gray}{0.6}
+\setlength{\textwidth}{400pt}
+\lstset{numbers=left, numberstyle=\tiny, basicstyle=\scriptsize\ttfamily, breaklines=true, captionpos=b, tabsize=2}
+
+\makeindex
+
+\title{Laboratorium PAiMSI 5\newline
+Poprawione sprawozdanie}
+\date{\today}
+\author{Witold Zimnicki - nr 200465}
+
+
+
+\usepackage{pgfplots}
+\usepackage{filecontents}
+\begin{filecontents*}{data1.csv}
+a,b,c,d
+10,0,0,0
+100,0,0,0
+1000,1,0,0
+5000,10,0,1
+10000,27,1,2
+50000,213,6,9
+100000,483,14,17
+\end{filecontents*}
+
+\begin{filecontents*}{data2.csv}
+a,b,c,d
+10,0,0,0
+100,0,0,0
+1000,0,0,0
+5000,0,0,1
+10000,1,1,2
+50000,6,6,9
+100000,12,14,17
+500000,76,75,93
+1000000,187,4,4
+2000000,523,3,4
+5000000,2519,3,4
+\end{filecontents*}
+
+
+\begin{filecontents*}{data3.csv}
+a,b,c,d
+10,0,0,0
+100,0,0,0
+1000,0,0,0
+5000,0,0,1
+10000,1,1,2
+50000,8,6,9
+100000,18,14,17
+500000,94,75,93
+1000000,193,4,4
+2000000,396,3,4
+5000000,1008,3,4
+\end{filecontents*}
+\begin{document}
+
+	\maketitle
+	\pagestyle{empty}
+	\pagestyle{headings}
+	
+	\textbf{W sprawozdaniu znajdują się 3 wykresy:}\newline
+	
+	1. Posortowanie tablicy algorytmem quicksort.(Wariant pesymistyczny) \newline
+	 
+	2. Posortowanie tablicy algorytmem quicksort.(Wariant przeciętny ) \newline
+	
+	3. Posortowanie tablicy algorytmem quicksort.(Wariant optymistyczny) \newline
+	
+	
+	
+	Każda wartość (czas) dla danego rozmiaru problemu jest średnią czasów zmierzonych w pętli wykonującej się 10-krotnie dla danego sortowania. \newline
+	\newline
+	\newline
+	\newpage
+	
+
+	\begin{tikzpicture}
+		\begin{axis}[
+			title=\textbf{QUICKSORT-przypadek pesymistyczny},
+			xlabel= N - rozmiar problemu,
+			ylabel=czas w ms,
+			xlabel style={sloped like x axis},
+			ylabel style={sloped}
+			]
+			\addplot table [x=a, y=b, col sep=comma] {data1.csv};
+
+
+		\end{axis}
+	\end{tikzpicture}
+		\newline \newline
+		\begin{tikzpicture}
+		\begin{axis}[
+			title=\textbf{QUICKSORT-przypadek przeciętny},
+			xlabel= N - rozmiar problemu,
+			ylabel=czas w ms,
+			xlabel style={sloped like x axis},
+			ylabel style={sloped}
+			]
+			\addplot table [x=a, y=b, col sep=comma] {data2.csv};
+			
+
+
+		\end{axis}
+	\end{tikzpicture}
+	\newline \newline
+		\begin{tikzpicture}
+		\begin{axis}[
+			title=\textbf{QUICKSORT-przypadek optymistyczny},
+			xlabel= N - rozmiar problemu,
+			ylabel=czas w ms,
+			xlabel style={sloped like x axis},
+			ylabel style={sloped}
+			]
+			\addplot table [x=a, y=b, col sep=comma] {data3.csv};
+			
+
+
+		\end{axis}
+	\end{tikzpicture}
+	\newline \newline \newline
+\textbf{Wnioski: \newline	\newline}
+\textbf{-} Przypadek pesymistyczny potwierdza swoją największą złożoność czasową i powoduje kwadratowo rosnące wartości czasu sortowania. \newline
+\newline
+ \textbf{-} Przypadek przeciętny algorytmu jest efektywniejszy od optymistycznego dla stosunkowo małych rozmiarów problemów. Za to dla większych problemów, czasy wykonywania się sortowania są dużo niższe w wariancie optymistycznym. \newline
+ \newline
+ - W przypadku pesymistycznym dla większych rozmiarów N problemu niż na wykresie, przy kompilacji pojawiały się błędy.
+ 
+
+
+\end{document}

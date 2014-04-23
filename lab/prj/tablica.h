@@ -18,7 +18,8 @@ class tablica
 {
 	/*! Funkcja pomocnicza (dzielaca tablice na dwie czesci) do wykonania algorytmu quicksort.
 	*/
-	int podziel (int poczatek, int rozmiar);
+	int podziel_pes (int poczatek, int rozmiar);
+	int podziel_opt(int poczatek, int rozmiar);
 
 	void merge( int low, int pivot, int high);
 	//! Pole przechowujace informacje o ilosci danych w tablicy g³ównej.
@@ -47,10 +48,16 @@ public:
 	/*! Konstruktor klasy Operacja tworzacy obiekt z tablica o okreslonej liczbie elementow.
 	*/
 	tablica(char nazwa[]);
-	tablica();
+	tablica()
+	{
+
+	}
+
 	/*! Funkcja wykonujaca algorytm quicksort.
 	*/
-	void quicksort(int poczatek, int rozmiar);
+	void quicksort_pes(int poczatek, int rozmiar);
+	void quicksort_przecietny(int poczatek, int rozmiar);
+	void quicksort_opt(int poczatek, int rozmiar);
 	/*! Funkcja wykonujaca algorytm 'sortowania babelkowego'.
 	*/
 	void sortuj_babel();
@@ -81,7 +88,7 @@ public:
 	void WypelnijStosLTablica(StosL &stosikL);
 
 	
-	void mergesort( int poczatek, int rozmiar);
+	void mergesort( int low, int high);
 	void heapsort();
 };
 
