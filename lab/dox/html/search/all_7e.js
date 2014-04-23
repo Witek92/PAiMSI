@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7eoperacja',['~Operacja',['../class_operacja.html#aaff0fce58075a7e425f781774debf613',1,'Operacja']]]
+  ['_7ekolejka',['~Kolejka',['../class_kolejka.html#a352f86ff08cd47be6c35c60bb0f873a6',1,'Kolejka']]],
+  ['_7estos',['~Stos',['../class_stos.html#af9a198e2540e18adcc0b5259105fd78e',1,'Stos']]]
 ];

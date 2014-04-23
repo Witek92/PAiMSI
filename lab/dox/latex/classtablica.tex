@@ -1,0 +1,279 @@
+\hypertarget{classtablica}{\section{Dokumentacja klasy tablica}
+\label{classtablica}\index{tablica@{tablica}}
+}
+
+
+Deklaracja klasy tablica.  
+
+
+
+
+{\ttfamily \#include $<$tablica.\-h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtablica_aa464212c27ab647f400f3d797dbc2a35}{Zwroc\-Ilosc\-Liczb} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca ilosc liczb tablicy. \end{DoxyCompactList}\item 
+void \hyperlink{classtablica_a5bcf67f378f0d78f29ec072d19f50e7c}{Pomnoz\-Liczby} (int liczba)
+\begin{DoxyCompactList}\small\item\em Funkcja mnozaca liczby tablicy przez liczbe. \end{DoxyCompactList}\item 
+void \hyperlink{classtablica_ad35970c518fe65267a08f80ac155b3b9}{Wyswietl\-Tablice} ()
+\item 
+\hyperlink{classtablica_a5453d2bbeeac4d81c1de4d3aedcb9855}{tablica} (char nazwa\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{classtablica_abc5414ba4d6321ecf744e38a809d9c8f}{tablica} ()
+\item 
+void \hyperlink{classtablica_a066e82a4a56683dd01ad1b8de622ca84}{quicksort} (int p, int r)
+\item 
+void \hyperlink{classtablica_a12286c2881ab2db67e601b76c376f101}{sortuj\-\_\-babel} ()
+\item 
+void \hyperlink{classtablica_add56035c59826fba431fb0ea5252917d}{Zamien\-Elementy} (int i, int j)
+\item 
+void \hyperlink{classtablica_a6977d8d18f45c2939bbca7c4d3c54692}{Odwroc\-Kolejnosc} ()
+\item 
+void \hyperlink{classtablica_a68b5e30acd662df4f0eab6ffd4efc4b9}{Dodaj\-Element} (int element)
+\item 
+bool \hyperlink{classtablica_acc4a17a373df6ad19367830dd20d8db1}{operator==} (int tab\mbox{[}$\,$\mbox{]})
+\item 
+int $\ast$ \hyperlink{classtablica_acab922fa86307f71e4eb54d9ee51ec2f}{operator+} (\hyperlink{classtablica}{tablica} tab)
+\item 
+void \hyperlink{classtablica_af024511fa95d92e5fefd3d5fc075b6eb}{operator=} (\hyperlink{classtablica}{tablica} \&tabliczka)
+\item 
+void \hyperlink{classtablica_adfddb9569f480bd363e90660a72add95}{Wypelnij\-Stos\-Tablica} (\hyperlink{class_stos}{Stos} \&stosek)
+\begin{DoxyCompactList}\small\item\em Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy \hyperlink{class_stos}{Stos}. \end{DoxyCompactList}\item 
+void \hyperlink{classtablica_a888da3562ae1d3200c8ab446685f6c18}{Wypelnij\-Kolejke\-Tablica} (\hyperlink{class_kolejka}{Kolejka} \&kolejeczka)
+\begin{DoxyCompactList}\small\item\em Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy \hyperlink{class_kolejka}{Kolejka}. \end{DoxyCompactList}\item 
+void \hyperlink{classtablica_ae97c0bebf2629c77fa9c34a6aaf40d4f}{Wypelnij\-Stos\-L\-Tablica} (\hyperlink{class_stos_l}{Stos\-L} \&stosik\-L)
+\begin{DoxyCompactList}\small\item\em Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy \hyperlink{class_stos_l}{Stos\-L}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \hyperlink{classtablica_ad6abcd9d60eef2315f0b92484058667b}{T\-A\-B\-L\-I\-C\-A}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Deklaracja klasy tablica. 
+
+Klasa tablica posiada pola oraz funkcje potrzebne do wykonywania dzialan na tablicach typu int. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{classtablica_a5453d2bbeeac4d81c1de4d3aedcb9855}{\index{tablica@{tablica}!tablica@{tablica}}
+\index{tablica@{tablica}!tablica@{tablica}}
+\subsubsection[{tablica}]{\setlength{\rightskip}{0pt plus 5cm}tablica\-::tablica (
+\begin{DoxyParamCaption}
+\item[{char}]{nazwa\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{classtablica_a5453d2bbeeac4d81c1de4d3aedcb9855}
+Konstruktor klasy \hyperlink{class_operacja}{Operacja} tworzacy obiekt z tablica o okreslonej liczbie elementow.
+
+Argumenty i najwazniejsze pola konstruktora\-:
+
+
+\begin{DoxyItemize}
+\item liczby -\/ ilosc liczb, ile zawierac bedzie glowna tablica po utworzeniu 
+\end{DoxyItemize}\hypertarget{classtablica_abc5414ba4d6321ecf744e38a809d9c8f}{\index{tablica@{tablica}!tablica@{tablica}}
+\index{tablica@{tablica}!tablica@{tablica}}
+\subsubsection[{tablica}]{\setlength{\rightskip}{0pt plus 5cm}tablica\-::tablica (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtablica_abc5414ba4d6321ecf744e38a809d9c8f}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{classtablica_a68b5e30acd662df4f0eab6ffd4efc4b9}{\index{tablica@{tablica}!Dodaj\-Element@{Dodaj\-Element}}
+\index{Dodaj\-Element@{Dodaj\-Element}!tablica@{tablica}}
+\subsubsection[{Dodaj\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::\-Dodaj\-Element (
+\begin{DoxyParamCaption}
+\item[{int}]{element}
+\end{DoxyParamCaption}
+)}}\label{classtablica_a68b5e30acd662df4f0eab6ffd4efc4b9}
+Funkcja dodajaca wybrany element typu int do tablicy.
+
+Argumenty i najwazniejsze pola funkcji\-:
+
+
+\begin{DoxyItemize}
+\item element -\/ wybrany element typu int, ktory chcemy dodac do tablicy
+\item tabschow -\/ tablica, do ktorej zostanie zapisana nowa tablica z nowym elementem
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Zwraca}
+Nowa tablica z dodanym elementem 
+\end{DoxyReturn}
+\hypertarget{classtablica_a6977d8d18f45c2939bbca7c4d3c54692}{\index{tablica@{tablica}!Odwroc\-Kolejnosc@{Odwroc\-Kolejnosc}}
+\index{Odwroc\-Kolejnosc@{Odwroc\-Kolejnosc}!tablica@{tablica}}
+\subsubsection[{Odwroc\-Kolejnosc}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::\-Odwroc\-Kolejnosc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtablica_a6977d8d18f45c2939bbca7c4d3c54692}
+Funkcja odwracajaca kolejnosc tablicy. \hypertarget{classtablica_acab922fa86307f71e4eb54d9ee51ec2f}{\index{tablica@{tablica}!operator+@{operator+}}
+\index{operator+@{operator+}!tablica@{tablica}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ tablica\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf tablica}}]{tab}
+\end{DoxyParamCaption}
+)}}\label{classtablica_acab922fa86307f71e4eb54d9ee51ec2f}
+Przeciazenie operatora dodawania (sklejania) dwoch tablic.
+
+Argumenty i najwazniejsze pola funkcji\-:
+
+
+\begin{DoxyItemize}
+\item tab -\/ tablica, ktora bedzie dodana do glownej tablicy
+\item tabschow -\/ tablica, do ktorej zostania zapisane dwie scalone tablice
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Zwraca}
+Adres pierwszego elementu Nowej tablicy z dodana druga tablica 
+\end{DoxyReturn}
+\hypertarget{classtablica_af024511fa95d92e5fefd3d5fc075b6eb}{\index{tablica@{tablica}!operator=@{operator=}}
+\index{operator=@{operator=}!tablica@{tablica}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf tablica} \&}]{tabliczka}
+\end{DoxyParamCaption}
+)}}\label{classtablica_af024511fa95d92e5fefd3d5fc075b6eb}
+Przeciazenie operatora przypisywania tablicy glownej innej tablicy.
+
+\begin{DoxyVerb}            Przeciazenie to powoduje nadpisanie glownej tablicy wybrana tablica, zarazem zrownujac liczby elementow obu tablic.
+\end{DoxyVerb}
+ Argumenty i najwazniejsze pola funkcji\-:
+
+
+\begin{DoxyItemize}
+\item tab -\/ tablica, ktora nadpisze tablice glowna 
+\end{DoxyItemize}\hypertarget{classtablica_acc4a17a373df6ad19367830dd20d8db1}{\index{tablica@{tablica}!operator==@{operator==}}
+\index{operator==@{operator==}!tablica@{tablica}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool tablica\-::operator== (
+\begin{DoxyParamCaption}
+\item[{int}]{tab\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{classtablica_acc4a17a373df6ad19367830dd20d8db1}
+Przeciazenie operatora porownywania tablicy z tablic�.
+
+Argumenty i najwazniejsze pola funkcji
+
+
+\begin{DoxyItemize}
+\item tab -\/ tablica wczytana jako pierwsza do porownania
+\item prawda -\/ pole logiczne, przechowujace informacje o spelnionym warunku
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Zwraca}
+prawda, jesli jest pelna zgodnosc; falsz, jesli wystapi blad w porownywaniu 
+\end{DoxyReturn}
+\hypertarget{classtablica_a5bcf67f378f0d78f29ec072d19f50e7c}{\index{tablica@{tablica}!Pomnoz\-Liczby@{Pomnoz\-Liczby}}
+\index{Pomnoz\-Liczby@{Pomnoz\-Liczby}!tablica@{tablica}}
+\subsubsection[{Pomnoz\-Liczby}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::\-Pomnoz\-Liczby (
+\begin{DoxyParamCaption}
+\item[{int}]{liczba}
+\end{DoxyParamCaption}
+)}}\label{classtablica_a5bcf67f378f0d78f29ec072d19f50e7c}
+
+
+Funkcja mnozaca liczby tablicy przez liczbe. 
+
+Argumenty i najwazniejsze pola funkcji
+\begin{DoxyItemize}
+\item liczba -\/ liczba, przez ktora jest mnozony kazdy wyraz tablicy
+\item tab\mbox{[}\mbox{]} -\/ tablica, na ktorej elementach bedzie wykonywane dzialanie
+\item Ilosc -\/ ilosc danych wczytanych z pliku 
+\end{DoxyItemize}\hypertarget{classtablica_a066e82a4a56683dd01ad1b8de622ca84}{\index{tablica@{tablica}!quicksort@{quicksort}}
+\index{quicksort@{quicksort}!tablica@{tablica}}
+\subsubsection[{quicksort}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::quicksort (
+\begin{DoxyParamCaption}
+\item[{int}]{p, }
+\item[{int}]{r}
+\end{DoxyParamCaption}
+)}}\label{classtablica_a066e82a4a56683dd01ad1b8de622ca84}
+Funkcja wykonujaca algorytm quicksort. \hypertarget{classtablica_a12286c2881ab2db67e601b76c376f101}{\index{tablica@{tablica}!sortuj\-\_\-babel@{sortuj\-\_\-babel}}
+\index{sortuj\-\_\-babel@{sortuj\-\_\-babel}!tablica@{tablica}}
+\subsubsection[{sortuj\-\_\-babel}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::sortuj\-\_\-babel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtablica_a12286c2881ab2db67e601b76c376f101}
+Funkcja wykonujaca algorytm 'sortowania babelkowego'. \hypertarget{classtablica_a888da3562ae1d3200c8ab446685f6c18}{\index{tablica@{tablica}!Wypelnij\-Kolejke\-Tablica@{Wypelnij\-Kolejke\-Tablica}}
+\index{Wypelnij\-Kolejke\-Tablica@{Wypelnij\-Kolejke\-Tablica}!tablica@{tablica}}
+\subsubsection[{Wypelnij\-Kolejke\-Tablica}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::\-Wypelnij\-Kolejke\-Tablica (
+\begin{DoxyParamCaption}
+\item[{{\bf Kolejka} \&}]{kolejeczka}
+\end{DoxyParamCaption}
+)}}\label{classtablica_a888da3562ae1d3200c8ab446685f6c18}
+
+
+Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy \hyperlink{class_kolejka}{Kolejka}. 
+
+\hypertarget{classtablica_ae97c0bebf2629c77fa9c34a6aaf40d4f}{\index{tablica@{tablica}!Wypelnij\-Stos\-L\-Tablica@{Wypelnij\-Stos\-L\-Tablica}}
+\index{Wypelnij\-Stos\-L\-Tablica@{Wypelnij\-Stos\-L\-Tablica}!tablica@{tablica}}
+\subsubsection[{Wypelnij\-Stos\-L\-Tablica}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::\-Wypelnij\-Stos\-L\-Tablica (
+\begin{DoxyParamCaption}
+\item[{{\bf Stos\-L} \&}]{stosik\-L}
+\end{DoxyParamCaption}
+)}}\label{classtablica_ae97c0bebf2629c77fa9c34a6aaf40d4f}
+
+
+Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy \hyperlink{class_stos_l}{Stos\-L}. 
+
+\hypertarget{classtablica_adfddb9569f480bd363e90660a72add95}{\index{tablica@{tablica}!Wypelnij\-Stos\-Tablica@{Wypelnij\-Stos\-Tablica}}
+\index{Wypelnij\-Stos\-Tablica@{Wypelnij\-Stos\-Tablica}!tablica@{tablica}}
+\subsubsection[{Wypelnij\-Stos\-Tablica}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::\-Wypelnij\-Stos\-Tablica (
+\begin{DoxyParamCaption}
+\item[{{\bf Stos} \&}]{stosek}
+\end{DoxyParamCaption}
+)}}\label{classtablica_adfddb9569f480bd363e90660a72add95}
+
+
+Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy \hyperlink{class_stos}{Stos}. 
+
+\hypertarget{classtablica_ad35970c518fe65267a08f80ac155b3b9}{\index{tablica@{tablica}!Wyswietl\-Tablice@{Wyswietl\-Tablice}}
+\index{Wyswietl\-Tablice@{Wyswietl\-Tablice}!tablica@{tablica}}
+\subsubsection[{Wyswietl\-Tablice}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::\-Wyswietl\-Tablice (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtablica_ad35970c518fe65267a08f80ac155b3b9}
+Funkcja wyswietlajaca wyrazy tablicy klasy \hyperlink{class_operacja}{Operacja}.
+
+Funkcja wyswietla wszystkie elementy tablicy glownej w zaleznosci od przechowywanej w polu Ilosc\-Liczb informacji o liczbie jej elementow. \hypertarget{classtablica_add56035c59826fba431fb0ea5252917d}{\index{tablica@{tablica}!Zamien\-Elementy@{Zamien\-Elementy}}
+\index{Zamien\-Elementy@{Zamien\-Elementy}!tablica@{tablica}}
+\subsubsection[{Zamien\-Elementy}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::\-Zamien\-Elementy (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}\label{classtablica_add56035c59826fba431fb0ea5252917d}
+Funkcja zamieniajaca miejscami wybrane elementy tablicy.
+
+Argumenty i najwazniejsze pola funkcji\-:
+
+
+\begin{DoxyItemize}
+\item i -\/ wybrany element pierwszej tablicy
+\item j -\/ wybrany element drugiej tablicy 
+\end{DoxyItemize}\hypertarget{classtablica_aa464212c27ab647f400f3d797dbc2a35}{\index{tablica@{tablica}!Zwroc\-Ilosc\-Liczb@{Zwroc\-Ilosc\-Liczb}}
+\index{Zwroc\-Ilosc\-Liczb@{Zwroc\-Ilosc\-Liczb}!tablica@{tablica}}
+\subsubsection[{Zwroc\-Ilosc\-Liczb}]{\setlength{\rightskip}{0pt plus 5cm}int tablica\-::\-Zwroc\-Ilosc\-Liczb (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtablica_aa464212c27ab647f400f3d797dbc2a35}
+
+
+Funkcja zwracajaca ilosc liczb tablicy. 
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{classtablica_ad6abcd9d60eef2315f0b92484058667b}{\index{tablica@{tablica}!T\-A\-B\-L\-I\-C\-A@{T\-A\-B\-L\-I\-C\-A}}
+\index{T\-A\-B\-L\-I\-C\-A@{T\-A\-B\-L\-I\-C\-A}!tablica@{tablica}}
+\subsubsection[{T\-A\-B\-L\-I\-C\-A}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ tablica\-::\-T\-A\-B\-L\-I\-C\-A}}\label{classtablica_ad6abcd9d60eef2315f0b92484058667b}
+Pole przechowujace glowna tablice klasy \hyperlink{class_operacja}{Operacja}. 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project44\-P\-A\-M\-S\-Ilab3/\-Project44\-P\-A\-M\-S\-Ilab3/\hyperlink{tablica_8h}{tablica.\-h}\item 
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project44\-P\-A\-M\-S\-Ilab3/\-Project44\-P\-A\-M\-S\-Ilab3/\hyperlink{tablica_8cpp}{tablica.\-cpp}\end{DoxyCompactItemize}

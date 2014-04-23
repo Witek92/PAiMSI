@@ -1,0 +1,159 @@
+\hypertarget{class_kolejka}{\section{Dokumentacja klasy Kolejka}
+\label{class_kolejka}\index{Kolejka@{Kolejka}}
+}
+
+
+Definicja klasy \hyperlink{class_kolejka}{Kolejka}.  
+
+
+
+
+{\ttfamily \#include $<$Kolejka.\-h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_kolejka_a37c886fdc73dce62b04da0381dec5484}{Kolejka} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny klasy \hyperlink{class_kolejka}{Kolejka}. \end{DoxyCompactList}\item 
+\hyperlink{class_kolejka_a507889c5f122d922544fdaf4dd58b2d0}{Kolejka} (int Ilosc)
+\begin{DoxyCompactList}\small\item\em Konstruktor pobierajacy parametr ilosci elementow tablicy. \end{DoxyCompactList}\item 
+\hyperlink{class_kolejka_a352f86ff08cd47be6c35c60bb0f873a6}{$\sim$\-Kolejka} ()
+\begin{DoxyCompactList}\small\item\em Destruktor usuwajacy tablice dynamiczna Q. \end{DoxyCompactList}\item 
+bool \hyperlink{class_kolejka_afdd931c17c1fa4d93bc5c8aa45cb212a}{empty} ()
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzajaca, czy tablica jest pusta. \end{DoxyCompactList}\item 
+int \hyperlink{class_kolejka_a6476787f1d02eb82e334f1be10daea66}{front} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca element na koncu kolejki. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a5f21d536bde87ae387e23e52ca27e3f9}{enqueue} (int element)
+\begin{DoxyCompactList}\small\item\em Funkcja kolejkuje wybrany element. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a9c78c81b3ef4d4d7a54215ab7fe380ff}{dequeue} ()
+\begin{DoxyCompactList}\small\item\em Funkcja usuwa ostatni element kolejki. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a555c767a2f9afd38aa60773ea9b62419}{Wyswietl} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietla cala kolejke. \end{DoxyCompactList}\item 
+void \hyperlink{class_kolejka_a8def296b0c464119e80a96258785b123}{Ustal\-Rozmiar} (int roz)
+\begin{DoxyCompactList}\small\item\em Funkcja przypisuje wybrany rozmiar kolejce. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \hyperlink{class_kolejka}{Kolejka}. 
+
+Ta struktura danych pozwala na zapisywanie danych do kolejki zaimplementowej tablicowo. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_kolejka_a37c886fdc73dce62b04da0381dec5484}{\index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
+\index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
+\subsubsection[{Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::\-Kolejka (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a37c886fdc73dce62b04da0381dec5484}
+
+
+Konstruktor domyslny klasy \hyperlink{class_kolejka}{Kolejka}. 
+
+\hypertarget{class_kolejka_a507889c5f122d922544fdaf4dd58b2d0}{\index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
+\index{Kolejka@{Kolejka}!Kolejka@{Kolejka}}
+\subsubsection[{Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::\-Kolejka (
+\begin{DoxyParamCaption}
+\item[{int}]{Ilosc}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a507889c5f122d922544fdaf4dd58b2d0}
+
+
+Konstruktor pobierajacy parametr ilosci elementow tablicy. 
+
+wskpocz po utworzeniu zmiennej klasy \hyperlink{class_kolejka}{Kolejka} pokazuje na poczatek tablicy.
+
+Parametry i najwazniejsza pola funkcji\-: -\/\-Ilosc\-: parametr okresla rozmiar stworzonej tablicy kolejki. \hypertarget{class_kolejka_a352f86ff08cd47be6c35c60bb0f873a6}{\index{Kolejka@{Kolejka}!$\sim$\-Kolejka@{$\sim$\-Kolejka}}
+\index{$\sim$\-Kolejka@{$\sim$\-Kolejka}!Kolejka@{Kolejka}}
+\subsubsection[{$\sim$\-Kolejka}]{\setlength{\rightskip}{0pt plus 5cm}Kolejka\-::$\sim$\-Kolejka (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a352f86ff08cd47be6c35c60bb0f873a6}
+
+
+Destruktor usuwajacy tablice dynamiczna Q. 
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_kolejka_a9c78c81b3ef4d4d7a54215ab7fe380ff}{\index{Kolejka@{Kolejka}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!Kolejka@{Kolejka}}
+\subsubsection[{dequeue}]{\setlength{\rightskip}{0pt plus 5cm}void Kolejka\-::dequeue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a9c78c81b3ef4d4d7a54215ab7fe380ff}
+
+
+Funkcja usuwa ostatni element kolejki. 
+
+\hypertarget{class_kolejka_afdd931c17c1fa4d93bc5c8aa45cb212a}{\index{Kolejka@{Kolejka}!empty@{empty}}
+\index{empty@{empty}!Kolejka@{Kolejka}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Kolejka\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_afdd931c17c1fa4d93bc5c8aa45cb212a}
+
+
+Funkcja sprawdzajaca, czy tablica jest pusta. 
+
+\begin{DoxyReturn}{Zwraca}
+prawde, jesli kolejka jest pusta; falsz, jesli kolejka posiada elementy 
+\end{DoxyReturn}
+\hypertarget{class_kolejka_a5f21d536bde87ae387e23e52ca27e3f9}{\index{Kolejka@{Kolejka}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!Kolejka@{Kolejka}}
+\subsubsection[{enqueue}]{\setlength{\rightskip}{0pt plus 5cm}void Kolejka\-::enqueue (
+\begin{DoxyParamCaption}
+\item[{int}]{element}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a5f21d536bde87ae387e23e52ca27e3f9}
+
+
+Funkcja kolejkuje wybrany element. 
+
+Parametry i najwazniejsza pola funkcji\-: -\/element\-: liczba typu int, ktora chcemy zakolejkowac.
+
+Gdy liczba elementow jest wieksza badz rowna rozmiarowi kolejki, nic sie nie dzieje. \hypertarget{class_kolejka_a6476787f1d02eb82e334f1be10daea66}{\index{Kolejka@{Kolejka}!front@{front}}
+\index{front@{front}!Kolejka@{Kolejka}}
+\subsubsection[{front}]{\setlength{\rightskip}{0pt plus 5cm}int Kolejka\-::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a6476787f1d02eb82e334f1be10daea66}
+
+
+Funkcja zwraca element na koncu kolejki. 
+
+\begin{DoxyReturn}{Zwraca}
+ostatni element kolejki, gdy posiada elementy; falsz, gdy ich nie posiada. 
+\end{DoxyReturn}
+\hypertarget{class_kolejka_a8def296b0c464119e80a96258785b123}{\index{Kolejka@{Kolejka}!Ustal\-Rozmiar@{Ustal\-Rozmiar}}
+\index{Ustal\-Rozmiar@{Ustal\-Rozmiar}!Kolejka@{Kolejka}}
+\subsubsection[{Ustal\-Rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}void Kolejka\-::\-Ustal\-Rozmiar (
+\begin{DoxyParamCaption}
+\item[{int}]{roz}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a8def296b0c464119e80a96258785b123}
+
+
+Funkcja przypisuje wybrany rozmiar kolejce. 
+
+\hypertarget{class_kolejka_a555c767a2f9afd38aa60773ea9b62419}{\index{Kolejka@{Kolejka}!Wyswietl@{Wyswietl}}
+\index{Wyswietl@{Wyswietl}!Kolejka@{Kolejka}}
+\subsubsection[{Wyswietl}]{\setlength{\rightskip}{0pt plus 5cm}void Kolejka\-::\-Wyswietl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_kolejka_a555c767a2f9afd38aa60773ea9b62419}
+
+
+Funkcja wyswietla cala kolejke. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project44\-P\-A\-M\-S\-Ilab3/\-Project44\-P\-A\-M\-S\-Ilab3/\hyperlink{_kolejka_8h}{Kolejka.\-h}\item 
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project44\-P\-A\-M\-S\-Ilab3/\-Project44\-P\-A\-M\-S\-Ilab3/\hyperlink{_kolejka_8cpp}{Kolejka.\-cpp}\end{DoxyCompactItemize}
