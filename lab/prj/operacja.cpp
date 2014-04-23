@@ -43,8 +43,7 @@ using namespace std;
 	
 	Operacja::Operacja(char nazwa[])
 	{
-		//tablica tabliczka3(nazwa);
-	//	tabliczka2=tabliczka3;
+	
 		tabliczka2= tablica(nazwa);
 
 	}
@@ -65,6 +64,8 @@ using namespace std;
 		cout<<"z - Zamien Elementy tablicy"<<endl;
 		cout<<"b - Sortowanie babelkowe tablicy"<<endl;
 		cout<<"q - sortowanie quicksort tablicy"<<endl;
+		cout<<"m - sortowanie mergesort tablicy"<<endl;
+		cout<<"h - sortowanie heapsort tablicy"<<endl;
 		cout<<"o - Odwroc Kolejnosc tablicy"<<endl;
 		cout<<"d - Dodaj Element do tablicy "<<endl;
 		cout<<"s - zapelnij stos tablicowy"<<endl;
@@ -129,6 +130,13 @@ using namespace std;
 					sukces=true;
 					break;
 				}
+			case 1000000:
+				{
+					tabliczka2=tablica("sort_1000000.txt");
+					sukces=true;
+					break;
+				}
+
 			default:
 				{
 					cout<<"NIEPOPRAWNA ILOSC!!!"<<endl;
@@ -259,6 +267,18 @@ using namespace std;
 					
 					break;
 				}
+			case 'm':
+				{
+					tabliczka2.mergesort(0,tabliczka2.ZwrocIloscLiczb()-1);
+					break;
+				}
+			case 'h':
+				{
+					tabliczka2.heapsort();
+					break;
+				}
+
+
 			default:
 				{
 			
@@ -290,8 +310,7 @@ using namespace std;
 		}
 		
 		PodajSrednia();
-//		tabliczka2.WyswietlTablice();
-	//stosik.Wyswietl();
+		
 	}
 
 

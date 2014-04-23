@@ -30,10 +30,8 @@
 
 \makeindex
 
-\title{Laboratorium PAiMSI 3
-\newline
-\newline
-Poprawione sprawozdanie}
+\title{Laboratorium PAiMSI 4
+\newline Poprawione sprawozdanie}
 \date{\today}
 \author{Witold Zimnicki - nr 200465}
 
@@ -45,44 +43,45 @@ Poprawione sprawozdanie}
 a,b,c,d
 10,0,0,1
 100,0,0,5
-1000,1,33,1
-5000,19,822,19
-10000,48,2904,48
-50000,48,91433,48
+1000,1,1,1
+5000,19,10,19
+10000,48,27,48
+50000,48,213,48
+100000,48,483,48
 \end{filecontents*}
 
 \begin{filecontents*}{data2.csv}
 a,b,c,d
 10,0,0,1
 100,0,0,5
-1000,6,0,1
-5000,91,0,91
-10000,210,1,210
-50000,48,2,48
-100000,48,4,48
-500000,48,26,48
+1000,6,4,1
+5000,91,92,91
+10000,210,471,210
 \end{filecontents*}
 
 \begin{filecontents*}{data3.csv}
 a,b,c,d
 10,0,0,1
 100,0,0,5
-1000,0,34,0
-5000,1,1011,1
-10000,1,4868,1
-50000,1,124101,1
+1000,1,0,1
+5000,19,1,19
+10000,48,1,48
+50000,48,8,48
+100000,48,18,48
+500000,3,102,49
+1000000,1,213,43
 \end{filecontents*}
 
 \begin{filecontents*}{data4.csv}
 a,b,c,d
 10,0,0,1
 100,0,0,5
-1000,6,0,1
-5000,91,0,91
-10000,210,0,210
-50000,48,2,48
-100000,48,5,48
-500000,48,18,48
+1000,5,5,5
+5000,125,121,125
+10000,513,513,513
+50000,3,14576,43
+100000,3,58831,3
+
 \end{filecontents*}
 
 
@@ -94,15 +93,14 @@ a,b,c,d
 	
 	\textbf{W sprawozdaniu znajdują się 4 wykresy:}\newline
 	
-	1. Raport z zapełniania stosu zaimplementowanego jako tablica, przy czym przy
-braku miejsca na stosie, jego rozmiar zwiększany jest o jeden. \newline
+	1. Posortowanie tablicy algorytmem quicksort.(złożoność czasowa $O(n^2))$ \newline
 	 
-	2. Raport z zapełniania stosu zaimplementowanego jako tablica, przy czym przy
-braku miejsca na stosie, jego rozmiar zwiększany jest dwukrotnie. \newline
+	2. Posortowanie tablicy algorytmem mergesort.(złożoność czasowa $O(n*log (n)))$ \newline
 	
-	3. Raport z zapełniania stosu zaimplementowanego jako lista. \newline
+	3. Posortowanie tablicy algorytmem heapsort.(złożoność czasowa $O(n*log (n)))$ \newline
 	
-	4. Raport z zapełnienia kolejki zaimplementowanej tablicowo. \newline
+	4. Posortowanie tablicy algorytmem sortowania bąbelkowego. \newline
+					(złożoność czasowa $O(n^2))$ \newline
 	
 	
 	Każda wartość (czas) dla danego rozmiaru problemu jest średnią czasów zmierzonych w pętli wykonującej się 10-krotnie dla danego sortowania. \newline
@@ -110,8 +108,7 @@ braku miejsca na stosie, jego rozmiar zwiększany jest dwukrotnie. \newline
 
 	\begin{tikzpicture}
 		\begin{axis}[
-			title=\textbf{1. Stos Tablicowy (powiekszanie o jeden) \newline
-			\newline},
+			title=\textbf{1. Sortowanie quicksort},
 			xlabel= N - rozmiar problemu,
 			ylabel=czas w ms,
 			xlabel style={sloped like x axis},
@@ -126,7 +123,7 @@ braku miejsca na stosie, jego rozmiar zwiększany jest dwukrotnie. \newline
 	
 	\begin{tikzpicture}
 		\begin{axis}[
-			title= \textbf{2. Stos Tablicowy (powiekszanie razy dwa)},
+			title= \textbf{2. Sortowanie mergesort},
 			xlabel= N - rozmiar problemu,
 			ylabel=czas w ms,
 			xlabel style={sloped like x axis},
@@ -142,7 +139,7 @@ braku miejsca na stosie, jego rozmiar zwiększany jest dwukrotnie. \newline
 	\begin{tikzpicture}
 
 		\begin{axis}[
-			title= \textbf{3. Stos Listowy},
+			title= \textbf{3. Sortowanie heapsort},
 			xlabel= N - rozmiar problemu,
 			ylabel=czas w ms,
 			xlabel style={sloped like x axis},
@@ -160,7 +157,7 @@ braku miejsca na stosie, jego rozmiar zwiększany jest dwukrotnie. \newline
 	\begin{tikzpicture}
 
 		\begin{axis}[
-			title= \textbf{4. Kolejka tablicowa},
+			title= \textbf{4. Sortowanie bąbelkowe},
 			xlabel= N - rozmiar problemu,
 			ylabel=czas w ms,
 			xlabel style={sloped like x axis},
@@ -176,14 +173,13 @@ braku miejsca na stosie, jego rozmiar zwiększany jest dwukrotnie. \newline
 	\end{tikzpicture}
 \newline
 \newline
+\textbf{Wnioski: \newline}
 \newline
-\textbf{Wnioski: }\newline
+- Wśród zaimplementowanych przeze mnie algorytmów sortowania, najefektywniejszym był 'heapsort'. Dla rozmiaru problemu N=1 000 000 średni czas wykonywania się algorytmu wynosił stosunkowo mało - 213 ms.\newline
 \newline
-- Rozpatrując dwa omówione sposoby powiększania stosu ('o jeden' oraz 'razy dwa') dużo mniejszą złożonością czasową wykazał się sposób 'razy dwa'.\newline
+- Wykresy efektywności algorytmów w dużym stopniu odzwierciedlają ich teoretyczne złożoności czasowe.\newline
 \newline
-- Najefektywniejszym algorytmem było zapełnianie kolejki zaimplementowanej jako tablica (przy problemie N=500 000 średnia wykonywania się jego wynosiła 18 ms.\newline
-\newline
-- Stos zaimplementowany jako lista oraz stos zapełniający się z każdorazowym jego powiększeniem o jeden był efektywny tylko dla małych rozmiarów problemu. Dla większych - czas rósł w tempie kwadratowym.
+- W przypadku quicksort oraz mergesort, przy próbie zwiększenia problemu występowały błędy.
 
 
 

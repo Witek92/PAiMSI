@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>PAMSIlab3POPRAWA: Dokumentacja klasy tablica</title>
+<title>PAMSIlab4POPRAWA: Dokumentacja klasy tablica</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">PAMSIlab3POPRAWA
+   <div id="projectname">PAMSIlab4POPRAWA
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:ad35970c518fe65267a08f80ac155b3b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtablica.html#ad35970c518fe65267a08f80ac155b3b9">WyswietlTablice</a> ()</td></tr>
 <tr class="memitem:a5453d2bbeeac4d81c1de4d3aedcb9855"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtablica.html#a5453d2bbeeac4d81c1de4d3aedcb9855">tablica</a> (char nazwa[])</td></tr>
 <tr class="memitem:abc5414ba4d6321ecf744e38a809d9c8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtablica.html#abc5414ba4d6321ecf744e38a809d9c8f">tablica</a> ()</td></tr>
-<tr class="memitem:a066e82a4a56683dd01ad1b8de622ca84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtablica.html#a066e82a4a56683dd01ad1b8de622ca84">quicksort</a> (int p, int r)</td></tr>
+<tr class="memitem:a94d840f1063a31576890ef0510f8bcd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtablica.html#a94d840f1063a31576890ef0510f8bcd1">quicksort</a> (int poczatek, int rozmiar)</td></tr>
 <tr class="memitem:a12286c2881ab2db67e601b76c376f101"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtablica.html#a12286c2881ab2db67e601b76c376f101">sortuj_babel</a> ()</td></tr>
 <tr class="memitem:add56035c59826fba431fb0ea5252917d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtablica.html#add56035c59826fba431fb0ea5252917d">ZamienElementy</a> (int i, int j)</td></tr>
 <tr class="memitem:a6977d8d18f45c2939bbca7c4d3c54692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtablica.html#a6977d8d18f45c2939bbca7c4d3c54692">OdwrocKolejnosc</a> ()</td></tr>
@@ -117,6 +117,8 @@ Metody publiczne</h2></td></tr>
 <tr class="memdesc:a888da3562ae1d3200c8ab446685f6c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy <a class="el" href="class_kolejka.html" title="Definicja klasy Kolejka.">Kolejka</a>.  <a href="#a888da3562ae1d3200c8ab446685f6c18"></a><br/></td></tr>
 <tr class="memitem:ae97c0bebf2629c77fa9c34a6aaf40d4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtablica.html#ae97c0bebf2629c77fa9c34a6aaf40d4f">WypelnijStosLTablica</a> (<a class="el" href="class_stos_l.html">StosL</a> &amp;stosikL)</td></tr>
 <tr class="memdesc:ae97c0bebf2629c77fa9c34a6aaf40d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy <a class="el" href="class_stos_l.html" title="Definicja klasy StosL dziedziczaca klase ElementStosu, majaca za zadanie dzialac na elementach stosu ...">StosL</a>.  <a href="#ae97c0bebf2629c77fa9c34a6aaf40d4f"></a><br/></td></tr>
+<tr class="memitem:a6755ce7af329824a291f065b236b20b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtablica.html#a6755ce7af329824a291f065b236b20b6">mergesort</a> (int poczatek, int rozmiar)</td></tr>
+<tr class="memitem:abaa55fa9f758235ccb4794eac077d102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtablica.html#abaa55fa9f758235ccb4794eac077d102">heapsort</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
 Atrybuty publiczne</h2></td></tr>
@@ -183,6 +185,59 @@ Atrybuty publiczne</h2></td></tr>
 <li>tabschow - tablica, do ktorej zostanie zapisana nowa tablica z nowym elementem</li>
 </ul>
 <dl class="section return"><dt>Zwraca</dt><dd>Nowa tablica z dodanym elementem </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abaa55fa9f758235ccb4794eac077d102"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tablica::heapsort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">    Sortowanie przez kopcowanie wykonywane jest dzieki stworzeniu kopca binarnego. Pierwszym etapem wiec jest stworzenie takiego kopca. Mniejsze elementy od szczytowego elementu
+</pre><p> sa spuszczane w dol kopca, a przy okazji zamieniane sa z wiekszymi, ktore to pna sie do gory. Gdy kopiec jest wypelniony zaczyna sie jego sortowanie. Najwiekszy z gory jest dodawany na koniec TABLICA. Na jego miejsce trafia element najmniejszy wsrod calkiem dolnych galezi. Nastepnie spada on wedlug tej samej zasady na dol, przy czym na szczyt trafiaja kolejne wieksze wartosci, ktore finalnie w TABLICA tworza posortowane wartosci.</p>
+<p>Najwazniejsze argumenty i pola funkcji:</p>
+<p>-rozmiar: bada rozmiar calego kopca, ewentualnie zmniejsza jego rozmiar, jesli element zostanie ze sczytu zdjety i dodany do TABLICA</p>
+<ul>
+<li>szczyt, galaz - indeksy szczytu, oraz galezi</li>
+<li>wskaznik - przechowuje indeks elementu, na ktorym jest wykonywana operacja np przenoszania na szczyt</li>
+<li>schowek - pole przechowujace wartosc w celu np spuszczenia ja na dol kopca </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a6755ce7af329824a291f065b236b20b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tablica::mergesort </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>poczatek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rozmiar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mergesort rekurencyjnie sortuje elementy. Algorytm dziala nastepujaco: Tablica jest najpierw dzielona na pol. Nastepnie na kolejne polowki, itd. W podzielonych malych paczkach elementy sa indywidualnie odwracane w posortowana kolejnosc (za pomoca merge() ). Na koncu paczki laczone sa w jedna calosc zapisana w TABLICA. Rekurencja dziala dwufazowo: najpierw mergesort wykonywane jest na czesci od poczatku tablicy, do jej srodka; a ostatecznie na czesci od srodka do konca.</p>
+<p>Najwazniejsze pola i argumenty funkcji:</p>
+<p>-poczatek, rozmiar - poczatki i konce czesci tablic do scalenia. -srodek: srodek oznacza przy kazdym wywolaniu funkcji rozny srodek podzielonej na pol tablicy. </p>
 
 </div>
 </div>
@@ -294,7 +349,7 @@ Atrybuty publiczne</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a066e82a4a56683dd01ad1b8de622ca84"></a>
+<a class="anchor" id="a94d840f1063a31576890ef0510f8bcd1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -302,13 +357,13 @@ Atrybuty publiczne</h2></td></tr>
           <td class="memname">void tablica::quicksort </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
+          <td class="paramname"><em>poczatek</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>r</em>&#160;</td>
+          <td class="paramname"><em>rozmiar</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -317,7 +372,10 @@ Atrybuty publiczne</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Funkcja wykonujaca algorytm quicksort. </p>
+<p>Funkcja wykonujaca algorytm quicksort.</p>
+<p>Sortowanie typu quicksort wykonywane jest rekurencyjnie. Dopoki wartosc poczatku tablicy jest mniejsza niz poszczegolny rozmiar czesci tablicy, wykonuje sie 'funkcja w funkcji'. Najpierw pierwsza - od poczatku do punktu podzialu. Pozniej sortowana jest druga czesc, ktora jako argumenty przyjmuje wartosc pierwszego elementu drugiej czesci tablicy oraz ponownie jej rozmiary.</p>
+<p>Najwazniejsze pola i argumenty funkcji:</p>
+<p>-punkt_podzialu: jw pole przechowujace wyliczane przez rekurencje punkty podzialu. </p>
 
 </div>
 </div>
@@ -472,13 +530,13 @@ Atrybuty publiczne</h2></td></tr>
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project44PAMSIlab3/Project44PAMSIlab3/<a class="el" href="tablica_8h_source.html">tablica.h</a></li>
-<li>C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project44PAMSIlab3/Project44PAMSIlab3/<a class="el" href="tablica_8cpp.html">tablica.cpp</a></li>
+<li>C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project45PAMSIlab4/Project44PAMSIlab4/<a class="el" href="tablica_8h_source.html">tablica.h</a></li>
+<li>C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project45PAMSIlab4/Project44PAMSIlab4/<a class="el" href="tablica_8cpp.html">tablica.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano So, 19 kwi 2014 15:28:14 dla PAMSIlab3POPRAWA programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano Śr, 23 kwi 2014 14:06:08 dla PAMSIlab4POPRAWA programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quicksort',['quicksort',['../classtablica.html#a066e82a4a56683dd01ad1b8de622ca84',1,'tablica']]]
+  ['quicksort',['quicksort',['../classtablica.html#a94d840f1063a31576890ef0510f8bcd1',1,'tablica']]]
 ];

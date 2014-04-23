@@ -1,7 +1,7 @@
-/*! \mainpage Dokumentacja zadania PAMSI lab 3
+/*! \mainpage POPRAWIONA Dokumentacja zadania PAMSI lab 4
  *
  * \author Witold Zimnicki
- * \date 19.4.2014
+ * \date 23.4.2014
  * 
  */
 
@@ -16,17 +16,17 @@ using namespace std;
 W funkcji main wykonywane sa nastepujace operacje:
 
 - Tworzony jest obiekt klasy Operacja
-- Uruchamiany jest interfejs oraz mozliwe jest wybranie algorytmu, ktory chcemy obserwowac.
+- Uruchamiany jest interfejs i mozliwe jest wybranie algorytmu, ktory chcemy obserwowac.
 
 */
 
 int main()
 {
 	
-Operacja jakas;
-jakas.Dzialaj();
-
-system("PAUSE");
-return 0;
+	Operacja jakas;
+	jakas.Dzialaj();
+	
+	system("PAUSE");
+	return 0;
 }
 

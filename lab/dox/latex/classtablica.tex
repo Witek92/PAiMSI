@@ -23,7 +23,7 @@ void \hyperlink{classtablica_ad35970c518fe65267a08f80ac155b3b9}{Wyswietl\-Tablic
 \item 
 \hyperlink{classtablica_abc5414ba4d6321ecf744e38a809d9c8f}{tablica} ()
 \item 
-void \hyperlink{classtablica_a066e82a4a56683dd01ad1b8de622ca84}{quicksort} (int p, int r)
+void \hyperlink{classtablica_a94d840f1063a31576890ef0510f8bcd1}{quicksort} (int poczatek, int rozmiar)
 \item 
 void \hyperlink{classtablica_a12286c2881ab2db67e601b76c376f101}{sortuj\-\_\-babel} ()
 \item 
@@ -44,7 +44,11 @@ void \hyperlink{classtablica_adfddb9569f480bd363e90660a72add95}{Wypelnij\-Stos\-
 void \hyperlink{classtablica_a888da3562ae1d3200c8ab446685f6c18}{Wypelnij\-Kolejke\-Tablica} (\hyperlink{class_kolejka}{Kolejka} \&kolejeczka)
 \begin{DoxyCompactList}\small\item\em Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy \hyperlink{class_kolejka}{Kolejka}. \end{DoxyCompactList}\item 
 void \hyperlink{classtablica_ae97c0bebf2629c77fa9c34a6aaf40d4f}{Wypelnij\-Stos\-L\-Tablica} (\hyperlink{class_stos_l}{Stos\-L} \&stosik\-L)
-\begin{DoxyCompactList}\small\item\em Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy \hyperlink{class_stos_l}{Stos\-L}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Funkcja, ktora po wczytaniu tablicy, kopiuje jej zawartosc do obiektu klasy \hyperlink{class_stos_l}{Stos\-L}. \end{DoxyCompactList}\item 
+void \hyperlink{classtablica_a6755ce7af329824a291f065b236b20b6}{mergesort} (int poczatek, int rozmiar)
+\item 
+void \hyperlink{classtablica_abaa55fa9f758235ccb4794eac077d102}{heapsort} ()
+\end{DoxyCompactItemize}
 \subsection*{Atrybuty publiczne}
 \begin{DoxyCompactItemize}
 \item 
@@ -102,7 +106,37 @@ Argumenty i najwazniejsze pola funkcji\-:
 \begin{DoxyReturn}{Zwraca}
 Nowa tablica z dodanym elementem 
 \end{DoxyReturn}
-\hypertarget{classtablica_a6977d8d18f45c2939bbca7c4d3c54692}{\index{tablica@{tablica}!Odwroc\-Kolejnosc@{Odwroc\-Kolejnosc}}
+\hypertarget{classtablica_abaa55fa9f758235ccb4794eac077d102}{\index{tablica@{tablica}!heapsort@{heapsort}}
+\index{heapsort@{heapsort}!tablica@{tablica}}
+\subsubsection[{heapsort}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::heapsort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtablica_abaa55fa9f758235ccb4794eac077d102}
+\begin{DoxyVerb}    Sortowanie przez kopcowanie wykonywane jest dzieki stworzeniu kopca binarnego. Pierwszym etapem wiec jest stworzenie takiego kopca. Mniejsze elementy od szczytowego elementu
+\end{DoxyVerb}
+ sa spuszczane w dol kopca, a przy okazji zamieniane sa z wiekszymi, ktore to pna sie do gory. Gdy kopiec jest wypelniony zaczyna sie jego sortowanie. Najwiekszy z gory jest dodawany na koniec T\-A\-B\-L\-I\-C\-A. Na jego miejsce trafia element najmniejszy wsrod calkiem dolnych galezi. Nastepnie spada on wedlug tej samej zasady na dol, przy czym na szczyt trafiaja kolejne wieksze wartosci, ktore finalnie w T\-A\-B\-L\-I\-C\-A tworza posortowane wartosci.
+
+Najwazniejsze argumenty i pola funkcji\-:
+
+-\/rozmiar\-: bada rozmiar calego kopca, ewentualnie zmniejsza jego rozmiar, jesli element zostanie ze sczytu zdjety i dodany do T\-A\-B\-L\-I\-C\-A
+\begin{DoxyItemize}
+\item szczyt, galaz -\/ indeksy szczytu, oraz galezi
+\item wskaznik -\/ przechowuje indeks elementu, na ktorym jest wykonywana operacja np przenoszania na szczyt
+\item schowek -\/ pole przechowujace wartosc w celu np spuszczenia ja na dol kopca 
+\end{DoxyItemize}\hypertarget{classtablica_a6755ce7af329824a291f065b236b20b6}{\index{tablica@{tablica}!mergesort@{mergesort}}
+\index{mergesort@{mergesort}!tablica@{tablica}}
+\subsubsection[{mergesort}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::mergesort (
+\begin{DoxyParamCaption}
+\item[{int}]{poczatek, }
+\item[{int}]{rozmiar}
+\end{DoxyParamCaption}
+)}}\label{classtablica_a6755ce7af329824a291f065b236b20b6}
+Mergesort rekurencyjnie sortuje elementy. Algorytm dziala nastepujaco\-: Tablica jest najpierw dzielona na pol. Nastepnie na kolejne polowki, itd. W podzielonych malych paczkach elementy sa indywidualnie odwracane w posortowana kolejnosc (za pomoca merge() ). Na koncu paczki laczone sa w jedna calosc zapisana w T\-A\-B\-L\-I\-C\-A. Rekurencja dziala dwufazowo\-: najpierw mergesort wykonywane jest na czesci od poczatku tablicy, do jej srodka; a ostatecznie na czesci od srodka do konca.
+
+Najwazniejsze pola i argumenty funkcji\-:
+
+-\/poczatek, rozmiar -\/ poczatki i konce czesci tablic do scalenia. -\/srodek\-: srodek oznacza przy kazdym wywolaniu funkcji rozny srodek podzielonej na pol tablicy. \hypertarget{classtablica_a6977d8d18f45c2939bbca7c4d3c54692}{\index{tablica@{tablica}!Odwroc\-Kolejnosc@{Odwroc\-Kolejnosc}}
 \index{Odwroc\-Kolejnosc@{Odwroc\-Kolejnosc}!tablica@{tablica}}
 \subsubsection[{Odwroc\-Kolejnosc}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::\-Odwroc\-Kolejnosc (
 \begin{DoxyParamCaption}
@@ -181,15 +215,21 @@ Argumenty i najwazniejsze pola funkcji
 \item liczba -\/ liczba, przez ktora jest mnozony kazdy wyraz tablicy
 \item tab\mbox{[}\mbox{]} -\/ tablica, na ktorej elementach bedzie wykonywane dzialanie
 \item Ilosc -\/ ilosc danych wczytanych z pliku 
-\end{DoxyItemize}\hypertarget{classtablica_a066e82a4a56683dd01ad1b8de622ca84}{\index{tablica@{tablica}!quicksort@{quicksort}}
+\end{DoxyItemize}\hypertarget{classtablica_a94d840f1063a31576890ef0510f8bcd1}{\index{tablica@{tablica}!quicksort@{quicksort}}
 \index{quicksort@{quicksort}!tablica@{tablica}}
 \subsubsection[{quicksort}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::quicksort (
 \begin{DoxyParamCaption}
-\item[{int}]{p, }
-\item[{int}]{r}
+\item[{int}]{poczatek, }
+\item[{int}]{rozmiar}
 \end{DoxyParamCaption}
-)}}\label{classtablica_a066e82a4a56683dd01ad1b8de622ca84}
-Funkcja wykonujaca algorytm quicksort. \hypertarget{classtablica_a12286c2881ab2db67e601b76c376f101}{\index{tablica@{tablica}!sortuj\-\_\-babel@{sortuj\-\_\-babel}}
+)}}\label{classtablica_a94d840f1063a31576890ef0510f8bcd1}
+Funkcja wykonujaca algorytm quicksort.
+
+Sortowanie typu quicksort wykonywane jest rekurencyjnie. Dopoki wartosc poczatku tablicy jest mniejsza niz poszczegolny rozmiar czesci tablicy, wykonuje sie 'funkcja w funkcji'. Najpierw pierwsza -\/ od poczatku do punktu podzialu. Pozniej sortowana jest druga czesc, ktora jako argumenty przyjmuje wartosc pierwszego elementu drugiej czesci tablicy oraz ponownie jej rozmiary.
+
+Najwazniejsze pola i argumenty funkcji\-:
+
+-\/punkt\-\_\-podzialu\-: jw pole przechowujace wyliczane przez rekurencje punkty podzialu. \hypertarget{classtablica_a12286c2881ab2db67e601b76c376f101}{\index{tablica@{tablica}!sortuj\-\_\-babel@{sortuj\-\_\-babel}}
 \index{sortuj\-\_\-babel@{sortuj\-\_\-babel}!tablica@{tablica}}
 \subsubsection[{sortuj\-\_\-babel}]{\setlength{\rightskip}{0pt plus 5cm}void tablica\-::sortuj\-\_\-babel (
 \begin{DoxyParamCaption}
@@ -275,5 +315,5 @@ Pole przechowujace glowna tablice klasy \hyperlink{class_operacja}{Operacja}.
 
 Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
 \item 
-C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project44\-P\-A\-M\-S\-Ilab3/\-Project44\-P\-A\-M\-S\-Ilab3/\hyperlink{tablica_8h}{tablica.\-h}\item 
-C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project44\-P\-A\-M\-S\-Ilab3/\-Project44\-P\-A\-M\-S\-Ilab3/\hyperlink{tablica_8cpp}{tablica.\-cpp}\end{DoxyCompactItemize}
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project45\-P\-A\-M\-S\-Ilab4/\-Project44\-P\-A\-M\-S\-Ilab4/\hyperlink{tablica_8h}{tablica.\-h}\item 
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project45\-P\-A\-M\-S\-Ilab4/\-Project44\-P\-A\-M\-S\-Ilab4/\hyperlink{tablica_8cpp}{tablica.\-cpp}\end{DoxyCompactItemize}

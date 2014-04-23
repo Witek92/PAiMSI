@@ -28,19 +28,23 @@ class Operacja
 	int pomocsr;
 	//! Zmienna przechowujaca wartosc sredniej dla danej operacji.
 	int srednia;
+	//! Pole przechowuje wybor operacji przez uzytkownika.
 	char wyborco;
+	//! Pole przechowuje rozmiar problemu.
 	int rozmiar;
-	int liczba1, liczba2, liczba3;
-		int element;
-		int jakstos;
-		
+	//! liczby pomocnicze przy operacjach na tablicy.
+	int liczba1, liczba2, liczba3,element,jakstos;
+
+		//! Stos na ktorym wykonywana jest operacja
 		Stos stosik;
+		//! Stos jako lista, na ktorym wykonywana jest operacja.
 		StosL stosikL;
+		//! Kolejka, na ktorej wykonywana jest operacja
 		Kolejka Kolejeczka;
 	
 	
 public:
-
+	//! Tablica, na ktorej wykonywane sa operacje.
 	tablica tabliczka2;
 	//! Funkcja wyznaczajaca poczatek pomiaru czasu.
 	void ZmierzCzasStart();
@@ -75,11 +79,7 @@ public:
 
 	
 
-	/*! Funkcja pomocnicza wyswietlajaca wyrazy dowolnej tablicy w zaleznosci od ilosci jej elementow.
-	*/
-	void WyswietlTablice(int tab[], int Ilosc);
-
-	 
+	
 
 
 #endif

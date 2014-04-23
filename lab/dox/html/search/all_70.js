@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['poprawiona_20dokumentacja_20zadania_20pamsi_20lab_204',['POPRAWIONA Dokumentacja zadania PAMSI lab 4',['../index.html',1,'']]],
   ['pierwszy',['pierwszy',['../class_stos_l.html#a50de812f4b155571f88ea4ac6a0d5982',1,'StosL']]],
   ['pobierziloscpowtorzen',['PobierzIloscPowtorzen',['../class_operacja.html#a3f6cb38d924c260711fad70fe0eed35f',1,'Operacja']]],
   ['pobierzrozmiarproblemu',['PobierzRozmiarProblemu',['../class_operacja.html#afa1d33f2045ce668becc90b56c1b6907',1,'Operacja']]],
