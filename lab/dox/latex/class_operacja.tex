@@ -15,49 +15,33 @@ Deklaracja klasy \hyperlink{class_operacja}{Operacja}.
 \item 
 void \hyperlink{class_operacja_a8a31476894d307c400f965dd3dfcbb46}{Zmierz\-Czas\-Start} ()
 \begin{DoxyCompactList}\small\item\em Funkcja wyznaczajaca poczatek pomiaru czasu. \end{DoxyCompactList}\item 
-void \hyperlink{class_operacja_a971e3493bec71fc140ac44f74bd92998}{Zmierz\-Czas\-Koniec\-Drzewo} ()
-\begin{DoxyCompactList}\small\item\em Funkcja wyznaczajaca koniec pomiaru czasu dla zapelniania drzewa binarnego. \end{DoxyCompactList}\item 
-void \hyperlink{class_operacja_a39ea8e62797c94693c75abe6f0416035}{Zmierz\-Czas\-Koniec\-Hasz} ()
-\begin{DoxyCompactList}\small\item\em Funkcja wyznaczajaca koniec pomiaru czasu dla zapelniania tablicy haszujacej. \end{DoxyCompactList}\item 
+void \hyperlink{class_operacja_a0be771c3a85d8a53d5dba677f8cc6959}{Zmierz\-Czas\-Koniec} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyznaczajaca koniec pomiaru czasu. \end{DoxyCompactList}\item 
 void \hyperlink{class_operacja_a3f6cb38d924c260711fad70fe0eed35f}{Pobierz\-Ilosc\-Powtorzen} ()
 \begin{DoxyCompactList}\small\item\em Funkcja pobierajaca ilosc powtorzen od uzytkownika. \end{DoxyCompactList}\item 
-void \hyperlink{class_operacja_aca61c478012e3477b123b1cccedd375c}{Policz\-Operacje\-Drzewo} ()
-\begin{DoxyCompactList}\small\item\em Funkcja wykonujaca zapelnianie drzewa binarnego. \end{DoxyCompactList}\item 
-void \hyperlink{class_operacja_a97f0315ebc8d718a497415023ef11564}{Policz\-Operacje\-Hasz} ()
-\begin{DoxyCompactList}\small\item\em Funkcja wykonujaca zapelnianie tablicy haszujacej. \end{DoxyCompactList}\item 
+void \hyperlink{class_operacja_a26c10d244f0cd7b2c22e810476ee9380}{Podaj\-Srednia} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajca i liczaca srednia dla danej operacji. \end{DoxyCompactList}\item 
+void \hyperlink{class_operacja_a78c30760d29ccd38944962e6c71fee13}{Wybor\-Operacji} ()
+\begin{DoxyCompactList}\small\item\em Funkcja pozwalajaca na wybor algorytmu, rozmiaru problemu i ilosc powtorzen. \end{DoxyCompactList}\item 
+void \hyperlink{class_operacja_add37253efa90cee5fa332cde6e163bab}{Policz\-Operacje} ()
+\begin{DoxyCompactList}\small\item\em Funkcja liczaca wybrany algorytm. \end{DoxyCompactList}\item 
 void \hyperlink{class_operacja_add48398ebfeae90a0d1b58a31962fd7d}{Dzialaj} ()
-\begin{DoxyCompactList}\small\item\em Glowna Funkcja Operacji wykonujaca wszystkie potrzebne funkcje do uzyskania czasow. \end{DoxyCompactList}\item 
-\hyperlink{class_operacja_a1624fb5817c0b60e1680509fc4517732}{Operacja} ()
-\begin{DoxyCompactList}\small\item\em Konstruktor bezparametryczny. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Glowna Funkcja Operacji wykonujaca pomiary czasu itp. \end{DoxyCompactList}\item 
+void \hyperlink{class_operacja_afa1d33f2045ce668becc90b56c1b6907}{Pobierz\-Rozmiar\-Problemu} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wczytujaca rozmiar problemu z klawiatury. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atrybuty publiczne}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_hash_m}{Hash\-M} \hyperlink{class_operacja_ad67a2aa20b71ec0e1f1cff12b7220b6a}{haszujaca}
-\begin{DoxyCompactList}\small\item\em Tablica haszujaca dla danej operacji. \end{DoxyCompactList}\item 
-\hyperlink{class_drzewo}{Drzewo} \hyperlink{class_operacja_a814e223e988958ccbbe66aef89054da3}{drzewko}
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_drzewo}{Drzewo} binarne dla danej operacji. \end{DoxyCompactList}\item 
 int \hyperlink{class_operacja_aa568b17d05f31132b3d97eb5b7e93d61}{Powtorzenia}
-\begin{DoxyCompactList}\small\item\em Pole przechowujace informiacji o ilosci powtorzen dla danej operacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pole przechowujace informiacji o ilosci powtorzen dla danej operacji. \end{DoxyCompactList}\item 
+int \hyperlink{class_operacja_a9af6bfee62f233a584f368a626e8329e}{Licznik\-Powtorzen}
+\begin{DoxyCompactList}\small\item\em Pole pomagajace w liczeniu ilosci powtorzen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Opis szczegółowy}
 Deklaracja klasy \hyperlink{class_operacja}{Operacja}. 
 
-Klasa \hyperlink{class_operacja}{Operacja} posiada pola oraz funkcje potrzebne do wykonywania dzialan na roznych strukturach danych. 
-
-\subsection{Dokumentacja konstruktora i destruktora}
-\hypertarget{class_operacja_a1624fb5817c0b60e1680509fc4517732}{\index{Operacja@{Operacja}!Operacja@{Operacja}}
-\index{Operacja@{Operacja}!Operacja@{Operacja}}
-\subsubsection[{Operacja}]{\setlength{\rightskip}{0pt plus 5cm}Operacja\-::\-Operacja (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_operacja_a1624fb5817c0b60e1680509fc4517732}
-
-
-Konstruktor bezparametryczny. 
-
-Konstruktor pobiera wybrana ilosc zestawow, ktore chcemy dodac do tablicy i drzewa. 
+Klasa \hyperlink{class_operacja}{Operacja} posiada pola oraz funkcje potrzebne do wykonywania dzialan na tablicach typu int. 
 
 \subsection{Dokumentacja funkcji składowych}
 \hypertarget{class_operacja_add48398ebfeae90a0d1b58a31962fd7d}{\index{Operacja@{Operacja}!Dzialaj@{Dzialaj}}
@@ -69,7 +53,7 @@ Konstruktor pobiera wybrana ilosc zestawow, ktore chcemy dodac do tablicy i drze
 )}}\label{class_operacja_add48398ebfeae90a0d1b58a31962fd7d}
 
 
-Glowna Funkcja Operacji wykonujaca wszystkie potrzebne funkcje do uzyskania czasow. 
+Glowna Funkcja Operacji wykonujaca pomiary czasu itp. 
 
 \hypertarget{class_operacja_a3f6cb38d924c260711fad70fe0eed35f}{\index{Operacja@{Operacja}!Pobierz\-Ilosc\-Powtorzen@{Pobierz\-Ilosc\-Powtorzen}}
 \index{Pobierz\-Ilosc\-Powtorzen@{Pobierz\-Ilosc\-Powtorzen}!Operacja@{Operacja}}
@@ -82,49 +66,60 @@ Glowna Funkcja Operacji wykonujaca wszystkie potrzebne funkcje do uzyskania czas
 
 Funkcja pobierajaca ilosc powtorzen od uzytkownika. 
 
-\hypertarget{class_operacja_aca61c478012e3477b123b1cccedd375c}{\index{Operacja@{Operacja}!Policz\-Operacje\-Drzewo@{Policz\-Operacje\-Drzewo}}
-\index{Policz\-Operacje\-Drzewo@{Policz\-Operacje\-Drzewo}!Operacja@{Operacja}}
-\subsubsection[{Policz\-Operacje\-Drzewo}]{\setlength{\rightskip}{0pt plus 5cm}void Operacja\-::\-Policz\-Operacje\-Drzewo (
+\hypertarget{class_operacja_afa1d33f2045ce668becc90b56c1b6907}{\index{Operacja@{Operacja}!Pobierz\-Rozmiar\-Problemu@{Pobierz\-Rozmiar\-Problemu}}
+\index{Pobierz\-Rozmiar\-Problemu@{Pobierz\-Rozmiar\-Problemu}!Operacja@{Operacja}}
+\subsubsection[{Pobierz\-Rozmiar\-Problemu}]{\setlength{\rightskip}{0pt plus 5cm}void Operacja\-::\-Pobierz\-Rozmiar\-Problemu (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{class_operacja_aca61c478012e3477b123b1cccedd375c}
+)}}\label{class_operacja_afa1d33f2045ce668becc90b56c1b6907}
 
 
-Funkcja wykonujaca zapelnianie drzewa binarnego. 
+Funkcja wczytujaca rozmiar problemu z klawiatury. 
 
-\hypertarget{class_operacja_a97f0315ebc8d718a497415023ef11564}{\index{Operacja@{Operacja}!Policz\-Operacje\-Hasz@{Policz\-Operacje\-Hasz}}
-\index{Policz\-Operacje\-Hasz@{Policz\-Operacje\-Hasz}!Operacja@{Operacja}}
-\subsubsection[{Policz\-Operacje\-Hasz}]{\setlength{\rightskip}{0pt plus 5cm}void Operacja\-::\-Policz\-Operacje\-Hasz (
+\hypertarget{class_operacja_a26c10d244f0cd7b2c22e810476ee9380}{\index{Operacja@{Operacja}!Podaj\-Srednia@{Podaj\-Srednia}}
+\index{Podaj\-Srednia@{Podaj\-Srednia}!Operacja@{Operacja}}
+\subsubsection[{Podaj\-Srednia}]{\setlength{\rightskip}{0pt plus 5cm}void Operacja\-::\-Podaj\-Srednia (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{class_operacja_a97f0315ebc8d718a497415023ef11564}
+)}}\label{class_operacja_a26c10d244f0cd7b2c22e810476ee9380}
 
 
-Funkcja wykonujaca zapelnianie tablicy haszujacej. 
+Funkcja wyswietlajca i liczaca srednia dla danej operacji. 
 
-\hypertarget{class_operacja_a971e3493bec71fc140ac44f74bd92998}{\index{Operacja@{Operacja}!Zmierz\-Czas\-Koniec\-Drzewo@{Zmierz\-Czas\-Koniec\-Drzewo}}
-\index{Zmierz\-Czas\-Koniec\-Drzewo@{Zmierz\-Czas\-Koniec\-Drzewo}!Operacja@{Operacja}}
-\subsubsection[{Zmierz\-Czas\-Koniec\-Drzewo}]{\setlength{\rightskip}{0pt plus 5cm}void Operacja\-::\-Zmierz\-Czas\-Koniec\-Drzewo (
+\hypertarget{class_operacja_add37253efa90cee5fa332cde6e163bab}{\index{Operacja@{Operacja}!Policz\-Operacje@{Policz\-Operacje}}
+\index{Policz\-Operacje@{Policz\-Operacje}!Operacja@{Operacja}}
+\subsubsection[{Policz\-Operacje}]{\setlength{\rightskip}{0pt plus 5cm}void Operacja\-::\-Policz\-Operacje (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{class_operacja_a971e3493bec71fc140ac44f74bd92998}
+)}}\label{class_operacja_add37253efa90cee5fa332cde6e163bab}
 
 
-Funkcja wyznaczajaca koniec pomiaru czasu dla zapelniania drzewa binarnego. 
+Funkcja liczaca wybrany algorytm. 
 
-\hypertarget{class_operacja_a39ea8e62797c94693c75abe6f0416035}{\index{Operacja@{Operacja}!Zmierz\-Czas\-Koniec\-Hasz@{Zmierz\-Czas\-Koniec\-Hasz}}
-\index{Zmierz\-Czas\-Koniec\-Hasz@{Zmierz\-Czas\-Koniec\-Hasz}!Operacja@{Operacja}}
-\subsubsection[{Zmierz\-Czas\-Koniec\-Hasz}]{\setlength{\rightskip}{0pt plus 5cm}void Operacja\-::\-Zmierz\-Czas\-Koniec\-Hasz (
+\hypertarget{class_operacja_a78c30760d29ccd38944962e6c71fee13}{\index{Operacja@{Operacja}!Wybor\-Operacji@{Wybor\-Operacji}}
+\index{Wybor\-Operacji@{Wybor\-Operacji}!Operacja@{Operacja}}
+\subsubsection[{Wybor\-Operacji}]{\setlength{\rightskip}{0pt plus 5cm}void Operacja\-::\-Wybor\-Operacji (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{class_operacja_a39ea8e62797c94693c75abe6f0416035}
+)}}\label{class_operacja_a78c30760d29ccd38944962e6c71fee13}
 
 
-Funkcja wyznaczajaca koniec pomiaru czasu dla zapelniania tablicy haszujacej. 
+Funkcja pozwalajaca na wybor algorytmu, rozmiaru problemu i ilosc powtorzen. 
+
+\hypertarget{class_operacja_a0be771c3a85d8a53d5dba677f8cc6959}{\index{Operacja@{Operacja}!Zmierz\-Czas\-Koniec@{Zmierz\-Czas\-Koniec}}
+\index{Zmierz\-Czas\-Koniec@{Zmierz\-Czas\-Koniec}!Operacja@{Operacja}}
+\subsubsection[{Zmierz\-Czas\-Koniec}]{\setlength{\rightskip}{0pt plus 5cm}void Operacja\-::\-Zmierz\-Czas\-Koniec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_operacja_a0be771c3a85d8a53d5dba677f8cc6959}
+
+
+Funkcja wyznaczajaca koniec pomiaru czasu. 
 
 \hypertarget{class_operacja_a8a31476894d307c400f965dd3dfcbb46}{\index{Operacja@{Operacja}!Zmierz\-Czas\-Start@{Zmierz\-Czas\-Start}}
 \index{Zmierz\-Czas\-Start@{Zmierz\-Czas\-Start}!Operacja@{Operacja}}
@@ -140,19 +135,12 @@ Funkcja wyznaczajaca poczatek pomiaru czasu.
 
 
 \subsection{Dokumentacja atrybutów składowych}
-\hypertarget{class_operacja_a814e223e988958ccbbe66aef89054da3}{\index{Operacja@{Operacja}!drzewko@{drzewko}}
-\index{drzewko@{drzewko}!Operacja@{Operacja}}
-\subsubsection[{drzewko}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Drzewo} Operacja\-::drzewko}}\label{class_operacja_a814e223e988958ccbbe66aef89054da3}
+\hypertarget{class_operacja_a9af6bfee62f233a584f368a626e8329e}{\index{Operacja@{Operacja}!Licznik\-Powtorzen@{Licznik\-Powtorzen}}
+\index{Licznik\-Powtorzen@{Licznik\-Powtorzen}!Operacja@{Operacja}}
+\subsubsection[{Licznik\-Powtorzen}]{\setlength{\rightskip}{0pt plus 5cm}int Operacja\-::\-Licznik\-Powtorzen}}\label{class_operacja_a9af6bfee62f233a584f368a626e8329e}
 
 
-\hyperlink{class_drzewo}{Drzewo} binarne dla danej operacji. 
-
-\hypertarget{class_operacja_ad67a2aa20b71ec0e1f1cff12b7220b6a}{\index{Operacja@{Operacja}!haszujaca@{haszujaca}}
-\index{haszujaca@{haszujaca}!Operacja@{Operacja}}
-\subsubsection[{haszujaca}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hash\-M} Operacja\-::haszujaca}}\label{class_operacja_ad67a2aa20b71ec0e1f1cff12b7220b6a}
-
-
-Tablica haszujaca dla danej operacji. 
+Pole pomagajace w liczeniu ilosci powtorzen. 
 
 \hypertarget{class_operacja_aa568b17d05f31132b3d97eb5b7e93d61}{\index{Operacja@{Operacja}!Powtorzenia@{Powtorzenia}}
 \index{Powtorzenia@{Powtorzenia}!Operacja@{Operacja}}
@@ -165,5 +153,5 @@ Pole przechowujace informiacji o ilosci powtorzen dla danej operacji.
 
 Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
 \item 
-C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project47\-P\-A\-M\-S\-Ilab7/\-Project47\-P\-A\-M\-S\-Ilab7/\hyperlink{operacja_8h}{operacja.\-h}\item 
-C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project47\-P\-A\-M\-S\-Ilab7/\-Project47\-P\-A\-M\-S\-Ilab7/\hyperlink{operacja_8cpp}{operacja.\-cpp}\end{DoxyCompactItemize}
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project49probagraf/\-Project49probagraf/\hyperlink{operacja_8h}{operacja.\-h}\item 
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project49probagraf/\-Project49probagraf/\hyperlink{operacja_8cpp}{operacja.\-cpp}\end{DoxyCompactItemize}

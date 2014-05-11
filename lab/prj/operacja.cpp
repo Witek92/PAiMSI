@@ -1,7 +1,4 @@
-#include <iostream>
 #include "operacja.h"
-#include <fstream>
-#include <ctime>
 #include <string>
 
 using namespace std;
@@ -12,24 +9,19 @@ using namespace std;
 
 	void Operacja::ZmierzCzasStart()
 	{
+		
 		start = clock();
 	}
-	void Operacja::ZmierzCzasKoniecDrzewo()
+	void Operacja::ZmierzCzasKoniec()
 	{
-		
+		if (LicznikPowtorzen==0)
+		{
+		pomocsr=0;
+		}
 		koniec = clock(); 
 		delta=(long)(koniec - start);
-		
-		cout<<endl<<"Czas wypelnienia drzewa z "<<Powtorzenia<<" powtorzeniami "<<" wynosi: "<<delta<<endl;
-	}
-
-	void Operacja::ZmierzCzasKoniecHasz()
-	{
-		
-		koniec = clock(); 
-		delta=(long)(koniec - start);
-		
-		cout<<endl<<"Czas wypelnienia tablicy mieszajacej z "<<Powtorzenia<<" powtorzeniami "<<" wynosi: "<<delta<<endl;
+		pomocsr=delta+pomocsr;
+		cout<<endl<<"Czas pomiaru dla algorytmu z "<<rozmiar<<" danymi nr: "<< LicznikPowtorzen+1<<" wynosi: "<<delta<<endl;
 	}
 
 	void Operacja::PobierzIloscPowtorzen()
@@ -38,57 +30,129 @@ using namespace std;
 		cin>>Powtorzenia;
 	}
 
-
-	/*! 
-		Konstruktor pobiera wybrana ilosc zestawow, ktore chcemy dodac do tablicy i drzewa.
-	*/
-	Operacja::Operacja()
+	void Operacja::PodajSrednia()
 	{
+		srednia=pomocsr/Powtorzenia;
+		cout<<endl<<"Srednia z "<<rozmiar<<" danymi dla: "<< Powtorzenia<<" powtorzen wynosi: "<<srednia<<endl<<endl;
+	}
+
+	
+	
+
+
+
+	void Operacja::WyborOperacji()
+	{
+	
+		cout<<endl<<"WYBIERZ ZADANA OPERACJE: "<<endl;
+		cout<<"d - Depth First Search zwykle "<<endl;
+		cout<<"p - Depth First Search z wyborem wierzcholka"<<endl;
+		cout<<"b - Breadth First Search z wyborem elementu"<<endl;
+		cout<<"Co chcesz zrobic?"<<endl;
+		cin>>wyborco;
+		PobierzRozmiarProblemu();
+		cout<<"Jak wiele powtorzen chcesz dla wykonania sie tego algorytmu ?"<<endl;
 		PobierzIloscPowtorzen();
-		haszujaca=HashM(Powtorzenia);
+		
+
 	}
 
 
 
-	void Operacja::PoliczOperacjeDrzewo()
+	void Operacja::PoliczOperacje()
 	{
-	
-		for (int i=0;i<Powtorzenia;i++)
-		{
+	int x,y;
+	srand(time(NULL));
+		switch(wyborco)
+			{
 		
-			drzewko.dodaj(i,"przlad");
-	
+			case 'b':
+				{
+					Graf g(rozmiar);
+					
+					for (int i=0;i<rozmiar;i++)
+					{
+						x=rand() % rozmiar;
+						y=rand() % rozmiar;
+						g.DodajKrawedz(x,y);
+					}
+					g.BFS(x);
+					break;
+				}
+			
+			case 'p':
+				{
+					Graf g(rozmiar);
+					
+					for (int i=0;i<rozmiar;i++)
+					{
+						x=rand() % rozmiar;
+						y=rand() % rozmiar;
+						g.DodajKrawedz(x,y);
+					}
+					g.DFS(x);
+					
+					break;
+				}
+
+
+			
+			case 'd':
+				{
+					
+					Graf g(rozmiar);
+				
+					
+					for (int i=0;i<rozmiar;i++)
+					{
+						x=rand() % rozmiar;
+						y=rand() % rozmiar;
+						g.DodajKrawedz(x,y);
+					}
+					g.DFS();
+					
+					break;
+				}
+				
+
+			default:
+				{
+			
+					break;
+
+					
+				}
+
+			}
 		}
-		
-	}
-
-	void Operacja::PoliczOperacjeHasz()
-	{
-		for (int i=0;i<Powtorzenia;i++)
-		{
-		
-			haszujaca.Push("przklad",i);
-
-		}
-	}
-
+	
 
 
 
 	void Operacja::Dzialaj()
 	{
+		WyborOperacji();
 		
+		
+		for (LicznikPowtorzen=0;LicznikPowtorzen<Powtorzenia;LicznikPowtorzen++)
+		{
+			
 			ZmierzCzasStart();
-			PoliczOperacjeDrzewo();
-			ZmierzCzasKoniecDrzewo();
+			PoliczOperacje();
+			ZmierzCzasKoniec();
 			
 			
-			ZmierzCzasStart();
-			PoliczOperacjeHasz();
-			ZmierzCzasKoniecHasz();
 			
+	
+		}
 		
-		
+		PodajSrednia();
 		
 	}
 
+
+	void Operacja::PobierzRozmiarProblemu()
+	{
+		cout<<"Jak duzy problem grafu wybierasz? :"<<endl;
+		cin>>rozmiar;
+	}

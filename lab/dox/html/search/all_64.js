@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['dodaj',['dodaj',['../class_drzewo.html#a50373a0a15637acc4e8f961b1a53cb37',1,'Drzewo']]],
-  ['drzewko',['drzewko',['../class_operacja.html#a814e223e988958ccbbe66aef89054da3',1,'Operacja']]],
-  ['drzewo',['Drzewo',['../class_drzewo.html',1,'Drzewo'],['../class_drzewo.html#a309a5197b6a02c761f046fc99136eebb',1,'Drzewo::Drzewo()']]],
-  ['drzewo_2ecpp',['drzewo.cpp',['../drzewo_8cpp.html',1,'']]],
-  ['drzewo_2eh',['drzewo.h',['../drzewo_8h.html',1,'']]],
+  ['dfs',['DFS',['../class_graf.html#a8b40e6700dd8f1f71b6b47558c0975a1',1,'Graf::DFS()'],['../class_graf.html#ab604c6d56e372a70b85368f03cc9508b',1,'Graf::DFS(int odkad)']]],
+  ['dodajkrawedz',['DodajKrawedz',['../class_graf.html#abbf515053e5cd08a7b95c24dfbd1370d',1,'Graf']]],
   ['dzialaj',['Dzialaj',['../class_operacja.html#add48398ebfeae90a0d1b58a31962fd7d',1,'Operacja']]],
-  ['dokumentacja_20zadania_20pamsi_20lab_207',['Dokumentacja zadania PAMSI lab 7',['../index.html',1,'']]]
+  ['dokumentacja_20zadania_20pamsi_20lab_208',['Dokumentacja zadania PAMSI lab 8',['../index.html',1,'']]]
 ];

@@ -1,32 +1,27 @@
-/*! \mainpage Dokumentacja zadania PAMSI lab 7
+/*! \mainpage Dokumentacja zadania PAMSI lab 8
  *
  * \author Witold Zimnicki
- * \date 23.4.2014
+ * \date 11.5.2014
  * 
  */
-
-
 #include "operacja.h"
-#include <ctime>
-#include<iostream>
 
 using namespace std;
-
-/*! \brief Funkcja main wykonuje zapelnianie tablicy haszujacej oraz drzewa binarnego + mierzy czasy.
+/*! \brief Funkcja main wykonujaca wyszukiwanie sciezek w grafie i liczaca czasy.
 
 W funkcji main wykonywane sa nastepujace operacje:
 
 - Tworzony jest obiekt klasy Operacja
-- Uruchamiany jest interfejs i mozliwe jest wybranie ilosci zestawow, ktore chcemy dodac do struktur danych.
+- Uruchamiany jest interfejs i mozliwe jest wybranie algorytmu przeszukiwania grafu, ktory chcemy obserwowac.
 
 */
-
 int main()
 {
-	Operacja Zapelnianie;
-	Zapelnianie.Dzialaj();
+	Operacja jakas;
+	jakas.Dzialaj();
+	
+	system("PAUSE");
 
+	return 1;
 
- system("PAUSE");
- return 0;
 }

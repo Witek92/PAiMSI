@@ -1,0 +1,106 @@
+\hypertarget{class_graf}{\section{Dokumentacja klasy Graf}
+\label{class_graf}\index{Graf@{Graf}}
+}
+
+
+Klasa opisujaca graf nieskierowany.  
+
+
+
+
+{\ttfamily \#include $<$graf.\-h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graf_a56767176b30fa6759e1b664bfa815423}{Graf} (int rozmiar)
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzacy graf wedlug podanej ilosci wierzcholkow. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_abbf515053e5cd08a7b95c24dfbd1370d}{Dodaj\-Krawedz} (int w1, int w2)
+\begin{DoxyCompactList}\small\item\em Funkcja dodaje krawedz miedzy dwa wierzcholki. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_ad857a2246916d911b6616497c169e47c}{B\-F\-S} (int odkad)
+\begin{DoxyCompactList}\small\item\em Wyswietla wynik przeszukiwania wszerz od zadanego miejsca. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a8b40e6700dd8f1f71b6b47558c0975a1}{D\-F\-S} ()
+\begin{DoxyCompactList}\small\item\em Wyswietla wynik przeszukiwania w glab. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_ab604c6d56e372a70b85368f03cc9508b}{D\-F\-S} (int odkad)
+\begin{DoxyCompactList}\small\item\em Wyswietla wynik przeszukiwania w glab od zadanego wierzcholka. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa opisujaca graf nieskierowany. 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_graf_a56767176b30fa6759e1b664bfa815423}{\index{Graf@{Graf}!Graf@{Graf}}
+\index{Graf@{Graf}!Graf@{Graf}}
+\subsubsection[{Graf}]{\setlength{\rightskip}{0pt plus 5cm}Graf\-::\-Graf (
+\begin{DoxyParamCaption}
+\item[{int}]{rozmiar}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a56767176b30fa6759e1b664bfa815423}
+
+
+Konstruktor tworzacy graf wedlug podanej ilosci wierzcholkow. 
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_graf_ad857a2246916d911b6616497c169e47c}{\index{Graf@{Graf}!B\-F\-S@{B\-F\-S}}
+\index{B\-F\-S@{B\-F\-S}!Graf@{Graf}}
+\subsubsection[{B\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-B\-F\-S (
+\begin{DoxyParamCaption}
+\item[{int}]{odkad}
+\end{DoxyParamCaption}
+)}}\label{class_graf_ad857a2246916d911b6616497c169e47c}
+
+
+Wyswietla wynik przeszukiwania wszerz od zadanego miejsca. 
+
+Zaimplementowany algorytm Bredth First Search dziala nastepujaco\-:
+\begin{DoxyItemize}
+\item Wszystkie wierzcholki sa zaznaczone jako odwiedzone,
+\item Tworzona jest kolejka dla wykonania algorytmu B\-F\-S
+\item wybrane miejsce, od ktorego chcemy wykonac algorytm, jest zaznaczone jako odwiedzone i dodane do kolejki.
+\item dopoki w kolejsce cos jest, z kolejki jest usuwany i wyswietlany kolejny wierzcholek
+\item wszystkie graniczne wierzcholki wybranego wierzcholka zostaja zdekolejkowane
+\item jesli jakis graniczny wierzcholek nie zostal odwiedzony, zaznaczony jest jako odwiedzony i dodany do kolejki.
+\end{DoxyItemize}
+
+iterator i -\/ uzywany do wyluskania wszystkich granicznych wierzcholkow \hypertarget{class_graf_a8b40e6700dd8f1f71b6b47558c0975a1}{\index{Graf@{Graf}!D\-F\-S@{D\-F\-S}}
+\index{D\-F\-S@{D\-F\-S}!Graf@{Graf}}
+\subsubsection[{D\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-D\-F\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a8b40e6700dd8f1f71b6b47558c0975a1}
+
+
+Wyswietla wynik przeszukiwania w glab. 
+
+Aby przeprowadzic algorytm Depth First Search, najpierw wszystkie wierzcholki zaznaczone sa jako N\-I\-E odwiedzone. Nastepnie pomocnicza rekurencyjna funkcja jest wywolywana, by wyswietlic przeszukiwanie w glab zaczynajac od kazdego wierzcholka jeden po jednym. \hypertarget{class_graf_ab604c6d56e372a70b85368f03cc9508b}{\index{Graf@{Graf}!D\-F\-S@{D\-F\-S}}
+\index{D\-F\-S@{D\-F\-S}!Graf@{Graf}}
+\subsubsection[{D\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-D\-F\-S (
+\begin{DoxyParamCaption}
+\item[{int}]{odkad}
+\end{DoxyParamCaption}
+)}}\label{class_graf_ab604c6d56e372a70b85368f03cc9508b}
+
+
+Wyswietla wynik przeszukiwania w glab od zadanego wierzcholka. 
+
+Funkcja ponizej rozni sie od powyzszej tylko tym, ze przeszukiwane nie jest dla wszystkich wierzcholkow, lecz tylko dla wybranego \char`\"{}odkad\char`\"{}. \hypertarget{class_graf_abbf515053e5cd08a7b95c24dfbd1370d}{\index{Graf@{Graf}!Dodaj\-Krawedz@{Dodaj\-Krawedz}}
+\index{Dodaj\-Krawedz@{Dodaj\-Krawedz}!Graf@{Graf}}
+\subsubsection[{Dodaj\-Krawedz}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-Dodaj\-Krawedz (
+\begin{DoxyParamCaption}
+\item[{int}]{w1, }
+\item[{int}]{w2}
+\end{DoxyParamCaption}
+)}}\label{class_graf_abbf515053e5cd08a7b95c24dfbd1370d}
+
+
+Funkcja dodaje krawedz miedzy dwa wierzcholki. 
+
+W ponizszej funkcji do listy opartej na tablicy Q (z indeksem wierzcholka 1.) zostaje dodany wierzcholek 2. (tworzy sie krawedz). 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project49probagraf/\-Project49probagraf/\hyperlink{graf_8h}{graf.\-h}\item 
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project49probagraf/\-Project49probagraf/\hyperlink{graf_8cpp}{graf.\-cpp}\end{DoxyCompactItemize}

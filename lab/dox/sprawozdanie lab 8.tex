@@ -1,0 +1,135 @@
+%\documentclass{article}
+\documentclass[12pt,a4paper,titlepage]{article}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{stmaryrd}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage[figuresright]{rotating}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{geometry}
+\usepackage{pslatex}
+\usepackage{ulem}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{Here}
+\usepackage{color}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\selectlanguage{polish}
+\definecolor{szary}{gray}{0.6}
+\setlength{\textwidth}{400pt}
+\lstset{numbers=left, numberstyle=\tiny, basicstyle=\scriptsize\ttfamily, breaklines=true, captionpos=b, tabsize=2}
+
+\makeindex
+
+\title{Laboratorium PAiMSI 8}
+\date{\today}
+\author{Witold Zimnicki - nr 200465}
+
+
+
+\usepackage{pgfplots}
+\usepackage{filecontents}
+\begin{filecontents*}{data1.csv}
+a,b,c,d
+10,0,0,0
+100,1,0,0
+1000,10,7,8
+3000,33,22,22
+5000,55,37,37
+6000,66,43,44
+8000,116,78,72
+10000,137,92,105
+20000,297,195,206
+30000,480,432,432
+40000,812,589,657
+50000,,,688
+
+\end{filecontents*}
+
+
+
+
+\begin{document}
+
+	\maketitle
+	\pagestyle{empty}
+	\pagestyle{headings}
+	
+	Sprawozdanie przedstawia wykresy z zależnościami czasu od wielkości problemu dla szukania ścieżek \textbf{grafu nieskierowanego} metodami \textbf{Breadth First Search} (przeszukiwanie wszerz) oraz \textbf{Depth First Search} (przeszukiwanie w głąb). Graf zaimplementowany został jako wskaźnik (tablica) z listami typu int, które opisują otoczenie wierzchołków. Przed wykonaniami algorytmów przeszukiwania ścieżek, do grafu zostają dodane losowe liczby w ilości, która podawana jest na wejście standardowe. Wybierana jest również ilość wykonań algorytmu tak, aby uzyskać dokładniejszą wartość czasową.(W przypadku tego ćwiczenia było to 20.)\newline
+	\newline
+	\textbf{W sprawozdaniu znajdują się 3 wykresy:}\newline
+	
+	1. Czasy wyszukania ścieżek grafu metodą BFS. \newline
+	 
+	2. Czasy wyszukania ścieżek grafu metodą DFS (rozpatrując wszystkie wierzchołki). \newline
+	
+	3. Czasy wyszukania ścieżek grafu metodą DFS (z miejsca od losowo wybranego wierzchołka).
+	
+	
+	
+
+	\begin{tikzpicture}
+		\begin{axis}[
+			title=\textbf{BFS},
+			xlabel= N - rozmiar problemu,
+			ylabel=czas w ms,
+			xlabel style={sloped like x axis},
+			ylabel style={sloped}
+			]
+			\addplot table [x=a, y=d, col sep=comma] {data1.csv};
+
+
+		\end{axis}
+	\end{tikzpicture}
+		\newline
+		\newline
+		\begin{tikzpicture}
+		\begin{axis}[
+			title=\textbf{DFS wszystkie wierzchołki},
+			xlabel= N - rozmiar problemu,
+			ylabel=czas w ms,
+			xlabel style={sloped like x axis},
+			ylabel style={sloped}
+			]
+			\addplot table [x=a, y=c, col sep=comma] {data1.csv};
+			
+
+
+		\end{axis}
+	\end{tikzpicture}
+	
+	
+		\begin{tikzpicture}
+		\begin{axis}[
+			title=\textbf{DFS od wylosowanego wierzchołka},
+			xlabel= N - rozmiar problemu,
+			ylabel=czas w ms,
+			xlabel style={sloped like x axis},
+			ylabel style={sloped}
+			]
+			\addplot table [x=a, y=d, col sep=comma] {data1.csv};
+			
+
+
+		\end{axis}
+	\end{tikzpicture}
+	
+	
+	
+\textbf{Wnioski: \newline	\newline}
+\textbf{-} Podsumowując, można stwierdzić, że w przypadku powyżej wykonywanych pomiarów, złożoność obliczeniowa wszystkich metod była zbliżona. \newline
+\newline
+ \textbf{-} Obserwując dokładnie, szukanie algorytmem Depth First Search po wszystkich wierzchołkach dawało stosunkowo nieco mniejsze czasy niż przy innych omawianych metodach. \newline
+ 
+
+
+\end{document}
