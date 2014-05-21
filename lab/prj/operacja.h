@@ -29,12 +29,13 @@ class Operacja
 	char wyborco;
 	//! Pole przechowuje rozmiar problemu.
 	int rozmiar;
-	
+	//! Pole przechowuje indeksy nazw wierzcholkow.
+	int *nazwy;
+	//! Pole przechowuje nazwy wierzcholkow.
+	string *nazwys;
 
-	
-	
 public:
-
+	
 	//! Funkcja wyznaczajaca poczatek pomiaru czasu.
 	void ZmierzCzasStart();
 	//! Funkcja wyznaczajaca koniec pomiaru czasu.

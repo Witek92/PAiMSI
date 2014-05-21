@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>PAMSIlab8: Lista składowych</title>
+<title>PAMSIlab9: Lista składowych</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">PAMSIlab8
+   <div id="projectname">PAMSIlab9
    </div>
   </td>
  </tr>
@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,15 +86,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 
 <p>To jest kompletna lista składowych dla <a class="el" href="class_graf.html">Graf</a>, uwzględniająca wszystkie dziedziczone składowe.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_graf.html#ad857a2246916d911b6616497c169e47c">BFS</a>(int odkad)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_graf.html#a8b40e6700dd8f1f71b6b47558c0975a1">DFS</a>()</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_graf.html#ab604c6d56e372a70b85368f03cc9508b">DFS</a>(int odkad)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_graf.html#abbf515053e5cd08a7b95c24dfbd1370d">DodajKrawedz</a>(int w1, int w2)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_graf.html#a56767176b30fa6759e1b664bfa815423">Graf</a>(int rozmiar)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_graf.html#ab72f5cf13712d07a7021ca727d14e43d">CzyIstnieje</a>(string w)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_graf.html#a3bc81888fa952be6267dab6390223c63">CzyJestZakazane</a>(string w)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_graf.html#a3654353092430ab66f28af554fa45908">CzyPolaczone</a>(string w1, string w2)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_graf.html#a90ef4a4601908477e59e0cf877cb4e5a">dodajKrawedz</a>(string w1, string w2, int waga)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_graf.html#a5afda3f183a0337c6784072a92f1665f">Graf</a>(int ile)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_graf.html#ad1d0eaa1de57a75ba8cf6b5672440ce3">IlePolaczenBezposrednich</a>(int jaki)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_graf.html#ac046648ca44498f23160b476e0068d79">PoliczDroge</a>(string akcj, string cel)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_graf.html#afca25e4667ca9588002cdd364a2b7708">WyswietlGraf</a>()</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_graf.html#a820956405edd4b5fa006b2f46767d7ab">WyswietlSasiedztwo</a>(int jaki)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_graf.html#a03d5e2a34a50d31fff142496dad1b15f">ZwrocWage</a>(string w1, string w2)</td><td class="entry"><a class="el" href="class_graf.html">Graf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano N, 11 maj 2014 22:18:00 dla PAMSIlab8 programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano Śr, 21 maj 2014 20:34:40 dla PAMSIlab9 programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

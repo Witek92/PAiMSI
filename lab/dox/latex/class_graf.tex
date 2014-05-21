@@ -3,7 +3,7 @@
 }
 
 
-Klasa opisujaca graf nieskierowany.  
+Deklaracja klasy graf, zawierajaca jej podstawowe funkcje i pola.  
 
 
 
@@ -13,94 +13,175 @@ Klasa opisujaca graf nieskierowany.
 \subsection*{Metody publiczne}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_graf_a56767176b30fa6759e1b664bfa815423}{Graf} (int rozmiar)
-\begin{DoxyCompactList}\small\item\em Konstruktor tworzacy graf wedlug podanej ilosci wierzcholkow. \end{DoxyCompactList}\item 
-void \hyperlink{class_graf_abbf515053e5cd08a7b95c24dfbd1370d}{Dodaj\-Krawedz} (int w1, int w2)
-\begin{DoxyCompactList}\small\item\em Funkcja dodaje krawedz miedzy dwa wierzcholki. \end{DoxyCompactList}\item 
-void \hyperlink{class_graf_ad857a2246916d911b6616497c169e47c}{B\-F\-S} (int odkad)
-\begin{DoxyCompactList}\small\item\em Wyswietla wynik przeszukiwania wszerz od zadanego miejsca. \end{DoxyCompactList}\item 
-void \hyperlink{class_graf_a8b40e6700dd8f1f71b6b47558c0975a1}{D\-F\-S} ()
-\begin{DoxyCompactList}\small\item\em Wyswietla wynik przeszukiwania w glab. \end{DoxyCompactList}\item 
-void \hyperlink{class_graf_ab604c6d56e372a70b85368f03cc9508b}{D\-F\-S} (int odkad)
-\begin{DoxyCompactList}\small\item\em Wyswietla wynik przeszukiwania w glab od zadanego wierzcholka. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{class_graf_a5afda3f183a0337c6784072a92f1665f}{Graf} (int ile)
+\item 
+void \hyperlink{class_graf_a90ef4a4601908477e59e0cf877cb4e5a}{dodaj\-Krawedz} (string w1, string w2, int waga)
+\item 
+bool \hyperlink{class_graf_ab72f5cf13712d07a7021ca727d14e43d}{Czy\-Istnieje} (string w)
+\item 
+void \hyperlink{class_graf_afca25e4667ca9588002cdd364a2b7708}{Wyswietl\-Graf} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietla caly graf, poprzez poszczegolne wyswietlanie po kolei sasiedztw kazdego z wierzcholkow. \end{DoxyCompactList}\item 
+int \hyperlink{class_graf_ad1d0eaa1de57a75ba8cf6b5672440ce3}{Ile\-Polaczen\-Bezposrednich} (int jaki)
+\item 
+void \hyperlink{class_graf_a820956405edd4b5fa006b2f46767d7ab}{Wyswietl\-Sasiedztwo} (int jaki)
+\item 
+bool \hyperlink{class_graf_a3bc81888fa952be6267dab6390223c63}{Czy\-Jest\-Zakazane} (string w)
+\item 
+void \hyperlink{class_graf_ac046648ca44498f23160b476e0068d79}{Policz\-Droge} (string akcj, string cel)
+\item 
+bool \hyperlink{class_graf_a3654353092430ab66f28af554fa45908}{Czy\-Polaczone} (string w1, string w2)
+\item 
+int \hyperlink{class_graf_a03d5e2a34a50d31fff142496dad1b15f}{Zwroc\-Wage} (string w1, string w2)
+\end{DoxyCompactItemize}
 
 
 \subsection{Opis szczegółowy}
-Klasa opisujaca graf nieskierowany. 
+Deklaracja klasy graf, zawierajaca jej podstawowe funkcje i pola. 
 
 \subsection{Dokumentacja konstruktora i destruktora}
-\hypertarget{class_graf_a56767176b30fa6759e1b664bfa815423}{\index{Graf@{Graf}!Graf@{Graf}}
+\hypertarget{class_graf_a5afda3f183a0337c6784072a92f1665f}{\index{Graf@{Graf}!Graf@{Graf}}
 \index{Graf@{Graf}!Graf@{Graf}}
 \subsubsection[{Graf}]{\setlength{\rightskip}{0pt plus 5cm}Graf\-::\-Graf (
 \begin{DoxyParamCaption}
-\item[{int}]{rozmiar}
+\item[{int}]{ile}
 \end{DoxyParamCaption}
-)}}\label{class_graf_a56767176b30fa6759e1b664bfa815423}
-
-
-Konstruktor tworzacy graf wedlug podanej ilosci wierzcholkow. 
-
-
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_a5afda3f183a0337c6784072a92f1665f}
+Konstruktor ustawiajacy odpowiednie parametry obiektom tworzacym podstawowe funkcje grafu. \begin{DoxyVerb}   \param[in] ile - parametr okreslajacy ilosc wierzcholkow w grafie.\end{DoxyVerb}
+ 
 
 \subsection{Dokumentacja funkcji składowych}
-\hypertarget{class_graf_ad857a2246916d911b6616497c169e47c}{\index{Graf@{Graf}!B\-F\-S@{B\-F\-S}}
-\index{B\-F\-S@{B\-F\-S}!Graf@{Graf}}
-\subsubsection[{B\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-B\-F\-S (
+\hypertarget{class_graf_ab72f5cf13712d07a7021ca727d14e43d}{\index{Graf@{Graf}!Czy\-Istnieje@{Czy\-Istnieje}}
+\index{Czy\-Istnieje@{Czy\-Istnieje}!Graf@{Graf}}
+\subsubsection[{Czy\-Istnieje}]{\setlength{\rightskip}{0pt plus 5cm}bool Graf\-::\-Czy\-Istnieje (
 \begin{DoxyParamCaption}
-\item[{int}]{odkad}
+\item[{string}]{w}
 \end{DoxyParamCaption}
-)}}\label{class_graf_ad857a2246916d911b6616497c169e47c}
-
-
-Wyswietla wynik przeszukiwania wszerz od zadanego miejsca. 
-
-Zaimplementowany algorytm Bredth First Search dziala nastepujaco\-:
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_ab72f5cf13712d07a7021ca727d14e43d}
+Funkcja sprawdza, czy w tablicy asocjacyjnej istnieje juz wierzcholek o zadanej nazwie. 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & w \-: nazwa wierzcholka, ktora bedzie sprawdzona\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+prawda, jesli istnieje; falsz, jesli nie istnieje. 
+\end{DoxyReturn}
+\hypertarget{class_graf_a3bc81888fa952be6267dab6390223c63}{\index{Graf@{Graf}!Czy\-Jest\-Zakazane@{Czy\-Jest\-Zakazane}}
+\index{Czy\-Jest\-Zakazane@{Czy\-Jest\-Zakazane}!Graf@{Graf}}
+\subsubsection[{Czy\-Jest\-Zakazane}]{\setlength{\rightskip}{0pt plus 5cm}bool Graf\-::\-Czy\-Jest\-Zakazane (
+\begin{DoxyParamCaption}
+\item[{string}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_a3bc81888fa952be6267dab6390223c63}
+Funkcja sprawdzajaca, czy (wykorzystywane podczas szukania drogi) pobrany wierzcholek jest na liscie przejrzanych, zakazanych wierzcholkow. 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & w\-: nazwa wierzcholka, ktory chcemy sprawdzic. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+prawda, jesli juz istnieje w tym wektorze; falsz, jesli nie istnieje. 
+\end{DoxyReturn}
+\hypertarget{class_graf_a3654353092430ab66f28af554fa45908}{\index{Graf@{Graf}!Czy\-Polaczone@{Czy\-Polaczone}}
+\index{Czy\-Polaczone@{Czy\-Polaczone}!Graf@{Graf}}
+\subsubsection[{Czy\-Polaczone}]{\setlength{\rightskip}{0pt plus 5cm}bool Graf\-::\-Czy\-Polaczone (
+\begin{DoxyParamCaption}
+\item[{string}]{w1, }
+\item[{string}]{w2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_a3654353092430ab66f28af554fa45908}
+Funkcja sprawdzajaca, czy polaczone sa dwa wierzcholki. Wykonywane jest to przez macierz sasiedztwa. 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & w1, w2\-: nazwy wierzcholka, ktore chcemy sprawdzic. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+prawda, jesli sa polaczone; falsz, jesli nie sa. 
+\end{DoxyReturn}
+\hypertarget{class_graf_a90ef4a4601908477e59e0cf877cb4e5a}{\index{Graf@{Graf}!dodaj\-Krawedz@{dodaj\-Krawedz}}
+\index{dodaj\-Krawedz@{dodaj\-Krawedz}!Graf@{Graf}}
+\subsubsection[{dodaj\-Krawedz}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::dodaj\-Krawedz (
+\begin{DoxyParamCaption}
+\item[{string}]{w1, }
+\item[{string}]{w2, }
+\item[{int}]{waga}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_a90ef4a4601908477e59e0cf877cb4e5a}
+Funkcja dodaje krawedz laczaca dwa wierzcholki w1 i w2. Wierzcholki sa przechowywane w macierzy sasiedztwa. Kazda wartosc w macierzy wieksza od 0 oznacza\-:
 \begin{DoxyItemize}
-\item Wszystkie wierzcholki sa zaznaczone jako odwiedzone,
-\item Tworzona jest kolejka dla wykonania algorytmu B\-F\-S
-\item wybrane miejsce, od ktorego chcemy wykonac algorytm, jest zaznaczone jako odwiedzone i dodane do kolejki.
-\item dopoki w kolejsce cos jest, z kolejki jest usuwany i wyswietlany kolejny wierzcholek
-\item wszystkie graniczne wierzcholki wybranego wierzcholka zostaja zdekolejkowane
-\item jesli jakis graniczny wierzcholek nie zostal odwiedzony, zaznaczony jest jako odwiedzony i dodany do kolejki.
+\item istnienie polaczenia miedzy wierzcholkami
+\item okresla wartosc wagi miedzy nimi Dodatkowo do wczesniej zaimplementowanych tablic asocjacyjnych dodawane sa nazwy wierzcholkow z ich numerami porzadkowymi, oraz ich wagami.
 \end{DoxyItemize}
 
-iterator i -\/ uzywany do wyluskania wszystkich granicznych wierzcholkow \hypertarget{class_graf_a8b40e6700dd8f1f71b6b47558c0975a1}{\index{Graf@{Graf}!D\-F\-S@{D\-F\-S}}
-\index{D\-F\-S@{D\-F\-S}!Graf@{Graf}}
-\subsubsection[{D\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-D\-F\-S (
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em w1,w2} & -\/ nazwy wierzcholkow, ktore beda dodane \\
+\hline
+\mbox{\tt in}  & {\em waga} & -\/ wartosc wagi polaczenia miedzy dwoma wierzcholkami \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graf_ad1d0eaa1de57a75ba8cf6b5672440ce3}{\index{Graf@{Graf}!Ile\-Polaczen\-Bezposrednich@{Ile\-Polaczen\-Bezposrednich}}
+\index{Ile\-Polaczen\-Bezposrednich@{Ile\-Polaczen\-Bezposrednich}!Graf@{Graf}}
+\subsubsection[{Ile\-Polaczen\-Bezposrednich}]{\setlength{\rightskip}{0pt plus 5cm}int Graf\-::\-Ile\-Polaczen\-Bezposrednich (
+\begin{DoxyParamCaption}
+\item[{int}]{jaki}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_ad1d0eaa1de57a75ba8cf6b5672440ce3}
+Funkcja liczaca bezposrednich polaczen z danego indeksu wierzcholka. 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & jaki\-: indeks wybranego wierzcholka. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ ilosc bezposrednich polaczen z danego wierzcholka. 
+\end{DoxyReturn}
+\hypertarget{class_graf_ac046648ca44498f23160b476e0068d79}{\index{Graf@{Graf}!Policz\-Droge@{Policz\-Droge}}
+\index{Policz\-Droge@{Policz\-Droge}!Graf@{Graf}}
+\subsubsection[{Policz\-Droge}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-Policz\-Droge (
+\begin{DoxyParamCaption}
+\item[{string}]{akcj, }
+\item[{string}]{cel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_ac046648ca44498f23160b476e0068d79}
+and Bound Funkcja liczaca droge z zadanego do wierzcholka, do celowego. Algorytm dziala na zasadzie rekurencji, sprawdzajac czy poprzez wierzcholek, przy ktorym sie znajduje, jest w stanie dojsc do celu. Jesli nie, to cofa sie do tylu i sprawdza w innych. Tak, az do skutku. 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & akcj, cel -\/ nazwy wierzcholkow\-: wierzcholek skad wyruszamy, wierzcholek celowy. Dla informacji wyswietla sie zliczona waga sumaryczna wybranej drogi. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graf_afca25e4667ca9588002cdd364a2b7708}{\index{Graf@{Graf}!Wyswietl\-Graf@{Wyswietl\-Graf}}
+\index{Wyswietl\-Graf@{Wyswietl\-Graf}!Graf@{Graf}}
+\subsubsection[{Wyswietl\-Graf}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-Wyswietl\-Graf (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{class_graf_a8b40e6700dd8f1f71b6b47558c0975a1}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_afca25e4667ca9588002cdd364a2b7708}
 
 
-Wyswietla wynik przeszukiwania w glab. 
+Funkcja wyswietla caly graf, poprzez poszczegolne wyswietlanie po kolei sasiedztw kazdego z wierzcholkow. 
 
-Aby przeprowadzic algorytm Depth First Search, najpierw wszystkie wierzcholki zaznaczone sa jako N\-I\-E odwiedzone. Nastepnie pomocnicza rekurencyjna funkcja jest wywolywana, by wyswietlic przeszukiwanie w glab zaczynajac od kazdego wierzcholka jeden po jednym. \hypertarget{class_graf_ab604c6d56e372a70b85368f03cc9508b}{\index{Graf@{Graf}!D\-F\-S@{D\-F\-S}}
-\index{D\-F\-S@{D\-F\-S}!Graf@{Graf}}
-\subsubsection[{D\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-D\-F\-S (
+\hypertarget{class_graf_a820956405edd4b5fa006b2f46767d7ab}{\index{Graf@{Graf}!Wyswietl\-Sasiedztwo@{Wyswietl\-Sasiedztwo}}
+\index{Wyswietl\-Sasiedztwo@{Wyswietl\-Sasiedztwo}!Graf@{Graf}}
+\subsubsection[{Wyswietl\-Sasiedztwo}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-Wyswietl\-Sasiedztwo (
 \begin{DoxyParamCaption}
-\item[{int}]{odkad}
+\item[{int}]{jaki}
 \end{DoxyParamCaption}
-)}}\label{class_graf_ab604c6d56e372a70b85368f03cc9508b}
-
-
-Wyswietla wynik przeszukiwania w glab od zadanego wierzcholka. 
-
-Funkcja ponizej rozni sie od powyzszej tylko tym, ze przeszukiwane nie jest dla wszystkich wierzcholkow, lecz tylko dla wybranego \char`\"{}odkad\char`\"{}. \hypertarget{class_graf_abbf515053e5cd08a7b95c24dfbd1370d}{\index{Graf@{Graf}!Dodaj\-Krawedz@{Dodaj\-Krawedz}}
-\index{Dodaj\-Krawedz@{Dodaj\-Krawedz}!Graf@{Graf}}
-\subsubsection[{Dodaj\-Krawedz}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-Dodaj\-Krawedz (
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_a820956405edd4b5fa006b2f46767d7ab}
+Funkcja wyswietla sasiedztwo zadanego wierzcholka 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em -\/} & jaki \-: indeks wierzcholka, ktorego sasiedztwo bedzie wyswietlone. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graf_a03d5e2a34a50d31fff142496dad1b15f}{\index{Graf@{Graf}!Zwroc\-Wage@{Zwroc\-Wage}}
+\index{Zwroc\-Wage@{Zwroc\-Wage}!Graf@{Graf}}
+\subsubsection[{Zwroc\-Wage}]{\setlength{\rightskip}{0pt plus 5cm}int Graf\-::\-Zwroc\-Wage (
 \begin{DoxyParamCaption}
-\item[{int}]{w1, }
-\item[{int}]{w2}
+\item[{string}]{w1, }
+\item[{string}]{w2}
 \end{DoxyParamCaption}
-)}}\label{class_graf_abbf515053e5cd08a7b95c24dfbd1370d}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graf_a03d5e2a34a50d31fff142496dad1b15f}
+Funkcja zwraca wage, pomiedzy dwoma bezposrednio polaczonymi wierzcholkami w1, w2 \begin{DoxyReturn}{Zwraca}
+waga (int) miedzy dwoma wierzcholkami; -\/1, jesli nie sa polaczone. 
+\end{DoxyReturn}
 
 
-Funkcja dodaje krawedz miedzy dwa wierzcholki. 
-
-W ponizszej funkcji do listy opartej na tablicy Q (z indeksem wierzcholka 1.) zostaje dodany wierzcholek 2. (tworzy sie krawedz). 
-
-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+Dokumentacja dla tej klasy została wygenerowana z pliku\-:\begin{DoxyCompactItemize}
 \item 
-C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project49probagraf/\-Project49probagraf/\hyperlink{graf_8h}{graf.\-h}\item 
-C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project49probagraf/\-Project49probagraf/\hyperlink{graf_8cpp}{graf.\-cpp}\end{DoxyCompactItemize}
+C\-:/\-Users/\-Witek/\-Documents/\-Visual Studio 2012/\-Projects/\-Project48\-P\-A\-M\-S\-Ilab8/\-Project48\-P\-A\-M\-S\-Ilab8/\hyperlink{graf_8h}{graf.\-h}\end{DoxyCompactItemize}

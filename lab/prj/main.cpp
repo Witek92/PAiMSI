@@ -1,12 +1,13 @@
-/*! \mainpage Dokumentacja zadania PAMSI lab 8
- *
- * \author Witold Zimnicki
- * \date 11.5.2014
- * 
- */
 #include "operacja.h"
 
-using namespace std;
+/*! \mainpage Dokumentacja zadania PAMSI lab 9
+ *
+ * \author Witold Zimnicki
+ * \date 18.5.2014
+ * 
+ */
+ 
+
 /*! \brief Funkcja main wykonujaca wyszukiwanie sciezek w grafie i liczaca czasy.
 
 W funkcji main wykonywane sa nastepujace operacje:
@@ -17,11 +18,11 @@ W funkcji main wykonywane sa nastepujace operacje:
 */
 int main()
 {
+	
 	Operacja jakas;
 	jakas.Dzialaj();
-	
-	system("PAUSE");
 
-	return 1;
+system("PAUSE");
 
+return 0;
 }

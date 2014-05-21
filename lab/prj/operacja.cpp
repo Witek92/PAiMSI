@@ -45,9 +45,7 @@ using namespace std;
 	{
 	
 		cout<<endl<<"WYBIERZ ZADANA OPERACJE: "<<endl;
-		cout<<"d - Depth First Search zwykle "<<endl;
-		cout<<"p - Depth First Search z wyborem wierzcholka"<<endl;
-		cout<<"b - Breadth First Search z wyborem elementu"<<endl;
+		cout<<"a -  Branch and Bound"<<endl;
 		cout<<"Co chcesz zrobic?"<<endl;
 		cin>>wyborco;
 		PobierzRozmiarProblemu();
@@ -56,62 +54,44 @@ using namespace std;
 		
 
 	}
-
-
+	
 
 	void Operacja::PoliczOperacje()
 	{
-	int x,y;
+	int x,y,a,glowny=1,glowny2=0;
+	string pierwszy;
 	srand(time(NULL));
 		switch(wyborco)
 			{
 		
-			case 'b':
+			case 'a':
 				{
-					Graf g(rozmiar);
-					
+					nazwy=new int [rozmiar];
+					for (int i=0; i<rozmiar;i++)
+					{
+						nazwy[i]=i;
+					}
+					nazwys=new string [rozmiar];
 					for (int i=0;i<rozmiar;i++)
 					{
-						x=rand() % rozmiar;
-						y=rand() % rozmiar;
-						g.DodajKrawedz(x,y);
+						nazwys[i]=nazwy[i];
 					}
-					g.BFS(x);
-					break;
-				}
-			
-			case 'p':
-				{
 					Graf g(rozmiar);
-					
-					for (int i=0;i<rozmiar;i++)
+					for (int i=glowny2;i<glowny2+3 && glowny<rozmiar;i++,glowny2++)
 					{
-						x=rand() % rozmiar;
-						y=rand() % rozmiar;
-						g.DodajKrawedz(x,y);
-					}
-					g.DFS(x);
-					
-					break;
-				}
+						
+						for (int j=glowny;j<glowny+3 && glowny<rozmiar;j++,glowny++)
+						{
+							a=rand() % 20 + 1;
+							g.dodajKrawedz(nazwys[i],nazwys[j],a);
+						}
 
-
-			
-			case 'd':
-				{
-					
-					Graf g(rozmiar);
-				
-					
-					for (int i=0;i<rozmiar;i++)
-					{
-						x=rand() % rozmiar;
-						y=rand() % rozmiar;
-						g.DodajKrawedz(x,y);
+						
+						
+						
 					}
-					g.DFS();
+					g.PoliczDroge(nazwys[0],nazwys[rozmiar-1]);
 					
-					break;
 				}
 				
 

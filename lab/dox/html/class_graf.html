@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>PAMSIlab8: Dokumentacja klasy Graf</title>
+<title>PAMSIlab9: Dokumentacja klasy Graf</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">PAMSIlab8
+   <div id="projectname">PAMSIlab9
    </div>
   </td>
  </tr>
@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,125 +87,135 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 </div><!--header-->
 <div class="contents">
 
-<p>Klasa opisujaca graf nieskierowany.  
+<p>Deklaracja klasy graf, zawierajaca jej podstawowe funkcje i pola.  
  <a href="class_graf.html#details">Więcej...</a></p>
 
 <p><code>#include &lt;<a class="el" href="graf_8h_source.html">graf.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:a56767176b30fa6759e1b664bfa815423"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a56767176b30fa6759e1b664bfa815423">Graf</a> (int rozmiar)</td></tr>
-<tr class="memdesc:a56767176b30fa6759e1b664bfa815423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor tworzacy graf wedlug podanej ilosci wierzcholkow.  <a href="#a56767176b30fa6759e1b664bfa815423"></a><br/></td></tr>
-<tr class="memitem:abbf515053e5cd08a7b95c24dfbd1370d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#abbf515053e5cd08a7b95c24dfbd1370d">DodajKrawedz</a> (int w1, int w2)</td></tr>
-<tr class="memdesc:abbf515053e5cd08a7b95c24dfbd1370d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dodaje krawedz miedzy dwa wierzcholki.  <a href="#abbf515053e5cd08a7b95c24dfbd1370d"></a><br/></td></tr>
-<tr class="memitem:ad857a2246916d911b6616497c169e47c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#ad857a2246916d911b6616497c169e47c">BFS</a> (int odkad)</td></tr>
-<tr class="memdesc:ad857a2246916d911b6616497c169e47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyswietla wynik przeszukiwania wszerz od zadanego miejsca.  <a href="#ad857a2246916d911b6616497c169e47c"></a><br/></td></tr>
-<tr class="memitem:a8b40e6700dd8f1f71b6b47558c0975a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a8b40e6700dd8f1f71b6b47558c0975a1">DFS</a> ()</td></tr>
-<tr class="memdesc:a8b40e6700dd8f1f71b6b47558c0975a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyswietla wynik przeszukiwania w glab.  <a href="#a8b40e6700dd8f1f71b6b47558c0975a1"></a><br/></td></tr>
-<tr class="memitem:ab604c6d56e372a70b85368f03cc9508b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#ab604c6d56e372a70b85368f03cc9508b">DFS</a> (int odkad)</td></tr>
-<tr class="memdesc:ab604c6d56e372a70b85368f03cc9508b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyswietla wynik przeszukiwania w glab od zadanego wierzcholka.  <a href="#ab604c6d56e372a70b85368f03cc9508b"></a><br/></td></tr>
+<tr class="memitem:a5afda3f183a0337c6784072a92f1665f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a5afda3f183a0337c6784072a92f1665f">Graf</a> (int ile)</td></tr>
+<tr class="memitem:a90ef4a4601908477e59e0cf877cb4e5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a90ef4a4601908477e59e0cf877cb4e5a">dodajKrawedz</a> (string w1, string w2, int waga)</td></tr>
+<tr class="memitem:ab72f5cf13712d07a7021ca727d14e43d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#ab72f5cf13712d07a7021ca727d14e43d">CzyIstnieje</a> (string w)</td></tr>
+<tr class="memitem:afca25e4667ca9588002cdd364a2b7708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#afca25e4667ca9588002cdd364a2b7708">WyswietlGraf</a> ()</td></tr>
+<tr class="memdesc:afca25e4667ca9588002cdd364a2b7708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wyswietla caly graf, poprzez poszczegolne wyswietlanie po kolei sasiedztw kazdego z wierzcholkow.  <a href="#afca25e4667ca9588002cdd364a2b7708"></a><br/></td></tr>
+<tr class="memitem:ad1d0eaa1de57a75ba8cf6b5672440ce3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#ad1d0eaa1de57a75ba8cf6b5672440ce3">IlePolaczenBezposrednich</a> (int jaki)</td></tr>
+<tr class="memitem:a820956405edd4b5fa006b2f46767d7ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a820956405edd4b5fa006b2f46767d7ab">WyswietlSasiedztwo</a> (int jaki)</td></tr>
+<tr class="memitem:a3bc81888fa952be6267dab6390223c63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a3bc81888fa952be6267dab6390223c63">CzyJestZakazane</a> (string w)</td></tr>
+<tr class="memitem:ac046648ca44498f23160b476e0068d79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#ac046648ca44498f23160b476e0068d79">PoliczDroge</a> (string akcj, string cel)</td></tr>
+<tr class="memitem:a3654353092430ab66f28af554fa45908"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a3654353092430ab66f28af554fa45908">CzyPolaczone</a> (string w1, string w2)</td></tr>
+<tr class="memitem:a03d5e2a34a50d31fff142496dad1b15f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graf.html#a03d5e2a34a50d31fff142496dad1b15f">ZwrocWage</a> (string w1, string w2)</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Opis szczegółowy</h2>
-<div class="textblock"><p>Klasa opisujaca graf nieskierowany. </p>
+<div class="textblock"><p>Deklaracja klasy graf, zawierajaca jej podstawowe funkcje i pola. </p>
 </div><h2>Dokumentacja konstruktora i destruktora</h2>
-<a class="anchor" id="a56767176b30fa6759e1b664bfa815423"></a>
+<a class="anchor" id="a5afda3f183a0337c6784072a92f1665f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Graf::Graf </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>rozmiar</em></td><td>)</td>
+          <td class="paramname"><em>ile</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Konstruktor tworzacy graf wedlug podanej ilosci wierzcholkow. </p>
-
+<p>Konstruktor ustawiajacy odpowiednie parametry obiektom tworzacym podstawowe funkcje grafu. </p>
+<pre class="fragment">   \param[in] ile - parametr okreslajacy ilosc wierzcholkow w grafie.</pre> 
 </div>
 </div>
 <h2>Dokumentacja funkcji składowych</h2>
-<a class="anchor" id="ad857a2246916d911b6616497c169e47c"></a>
+<a class="anchor" id="ab72f5cf13712d07a7021ca727d14e43d"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Graf::BFS </td>
+          <td class="memname">bool Graf::CzyIstnieje </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>odkad</em></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Wyswietla wynik przeszukiwania wszerz od zadanego miejsca. </p>
-<p>Zaimplementowany algorytm Bredth First Search dziala nastepujaco:</p>
-<ul>
-<li>Wszystkie wierzcholki sa zaznaczone jako odwiedzone,</li>
-<li>Tworzona jest kolejka dla wykonania algorytmu BFS</li>
-<li>wybrane miejsce, od ktorego chcemy wykonac algorytm, jest zaznaczone jako odwiedzone i dodane do kolejki.</li>
-<li>dopoki w kolejsce cos jest, z kolejki jest usuwany i wyswietlany kolejny wierzcholek</li>
-<li>wszystkie graniczne wierzcholki wybranego wierzcholka zostaja zdekolejkowane</li>
-<li>jesli jakis graniczny wierzcholek nie zostal odwiedzony, zaznaczony jest jako odwiedzony i dodany do kolejki.</li>
-</ul>
-<p>iterator i - uzywany do wyluskania wszystkich granicznych wierzcholkow </p>
+<p>Funkcja sprawdza, czy w tablicy asocjacyjnej istnieje juz wierzcholek o zadanej nazwie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">-</td><td>w : nazwa wierzcholka, ktora bedzie sprawdzona</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>prawda, jesli istnieje; falsz, jesli nie istnieje. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a8b40e6700dd8f1f71b6b47558c0975a1"></a>
+<a class="anchor" id="a3bc81888fa952be6267dab6390223c63"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Graf::DFS </td>
+          <td class="memname">bool Graf::CzyJestZakazane </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Wyswietla wynik przeszukiwania w glab. </p>
-<p>Aby przeprowadzic algorytm Depth First Search, najpierw wszystkie wierzcholki zaznaczone sa jako NIE odwiedzone. Nastepnie pomocnicza rekurencyjna funkcja jest wywolywana, by wyswietlic przeszukiwanie w glab zaczynajac od kazdego wierzcholka jeden po jednym. </p>
+<p>Funkcja sprawdzajaca, czy (wykorzystywane podczas szukania drogi) pobrany wierzcholek jest na liscie przejrzanych, zakazanych wierzcholkow. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">-</td><td>w: nazwa wierzcholka, ktory chcemy sprawdzic. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>prawda, jesli juz istnieje w tym wektorze; falsz, jesli nie istnieje. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ab604c6d56e372a70b85368f03cc9508b"></a>
+<a class="anchor" id="a3654353092430ab66f28af554fa45908"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Graf::DFS </td>
+          <td class="memname">bool Graf::CzyPolaczone </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>odkad</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wyswietla wynik przeszukiwania w glab od zadanego wierzcholka. </p>
-<p>Funkcja ponizej rozni sie od powyzszej tylko tym, ze przeszukiwane nie jest dla wszystkich wierzcholkow, lecz tylko dla wybranego "odkad". </p>
-
-</div>
-</div>
-<a class="anchor" id="abbf515053e5cd08a7b95c24dfbd1370d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Graf::DodajKrawedz </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>w1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>w2</em>&#160;</td>
         </tr>
         <tr>
@@ -214,21 +224,247 @@ Metody publiczne</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Funkcja sprawdzajaca, czy polaczone sa dwa wierzcholki. Wykonywane jest to przez macierz sasiedztwa. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">-</td><td>w1, w2: nazwy wierzcholka, ktore chcemy sprawdzic. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>prawda, jesli sa polaczone; falsz, jesli nie sa. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a90ef4a4601908477e59e0cf877cb4e5a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Graf::dodajKrawedz </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>w1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>w2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>waga</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Funkcja dodaje krawedz laczaca dwa wierzcholki w1 i w2. Wierzcholki sa przechowywane w macierzy sasiedztwa. Kazda wartosc w macierzy wieksza od 0 oznacza:</p>
+<ul>
+<li>istnienie polaczenia miedzy wierzcholkami</li>
+<li>okresla wartosc wagi miedzy nimi Dodatkowo do wczesniej zaimplementowanych tablic asocjacyjnych dodawane sa nazwy wierzcholkow z ich numerami porzadkowymi, oraz ich wagami.</li>
+</ul>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">w1,w2</td><td>- nazwy wierzcholkow, ktore beda dodane </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">waga</td><td>- wartosc wagi polaczenia miedzy dwoma wierzcholkami </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad1d0eaa1de57a75ba8cf6b5672440ce3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graf::IlePolaczenBezposrednich </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>jaki</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Funkcja liczaca bezposrednich polaczen z danego indeksu wierzcholka. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">-</td><td>jaki: indeks wybranego wierzcholka. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>- ilosc bezposrednich polaczen z danego wierzcholka. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac046648ca44498f23160b476e0068d79"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Graf::PoliczDroge </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>akcj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>cel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>and Bound Funkcja liczaca droge z zadanego do wierzcholka, do celowego. Algorytm dziala na zasadzie rekurencji, sprawdzajac czy poprzez wierzcholek, przy ktorym sie znajduje, jest w stanie dojsc do celu. Jesli nie, to cofa sie do tylu i sprawdza w innych. Tak, az do skutku. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">-</td><td>akcj, cel - nazwy wierzcholkow: wierzcholek skad wyruszamy, wierzcholek celowy. Dla informacji wyswietla sie zliczona waga sumaryczna wybranej drogi. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afca25e4667ca9588002cdd364a2b7708"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Graf::WyswietlGraf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Funkcja dodaje krawedz miedzy dwa wierzcholki. </p>
-<p>W ponizszej funkcji do listy opartej na tablicy Q (z indeksem wierzcholka 1.) zostaje dodany wierzcholek 2. (tworzy sie krawedz). </p>
+<p>Funkcja wyswietla caly graf, poprzez poszczegolne wyswietlanie po kolei sasiedztw kazdego z wierzcholkow. </p>
 
 </div>
 </div>
-<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project49probagraf/Project49probagraf/<a class="el" href="graf_8h_source.html">graf.h</a></li>
-<li>C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project49probagraf/Project49probagraf/<a class="el" href="graf_8cpp.html">graf.cpp</a></li>
+<a class="anchor" id="a820956405edd4b5fa006b2f46767d7ab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Graf::WyswietlSasiedztwo </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>jaki</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Funkcja wyswietla sasiedztwo zadanego wierzcholka </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">-</td><td>jaki : indeks wierzcholka, ktorego sasiedztwo bedzie wyswietlone. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a03d5e2a34a50d31fff142496dad1b15f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graf::ZwrocWage </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>w1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>w2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Funkcja zwraca wage, pomiedzy dwoma bezposrednio polaczonymi wierzcholkami w1, w2 </p>
+<dl class="section return"><dt>Zwraca</dt><dd>waga (int) miedzy dwoma wierzcholkami; -1, jesli nie sa polaczone. </dd></dl>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project48PAMSIlab8/Project48PAMSIlab8/<a class="el" href="graf_8h_source.html">graf.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano N, 11 maj 2014 22:18:00 dla PAMSIlab8 programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano Śr, 21 maj 2014 20:34:40 dla PAMSIlab9 programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
