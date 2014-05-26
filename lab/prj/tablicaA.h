@@ -11,21 +11,17 @@ template<typename TYP> class TablicaA
 {
 	private:
 		
-		
-	public:
-
 		//!Pole przechowujace kluczy tablicy asocjacyjnej, ktore sa typu string. 
 		vector<string> klucz;
 		//!Pole przechowujace wartosci tablicy asocjacyjnej, ktore sa wybranego typu.
 		vector<TYP> wartosc;
+	public:
 		//! Funkcja dodaj¹ca do tablicy asocjacyjnej pozycje.
 		void dodaj(string k,TYP v);
 		//! Funkcja usuwajaca z tablicy asocjacyjnej wybrana pozycje.
 		void usun(string k,TYP v);
 		//! Funkcja zwracajaca wartosc zadanego klucza.
 		TYP pobierz(string k);
-		//! Funkcja zwracajaca klucz zadanej wartosci.
-		string pobierz(TYP v);
 		//! Funkcja zwracajaca ilosc elementow tablicy asocjacyjnej.
 		int IleElementow();
 		//! Funkcja sprawdzajaca, czy tablica asocjacyjna jest pusta.
@@ -111,7 +107,6 @@ bool TablicaA<TYP>::CzyPusta()
 
 
 
-
 template <typename TYP>
 
 ostream &operator << (ostream &ekran, TablicaA<TYP> &tabliczka)
@@ -150,22 +145,6 @@ TYP TablicaA<TYP>::pobierz(string k)
 	cout<<endl<<"BRAK ELEMENTU Z TAKIM KLUCZEM!"<<endl;
 	return NULL;
 }
-
-template <typename TYP>
-string TablicaA<TYP>::pobierz(TYP v)
-{
-	for (int i=0; i<klucz.size();i++)
-	{
-		if (wartosc[i]==v)
-		{
-			return klucz[i];
-		}
-	}
-	cout<<endl<<"BRAK ELEMENTU Z TAKA WARTOSCIA!"<<endl;
-	return NULL;
-}
-
-
 
 /*!	Argumenty i najwa¿niejsze pola funkcji:
 	

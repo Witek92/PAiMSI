@@ -5,7 +5,9 @@
 #include <iostream>
 #include <fstream>
 #include <ctime>
-#include "graf.h"
+#include "tablicaA.h"
+#include "drzewo.h"
+#include "hashm.h"
 
 /*! \brief Deklaracja klasy Operacja.
 
@@ -29,13 +31,21 @@ class Operacja
 	char wyborco;
 	//! Pole przechowuje rozmiar problemu.
 	int rozmiar;
-	//! Pole przechowuje indeksy nazw wierzcholkow.
-	int *nazwy;
-	//! Pole przechowuje nazwy wierzcholkow.
+	//! tablica asocjacyjna oparta na wektorze.
+	TablicaA<int> tabliczka;
+	//! Tablica ze stringami, przechowujaca klucze.
 	string *nazwys;
+	//! Drzewo BST dla wykonywania algorytmu.
+	Drzewo drzewko;
+	//! Tablica mieszajaca dla wykonywania na niej algorytmow.
+	HashM haszujaca;
+	//! Funkcja dodajaca unikalny klucz do wybranej struktury danych.
+	void dodaj(string &tekst, int ktory);
+	
+
 
 public:
-	
+	Operacja();
 	//! Funkcja wyznaczajaca poczatek pomiaru czasu.
 	void ZmierzCzasStart();
 	//! Funkcja wyznaczajaca koniec pomiaru czasu.

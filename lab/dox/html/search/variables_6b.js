@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['klucz',['klucz',['../class_tablica_a.html#a3eb0482d1d6aff4e61ca9afc8fd3d316',1,'TablicaA']]]
+  ['klucz',['klucz',['../class_wezel.html#a69170fb72d1770a86e0dee946536cb9f',1,'Wezel']]]
 ];

@@ -1,0 +1,179 @@
+%\documentclass{article}
+\documentclass[12pt,a4paper,titlepage]{article}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{stmaryrd}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage[figuresright]{rotating}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{geometry}
+\usepackage{pslatex}
+\usepackage{ulem}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{Here}
+\usepackage{color}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\selectlanguage{polish}
+\definecolor{szary}{gray}{0.6}
+\setlength{\textwidth}{400pt}
+\lstset{numbers=left, numberstyle=\tiny, basicstyle=\scriptsize\ttfamily, breaklines=true, captionpos=b, tabsize=2}
+
+\makeindex
+
+\title{Poprawione sprawozdanie z laboratorium PAiMSI 7 -
+Tablica Asocjacyjna}
+\date{25 maja 2014}
+\author{Witold Zimnicki - nr 200465}
+
+
+
+\usepackage{pgfplots}
+\usepackage{filecontents}
+\begin{filecontents*}{data1.csv}
+a,b,c,d
+10,0,0,0
+100,0,0,0
+1000,1,1,1
+5000,2,1,1
+8000,3,2,1
+10000,3,2,1
+30000,8,8,1
+50000,12,9,1
+80000,12,10,1
+100000,13,12,1
+
+\end{filecontents*}
+
+
+
+
+\begin{document}
+
+	\maketitle
+	\pagestyle{empty}
+	\pagestyle{headings}
+	\begin{large}
+	\textbf{1. Cel ćwiczenia:}
+	\newline
+	\end{large}
+
+	Celem ćwiczenia było przetestowanie czasów wyszukania wartości elementu według jego klucza w strukturach danych opartych na tablicy asocjacyjnej, takich jak:
+	\begin{itemize}
+\item[-] tablica asocjacyjna oparta na klasie \textit{vector}
+\item[-] binarne drzewo przeszukiwań
+\item[-] tablica mieszająca
+\newline
+\newline
+
+
+	\end{itemize}
+	
+	
+	\begin{large}
+	\textbf{2. Wyniki testu:}
+	\newline
+	\end{large}
+	
+	Algorytmy wykonywane są następująco: \\
+	Do podanych wyżej struktur danych zostaje dodana zadana ilość par wartości i kluczy (bez kolizji). Następnie pobierany jest uśredniony czas wyszukiwania wartości klucza dla losowo wybranych kluczy przy 20 powtórzeniach.\\
+	\\
+	
+	
+	\textbf{W sprawozdaniu znajdują się 3 wykresy:}\newline
+	
+1. Czasy szukania wartości klucza w tablicy asocjacyjnej dla różnych ilości danych. \newline
+	 
+2. Czasy szukania wartości klucza w tablicy mieszającej dla różnych ilości danych. \newline
+	
+3. Czasy szukania wartości klucza w drzewie BST dla różnych ilości danych. \newline
+	
+	\newpage
+	
+	\begin{large}
+	\textbf{Wykresy:}
+	\newline
+	\end{large}
+	
+\begin{center}
+\begin{tikzpicture}
+		\begin{axis}[
+			title=\textbf{TABLICA ASOCJACYJNA - \textit{vector}},
+			xlabel= N - rozmiar problemu,
+			ylabel=czas [ms],
+			xlabel style={sloped like x axis},
+			ylabel style={sloped}
+			]
+			\addplot table [x=a, y=b, col sep=comma] {data1.csv};
+
+		\end{axis}
+	\end{tikzpicture}
+	
+	
+	
+		\begin{tikzpicture}
+		\begin{axis}[
+			title=\textbf{DRZEWO BST},
+			xlabel= N - rozmiar problemu,
+			ylabel=czas [ms],
+			xlabel style={sloped like x axis},
+			ylabel style={sloped}
+			]
+			\addplot table [x=a, y=c, col sep=comma] {data1.csv};
+			
+
+
+		\end{axis}
+	\end{tikzpicture}
+	
+	
+		
+		\begin{tikzpicture}
+		\begin{axis}[
+			title=\textbf{TABLICA MIESZAJĄCA},
+			xlabel= N - rozmiar problemu,
+			ylabel=czas  [ms],
+			xlabel style={sloped like x axis},
+			ylabel style={sloped}
+			]
+			\addplot table [x=a, y=d, col sep=comma] {data1.csv};
+			
+
+
+		\end{axis}
+	\end{tikzpicture}
+\end{center}
+	
+	
+	
+\begin{large}
+	\textbf{3. Wnioski: \\}
+	\newline
+	\end{large}
+\textbf{-} Wyniki testu potwierdzają w przybliżeniu następujące złożoności czasowe poszczególnych algorytmów: \newline
+\begin{itemize}
+\item Tablica asocjacyjna zaimplementowana na klasie \textit{vector}: $\mathcal{O}(log(n))$ 
+\item Drzewo BST (drzewo bliskie zrównoważenia) ze złożonością $\mathcal{O}(log(n))$ 
+\item Tablica mieszająca przy nie za dużych zbiorach: $\mathcal{O}(1)$
+\end{itemize}
+
+\begin{flushleft}
+\textbf{-}  Powyższe ćwiczenie pokazuje, że na czas wykonywania się algorytmu składa się również miejsce w strukturze danych, z którego wyszukiwana będzie wartość, a nie tylko rozmiar problemu.\newline
+
+ 
+ 
+\textbf{-}  Przy dużych rozmiarach problemu, dodawanie dużej ilości par kluczy i wartości do tablicy asocjacyjnej opartej na klasie \textit{vector} jest czasochłonne, gdyż wykazuje zależność liniową.\newline
+ 
+\textbf{-} Generalny czas dostępu do wartości w drzewie BST był nieco mniejszy niż dla tablicy asocjacyjnej.\newline
+ \end{flushleft} 
+
+\end{document}
