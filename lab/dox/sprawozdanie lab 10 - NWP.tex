@@ -1,0 +1,150 @@
+%\documentclass{article}
+\documentclass[12pt,a4paper,titlepage]{article}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{stmaryrd}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage[figuresright]{rotating}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{geometry}
+\usepackage{pslatex}
+\usepackage{ulem}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{Here}
+\usepackage{color}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\selectlanguage{polish}
+\definecolor{szary}{gray}{0.6}
+\setlength{\textwidth}{400pt}
+\setlength{\parindent}{1pt}
+\lstset{numbers=left, numberstyle=\tiny, basicstyle=\scriptsize\ttfamily, breaklines=true, captionpos=b, tabsize=2}
+
+\makeindex
+\frenchspacing
+\title{Laboratorium PAiMSI 10 \\
+Najdłuższy Wspólny Podciąg}
+\date{25 maja 2014}
+\author{Witold Zimnicki - nr 200465}
+
+
+\begin{document}
+
+	\maketitle
+	\pagestyle{empty}
+	\pagestyle{headings}
+	\begin{large}
+	\textbf{1. Cel ćwiczenia:}
+	\newline
+	\end{large}
+
+	Celem ćwiczenia było zapoznanie się z algorytmem \textbf{NWP} (Najdłuższy Wspólny Podciąg) oraz jego zaimplementowanie w taki sposób, aby możliwe było zaprezentowanie wyników udowadniających jego poprawne działanie.\newline
+	\newline
+
+	
+	
+	\begin{large}
+	\textbf{2. Najdłuższy Wspólny Podciąg:}
+	\newline
+	\end{large}
+	
+	\begin{itemize}
+\item[-] \hspace{8pt}  Zadaniem algorytmu \textbf{NWP} jest wyszukanie najdłuższego wspólnego łańcucha znaków w dwóch ciągach wyrazów. Unikatowość swoją zawdzięcza temu, że elementy łańcucha nie muszą leżeć obok siebie. Wykorzystywany może być do wykrywania plagiatów lub do różnego rodzaju systemów kontroli wersji. \\
+\item[-] \hspace{8pt} Problem NWP dwóch ciągów A i B o długościach odpowiednio n i m może być rozwiązany za pomocą metody programowania dynamicznego.
+Algorytm ten ma złożoność obliczeniową rzędu $\mathcal{O}(n*m)$, gdzie n oraz m to długości ciągów A i B. Algorytm ten tworzy tablicę dwuwymiarową C (n na m) taką, że wartość C[i][j] jest długością NWP podciągów A[1..i] i B[1..j]. A więc po zakończeniu wypełniania tablicy C komórka C[n][m] będzie zawierała wartość będąca długością NWP oryginalnych ciągów wejściowych A i B.\\\newline
+\newline
+	\end{itemize}
+	
+	\begin{large}
+	\textbf{Odtworzenie najdłuższego podciągu: }
+	\newline
+	\end{large}
+	
+	Polega ono na utworzeniu macierzy o wymiarach n+1 x m+1 (n i m to długości ciągów A i B). Pierwsza kolumna oraz wiersz są zerami. Następnie wypełniamy macierz aż do końca jednym schematem: 
+	\begin{enumerate}
+	\item Jeśli znak kolejnego wiersza i kolumny są takie same - inkrementowana jest wartość na ukos z lewej strony.
+	\item Jeśli znaki kolejnego wiersza i kolumny nie są takie same - w zależności od tego która jest większa, przypisywana jest wartość sąsiada na górze, lub po lewej.
+	\end{enumerate}
+	
+	\newpage
+	
+	\begin{large}
+	\textbf{Sprawdzenie zawartości najdłuższego wspólnego podciągu: }
+	\newline
+	\end{large}
+	
+	Aby dowiedzieć się jaki to podciąg należy 'przejść' z ostatniej komórki macierzy do komórki początkowej według następującego algorytmu:
+\begin{enumerate}
+\item jeśli któraś komórka sąsiednia do tej w której jesteśmy (z lewej strony lub u góry) ma wartość identyczną, to przechodzimy do niej.
+\item jeśli jesteśmy w komórce zerowej to zakończ.
+\item jeśli nie ma takiej, do ciągu odpowiedzi dopisujemy na początek literę odpowiadającą tej komórce a następnie idziemy do komórki o wartości mniejszej o 1 (po skosie do góry i w lewo).
+\item jeśli nie jesteśmy w komórce [0][0] to przeskocz do punktu 1. w przeciwnym wypadku Zakończ.
+\end{enumerate}
+
+W związku z tym, że w każdym kolejnym kroku można iść zarówno w lewo jak i do góry, można uzyskać dwa, lub więcej podciągów.\newline
+
+\newpage
+	\begin{large}
+	\textbf{3. Wyniki działania: }\\
+	\newline
+	\end{large}
+	\begin{itemize}
+	\item[-] \textbf{Wariant z jednym możliwym najdłuższym wspólnym podciągiem:}
+	\\
+	\newline
+	\hspace{5pt} Działanie zostało sprawdzone na przykładowych ciągach znaków: "\textit{\textbf{komputer}} " oraz "\textit{\textbf{komputerami}}". Ich najdłuższy wspólny podciąg to "\textbf{\color{red} komputer}". Sprawdzimy zatem ich działanie zaimplementowanego w ćwiczeniu algorytmu:
+	\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{./wariant1komputer}
+\caption{Wariant 1}
+\label{Wariant 1}
+\end{figure}
+	\newpage
+	
+	\item[-] \textbf{Wariant z dwoma możliwymi najdłuższymi wspólnymi podciągami (gdy idziemy od ostatniego elementu w górę, lub w lewo:}\\
+	\newline
+\hspace{5pt} Działanie zostało sprawdzone na przykładowych ciągach znaków: \textit{\textbf{giggiiggg}} oraz \textit{\textbf{igigi}}. Ich najdłuższy wspólny podciąg to \textbf{\color{red} igig} oraz \textbf{\color{red} gigi}. Sprawdzimy zatem ich działanie zaimplementowanego w ćwiczeniu algorytmu: \\
+\newline
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{./wariant2igig}
+\caption{Wariant 2}
+\label{Wariant 2}
+\end{figure}
+\newpage
+\item[-] \textbf{Wariant z brakiem wspólnego podciągu:}\\
+\newline
+\hspace{5pt} Działanie zostało sprawdzone na przykładowych ciągach znaków: \textit{\textbf{abcdef}} oraz \textit{\textbf{ghijkl}}. Sprawdzimy działanie zaimplementowanego w ćwiczeniu algorytmu:
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{./wariant3brak}
+\caption{Wariant 3}
+\label{Wariant 3}
+\end{figure}
+\end{itemize}
+	
+	
+	
+\begin{large}
+	\textbf{4. Wnioski: \\}
+	\newline
+	\end{large}
+\textbf{-} Wyniki testu potwierdzają poprawność działania zaimplementowanych funkcji \textbf{NWP}.
+\begin{flushleft}
+\textbf{-} Ćwiczenie pokazuje, że algorytm NWP może być przydatny w kontrolowaniu wersji dokumentów, książek czy też wykrywaniu plagiatów. \newline
+ 
+\textbf{-} Przy dużych rozmiarach ciągów uwidacznia się stosunkowo duża złożoność czasowa algorytmu $\mathcal{O}(n*m)$, gdzie n i m to długości zadanych ciągów znaków .\newline
+ 
+\textbf{-} Algorytm wyszukuje wspólny najdłuższy podciąg, nawet jeśli elementy ciągów zadanych nie leżą obok siebie. Nie wolno go zatem mylić z algorytmem \textit{ najdłuższego wspólnego podłańcucha}. \newline
+ \end{flushleft} 
+
+\end{document}

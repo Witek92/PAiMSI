@@ -1,33 +1,39 @@
-/*! \mainpage POPRAWIONA Dokumentacja zadania PAMSI lab 7
+#include "NWP.h"
+/*! \mainpage Dokumentacja zadania PAMSI lab 10
  *
  * \author Witold Zimnicki
  * \date 25.5.2014
  * 
  */
+ 
 
-
-#include "operacja.h"
-#include <ctime>
-#include<iostream>
-
-using namespace std;
-
-/*! \brief Funkcja main wykonuje zapelnianie tablicy haszujacej oraz drzewa binarnego + mierzy czasy.
+/*! \brief Funkcja main wykonujaca algorytm NWP.
 
 W funkcji main wykonywane sa nastepujace operacje:
 
-- Tworzony jest obiekt klasy Operacja
-- Uruchamiany jest interfejs i mozliwe jest wybranie ilosci zestawow, ktore chcemy dodac do struktur danych.
+- Na wejscie standardowe podawany jest pierwszy ciag znakow.
+- Na wejscie standardowe podadawany jest drugi ciag znakow do porownania.
+- Tworzony jest obiekt klasy NWP.
+- Liczona jest dlugosc najdluzszego wspolnego podciagu i wyswietlona zostaje macierz pracy.
+- Wyswietlane sa wszystkie mozliwe najdluzsze wspolne podciagi.
 
 */
-
 int main()
 {
-	Operacja Zapelnianie;
-	Zapelnianie.Dzialaj();
+	string a,b;
+	cout<<endl<<"PODAJ PIERWSZE SLOWO (w macierzy, znaki przy osi wierszy):"<<endl;
+	cin>>a;
+	cout<<endl<<"PODAJ DRUGIE SLOWO (w macierzy, znaki przy osi kolumn):"<<endl;
+	cin>>b;
+	cout<<endl;
+	NWP podciag(a,b);
+	int liczba=podciag.PoliczDlugoscPodciagu();
+	cout<<endl<<"DLUGOSC NAJDLUZSZEGO WSPOLNEGO PODCIAGU: "<<endl<<liczba<<endl;
+	cout<<endl;
+	podciag.WyswietlNajdluzszyPodciag();
 
-	
-
- system("PAUSE");
- return 0;
+	system("PAUSE");
+	return 0;
 }
+
+

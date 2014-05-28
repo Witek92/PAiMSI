@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>PAMSIlab10: Dokumentacja pliku C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project51PAMSIlab10/Project51PAMSIlab10/main.cpp</title>
+<title>PAMSIlab10: Plik źródłowy C:/Users/Witek/Documents/Visual Studio 2012/Projects/Project51PAMSIlab10/Project51PAMSIlab10/NWP.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,49 +82,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Funkcje</a>  </div>
   <div class="headertitle">
-<div class="title">Dokumentacja pliku main.cpp</div>  </div>
+<div class="title">NWP.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_n_w_p_8h_source.html">NWP.h</a>&quot;</code><br/>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
-Funkcje</h2></td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja main wykonujaca algorytm <a class="el" href="class_n_w_p.html">NWP</a>.  <a href="#ae66f6b31b5ad750f1fe042a706a4e3d4"></a><br/></td></tr>
-</table>
-<h2>Dokumentacja funkcji</h2>
-<a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int main </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Funkcja main wykonujaca algorytm <a class="el" href="class_n_w_p.html">NWP</a>. </p>
-<p>W funkcji main wykonywane sa nastepujace operacje:</p>
-<ul>
-<li>Na wejscie standardowe podawany jest pierwszy ciag znakow.</li>
-<li>Na wejscie standardowe podadawany jest drugi ciag znakow do porownania.</li>
-<li>Tworzony jest obiekt klasy <a class="el" href="class_n_w_p.html">NWP</a>.</li>
-<li>Liczona jest dlugosc najdluzszego wspolnego podciagu i wyswietlona zostaje macierz pracy.</li>
-<li>Wyswietlane sa wszystkie mozliwe najdluzsze wspolne podciagi. </li>
-</ul>
-
-</div>
-</div>
-</div><!-- contents -->
+<a href="_n_w_p_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NWP_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NWP_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="class_n_w_p.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_n_w_p.html">NWP</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">int</span> **C;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">void</span> WyswietlC();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">int</span> m,n;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">string</span> X,Y;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">int</span> max(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_n_w_p.html">NWP</a>(<span class="keywordtype">string</span> x, <span class="keywordtype">string</span> y);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="class_n_w_p.html">NWP</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">int</span> PoliczDlugoscPodciagu();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> WyswietlNajdluzszyPodciag();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano Śr, 28 maj 2014 18:58:03 dla PAMSIlab10 programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano Śr, 28 maj 2014 18:58:02 dla PAMSIlab10 programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
