@@ -1,0 +1,8 @@
+<map id="Interfejs" name="Interfejs">
+<area shape="rect" id="node2" href="$class_g_r_a.html" title="Modeluje pojecie GRA." alt="" coords="5,197,56,227"/>
+<area shape="rect" id="node8" href="$class_c_p_u.html" title="Modeluje pojecie CPU." alt="" coords="80,293,131,323"/>
+<area shape="rect" id="node4" href="$class_talia.html" title="Modeluje pojecie Talia." alt="" coords="12,101,63,131"/>
+<area shape="rect" id="node6" href="$class_karta.html" title="Modeluje pojecie Karta." alt="" coords="55,5,108,35"/>
+<area shape="rect" id="node13" href="$class_zestaw.html" title="Modeluje pojecie Zestaw." alt="" coords="89,101,153,131"/>
+<area shape="rect" id="node11" href="$class_gracz.html" title="Modeluje pojecie Gracz." alt="" coords="97,197,153,227"/>
+</map>

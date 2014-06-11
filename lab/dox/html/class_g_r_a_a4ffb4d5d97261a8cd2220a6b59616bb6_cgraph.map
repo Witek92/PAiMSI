@@ -1,0 +1,5 @@
+<map id="GRA::Wymiana" name="GRA::Wymiana">
+<area shape="rect" id="node3" href="$class_g_r_a.html#a532269809ccd27cde2c8a7822bfc1a43" title="Metoda wyswietla instrukcje." alt="" coords="168,5,339,35"/>
+<area shape="rect" id="node5" href="$class_g_r_a.html#a99c72e824c90f1bdbb34626e67d83c15" title="Metoda pobiera nowa karte z talii 52 kart." alt="" coords="200,59,307,88"/>
+<area shape="rect" id="node7" href="$class_talia.html#a7ed9525f83b4260dacc192cffca859d5" title="Metoda pobiera karte z talii." alt="" coords="387,59,520,88"/>
+</map>

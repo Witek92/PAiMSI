@@ -1,0 +1,56 @@
+.TH "Zestaw" 3 "Śr, 11 cze 2014" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Zestaw \- 
+.PP
+Modeluje pojecie \fBZestaw\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <zestaw\&.h>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "void \fBZapiszIloscGraczy\fP (int ilosc)"
+.br
+.RI "\fIMetoda ktora zapisuje ile graczy bedzie bralo udzial w grze\&. \fP"
+.ti -1c
+.RI "\fBZestaw\fP & \fBoperator=\fP (\fBZestaw\fP zestawik)"
+.br
+.RI "\fIPrzeciazenie operatora = , potrzebne do przypisania jednego zestawu drugiemu\&. \fP"
+.in -1c
+.SS "Atrybuty publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBKarta\fP \fB_Zestaw\fP [5]"
+.br
+.RI "\fIObiekt typu \fBKarta\fP zawierajacy zestaw 5 kart dla gracza\&. \fP"
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa modeluje pojecie zestaw\&. 
+.PP
+Definicja w linii 19 pliku zestaw\&.h\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "\fBZestaw\fP & Zestaw::operator= (\fBZestaw\fPzestawik)"
+
+.PP
+Definicja w linii 30 pliku zestaw\&.cpp\&.
+.SS "void Zestaw::ZapiszIloscGraczy (intilosc)"
+
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "\fBKarta\fP Zestaw::_Zestaw[5]"
+
+.PP
+Definicja w linii 25 pliku zestaw\&.h\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla My Project\&.

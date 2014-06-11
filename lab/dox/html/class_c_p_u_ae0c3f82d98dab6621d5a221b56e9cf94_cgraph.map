@@ -1,0 +1,7 @@
+<map id="CPU::WymianaDla2" name="CPU::WymianaDla2">
+<area shape="rect" id="node3" href="$class_g_r_a.html#a532c7c083060d7c846ac159b1f5c3f81" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="195,56,320,85"/>
+<area shape="rect" id="node10" href="$class_g_r_a.html#a99c72e824c90f1bdbb34626e67d83c15" title="Metoda pobiera nowa karte z talii 52 kart." alt="" coords="204,109,311,139"/>
+<area shape="rect" id="node5" href="$class_g_r_a.html#a2f160ac8a217e52308423ddc950488d5" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="372,5,497,35"/>
+<area shape="rect" id="node7" href="$class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="549,32,720,61"/>
+<area shape="rect" id="node12" href="$class_talia.html#a7ed9525f83b4260dacc192cffca859d5" title="Metoda pobiera karte z talii." alt="" coords="368,109,501,139"/>
+</map>

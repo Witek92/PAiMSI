@@ -1,0 +1,7 @@
+<map id="CPU" name="CPU">
+<area shape="rect" id="node2" href="$class_g_r_a.html" title="Modeluje pojecie GRA." alt="" coords="5,197,56,227"/>
+<area shape="rect" id="node4" href="$class_talia.html" title="Modeluje pojecie Talia." alt="" coords="8,101,59,131"/>
+<area shape="rect" id="node6" href="$class_karta.html" title="Modeluje pojecie Karta." alt="" coords="51,5,104,35"/>
+<area shape="rect" id="node10" href="$class_zestaw.html" title="Modeluje pojecie Zestaw." alt="" coords="85,101,149,131"/>
+<area shape="rect" id="node8" href="$class_gracz.html" title="Modeluje pojecie Gracz." alt="" coords="88,197,144,227"/>
+</map>

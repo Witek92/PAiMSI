@@ -1,0 +1,815 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>My Project: Dokumentacja klasy CPU</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-attribs">Atrybuty publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_c_p_u-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy CPU</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Modeluje pojecie <a class="el" href="class_c_p_u.html" title="Modeluje pojecie CPU.">CPU</a>.  
+ <a href="class_c_p_u.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_c_p_u_8h_source.html">CPU.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram współpracy dla CPU:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u__coll__graph.png" border="0" usemap="#_c_p_u_coll__map" alt="Collaboration graph"/></div>
+<map name="_c_p_u_coll__map" id="_c_p_u_coll__map">
+<area shape="rect" id="node2" href="class_g_r_a.html" title="Modeluje pojecie GRA." alt="" coords="5,197,56,227"/><area shape="rect" id="node4" href="class_talia.html" title="Modeluje pojecie Talia." alt="" coords="8,101,59,131"/><area shape="rect" id="node6" href="class_karta.html" title="Modeluje pojecie Karta." alt="" coords="51,5,104,35"/><area shape="rect" id="node10" href="class_zestaw.html" title="Modeluje pojecie Zestaw." alt="" coords="85,101,149,131"/><area shape="rect" id="node8" href="class_gracz.html" title="Modeluje pojecie Gracz." alt="" coords="88,197,144,227"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:aca73986a06413986e1569e81ae475913"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#aca73986a06413986e1569e81ae475913">Wymiana</a> (<a class="el" href="class_g_r_a.html">GRA</a> &amp;Game)</td></tr>
+<tr class="memdesc:aca73986a06413986e1569e81ae475913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wymiany kart dla komputera.Jesli bd wymienial to co bd wymienial.  <a href="#aca73986a06413986e1569e81ae475913">Więcej...</a><br/></td></tr>
+<tr class="separator:aca73986a06413986e1569e81ae475913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fdd8153d0979ccad9ed8452897267f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a2fdd8153d0979ccad9ed8452897267f4">CPU</a> ()</td></tr>
+<tr class="memdesc:a2fdd8153d0979ccad9ed8452897267f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizuje konstruktor.  <a href="#a2fdd8153d0979ccad9ed8452897267f4">Więcej...</a><br/></td></tr>
+<tr class="separator:a2fdd8153d0979ccad9ed8452897267f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a7a17a7c732fda55456f2d929839cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#ab5a7a17a7c732fda55456f2d929839cd">CPU</a> (string nazwa)</td></tr>
+<tr class="memdesc:ab5a7a17a7c732fda55456f2d929839cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda nadaje nazwe graczowi z komputera.  <a href="#ab5a7a17a7c732fda55456f2d929839cd">Więcej...</a><br/></td></tr>
+<tr class="separator:ab5a7a17a7c732fda55456f2d929839cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400f9910fc72454497684731380621bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a400f9910fc72454497684731380621bd">CoBedzieWymienial</a> (<a class="el" href="class_g_r_a.html">GRA</a> &amp;Game)</td></tr>
+<tr class="memdesc:a400f9910fc72454497684731380621bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart.  <a href="#a400f9910fc72454497684731380621bd">Więcej...</a><br/></td></tr>
+<tr class="separator:a400f9910fc72454497684731380621bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60fa4d2a96e91be88c4550505f6614ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a60fa4d2a96e91be88c4550505f6614ed">Decyzja</a> (<a class="el" href="class_g_r_a.html">GRA</a> &amp;Game)</td></tr>
+<tr class="memdesc:a60fa4d2a96e91be88c4550505f6614ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda odpowiadajaca za decyzje gracza : -podbija/czeka -przebija -pasuje.  <a href="#a60fa4d2a96e91be88c4550505f6614ed">Więcej...</a><br/></td></tr>
+<tr class="separator:a60fa4d2a96e91be88c4550505f6614ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6902858786d30ae35d2c7a3d9e29b0f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a6902858786d30ae35d2c7a3d9e29b0f5">DecyzjaZCzekaniem</a> (<a class="el" href="class_g_r_a.html">GRA</a> &amp;Game)</td></tr>
+<tr class="memdesc:a6902858786d30ae35d2c7a3d9e29b0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda odpowiadajaca za decyzje gracza z czekaniem.  <a href="#a6902858786d30ae35d2c7a3d9e29b0f5">Więcej...</a><br/></td></tr>
+<tr class="separator:a6902858786d30ae35d2c7a3d9e29b0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d619927e12bcf71bbc30ad44ba3fada"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a2d619927e12bcf71bbc30ad44ba3fada">CoObstawi</a> (<a class="el" href="class_g_r_a.html">GRA</a> &amp;Game)</td></tr>
+<tr class="memdesc:a2d619927e12bcf71bbc30ad44ba3fada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda liczy uklad kart komputera i decyduje czy komputer bd pasowal,czekal czy podbijal.  <a href="#a2d619927e12bcf71bbc30ad44ba3fada">Więcej...</a><br/></td></tr>
+<tr class="separator:a2d619927e12bcf71bbc30ad44ba3fada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atrybuty publiczne</h2></td></tr>
+<tr class="memitem:a6530a4639d59e54a02ead99b6477f486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gracz.html">Gracz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a6530a4639d59e54a02ead99b6477f486">Komputer</a></td></tr>
+<tr class="memdesc:a6530a4639d59e54a02ead99b6477f486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy obiekt typu <a class="el" href="class_gracz.html" title="Modeluje pojecie Gracz.">Gracz</a>.  <a href="#a6530a4639d59e54a02ead99b6477f486">Więcej...</a><br/></td></tr>
+<tr class="separator:a6530a4639d59e54a02ead99b6477f486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa02aad3d7238ef5d8908319c02836f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_g_r_a.html">GRA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#aaa02aad3d7238ef5d8908319c02836f0">Gierka</a></td></tr>
+<tr class="memdesc:aaa02aad3d7238ef5d8908319c02836f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy obiekt typu <a class="el" href="class_g_r_a.html" title="Modeluje pojecie GRA.">GRA</a>.  <a href="#aaa02aad3d7238ef5d8908319c02836f0">Więcej...</a><br/></td></tr>
+<tr class="separator:aaa02aad3d7238ef5d8908319c02836f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:ae28436e9e40e05d897bcdc3f5f137de9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#ae28436e9e40e05d897bcdc3f5f137de9">CzyBedzieWymienial</a> (<a class="el" href="class_g_r_a.html">GRA</a> &amp;Game)</td></tr>
+<tr class="memdesc:ae28436e9e40e05d897bcdc3f5f137de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy komputer chce wymienic karty ze swojego zestawu.  <a href="#ae28436e9e40e05d897bcdc3f5f137de9">Więcej...</a><br/></td></tr>
+<tr class="separator:ae28436e9e40e05d897bcdc3f5f137de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeb4244b31bbdfb59c0ad7f9b51d0e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a9eeb4244b31bbdfb59c0ad7f9b51d0e6">WymianaDla0</a> (<a class="el" href="class_g_r_a.html">GRA</a> &amp;Game)</td></tr>
+<tr class="memdesc:a9eeb4244b31bbdfb59c0ad7f9b51d0e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wymiany kart dla komputera z ukladem 0 ( nie ma par ,trojek ,fulla, strita itd.)  <a href="#a9eeb4244b31bbdfb59c0ad7f9b51d0e6">Więcej...</a><br/></td></tr>
+<tr class="separator:a9eeb4244b31bbdfb59c0ad7f9b51d0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996ad643815fb962ffc60c543efdb4bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a996ad643815fb962ffc60c543efdb4bd">WymianaDla1</a> (<a class="el" href="class_g_r_a.html">GRA</a> &amp;Game)</td></tr>
+<tr class="memdesc:a996ad643815fb962ffc60c543efdb4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wymiany kart dla komputera z ukladem 1(czyli dla jednej pary)  <a href="#a996ad643815fb962ffc60c543efdb4bd">Więcej...</a><br/></td></tr>
+<tr class="separator:a996ad643815fb962ffc60c543efdb4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c3f82d98dab6621d5a221b56e9cf94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#ae0c3f82d98dab6621d5a221b56e9cf94">WymianaDla2</a> (<a class="el" href="class_g_r_a.html">GRA</a> &amp;Game)</td></tr>
+<tr class="memdesc:ae0c3f82d98dab6621d5a221b56e9cf94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wymiany kart dla komputera z ukladem 2 (czyli dla dw�ch par)  <a href="#ae0c3f82d98dab6621d5a221b56e9cf94">Więcej...</a><br/></td></tr>
+<tr class="separator:ae0c3f82d98dab6621d5a221b56e9cf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173d904de6429cec82d21bc47260e73b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a173d904de6429cec82d21bc47260e73b">WymianaDla3</a> (<a class="el" href="class_g_r_a.html">GRA</a> &amp;Game)</td></tr>
+<tr class="memdesc:a173d904de6429cec82d21bc47260e73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wymiany kart dla komputera z ukladem 3(czyli dla trojki)  <a href="#a173d904de6429cec82d21bc47260e73b">Więcej...</a><br/></td></tr>
+<tr class="separator:a173d904de6429cec82d21bc47260e73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07d6b432de3847e0b3e9f953e54dca1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#ab07d6b432de3847e0b3e9f953e54dca1">WskazindeksySlabych</a> (<a class="el" href="class_gracz.html">Gracz</a> ziomek, vector&lt; int &gt; &amp;slabe)</td></tr>
+<tr class="memdesc:ab07d6b432de3847e0b3e9f953e54dca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wskazuje indeksy slabych kart.  <a href="#ab07d6b432de3847e0b3e9f953e54dca1">Więcej...</a><br/></td></tr>
+<tr class="separator:ab07d6b432de3847e0b3e9f953e54dca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a1e17b85bb84e5e60c45334ea8e409690"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a1e17b85bb84e5e60c45334ea8e409690">random</a></td></tr>
+<tr class="memdesc:a1e17b85bb84e5e60c45334ea8e409690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna pomocnicza typu int.  <a href="#a1e17b85bb84e5e60c45334ea8e409690">Więcej...</a><br/></td></tr>
+<tr class="separator:a1e17b85bb84e5e60c45334ea8e409690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239c611d8bcd010f2b2676f22afb12d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a239c611d8bcd010f2b2676f22afb12d8">iter</a></td></tr>
+<tr class="memdesc:a239c611d8bcd010f2b2676f22afb12d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna pomocnicza typu int.  <a href="#a239c611d8bcd010f2b2676f22afb12d8">Więcej...</a><br/></td></tr>
+<tr class="separator:a239c611d8bcd010f2b2676f22afb12d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff66a069827189be5f8c64d32dc1c9d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#aff66a069827189be5f8c64d32dc1c9d5">p1</a></td></tr>
+<tr class="memdesc:aff66a069827189be5f8c64d32dc1c9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienne pomocnicze.  <a href="#aff66a069827189be5f8c64d32dc1c9d5">Więcej...</a><br/></td></tr>
+<tr class="separator:aff66a069827189be5f8c64d32dc1c9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c30767fcadc9d443d4c591c5ea9f905"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a7c30767fcadc9d443d4c591c5ea9f905">p2</a></td></tr>
+<tr class="separator:a7c30767fcadc9d443d4c591c5ea9f905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10840329e8aaacd30333e5ff973d0abc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_u.html#a10840329e8aaacd30333e5ff973d0abc">p3</a></td></tr>
+<tr class="separator:a10840329e8aaacd30333e5ff973d0abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa modeluje pojecie cpu czyli gracza komputerowego. </p>
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8h_source.html#l00018">18</a> pliku <a class="el" href="_c_p_u_8h_source.html">CPU.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a2fdd8153d0979ccad9ed8452897267f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPU::CPU </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00037">37</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5a7a17a7c732fda55456f2d929839cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPU::CPU </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nazwa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00027">27</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a400f9910fc72454497684731380621bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPU::CoBedzieWymienial </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_r_a.html">GRA</a> &amp;&#160;</td>
+          <td class="paramname"><em>Game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00058">58</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a400f9910fc72454497684731380621bd_cgraph.png" border="0" usemap="#class_c_p_u_a400f9910fc72454497684731380621bd_cgraph" alt=""/></div>
+<map name="class_c_p_u_a400f9910fc72454497684731380621bd_cgraph" id="class_c_p_u_a400f9910fc72454497684731380621bd_cgraph">
+<area shape="rect" id="node3" href="class_g_r_a.html#abfc9b5fdad9fef80496cb5b6ece66ed9" title="Metoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma." alt="" coords="235,375,371,404"/><area shape="rect" id="node21" href="class_c_p_u.html#a9eeb4244b31bbdfb59c0ad7f9b51d0e6" title="Metoda wymiany kart dla komputera z ukladem 0 ( nie ma par ,trojek ,fulla, strita itd..." alt="" coords="232,136,373,165"/><area shape="rect" id="node29" href="class_c_p_u.html#a996ad643815fb962ffc60c543efdb4bd" title="Metoda wymiany kart dla komputera z ukladem 1(czyli dla jednej pary)" alt="" coords="232,29,373,59"/><area shape="rect" id="node35" href="class_c_p_u.html#ae0c3f82d98dab6621d5a221b56e9cf94" title="Metoda wymiany kart dla komputera z ukladem 2 (czyli dla dw�ch par)" alt="" coords="232,83,373,112"/><area shape="rect" id="node42" href="class_c_p_u.html#a173d904de6429cec82d21bc47260e73b" title="Metoda wymiany kart dla komputera z ukladem 3(czyli dla trojki)" alt="" coords="232,189,373,219"/><area shape="rect" id="node5" href="class_g_r_a.html#a7c72639bade47c93f59e4d02344b29de" title="Metoda sprawdza czy jest para w zestawie kart gracza." alt="" coords="663,361,796,391"/><area shape="rect" id="node9" href="class_g_r_a.html#a83ff1a2e629b7368180f5ac0cc06fcfd" title="Metoda sprawdza czy sa dwie pary w zestawie kart gracza." alt="" coords="440,455,595,484"/><area shape="rect" id="node11" href="class_g_r_a.html#ab62696649e029ba3adc5876dee3c8fbc" title="Metoda sprawdza czy jest trojka w zestawie kart gracza." alt="" coords="445,559,589,588"/><area shape="rect" id="node13" href="class_g_r_a.html#a04dd210d0146656fd70e2d10ccdf0065" title="Metoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze)." alt="" coords="448,241,587,271"/><area shape="rect" id="node15" href="class_g_r_a.html#a3fb6dbd37229ac58c84a0b4f5403a3d6" title="Metoda sprawdza czy jest strit w zestawie kart gracza." alt="" coords="452,295,583,324"/><area shape="rect" id="node17" href="class_g_r_a.html#a4d6b5d423f0f4761d04bbb59325417fd" title="Metoda sprawdza czy jest ful w zestawie kart gracza." alt="" coords="455,348,580,377"/><area shape="rect" id="node19" href="class_g_r_a.html#a1be2bb0326db17fde5861adb676224fb" title="Metoda sprawdza czy jest czworka w zestawie kart gracza." alt="" coords="437,401,597,431"/><area shape="rect" id="node7" href="class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="845,123,1016,152"/><area shape="rect" id="node23" href="class_c_p_u.html#ab07d6b432de3847e0b3e9f953e54dca1" title="Metoda wskazuje indeksy slabych kart." alt="" coords="421,137,613,167"/><area shape="rect" id="node25" href="class_g_r_a.html#a99c72e824c90f1bdbb34626e67d83c15" title="Metoda pobiera nowa karte z talii 52 kart." alt="" coords="464,84,571,113"/><area shape="rect" id="node27" href="class_talia.html#a7ed9525f83b4260dacc192cffca859d5" title="Metoda pobiera karte z talii." alt="" coords="663,109,796,139"/><area shape="rect" id="node31" href="class_g_r_a.html#a2f160ac8a217e52308423ddc950488d5" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="667,5,792,35"/><area shape="rect" id="node37" href="class_g_r_a.html#a532c7c083060d7c846ac159b1f5c3f81" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="455,31,580,60"/><area shape="rect" id="node44" href="class_g_r_a.html#a1045d31987634f497e342a4485c7db7b" title="Metoda znajduje trojke w zestawie kart gracza." alt="" coords="663,176,796,205"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a400f9910fc72454497684731380621bd_icgraph.png" border="0" usemap="#class_c_p_u_a400f9910fc72454497684731380621bd_icgraph" alt=""/></div>
+<map name="class_c_p_u_a400f9910fc72454497684731380621bd_icgraph" id="class_c_p_u_a400f9910fc72454497684731380621bd_icgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#aca73986a06413986e1569e81ae475913" title="Metoda wymiany kart dla komputera.Jesli bd wymienial to co bd wymienial." alt="" coords="232,5,347,35"/><area shape="rect" id="node5" href="class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="396,5,527,35"/><area shape="rect" id="node7" href="class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="576,5,693,35"/><area shape="rect" id="node9" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="741,5,792,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d619927e12bcf71bbc30ad44ba3fada"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char CPU::CoObstawi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_r_a.html">GRA</a> &amp;&#160;</td>
+          <td class="paramname"><em>Game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00274">274</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada_cgraph.png" border="0" usemap="#class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada_cgraph" alt=""/></div>
+<map name="class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada_cgraph" id="class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada_cgraph">
+<area shape="rect" id="node3" href="class_g_r_a.html#abfc9b5fdad9fef80496cb5b6ece66ed9" title="Metoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma." alt="" coords="204,192,340,221"/><area shape="rect" id="node21" href="class_g_r_a.html#a532c7c083060d7c846ac159b1f5c3f81" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="209,377,335,407"/><area shape="rect" id="node27" href="class_g_r_a.html#aba14465002d4fa6440beca25bf3de2bc" title="Metoda szuka najwyzszej karty w zestawie kart gracza." alt="" coords="179,431,365,460"/><area shape="rect" id="node5" href="class_g_r_a.html#a7c72639bade47c93f59e4d02344b29de" title="Metoda sprawdza czy jest para w zestawie kart gracza." alt="" coords="427,5,560,35"/><area shape="rect" id="node9" href="class_g_r_a.html#a83ff1a2e629b7368180f5ac0cc06fcfd" title="Metoda sprawdza czy sa dwie pary w zestawie kart gracza." alt="" coords="416,59,571,88"/><area shape="rect" id="node11" href="class_g_r_a.html#ab62696649e029ba3adc5876dee3c8fbc" title="Metoda sprawdza czy jest trojka w zestawie kart gracza." alt="" coords="421,112,565,141"/><area shape="rect" id="node13" href="class_g_r_a.html#a04dd210d0146656fd70e2d10ccdf0065" title="Metoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze)." alt="" coords="424,165,563,195"/><area shape="rect" id="node15" href="class_g_r_a.html#a3fb6dbd37229ac58c84a0b4f5403a3d6" title="Metoda sprawdza czy jest strit w zestawie kart gracza." alt="" coords="428,219,559,248"/><area shape="rect" id="node17" href="class_g_r_a.html#a4d6b5d423f0f4761d04bbb59325417fd" title="Metoda sprawdza czy jest ful w zestawie kart gracza." alt="" coords="431,272,556,301"/><area shape="rect" id="node19" href="class_g_r_a.html#a1be2bb0326db17fde5861adb676224fb" title="Metoda sprawdza czy jest czworka w zestawie kart gracza." alt="" coords="413,325,573,355"/><area shape="rect" id="node7" href="class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="621,377,792,407"/><area shape="rect" id="node23" href="class_g_r_a.html#a2f160ac8a217e52308423ddc950488d5" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="431,429,556,459"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada_icgraph.png" border="0" usemap="#class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada_icgraph" alt=""/></div>
+<map name="class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada_icgraph" id="class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada_icgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#a60fa4d2a96e91be88c4550505f6614ed" title="Metoda odpowiadajaca za decyzje gracza : &#45;podbija/czeka &#45;przebija &#45;pasuje." alt="" coords="216,5,323,35"/><area shape="rect" id="node11" href="class_c_p_u.html#a6902858786d30ae35d2c7a3d9e29b0f5" title="Metoda odpowiadajaca za decyzje gracza z czekaniem." alt="" coords="179,59,360,88"/><area shape="rect" id="node5" href="class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="409,32,540,61"/><area shape="rect" id="node7" href="class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="589,32,707,61"/><area shape="rect" id="node9" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="755,32,805,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae28436e9e40e05d897bcdc3f5f137de9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CPU::CzyBedzieWymienial </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_r_a.html">GRA</a> &amp;&#160;</td>
+          <td class="paramname"><em>Game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Zwraca</dt><dd>Zwraca true lub false. </dd></dl>
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00009">9</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9_cgraph.png" border="0" usemap="#class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9_cgraph" alt=""/></div>
+<map name="class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9_cgraph" id="class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9_cgraph">
+<area shape="rect" id="node3" href="class_g_r_a.html#abfc9b5fdad9fef80496cb5b6ece66ed9" title="Metoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma." alt="" coords="237,165,373,195"/><area shape="rect" id="node5" href="class_g_r_a.html#a7c72639bade47c93f59e4d02344b29de" title="Metoda sprawdza czy jest para w zestawie kart gracza." alt="" coords="435,5,568,35"/><area shape="rect" id="node9" href="class_g_r_a.html#a83ff1a2e629b7368180f5ac0cc06fcfd" title="Metoda sprawdza czy sa dwie pary w zestawie kart gracza." alt="" coords="424,59,579,88"/><area shape="rect" id="node11" href="class_g_r_a.html#ab62696649e029ba3adc5876dee3c8fbc" title="Metoda sprawdza czy jest trojka w zestawie kart gracza." alt="" coords="429,112,573,141"/><area shape="rect" id="node13" href="class_g_r_a.html#a04dd210d0146656fd70e2d10ccdf0065" title="Metoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze)." alt="" coords="432,165,571,195"/><area shape="rect" id="node15" href="class_g_r_a.html#a3fb6dbd37229ac58c84a0b4f5403a3d6" title="Metoda sprawdza czy jest strit w zestawie kart gracza." alt="" coords="436,219,567,248"/><area shape="rect" id="node17" href="class_g_r_a.html#a4d6b5d423f0f4761d04bbb59325417fd" title="Metoda sprawdza czy jest ful w zestawie kart gracza." alt="" coords="439,272,564,301"/><area shape="rect" id="node19" href="class_g_r_a.html#a1be2bb0326db17fde5861adb676224fb" title="Metoda sprawdza czy jest czworka w zestawie kart gracza." alt="" coords="421,325,581,355"/><area shape="rect" id="node7" href="class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="629,5,800,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9_icgraph.png" border="0" usemap="#class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9_icgraph" alt=""/></div>
+<map name="class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9_icgraph" id="class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9_icgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#aca73986a06413986e1569e81ae475913" title="Metoda wymiany kart dla komputera.Jesli bd wymienial to co bd wymienial." alt="" coords="237,5,352,35"/><area shape="rect" id="node5" href="class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="401,5,532,35"/><area shape="rect" id="node7" href="class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="581,5,699,35"/><area shape="rect" id="node9" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="747,5,797,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a60fa4d2a96e91be88c4550505f6614ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPU::Decyzja </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_r_a.html">GRA</a> &amp;&#160;</td>
+          <td class="paramname"><em>Game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00196">196</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed_cgraph.png" border="0" usemap="#class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed_cgraph" alt=""/></div>
+<map name="class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed_cgraph" id="class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed_cgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#a2d619927e12bcf71bbc30ad44ba3fada" title="Metoda liczy uklad kart komputera i decyduje czy komputer bd pasowal,czekal czy podbijal." alt="" coords="161,377,284,407"/><area shape="rect" id="node5" href="class_g_r_a.html#abfc9b5fdad9fef80496cb5b6ece66ed9" title="Metoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma." alt="" coords="359,192,495,221"/><area shape="rect" id="node23" href="class_g_r_a.html#a532c7c083060d7c846ac159b1f5c3f81" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="364,377,489,407"/><area shape="rect" id="node29" href="class_g_r_a.html#aba14465002d4fa6440beca25bf3de2bc" title="Metoda szuka najwyzszej karty w zestawie kart gracza." alt="" coords="333,431,520,460"/><area shape="rect" id="node7" href="class_g_r_a.html#a7c72639bade47c93f59e4d02344b29de" title="Metoda sprawdza czy jest para w zestawie kart gracza." alt="" coords="581,5,715,35"/><area shape="rect" id="node11" href="class_g_r_a.html#a83ff1a2e629b7368180f5ac0cc06fcfd" title="Metoda sprawdza czy sa dwie pary w zestawie kart gracza." alt="" coords="571,59,725,88"/><area shape="rect" id="node13" href="class_g_r_a.html#ab62696649e029ba3adc5876dee3c8fbc" title="Metoda sprawdza czy jest trojka w zestawie kart gracza." alt="" coords="576,112,720,141"/><area shape="rect" id="node15" href="class_g_r_a.html#a04dd210d0146656fd70e2d10ccdf0065" title="Metoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze)." alt="" coords="579,165,717,195"/><area shape="rect" id="node17" href="class_g_r_a.html#a3fb6dbd37229ac58c84a0b4f5403a3d6" title="Metoda sprawdza czy jest strit w zestawie kart gracza." alt="" coords="583,219,713,248"/><area shape="rect" id="node19" href="class_g_r_a.html#a4d6b5d423f0f4761d04bbb59325417fd" title="Metoda sprawdza czy jest ful w zestawie kart gracza." alt="" coords="585,272,711,301"/><area shape="rect" id="node21" href="class_g_r_a.html#a1be2bb0326db17fde5861adb676224fb" title="Metoda sprawdza czy jest czworka w zestawie kart gracza." alt="" coords="568,325,728,355"/><area shape="rect" id="node9" href="class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="776,377,947,407"/><area shape="rect" id="node25" href="class_g_r_a.html#a2f160ac8a217e52308423ddc950488d5" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="585,429,711,459"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed_icgraph.png" border="0" usemap="#class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed_icgraph" alt=""/></div>
+<map name="class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed_icgraph" id="class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed_icgraph">
+<area shape="rect" id="node3" href="class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="161,5,292,35"/><area shape="rect" id="node5" href="class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="341,5,459,35"/><area shape="rect" id="node7" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="507,5,557,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6902858786d30ae35d2c7a3d9e29b0f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPU::DecyzjaZCzekaniem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_r_a.html">GRA</a> &amp;&#160;</td>
+          <td class="paramname"><em>Game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00311">311</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5_cgraph.png" border="0" usemap="#class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5_cgraph" alt=""/></div>
+<map name="class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5_cgraph" id="class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5_cgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#a2d619927e12bcf71bbc30ad44ba3fada" title="Metoda liczy uklad kart komputera i decyduje czy komputer bd pasowal,czekal czy podbijal." alt="" coords="236,377,359,407"/><area shape="rect" id="node5" href="class_g_r_a.html#abfc9b5fdad9fef80496cb5b6ece66ed9" title="Metoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma." alt="" coords="433,192,569,221"/><area shape="rect" id="node23" href="class_g_r_a.html#a532c7c083060d7c846ac159b1f5c3f81" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="439,377,564,407"/><area shape="rect" id="node29" href="class_g_r_a.html#aba14465002d4fa6440beca25bf3de2bc" title="Metoda szuka najwyzszej karty w zestawie kart gracza." alt="" coords="408,431,595,460"/><area shape="rect" id="node7" href="class_g_r_a.html#a7c72639bade47c93f59e4d02344b29de" title="Metoda sprawdza czy jest para w zestawie kart gracza." alt="" coords="656,5,789,35"/><area shape="rect" id="node11" href="class_g_r_a.html#a83ff1a2e629b7368180f5ac0cc06fcfd" title="Metoda sprawdza czy sa dwie pary w zestawie kart gracza." alt="" coords="645,59,800,88"/><area shape="rect" id="node13" href="class_g_r_a.html#ab62696649e029ba3adc5876dee3c8fbc" title="Metoda sprawdza czy jest trojka w zestawie kart gracza." alt="" coords="651,112,795,141"/><area shape="rect" id="node15" href="class_g_r_a.html#a04dd210d0146656fd70e2d10ccdf0065" title="Metoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze)." alt="" coords="653,165,792,195"/><area shape="rect" id="node17" href="class_g_r_a.html#a3fb6dbd37229ac58c84a0b4f5403a3d6" title="Metoda sprawdza czy jest strit w zestawie kart gracza." alt="" coords="657,219,788,248"/><area shape="rect" id="node19" href="class_g_r_a.html#a4d6b5d423f0f4761d04bbb59325417fd" title="Metoda sprawdza czy jest ful w zestawie kart gracza." alt="" coords="660,272,785,301"/><area shape="rect" id="node21" href="class_g_r_a.html#a1be2bb0326db17fde5861adb676224fb" title="Metoda sprawdza czy jest czworka w zestawie kart gracza." alt="" coords="643,325,803,355"/><area shape="rect" id="node9" href="class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="851,377,1021,407"/><area shape="rect" id="node25" href="class_g_r_a.html#a2f160ac8a217e52308423ddc950488d5" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="660,429,785,459"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5_icgraph.png" border="0" usemap="#class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5_icgraph" alt=""/></div>
+<map name="class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5_icgraph" id="class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5_icgraph">
+<area shape="rect" id="node3" href="class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="236,5,367,35"/><area shape="rect" id="node5" href="class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="416,5,533,35"/><area shape="rect" id="node7" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="581,5,632,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab07d6b432de3847e0b3e9f953e54dca1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPU::WskazindeksySlabych </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_gracz.html">Gracz</a>&#160;</td>
+          <td class="paramname"><em>ziomek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>slabe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00134">134</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_ab07d6b432de3847e0b3e9f953e54dca1_icgraph.png" border="0" usemap="#class_c_p_u_ab07d6b432de3847e0b3e9f953e54dca1_icgraph" alt=""/></div>
+<map name="class_c_p_u_ab07d6b432de3847e0b3e9f953e54dca1_icgraph" id="class_c_p_u_ab07d6b432de3847e0b3e9f953e54dca1_icgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#a9eeb4244b31bbdfb59c0ad7f9b51d0e6" title="Metoda wymiany kart dla komputera z ukladem 0 ( nie ma par ,trojek ,fulla, strita itd..." alt="" coords="245,5,387,35"/><area shape="rect" id="node5" href="class_c_p_u.html#a400f9910fc72454497684731380621bd" title="Metoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart..." alt="" coords="436,5,612,35"/><area shape="rect" id="node7" href="class_c_p_u.html#aca73986a06413986e1569e81ae475913" title="Metoda wymiany kart dla komputera.Jesli bd wymienial to co bd wymienial." alt="" coords="661,5,776,35"/><area shape="rect" id="node9" href="class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="825,5,956,35"/><area shape="rect" id="node11" href="class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="1005,5,1123,35"/><area shape="rect" id="node13" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1171,5,1221,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aca73986a06413986e1569e81ae475913"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPU::Wymiana </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_r_a.html">GRA</a> &amp;&#160;</td>
+          <td class="paramname"><em>Game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00046">46</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_aca73986a06413986e1569e81ae475913_cgraph.png" border="0" usemap="#class_c_p_u_aca73986a06413986e1569e81ae475913_cgraph" alt=""/></div>
+<map name="class_c_p_u_aca73986a06413986e1569e81ae475913_cgraph" id="class_c_p_u_aca73986a06413986e1569e81ae475913_cgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#ae28436e9e40e05d897bcdc3f5f137de9" title="Sprawdza czy komputer chce wymienic karty ze swojego zestawu." alt="" coords="168,271,352,300"/><area shape="rect" id="node23" href="class_c_p_u.html#a400f9910fc72454497684731380621bd" title="Metoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart..." alt="" coords="172,401,348,431"/><area shape="rect" id="node5" href="class_g_r_a.html#abfc9b5fdad9fef80496cb5b6ece66ed9" title="Metoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma." alt="" coords="403,219,539,248"/><area shape="rect" id="node7" href="class_g_r_a.html#a7c72639bade47c93f59e4d02344b29de" title="Metoda sprawdza czy jest para w zestawie kart gracza." alt="" coords="831,324,964,353"/><area shape="rect" id="node11" href="class_g_r_a.html#a83ff1a2e629b7368180f5ac0cc06fcfd" title="Metoda sprawdza czy sa dwie pary w zestawie kart gracza." alt="" coords="608,165,763,195"/><area shape="rect" id="node13" href="class_g_r_a.html#ab62696649e029ba3adc5876dee3c8fbc" title="Metoda sprawdza czy jest trojka w zestawie kart gracza." alt="" coords="613,219,757,248"/><area shape="rect" id="node15" href="class_g_r_a.html#a04dd210d0146656fd70e2d10ccdf0065" title="Metoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze)." alt="" coords="616,272,755,301"/><area shape="rect" id="node17" href="class_g_r_a.html#a3fb6dbd37229ac58c84a0b4f5403a3d6" title="Metoda sprawdza czy jest strit w zestawie kart gracza." alt="" coords="620,5,751,35"/><area shape="rect" id="node19" href="class_g_r_a.html#a4d6b5d423f0f4761d04bbb59325417fd" title="Metoda sprawdza czy jest ful w zestawie kart gracza." alt="" coords="623,59,748,88"/><area shape="rect" id="node21" href="class_g_r_a.html#a1be2bb0326db17fde5861adb676224fb" title="Metoda sprawdza czy jest czworka w zestawie kart gracza." alt="" coords="605,112,765,141"/><area shape="rect" id="node9" href="class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="1013,404,1184,433"/><area shape="rect" id="node26" href="class_c_p_u.html#a9eeb4244b31bbdfb59c0ad7f9b51d0e6" title="Metoda wymiany kart dla komputera z ukladem 0 ( nie ma par ,trojek ,fulla, strita itd..." alt="" coords="400,481,541,511"/><area shape="rect" id="node34" href="class_c_p_u.html#a996ad643815fb962ffc60c543efdb4bd" title="Metoda wymiany kart dla komputera z ukladem 1(czyli dla jednej pary)" alt="" coords="400,375,541,404"/><area shape="rect" id="node40" href="class_c_p_u.html#ae0c3f82d98dab6621d5a221b56e9cf94" title="Metoda wymiany kart dla komputera z ukladem 2 (czyli dla dw�ch par)" alt="" coords="400,428,541,457"/><area shape="rect" id="node47" href="class_c_p_u.html#a173d904de6429cec82d21bc47260e73b" title="Metoda wymiany kart dla komputera z ukladem 3(czyli dla trojki)" alt="" coords="400,535,541,564"/><area shape="rect" id="node28" href="class_c_p_u.html#ab07d6b432de3847e0b3e9f953e54dca1" title="Metoda wskazuje indeksy slabych kart." alt="" coords="589,533,781,563"/><area shape="rect" id="node30" href="class_g_r_a.html#a99c72e824c90f1bdbb34626e67d83c15" title="Metoda pobiera nowa karte z talii 52 kart." alt="" coords="632,480,739,509"/><area shape="rect" id="node32" href="class_talia.html#a7ed9525f83b4260dacc192cffca859d5" title="Metoda pobiera karte z talii." alt="" coords="831,481,964,511"/><area shape="rect" id="node36" href="class_g_r_a.html#a2f160ac8a217e52308423ddc950488d5" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="835,377,960,407"/><area shape="rect" id="node42" href="class_g_r_a.html#a532c7c083060d7c846ac159b1f5c3f81" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="623,427,748,456"/><area shape="rect" id="node49" href="class_g_r_a.html#a1045d31987634f497e342a4485c7db7b" title="Metoda znajduje trojke w zestawie kart gracza." alt="" coords="831,560,964,589"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_aca73986a06413986e1569e81ae475913_icgraph.png" border="0" usemap="#class_c_p_u_aca73986a06413986e1569e81ae475913_icgraph" alt=""/></div>
+<map name="class_c_p_u_aca73986a06413986e1569e81ae475913_icgraph" id="class_c_p_u_aca73986a06413986e1569e81ae475913_icgraph">
+<area shape="rect" id="node3" href="class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="169,5,300,35"/><area shape="rect" id="node5" href="class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="349,5,467,35"/><area shape="rect" id="node7" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="515,5,565,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9eeb4244b31bbdfb59c0ad7f9b51d0e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPU::WymianaDla0 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_r_a.html">GRA</a> &amp;&#160;</td>
+          <td class="paramname"><em>Game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00120">120</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6_cgraph.png" border="0" usemap="#class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6_cgraph" alt=""/></div>
+<map name="class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6_cgraph" id="class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6_cgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#ab07d6b432de3847e0b3e9f953e54dca1" title="Metoda wskazuje indeksy slabych kart." alt="" coords="195,5,387,35"/><area shape="rect" id="node5" href="class_g_r_a.html#a99c72e824c90f1bdbb34626e67d83c15" title="Metoda pobiera nowa karte z talii 52 kart." alt="" coords="237,59,344,88"/><area shape="rect" id="node7" href="class_talia.html#a7ed9525f83b4260dacc192cffca859d5" title="Metoda pobiera karte z talii." alt="" coords="435,59,568,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6_icgraph.png" border="0" usemap="#class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6_icgraph" alt=""/></div>
+<map name="class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6_icgraph" id="class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6_icgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#a400f9910fc72454497684731380621bd" title="Metoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart..." alt="" coords="196,5,372,35"/><area shape="rect" id="node5" href="class_c_p_u.html#aca73986a06413986e1569e81ae475913" title="Metoda wymiany kart dla komputera.Jesli bd wymienial to co bd wymienial." alt="" coords="421,5,536,35"/><area shape="rect" id="node7" href="class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="585,5,716,35"/><area shape="rect" id="node9" href="class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="765,5,883,35"/><area shape="rect" id="node11" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="931,5,981,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a996ad643815fb962ffc60c543efdb4bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPU::WymianaDla1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_r_a.html">GRA</a> &amp;&#160;</td>
+          <td class="paramname"><em>Game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00148">148</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a996ad643815fb962ffc60c543efdb4bd_cgraph.png" border="0" usemap="#class_c_p_u_a996ad643815fb962ffc60c543efdb4bd_cgraph" alt=""/></div>
+<map name="class_c_p_u_a996ad643815fb962ffc60c543efdb4bd_cgraph" id="class_c_p_u_a996ad643815fb962ffc60c543efdb4bd_cgraph">
+<area shape="rect" id="node3" href="class_g_r_a.html#a2f160ac8a217e52308423ddc950488d5" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="195,5,320,35"/><area shape="rect" id="node7" href="class_g_r_a.html#a99c72e824c90f1bdbb34626e67d83c15" title="Metoda pobiera nowa karte z talii 52 kart." alt="" coords="204,59,311,88"/><area shape="rect" id="node5" href="class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="368,5,539,35"/><area shape="rect" id="node9" href="class_talia.html#a7ed9525f83b4260dacc192cffca859d5" title="Metoda pobiera karte z talii." alt="" coords="387,59,520,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a996ad643815fb962ffc60c543efdb4bd_icgraph.png" border="0" usemap="#class_c_p_u_a996ad643815fb962ffc60c543efdb4bd_icgraph" alt=""/></div>
+<map name="class_c_p_u_a996ad643815fb962ffc60c543efdb4bd_icgraph" id="class_c_p_u_a996ad643815fb962ffc60c543efdb4bd_icgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#a400f9910fc72454497684731380621bd" title="Metoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart..." alt="" coords="196,5,372,35"/><area shape="rect" id="node5" href="class_c_p_u.html#aca73986a06413986e1569e81ae475913" title="Metoda wymiany kart dla komputera.Jesli bd wymienial to co bd wymienial." alt="" coords="421,5,536,35"/><area shape="rect" id="node7" href="class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="585,5,716,35"/><area shape="rect" id="node9" href="class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="765,5,883,35"/><area shape="rect" id="node11" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="931,5,981,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0c3f82d98dab6621d5a221b56e9cf94"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPU::WymianaDla2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_r_a.html">GRA</a> &amp;&#160;</td>
+          <td class="paramname"><em>Game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00168">168</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94_cgraph.png" border="0" usemap="#class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94_cgraph" alt=""/></div>
+<map name="class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94_cgraph" id="class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94_cgraph">
+<area shape="rect" id="node3" href="class_g_r_a.html#a532c7c083060d7c846ac159b1f5c3f81" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="195,56,320,85"/><area shape="rect" id="node10" href="class_g_r_a.html#a99c72e824c90f1bdbb34626e67d83c15" title="Metoda pobiera nowa karte z talii 52 kart." alt="" coords="204,109,311,139"/><area shape="rect" id="node5" href="class_g_r_a.html#a2f160ac8a217e52308423ddc950488d5" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="372,5,497,35"/><area shape="rect" id="node7" href="class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="549,32,720,61"/><area shape="rect" id="node12" href="class_talia.html#a7ed9525f83b4260dacc192cffca859d5" title="Metoda pobiera karte z talii." alt="" coords="368,109,501,139"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94_icgraph.png" border="0" usemap="#class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94_icgraph" alt=""/></div>
+<map name="class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94_icgraph" id="class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94_icgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#a400f9910fc72454497684731380621bd" title="Metoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart..." alt="" coords="196,5,372,35"/><area shape="rect" id="node5" href="class_c_p_u.html#aca73986a06413986e1569e81ae475913" title="Metoda wymiany kart dla komputera.Jesli bd wymienial to co bd wymienial." alt="" coords="421,5,536,35"/><area shape="rect" id="node7" href="class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="585,5,716,35"/><area shape="rect" id="node9" href="class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="765,5,883,35"/><area shape="rect" id="node11" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="931,5,981,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a173d904de6429cec82d21bc47260e73b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPU::WymianaDla3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_r_a.html">GRA</a> &amp;&#160;</td>
+          <td class="paramname"><em>Game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8cpp_source.html#l00182">182</a> pliku <a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a173d904de6429cec82d21bc47260e73b_cgraph.png" border="0" usemap="#class_c_p_u_a173d904de6429cec82d21bc47260e73b_cgraph" alt=""/></div>
+<map name="class_c_p_u_a173d904de6429cec82d21bc47260e73b_cgraph" id="class_c_p_u_a173d904de6429cec82d21bc47260e73b_cgraph">
+<area shape="rect" id="node3" href="class_g_r_a.html#a1045d31987634f497e342a4485c7db7b" title="Metoda znajduje trojke w zestawie kart gracza." alt="" coords="196,5,329,35"/><area shape="rect" id="node7" href="class_g_r_a.html#a99c72e824c90f1bdbb34626e67d83c15" title="Metoda pobiera nowa karte z talii 52 kart." alt="" coords="209,59,316,88"/><area shape="rect" id="node5" href="class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="379,5,549,35"/><area shape="rect" id="node9" href="class_talia.html#a7ed9525f83b4260dacc192cffca859d5" title="Metoda pobiera karte z talii." alt="" coords="397,59,531,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_u_a173d904de6429cec82d21bc47260e73b_icgraph.png" border="0" usemap="#class_c_p_u_a173d904de6429cec82d21bc47260e73b_icgraph" alt=""/></div>
+<map name="class_c_p_u_a173d904de6429cec82d21bc47260e73b_icgraph" id="class_c_p_u_a173d904de6429cec82d21bc47260e73b_icgraph">
+<area shape="rect" id="node3" href="class_c_p_u.html#a400f9910fc72454497684731380621bd" title="Metoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart..." alt="" coords="196,5,372,35"/><area shape="rect" id="node5" href="class_c_p_u.html#aca73986a06413986e1569e81ae475913" title="Metoda wymiany kart dla komputera.Jesli bd wymienial to co bd wymienial." alt="" coords="421,5,536,35"/><area shape="rect" id="node7" href="class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="585,5,716,35"/><area shape="rect" id="node9" href="class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="765,5,883,35"/><area shape="rect" id="node11" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="931,5,981,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="aaa02aad3d7238ef5d8908319c02836f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_g_r_a.html">GRA</a> CPU::Gierka</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8h_source.html#l00081">81</a> pliku <a class="el" href="_c_p_u_8h_source.html">CPU.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a239c611d8bcd010f2b2676f22afb12d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CPU::iter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8h_source.html#l00055">55</a> pliku <a class="el" href="_c_p_u_8h_source.html">CPU.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6530a4639d59e54a02ead99b6477f486"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_gracz.html">Gracz</a> CPU::Komputer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8h_source.html#l00077">77</a> pliku <a class="el" href="_c_p_u_8h_source.html">CPU.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff66a069827189be5f8c64d32dc1c9d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CPU::p1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Zwraca</dt><dd>Zwracaja false lub true. </dd></dl>
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8h_source.html#l00060">60</a> pliku <a class="el" href="_c_p_u_8h_source.html">CPU.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c30767fcadc9d443d4c591c5ea9f905"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CPU::p2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8h_source.html#l00060">60</a> pliku <a class="el" href="_c_p_u_8h_source.html">CPU.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10840329e8aaacd30333e5ff973d0abc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CPU::p3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8h_source.html#l00060">60</a> pliku <a class="el" href="_c_p_u_8h_source.html">CPU.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e17b85bb84e5e60c45334ea8e409690"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CPU::random</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="_c_p_u_8h_source.html#l00050">50</a> pliku <a class="el" href="_c_p_u_8h_source.html">CPU.h</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>/home/karolina/Pulpit/Project41Poker(1)/Project41Poker/Project41Poker/prj/inc/<a class="el" href="_c_p_u_8h_source.html">CPU.h</a></li>
+<li>/home/karolina/Pulpit/Project41Poker(1)/Project41Poker/Project41Poker/prj/src/<a class="el" href="_c_p_u_8cpp_source.html">CPU.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Śr, 11 cze 2014 23:59:48 dla My Project programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,121 @@
+.TH "Gracz" 3 "Śr, 11 cze 2014" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Gracz \- 
+.PP
+Modeluje pojecie \fBGracz\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gracz\&.h>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBGracz\fP ()"
+.br
+.RI "\fIInicjalizuje konstruktor\&. \fP"
+.ti -1c
+.RI "\fBGracz\fP (string n)"
+.br
+.RI "\fIInicjalizuje konstruktor tworzacy gracza po nazwie\&. \fP"
+.ti -1c
+.RI "\fBGracz\fP & \fBoperator=\fP (\fBGracz\fP gosc)"
+.br
+.RI "\fIPrzeciazenie operatora = potrzebne do przypisania jednemu graczowi grugiego\&. \fP"
+.in -1c
+.SS "Atrybuty publiczne"
+
+.in +1c
+.ti -1c
+.RI "int \fBuklad\fP"
+.br
+.RI "\fIZmienna oznaczajaca uklad kart: 0-nic, 1-para,2-dwie pary,3-trojka,4-strit,5-kolor,6-full,7-kareta\&. \fP"
+.ti -1c
+.RI "int \fBzwyciestwo\fP"
+.br
+.RI "\fIZmienna oznaczajaca zwyciestwo\&. \fP"
+.ti -1c
+.RI "\fBZestaw\fP \fBZ\fP"
+.br
+.RI "\fIObiekt zawierajacy unikatowy zestaw gracza\&. \fP"
+.ti -1c
+.RI "string \fBnazwa\fP"
+.br
+.RI "\fIZmienna typu string przechowujaca nazwe gracza\&. \fP"
+.ti -1c
+.RI "int \fBhajs\fP"
+.br
+.RI "\fIZmienna typu int przechowujaca\&. \fP"
+.ti -1c
+.RI "int \fBobstawil\fP"
+.br
+.RI "\fIZmienna typu int przechowujaca informacje o obstawieniu pieniedzy przez gracza\&. \fP"
+.ti -1c
+.RI "bool \fBCzyPAS\fP"
+.br
+.RI "\fIMetoda sprawdza czy uzytkownik rezygnuje z dlaszej gry\&. \fP"
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa modeluje pojecie gracz\&. 
+.PP
+Definicja w linii 17 pliku gracz\&.h\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Gracz::Gracz ()"
+
+.PP
+Definicja w linii 21 pliku gracz\&.cpp\&.
+.SS "Gracz::Gracz (stringn)"
+
+.PP
+Definicja w linii 13 pliku gracz\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "\fBGracz\fP & Gracz::operator= (\fBGracz\fPgosc)"
+
+.PP
+Definicja w linii 28 pliku gracz\&.cpp\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "bool Gracz::CzyPAS"
+\fBZwraca:\fP
+.RS 4
+Zwraca true lub false\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 62 pliku gracz\&.h\&.
+.SS "int Gracz::hajs"
+
+.PP
+Definicja w linii 53 pliku gracz\&.h\&.
+.SS "string Gracz::nazwa"
+
+.PP
+Definicja w linii 37 pliku gracz\&.h\&.
+.SS "int Gracz::obstawil"
+
+.PP
+Definicja w linii 57 pliku gracz\&.h\&.
+.SS "int Gracz::uklad"
+
+.PP
+Definicja w linii 25 pliku gracz\&.h\&.
+.SS "\fBZestaw\fP Gracz::Z"
+
+.PP
+Definicja w linii 33 pliku gracz\&.h\&.
+.SS "int Gracz::zwyciestwo"
+
+.PP
+Definicja w linii 29 pliku gracz\&.h\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla My Project\&.

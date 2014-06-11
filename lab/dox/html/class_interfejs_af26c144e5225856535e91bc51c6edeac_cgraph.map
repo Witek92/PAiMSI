@@ -1,0 +1,51 @@
+<map id="Interfejs::NowaGra" name="Interfejs::NowaGra">
+<area shape="rect" id="node3" href="$class_interfejs.html#a70ba70fc2dcbf4979e7887e3e8509cbe" title="Metoda ktora pobiera poczatkowa stawke pieniedzy wpisana przez uzytkownika." alt="" coords="192,5,411,35"/>
+<area shape="rect" id="node5" href="$class_g_r_a.html#ab18509b806b22568ba97a8ab4f121ae2" title="Metoda tasuje karty z talii." alt="" coords="251,59,352,88"/>
+<area shape="rect" id="node9" href="$class_g_r_a.html#a3d86b57e35ee8ff610a056c92dfa325b" title="Metoda rozdaje karty z talii dla wszystkich graczy." alt="" coords="507,113,605,143"/>
+<area shape="rect" id="node13" href="$class_g_r_a.html#a28a2c64b762a24b489af437c7eef6040" title="Metoda rozdaje pieniadze dla kazdego z graczy." alt="" coords="236,163,367,192"/>
+<area shape="rect" id="node15" href="$class_interfejs.html#a8cd58b0d09bab1df3ccc9b8260385ccd" title="Metoda przydziela poczatkowa stawke wszystkim graczom rowna 100." alt="" coords="187,216,416,245"/>
+<area shape="rect" id="node17" href="$class_interfejs.html#a65cdf5c6927e442bd60658a9077f751e" title="Metoda po wybraniu przez gracza decyzji o pasowaniu usuwa go z listy graczy." alt="" coords="227,269,376,299"/>
+<area shape="rect" id="node19" href="$class_g_r_a.html#a08adc6b506a6fc09f75e0cfbe37a383a" title="Metoda odpowiadajaca za decyzje gracza : &#45;podbija/czeka &#45;przebija &#45;pasuje." alt="" coords="248,323,355,352"/>
+<area shape="rect" id="node21" href="$class_g_r_a.html#af1183dcbde935bdf4f5ee1d6882b6d80" title="Metoda odpowiadajaca za decyzje gracza z czekaniem." alt="" coords="211,376,392,405"/>
+<area shape="rect" id="node23" href="$class_g_r_a.html#a4ffb4d5d97261a8cd2220a6b59616bb6" title="Metoda sluzaca do wymiany kart gracza.Gracz zostaje spytany czy chce wymienic karty a potem ma mozliw..." alt="" coords="244,429,359,459"/>
+<area shape="rect" id="node30" href="$class_c_p_u.html#a60fa4d2a96e91be88c4550505f6614ed" title="Metoda odpowiadajaca za decyzje gracza : &#45;podbija/czeka &#45;przebija &#45;pasuje." alt="" coords="248,589,355,619"/>
+<area shape="rect" id="node60" href="$class_c_p_u.html#a6902858786d30ae35d2c7a3d9e29b0f5" title="Metoda odpowiadajaca za decyzje gracza z czekaniem." alt="" coords="211,696,392,725"/>
+<area shape="rect" id="node63" href="$class_c_p_u.html#aca73986a06413986e1569e81ae475913" title="Metoda wymiany kart dla komputera.Jesli bd wymienial to co bd wymienial." alt="" coords="244,483,359,512"/>
+<area shape="rect" id="node90" href="$class_interfejs.html#a3270c2153791c6e17414246ac021614f" title="Metoda wyswietla uklad na koncu programu jaki uzyskal kazdy z graczy." alt="" coords="219,643,384,672"/>
+<area shape="rect" id="node92" href="$class_interfejs.html#a7a91a3e36e13d01ed4ce5a39648a1f44" title="Obiekt typu Gracz wskazuje wygranego." alt="" coords="209,536,393,565"/>
+<area shape="rect" id="node7" href="$class_talia.html#a6c0e27d70bbbfbbcb14d6f65073bebb8" title="Metoda ktora losowo tasuje talie." alt="" coords="505,59,607,88"/>
+<area shape="rect" id="node11" href="$class_talia.html#a7ed9525f83b4260dacc192cffca859d5" title="Metoda pobiera karte z talii." alt="" coords="1240,168,1373,197"/>
+<area shape="rect" id="node25" href="$class_g_r_a.html#a532269809ccd27cde2c8a7822bfc1a43" title="Metoda wyswietla instrukcje." alt="" coords="471,219,641,248"/>
+<area shape="rect" id="node27" href="$class_g_r_a.html#a99c72e824c90f1bdbb34626e67d83c15" title="Metoda pobiera nowa karte z talii 52 kart." alt="" coords="1007,221,1113,251"/>
+<area shape="rect" id="node32" href="$class_c_p_u.html#a2d619927e12bcf71bbc30ad44ba3fada" title="Metoda liczy uklad kart komputera i decyduje czy komputer bd pasowal,czekal czy podbijal." alt="" coords="495,592,617,621"/>
+<area shape="rect" id="node34" href="$class_g_r_a.html#abfc9b5fdad9fef80496cb5b6ece66ed9" title="Metoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma." alt="" coords="733,536,869,565"/>
+<area shape="rect" id="node52" href="$class_g_r_a.html#a532c7c083060d7c846ac159b1f5c3f81" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="997,749,1123,779"/>
+<area shape="rect" id="node58" href="$class_g_r_a.html#aba14465002d4fa6440beca25bf3de2bc" title="Metoda szuka najwyzszej karty w zestawie kart gracza." alt="" coords="1213,959,1400,988"/>
+<area shape="rect" id="node36" href="$class_g_r_a.html#a7c72639bade47c93f59e4d02344b29de" title="Metoda sprawdza czy jest para w zestawie kart gracza." alt="" coords="1240,447,1373,476"/>
+<area shape="rect" id="node40" href="$class_g_r_a.html#a83ff1a2e629b7368180f5ac0cc06fcfd" title="Metoda sprawdza czy sa dwie pary w zestawie kart gracza." alt="" coords="983,643,1137,672"/>
+<area shape="rect" id="node42" href="$class_g_r_a.html#ab62696649e029ba3adc5876dee3c8fbc" title="Metoda sprawdza czy jest trojka w zestawie kart gracza." alt="" coords="988,696,1132,725"/>
+<area shape="rect" id="node44" href="$class_g_r_a.html#a04dd210d0146656fd70e2d10ccdf0065" title="Metoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze)." alt="" coords="991,429,1129,459"/>
+<area shape="rect" id="node46" href="$class_g_r_a.html#a3fb6dbd37229ac58c84a0b4f5403a3d6" title="Metoda sprawdza czy jest strit w zestawie kart gracza." alt="" coords="995,483,1125,512"/>
+<area shape="rect" id="node48" href="$class_g_r_a.html#a4d6b5d423f0f4761d04bbb59325417fd" title="Metoda sprawdza czy jest ful w zestawie kart gracza." alt="" coords="997,536,1123,565"/>
+<area shape="rect" id="node50" href="$class_g_r_a.html#a1be2bb0326db17fde5861adb676224fb" title="Metoda sprawdza czy jest czworka w zestawie kart gracza." alt="" coords="980,589,1140,619"/>
+<area shape="rect" id="node38" href="$class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="1448,493,1619,523"/>
+<area shape="rect" id="node54" href="$class_g_r_a.html#a2f160ac8a217e52308423ddc950488d5" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="1244,749,1369,779"/>
+<area shape="rect" id="node65" href="$class_c_p_u.html#ae28436e9e40e05d897bcdc3f5f137de9" title="Sprawdza czy komputer chce wymienic karty ze swojego zestawu." alt="" coords="464,484,648,513"/>
+<area shape="rect" id="node68" href="$class_c_p_u.html#a400f9910fc72454497684731380621bd" title="Metoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart..." alt="" coords="468,403,644,432"/>
+<area shape="rect" id="node71" href="$class_c_p_u.html#a9eeb4244b31bbdfb59c0ad7f9b51d0e6" title="Metoda wymiany kart dla komputera z ukladem 0 ( nie ma par ,trojek ,fulla, strita itd..." alt="" coords="731,219,872,248"/>
+<area shape="rect" id="node76" href="$class_c_p_u.html#a996ad643815fb962ffc60c543efdb4bd" title="Metoda wymiany kart dla komputera z ukladem 1(czyli dla jednej pary)" alt="" coords="731,376,872,405"/>
+<area shape="rect" id="node80" href="$class_c_p_u.html#ae0c3f82d98dab6621d5a221b56e9cf94" title="Metoda wymiany kart dla komputera z ukladem 2 (czyli dla dwóch par)" alt="" coords="731,429,872,459"/>
+<area shape="rect" id="node84" href="$class_c_p_u.html#a173d904de6429cec82d21bc47260e73b" title="Metoda wymiany kart dla komputera z ukladem 3(czyli dla trojki)" alt="" coords="731,323,872,352"/>
+<area shape="rect" id="node73" href="$class_c_p_u.html#ab07d6b432de3847e0b3e9f953e54dca1" title="Metoda wskazuje indeksy slabych kart." alt="" coords="964,168,1156,197"/>
+<area shape="rect" id="node86" href="$class_g_r_a.html#a1045d31987634f497e342a4485c7db7b" title="Metoda znajduje trojke w zestawie kart gracza." alt="" coords="993,275,1127,304"/>
+<area shape="rect" id="node95" href="$class_g_r_a.html#a0c6db7542b551b1c514f70b3ea9a358c" title="Metoda liczy uklady kart graczy i decyduje o zwyciestwie gracza: zwyciestwo=0 &#45; przegrana zwyciestwo=..." alt="" coords="480,801,632,831"/>
+<area shape="rect" id="node98" href="$class_g_r_a.html#a2b8440a2cf458585286161fd46ad1bea" title="Metoda porownuje zestawy graczy w przypadku gdy zaden z nich nie ma zadnego ukladu." alt="" coords="697,959,905,988"/>
+<area shape="rect" id="node101" href="$class_g_r_a.html#afcde718df260d05688ef36c7cf51de58" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma pare w swoim zestawie kart..." alt="" coords="956,853,1164,883"/>
+<area shape="rect" id="node104" href="$class_g_r_a.html#a51f60984eea162683d8e831952cceda8" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart..." alt="" coords="697,695,905,724"/>
+<area shape="rect" id="node107" href="$class_g_r_a.html#a0f1a4cc74547c599d5b8b808e1613cd0" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma trojke w swoim zestawie kart..." alt="" coords="697,483,905,512"/>
+<area shape="rect" id="node110" href="$class_g_r_a.html#a69bc4518f57fe02f9218fc6be253f687" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart..." alt="" coords="956,1011,1164,1040"/>
+<area shape="rect" id="node113" href="$class_g_r_a.html#abd74a787e23a77dc6ccccece977ceef0" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart..." alt="" coords="697,1063,905,1092"/>
+<area shape="rect" id="node116" href="$class_g_r_a.html#a58fe652c31046c129a81ec7d3f8755d0" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po fullu." alt="" coords="697,748,905,777"/>
+<area shape="rect" id="node118" href="$class_g_r_a.html#a4a73ac7324002fe6f1d1c49cc447527e" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart..." alt="" coords="697,905,905,935"/>
+<area shape="rect" id="node121" href="$class_g_r_a.html#a08ecbfc2389ce156e7e4cbb7a4bfbbcb" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma pokera." alt="" coords="697,801,905,831"/>
+</map>

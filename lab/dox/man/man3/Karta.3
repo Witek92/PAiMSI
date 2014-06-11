@@ -1,0 +1,242 @@
+.TH "Karta" 3 "Śr, 11 cze 2014" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Karta \- 
+.PP
+Modeluje pojecie \fBKarta\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <karta\&.h>\fP
+.SS "Typy publiczne"
+
+.in +1c
+.ti -1c
+.RI "enum \fBKolor\fP { \fBSerce\fP, \fBKaro\fP, \fBPik\fP, \fBTrefl\fP }"
+.br
+.RI "\fIRodzaj koloru definiowany przez dana klase\&. \fP"
+.ti -1c
+.RI "enum \fBFigura\fP { \fBdwa\fP, \fBtrzy\fP, \fBcztery\fP, \fBpiec\fP, \fBszesc\fP, \fBsiedem\fP, \fBosiem\fP, \fBdziewiec\fP, \fBdziesiec\fP, \fBjopek\fP, \fBdama\fP, \fBkrol\fP, \fBas\fP }"
+.br
+.RI "\fIRodzaj figury definiowany przez dana klase\&. \fP"
+.in -1c
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBKarta\fP (int kolor, int figura)"
+.br
+.RI "\fIInicjalizuje konstruktor\&. \fP"
+.ti -1c
+.RI "\fBKarta\fP ()"
+.br
+.ti -1c
+.RI "int \fBUdostepnijKolor\fP ()"
+.br
+.RI "\fIMetoda udostepnia kolor\&. \fP"
+.ti -1c
+.RI "int \fBUdostepnijFigure\fP ()"
+.br
+.RI "\fIMetoda udostepnia figure\&. \fP"
+.ti -1c
+.RI "bool \fBCzyTenSamKolor\fP (\fBKarta\fP k1)"
+.br
+.RI "\fIMetoda sprawdza czy tego samego koloru\&. \fP"
+.ti -1c
+.RI "bool \fBCzyTaSamaFigura\fP (\fBKarta\fP k1)"
+.br
+.RI "\fIMetoda sprawdza czy ta sama figura\&. \fP"
+.ti -1c
+.RI "bool \fBCzyTaSamaKarta\fP (\fBKarta\fP k1)"
+.br
+.RI "\fIMetoda sprawdza czy ta sama karta\&. \fP"
+.ti -1c
+.RI "bool \fBoperator==\fP (\fBKarta\fP k1)"
+.br
+.RI "\fIPrzeciazenie operatora porownania ==\&. \fP"
+.ti -1c
+.RI "bool \fBoperator!=\fP (\fBKarta\fP k1)"
+.br
+.RI "\fIPrzeciazenie operatora !=\&. \fP"
+.ti -1c
+.RI "void \fBPrzypiszKarcieWartosc\fP (int kolor, int figura)"
+.br
+.RI "\fIMetoda przypisuje karcie wartosc\&. \fP"
+.ti -1c
+.RI "\fBKarta\fP & \fBoperator=\fP (\fBKarta\fP k1)"
+.br
+.RI "\fIPrzeciazenie operatora =\&. \fP"
+.in -1c
+.SS "Atrybuty publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBKolor\fP \fBkol\fP"
+.br
+.RI "\fIObiekt typu Kolor\&. \fP"
+.ti -1c
+.RI "\fBFigura\fP \fBfig\fP"
+.br
+.RI "\fIObiekt typu Figura\&. \fP"
+.ti -1c
+.RI "int \fB_Kolor\fP"
+.br
+.RI "\fIZmienna przechowujaca kolor karty\&. \fP"
+.ti -1c
+.RI "int \fB_Figura\fP"
+.br
+.RI "\fIZmienna przechowujaca figure karty\&. \fP"
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa modeluje pojecie karta\&. 
+.PP
+Definicja w linii 23 pliku karta\&.h\&.
+.SH "Dokumentacja składowych wyliczanych"
+.PP 
+.SS "enum \fBKarta::Figura\fP"
+
+.PP
+\fBWartości wyliczeń\fP
+.in +1c
+.TP
+\fB\fIdwa \fP\fP
+.TP
+\fB\fItrzy \fP\fP
+.TP
+\fB\fIcztery \fP\fP
+.TP
+\fB\fIpiec \fP\fP
+.TP
+\fB\fIszesc \fP\fP
+.TP
+\fB\fIsiedem \fP\fP
+.TP
+\fB\fIosiem \fP\fP
+.TP
+\fB\fIdziewiec \fP\fP
+.TP
+\fB\fIdziesiec \fP\fP
+.TP
+\fB\fIjopek \fP\fP
+.TP
+\fB\fIdama \fP\fP
+.TP
+\fB\fIkrol \fP\fP
+.TP
+\fB\fIas \fP\fP
+.PP
+Definicja w linii 35 pliku karta\&.h\&.
+.SS "enum \fBKarta::Kolor\fP"
+
+.PP
+\fBWartości wyliczeń\fP
+.in +1c
+.TP
+\fB\fISerce \fP\fP
+.TP
+\fB\fIKaro \fP\fP
+.TP
+\fB\fIPik \fP\fP
+.TP
+\fB\fITrefl \fP\fP
+.PP
+Definicja w linii 31 pliku karta\&.h\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Karta::Karta (intkolor, intfigura)"
+
+.PP
+Definicja w linii 173 pliku karta\&.cpp\&.
+.SS "Karta::Karta ()"
+
+.PP
+Definicja w linii 287 pliku karta\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "bool Karta::CzyTaSamaFigura (\fBKarta\fPk1)"
+\fBZwraca:\fP
+.RS 4
+Zwraca true lub false\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 35 pliku karta\&.cpp\&.
+.SS "bool Karta::CzyTaSamaKarta (\fBKarta\fPk1)"
+\fBZwraca:\fP
+.RS 4
+Zwraca true lub false\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 159 pliku karta\&.cpp\&.
+.SS "bool Karta::CzyTenSamKolor (\fBKarta\fPk1)"
+\fBZwraca:\fP
+.RS 4
+Zwraca true lub false\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 24 pliku karta\&.cpp\&.
+.SS "bool Karta::operator!= (\fBKarta\fPk1)"
+
+.PP
+Definicja w linii 311 pliku karta\&.cpp\&.
+.SS "\fBKarta\fP & Karta::operator= (\fBKarta\fPk1)"
+
+.PP
+Definicja w linii 324 pliku karta\&.cpp\&.
+.SS "bool Karta::operator== (\fBKarta\fPk1)"
+
+.PP
+Definicja w linii 298 pliku karta\&.cpp\&.
+.SS "void Karta::PrzypiszKarcieWartosc (intkolor, intfigura)"
+
+.PP
+Definicja w linii 348 pliku karta\&.cpp\&.
+.SS "int Karta::UdostepnijFigure ()"
+\fBZwraca:\fP
+.RS 4
+Zwraca figure karty\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 19 pliku karta\&.cpp\&.
+.SS "int Karta::UdostepnijKolor ()"
+\fBZwraca:\fP
+.RS 4
+Zwraca kolor karty\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 14 pliku karta\&.cpp\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "int Karta::_Figura"
+
+.PP
+Definicja w linii 51 pliku karta\&.h\&.
+.SS "int Karta::_Kolor"
+
+.PP
+Definicja w linii 47 pliku karta\&.h\&.
+.SS "\fBFigura\fP Karta::fig"
+
+.PP
+Definicja w linii 43 pliku karta\&.h\&.
+.SS "\fBKolor\fP Karta::kol"
+
+.PP
+Definicja w linii 39 pliku karta\&.h\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla My Project\&.

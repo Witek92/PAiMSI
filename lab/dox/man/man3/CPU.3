@@ -1,0 +1,141 @@
+.TH "CPU" 3 "Śr, 11 cze 2014" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CPU \- 
+.PP
+Modeluje pojecie \fBCPU\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CPU\&.h>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "void \fBWymiana\fP (\fBGRA\fP &Game)"
+.br
+.RI "\fIMetoda wymiany kart dla komputera\&.Jesli bd wymienial to co bd wymienial\&. \fP"
+.ti -1c
+.RI "\fBCPU\fP ()"
+.br
+.RI "\fIInicjalizuje konstruktor\&. \fP"
+.ti -1c
+.RI "\fBCPU\fP (string nazwa)"
+.br
+.RI "\fIMetoda nadaje nazwe graczowi z komputera\&. \fP"
+.ti -1c
+.RI "void \fBCoBedzieWymienial\fP (\fBGRA\fP &Game)"
+.br
+.RI "\fIMetoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart\&. \fP"
+.in -1c
+.SS "Atrybuty publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBGracz\fP \fBKomputer\fP"
+.br
+.RI "\fITworzy obiekt typu \fBGracz\fP\&. \fP"
+.ti -1c
+.RI "\fBGRA\fP \fBGierka\fP"
+.br
+.RI "\fITworzy obiekt typu \fBGRA\fP\&. \fP"
+.in -1c
+.SS "Metody prywatne"
+
+.in +1c
+.ti -1c
+.RI "bool \fBCzyBedzieWymienial\fP (\fBGRA\fP &Game)"
+.br
+.RI "\fISprawdza czy komputer chce wymienic karty ze swojego zestawu\&. \fP"
+.ti -1c
+.RI "void \fBWymianaDla0\fP (\fBGRA\fP &Game)"
+.br
+.RI "\fIMetoda wymiany kart dla komputera z ukladem 0 ( nie ma par ,trojek ,fulla, strita itd\&.) \fP"
+.ti -1c
+.RI "void \fBWymianaDla1\fP (\fBGRA\fP &Game)"
+.br
+.RI "\fIMetoda wymiany kart dla komputera z ukladem 1(czyli dla jednej pary) \fP"
+.ti -1c
+.RI "void \fBWymianaDla2\fP (\fBGRA\fP &Game)"
+.br
+.RI "\fIMetoda wymiany kart dla komputera z ukladem 2 (czyli dla dw�ch par) \fP"
+.ti -1c
+.RI "void \fBWymianaDla3\fP (\fBGRA\fP &Game)"
+.br
+.RI "\fIMetoda wymiany kart dla komputera z ukladem 3(czyli dla trojki) \fP"
+.ti -1c
+.RI "void \fBWskazindeksySlabych\fP (\fBGracz\fP ziomek, vector< int > &slabe)"
+.br
+.RI "\fIMetoda wskazuje indeksy slabych kart\&. \fP"
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa modeluje pojecie cpu czyli gracza komputerowego\&. 
+.PP
+Definicja w linii 18 pliku CPU\&.h\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "CPU::CPU ()"
+
+.PP
+Definicja w linii 34 pliku CPU\&.cpp\&.
+.SS "CPU::CPU (stringnazwa)"
+
+.PP
+Definicja w linii 27 pliku CPU\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void CPU::CoBedzieWymienial (\fBGRA\fP &Game)"
+
+.PP
+Definicja w linii 52 pliku CPU\&.cpp\&.
+.SS "bool CPU::CzyBedzieWymienial (\fBGRA\fP &Game)\fC [private]\fP"
+\fBZwraca:\fP
+.RS 4
+Zwraca true lub false\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 9 pliku CPU\&.cpp\&.
+.SS "void CPU::WskazindeksySlabych (\fBGracz\fPziomek, vector< int > &slabe)\fC [private]\fP"
+
+.PP
+Definicja w linii 128 pliku CPU\&.cpp\&.
+.SS "void CPU::Wymiana (\fBGRA\fP &Game)"
+
+.PP
+Definicja w linii 40 pliku CPU\&.cpp\&.
+.SS "void CPU::WymianaDla0 (\fBGRA\fP &Game)\fC [private]\fP"
+
+.PP
+Definicja w linii 114 pliku CPU\&.cpp\&.
+.SS "void CPU::WymianaDla1 (\fBGRA\fP &Game)\fC [private]\fP"
+
+.PP
+Definicja w linii 142 pliku CPU\&.cpp\&.
+.SS "void CPU::WymianaDla2 (\fBGRA\fP &Game)\fC [private]\fP"
+
+.PP
+Definicja w linii 162 pliku CPU\&.cpp\&.
+.SS "void CPU::WymianaDla3 (\fBGRA\fP &Game)\fC [private]\fP"
+
+.PP
+Definicja w linii 176 pliku CPU\&.cpp\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "\fBGRA\fP CPU::Gierka"
+
+.PP
+Definicja w linii 68 pliku CPU\&.h\&.
+.SS "\fBGracz\fP CPU::Komputer"
+
+.PP
+Definicja w linii 64 pliku CPU\&.h\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla My Project\&.

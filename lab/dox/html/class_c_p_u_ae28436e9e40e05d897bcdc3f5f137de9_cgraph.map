@@ -1,0 +1,11 @@
+<map id="CPU::CzyBedzieWymienial" name="CPU::CzyBedzieWymienial">
+<area shape="rect" id="node3" href="$class_g_r_a.html#abfc9b5fdad9fef80496cb5b6ece66ed9" title="Metoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma." alt="" coords="237,165,373,195"/>
+<area shape="rect" id="node5" href="$class_g_r_a.html#a7c72639bade47c93f59e4d02344b29de" title="Metoda sprawdza czy jest para w zestawie kart gracza." alt="" coords="435,5,568,35"/>
+<area shape="rect" id="node9" href="$class_g_r_a.html#a83ff1a2e629b7368180f5ac0cc06fcfd" title="Metoda sprawdza czy sa dwie pary w zestawie kart gracza." alt="" coords="424,59,579,88"/>
+<area shape="rect" id="node11" href="$class_g_r_a.html#ab62696649e029ba3adc5876dee3c8fbc" title="Metoda sprawdza czy jest trojka w zestawie kart gracza." alt="" coords="429,112,573,141"/>
+<area shape="rect" id="node13" href="$class_g_r_a.html#a04dd210d0146656fd70e2d10ccdf0065" title="Metoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze)." alt="" coords="432,165,571,195"/>
+<area shape="rect" id="node15" href="$class_g_r_a.html#a3fb6dbd37229ac58c84a0b4f5403a3d6" title="Metoda sprawdza czy jest strit w zestawie kart gracza." alt="" coords="436,219,567,248"/>
+<area shape="rect" id="node17" href="$class_g_r_a.html#a4d6b5d423f0f4761d04bbb59325417fd" title="Metoda sprawdza czy jest ful w zestawie kart gracza." alt="" coords="439,272,564,301"/>
+<area shape="rect" id="node19" href="$class_g_r_a.html#a1be2bb0326db17fde5861adb676224fb" title="Metoda sprawdza czy jest czworka w zestawie kart gracza." alt="" coords="421,325,581,355"/>
+<area shape="rect" id="node7" href="$class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="629,5,800,35"/>
+</map>

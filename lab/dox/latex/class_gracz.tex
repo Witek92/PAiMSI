@@ -1,0 +1,154 @@
+\hypertarget{class_gracz}{\section{Dokumentacja klasy Gracz}
+\label{class_gracz}\index{Gracz@{Gracz}}
+}
+
+
+Modeluje pojecie \hyperlink{class_gracz}{Gracz}.  
+
+
+
+
+{\ttfamily \#include $<$gracz.\-h$>$}
+
+
+
+Diagram współpracy dla Gracz\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_gracz__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gracz_a460af0a2e2749e8c81ae86127320013a}{Gracz} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{class_gracz_a220896a816e27a3a7425cee9f66c2ef1}{Gracz} (string n)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje konstruktor tworzacy gracza po nazwie. \end{DoxyCompactList}\item 
+\hyperlink{class_gracz}{Gracz} \& \hyperlink{class_gracz_a2e678a26ad4b6e4c7ef63123e5dde2e0}{operator=} (\hyperlink{class_gracz}{Gracz} gosc)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operatora = potrzebne do przypisania jednemu graczowi grugiego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_gracz_a3d23530d268c7825833e48b0f613266f}{uklad}
+\begin{DoxyCompactList}\small\item\em Zmienna oznaczajaca uklad kart\-: 0-\/nic, 1-\/para,2-\/dwie pary,3-\/trojka,4-\/strit,5-\/kolor,6-\/full,7-\/kareta. \end{DoxyCompactList}\item 
+int \hyperlink{class_gracz_a56490a4d67a3f6950b322c7a1b8c7a30}{zwyciestwo}
+\begin{DoxyCompactList}\small\item\em Zmienna oznaczajaca zwyciestwo. \end{DoxyCompactList}\item 
+\hyperlink{class_zestaw}{Zestaw} \hyperlink{class_gracz_a958307f187f423a0b1f4fe458af46d90}{Z}
+\begin{DoxyCompactList}\small\item\em Obiekt zawierajacy unikatowy zestaw gracza. \end{DoxyCompactList}\item 
+string \hyperlink{class_gracz_a4b6cb4abfba854a45d71fe50dea46f81}{nazwa}
+\begin{DoxyCompactList}\small\item\em Zmienna typu string przechowujaca nazwe gracza. \end{DoxyCompactList}\item 
+int \hyperlink{class_gracz_af1bf45c98144c1018c653284d54638a1}{hajs}
+\begin{DoxyCompactList}\small\item\em Zmienna typu int przechowujaca. \end{DoxyCompactList}\item 
+int \hyperlink{class_gracz_a05bccdfde37c1d458fced24cd6242528}{obstawil}
+\begin{DoxyCompactList}\small\item\em Zmienna typu int przechowujaca informacje o obstawieniu pieniedzy przez gracza. \end{DoxyCompactList}\item 
+bool \hyperlink{class_gracz_a21194ebb17e901c39c9c83e699a9e2b7}{Czy\-P\-A\-S}
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy uzytkownik rezygnuje z dlaszej gry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa modeluje pojecie gracz. 
+
+Definicja w linii 17 pliku gracz.\-h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_gracz_a460af0a2e2749e8c81ae86127320013a}{\index{Gracz@{Gracz}!Gracz@{Gracz}}
+\index{Gracz@{Gracz}!Gracz@{Gracz}}
+\subsubsection[{Gracz}]{\setlength{\rightskip}{0pt plus 5cm}Gracz\-::\-Gracz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a460af0a2e2749e8c81ae86127320013a}
+
+
+Definicja w linii 21 pliku gracz.\-cpp.
+
+\hypertarget{class_gracz_a220896a816e27a3a7425cee9f66c2ef1}{\index{Gracz@{Gracz}!Gracz@{Gracz}}
+\index{Gracz@{Gracz}!Gracz@{Gracz}}
+\subsubsection[{Gracz}]{\setlength{\rightskip}{0pt plus 5cm}Gracz\-::\-Gracz (
+\begin{DoxyParamCaption}
+\item[{string}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a220896a816e27a3a7425cee9f66c2ef1}
+
+
+Definicja w linii 13 pliku gracz.\-cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_gracz_a2e678a26ad4b6e4c7ef63123e5dde2e0}{\index{Gracz@{Gracz}!operator=@{operator=}}
+\index{operator=@{operator=}!Gracz@{Gracz}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gracz} \& Gracz\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{gosc}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a2e678a26ad4b6e4c7ef63123e5dde2e0}
+
+
+Definicja w linii 30 pliku gracz.\-cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_gracz_a21194ebb17e901c39c9c83e699a9e2b7}{\index{Gracz@{Gracz}!Czy\-P\-A\-S@{Czy\-P\-A\-S}}
+\index{Czy\-P\-A\-S@{Czy\-P\-A\-S}!Gracz@{Gracz}}
+\subsubsection[{Czy\-P\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}bool Gracz\-::\-Czy\-P\-A\-S}}\label{class_gracz_a21194ebb17e901c39c9c83e699a9e2b7}
+\begin{DoxyReturn}{Zwraca}
+Zwraca true lub false. 
+\end{DoxyReturn}
+
+
+Definicja w linii 62 pliku gracz.\-h.
+
+\hypertarget{class_gracz_af1bf45c98144c1018c653284d54638a1}{\index{Gracz@{Gracz}!hajs@{hajs}}
+\index{hajs@{hajs}!Gracz@{Gracz}}
+\subsubsection[{hajs}]{\setlength{\rightskip}{0pt plus 5cm}int Gracz\-::hajs}}\label{class_gracz_af1bf45c98144c1018c653284d54638a1}
+
+
+Definicja w linii 53 pliku gracz.\-h.
+
+\hypertarget{class_gracz_a4b6cb4abfba854a45d71fe50dea46f81}{\index{Gracz@{Gracz}!nazwa@{nazwa}}
+\index{nazwa@{nazwa}!Gracz@{Gracz}}
+\subsubsection[{nazwa}]{\setlength{\rightskip}{0pt plus 5cm}string Gracz\-::nazwa}}\label{class_gracz_a4b6cb4abfba854a45d71fe50dea46f81}
+
+
+Definicja w linii 37 pliku gracz.\-h.
+
+\hypertarget{class_gracz_a05bccdfde37c1d458fced24cd6242528}{\index{Gracz@{Gracz}!obstawil@{obstawil}}
+\index{obstawil@{obstawil}!Gracz@{Gracz}}
+\subsubsection[{obstawil}]{\setlength{\rightskip}{0pt plus 5cm}int Gracz\-::obstawil}}\label{class_gracz_a05bccdfde37c1d458fced24cd6242528}
+
+
+Definicja w linii 57 pliku gracz.\-h.
+
+\hypertarget{class_gracz_a3d23530d268c7825833e48b0f613266f}{\index{Gracz@{Gracz}!uklad@{uklad}}
+\index{uklad@{uklad}!Gracz@{Gracz}}
+\subsubsection[{uklad}]{\setlength{\rightskip}{0pt plus 5cm}int Gracz\-::uklad}}\label{class_gracz_a3d23530d268c7825833e48b0f613266f}
+
+
+Definicja w linii 25 pliku gracz.\-h.
+
+\hypertarget{class_gracz_a958307f187f423a0b1f4fe458af46d90}{\index{Gracz@{Gracz}!Z@{Z}}
+\index{Z@{Z}!Gracz@{Gracz}}
+\subsubsection[{Z}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Zestaw} Gracz\-::\-Z}}\label{class_gracz_a958307f187f423a0b1f4fe458af46d90}
+
+
+Definicja w linii 33 pliku gracz.\-h.
+
+\hypertarget{class_gracz_a56490a4d67a3f6950b322c7a1b8c7a30}{\index{Gracz@{Gracz}!zwyciestwo@{zwyciestwo}}
+\index{zwyciestwo@{zwyciestwo}!Gracz@{Gracz}}
+\subsubsection[{zwyciestwo}]{\setlength{\rightskip}{0pt plus 5cm}int Gracz\-::zwyciestwo}}\label{class_gracz_a56490a4d67a3f6950b322c7a1b8c7a30}
+
+
+Definicja w linii 29 pliku gracz.\-h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/inc/\hyperlink{gracz_8h}{gracz.\-h}\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/src/\hyperlink{gracz_8cpp}{gracz.\-cpp}\end{DoxyCompactItemize}

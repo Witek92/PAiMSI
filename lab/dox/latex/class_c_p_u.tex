@@ -1,0 +1,539 @@
+\hypertarget{class_c_p_u}{\section{Dokumentacja klasy C\-P\-U}
+\label{class_c_p_u}\index{C\-P\-U@{C\-P\-U}}
+}
+
+
+Modeluje pojecie \hyperlink{class_c_p_u}{C\-P\-U}.  
+
+
+
+
+{\ttfamily \#include $<$C\-P\-U.\-h$>$}
+
+
+
+Diagram współpracy dla C\-P\-U\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_c_p_u__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_c_p_u_aca73986a06413986e1569e81ae475913}{Wymiana} (\hyperlink{class_g_r_a}{G\-R\-A} \&Game)
+\begin{DoxyCompactList}\small\item\em Metoda wymiany kart dla komputera.\-Jesli bd wymienial to co bd wymienial. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_u_a2fdd8153d0979ccad9ed8452897267f4}{C\-P\-U} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_u_ab5a7a17a7c732fda55456f2d929839cd}{C\-P\-U} (string nazwa)
+\begin{DoxyCompactList}\small\item\em Metoda nadaje nazwe graczowi z komputera. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_u_a400f9910fc72454497684731380621bd}{Co\-Bedzie\-Wymienial} (\hyperlink{class_g_r_a}{G\-R\-A} \&Game)
+\begin{DoxyCompactList}\small\item\em Metoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed}{Decyzja} (\hyperlink{class_g_r_a}{G\-R\-A} \&Game)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za decyzje gracza \-: -\/podbija/czeka -\/przebija -\/pasuje. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5}{Decyzja\-Z\-Czekaniem} (\hyperlink{class_g_r_a}{G\-R\-A} \&Game)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za decyzje gracza z czekaniem. \end{DoxyCompactList}\item 
+char \hyperlink{class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada}{Co\-Obstawi} (\hyperlink{class_g_r_a}{G\-R\-A} \&Game)
+\begin{DoxyCompactList}\small\item\em Metoda liczy uklad kart komputera i decyduje czy komputer bd pasowal,czekal czy podbijal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gracz}{Gracz} \hyperlink{class_c_p_u_a6530a4639d59e54a02ead99b6477f486}{Komputer}
+\begin{DoxyCompactList}\small\item\em Tworzy obiekt typu \hyperlink{class_gracz}{Gracz}. \end{DoxyCompactList}\item 
+\hyperlink{class_g_r_a}{G\-R\-A} \hyperlink{class_c_p_u_aaa02aad3d7238ef5d8908319c02836f0}{Gierka}
+\begin{DoxyCompactList}\small\item\em Tworzy obiekt typu \hyperlink{class_g_r_a}{G\-R\-A}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9}{Czy\-Bedzie\-Wymienial} (\hyperlink{class_g_r_a}{G\-R\-A} \&Game)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy komputer chce wymienic karty ze swojego zestawu. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6}{Wymiana\-Dla0} (\hyperlink{class_g_r_a}{G\-R\-A} \&Game)
+\begin{DoxyCompactList}\small\item\em Metoda wymiany kart dla komputera z ukladem 0 ( nie ma par ,trojek ,fulla, strita itd.) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_u_a996ad643815fb962ffc60c543efdb4bd}{Wymiana\-Dla1} (\hyperlink{class_g_r_a}{G\-R\-A} \&Game)
+\begin{DoxyCompactList}\small\item\em Metoda wymiany kart dla komputera z ukladem 1(czyli dla jednej pary) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94}{Wymiana\-Dla2} (\hyperlink{class_g_r_a}{G\-R\-A} \&Game)
+\begin{DoxyCompactList}\small\item\em Metoda wymiany kart dla komputera z ukladem 2 (czyli dla dw�ch par) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_u_a173d904de6429cec82d21bc47260e73b}{Wymiana\-Dla3} (\hyperlink{class_g_r_a}{G\-R\-A} \&Game)
+\begin{DoxyCompactList}\small\item\em Metoda wymiany kart dla komputera z ukladem 3(czyli dla trojki) \end{DoxyCompactList}\item 
+void \hyperlink{class_c_p_u_ab07d6b432de3847e0b3e9f953e54dca1}{Wskazindeksy\-Slabych} (\hyperlink{class_gracz}{Gracz} ziomek, vector$<$ int $>$ \&slabe)
+\begin{DoxyCompactList}\small\item\em Metoda wskazuje indeksy slabych kart. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_p_u_a1e17b85bb84e5e60c45334ea8e409690}{random}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza typu int. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_u_a239c611d8bcd010f2b2676f22afb12d8}{iter}
+\begin{DoxyCompactList}\small\item\em Zmienna pomocnicza typu int. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_p_u_aff66a069827189be5f8c64d32dc1c9d5}{p1}
+\begin{DoxyCompactList}\small\item\em Zmienne pomocnicze. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_p_u_a7c30767fcadc9d443d4c591c5ea9f905}{p2}
+\item 
+bool \hyperlink{class_c_p_u_a10840329e8aaacd30333e5ff973d0abc}{p3}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa modeluje pojecie cpu czyli gracza komputerowego. 
+
+Definicja w linii 18 pliku C\-P\-U.\-h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_c_p_u_a2fdd8153d0979ccad9ed8452897267f4}{\index{C\-P\-U@{C\-P\-U}!C\-P\-U@{C\-P\-U}}
+\index{C\-P\-U@{C\-P\-U}!CPU@{C\-P\-U}}
+\subsubsection[{C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}C\-P\-U\-::\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_u_a2fdd8153d0979ccad9ed8452897267f4}
+
+
+Definicja w linii 37 pliku C\-P\-U.\-cpp.
+
+\hypertarget{class_c_p_u_ab5a7a17a7c732fda55456f2d929839cd}{\index{C\-P\-U@{C\-P\-U}!C\-P\-U@{C\-P\-U}}
+\index{C\-P\-U@{C\-P\-U}!CPU@{C\-P\-U}}
+\subsubsection[{C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}C\-P\-U\-::\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{string}]{nazwa}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_u_ab5a7a17a7c732fda55456f2d929839cd}
+
+
+Definicja w linii 27 pliku C\-P\-U.\-cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_c_p_u_a400f9910fc72454497684731380621bd}{\index{C\-P\-U@{C\-P\-U}!Co\-Bedzie\-Wymienial@{Co\-Bedzie\-Wymienial}}
+\index{Co\-Bedzie\-Wymienial@{Co\-Bedzie\-Wymienial}!CPU@{C\-P\-U}}
+\subsubsection[{Co\-Bedzie\-Wymienial}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::\-Co\-Bedzie\-Wymienial (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-R\-A} \&}]{Game}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_u_a400f9910fc72454497684731380621bd}
+
+
+Definicja w linii 58 pliku C\-P\-U.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a400f9910fc72454497684731380621bd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a400f9910fc72454497684731380621bd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada}{\index{C\-P\-U@{C\-P\-U}!Co\-Obstawi@{Co\-Obstawi}}
+\index{Co\-Obstawi@{Co\-Obstawi}!CPU@{C\-P\-U}}
+\subsubsection[{Co\-Obstawi}]{\setlength{\rightskip}{0pt plus 5cm}char C\-P\-U\-::\-Co\-Obstawi (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-R\-A} \&}]{Game}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada}
+
+
+Definicja w linii 274 pliku C\-P\-U.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a2d619927e12bcf71bbc30ad44ba3fada_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9}{\index{C\-P\-U@{C\-P\-U}!Czy\-Bedzie\-Wymienial@{Czy\-Bedzie\-Wymienial}}
+\index{Czy\-Bedzie\-Wymienial@{Czy\-Bedzie\-Wymienial}!CPU@{C\-P\-U}}
+\subsubsection[{Czy\-Bedzie\-Wymienial}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-P\-U\-::\-Czy\-Bedzie\-Wymienial (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-R\-A} \&}]{Game}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9}
+\begin{DoxyReturn}{Zwraca}
+Zwraca true lub false. 
+\end{DoxyReturn}
+
+
+Definicja w linii 9 pliku C\-P\-U.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_ae28436e9e40e05d897bcdc3f5f137de9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed}{\index{C\-P\-U@{C\-P\-U}!Decyzja@{Decyzja}}
+\index{Decyzja@{Decyzja}!CPU@{C\-P\-U}}
+\subsubsection[{Decyzja}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::\-Decyzja (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-R\-A} \&}]{Game}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed}
+
+
+Definicja w linii 196 pliku C\-P\-U.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a60fa4d2a96e91be88c4550505f6614ed_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5}{\index{C\-P\-U@{C\-P\-U}!Decyzja\-Z\-Czekaniem@{Decyzja\-Z\-Czekaniem}}
+\index{Decyzja\-Z\-Czekaniem@{Decyzja\-Z\-Czekaniem}!CPU@{C\-P\-U}}
+\subsubsection[{Decyzja\-Z\-Czekaniem}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::\-Decyzja\-Z\-Czekaniem (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-R\-A} \&}]{Game}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5}
+
+
+Definicja w linii 311 pliku C\-P\-U.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a6902858786d30ae35d2c7a3d9e29b0f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_p_u_ab07d6b432de3847e0b3e9f953e54dca1}{\index{C\-P\-U@{C\-P\-U}!Wskazindeksy\-Slabych@{Wskazindeksy\-Slabych}}
+\index{Wskazindeksy\-Slabych@{Wskazindeksy\-Slabych}!CPU@{C\-P\-U}}
+\subsubsection[{Wskazindeksy\-Slabych}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::\-Wskazindeksy\-Slabych (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek, }
+\item[{vector$<$ int $>$ \&}]{slabe}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_p_u_ab07d6b432de3847e0b3e9f953e54dca1}
+
+
+Definicja w linii 134 pliku C\-P\-U.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_ab07d6b432de3847e0b3e9f953e54dca1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_p_u_aca73986a06413986e1569e81ae475913}{\index{C\-P\-U@{C\-P\-U}!Wymiana@{Wymiana}}
+\index{Wymiana@{Wymiana}!CPU@{C\-P\-U}}
+\subsubsection[{Wymiana}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::\-Wymiana (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-R\-A} \&}]{Game}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_u_aca73986a06413986e1569e81ae475913}
+
+
+Definicja w linii 46 pliku C\-P\-U.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_aca73986a06413986e1569e81ae475913_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_aca73986a06413986e1569e81ae475913_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6}{\index{C\-P\-U@{C\-P\-U}!Wymiana\-Dla0@{Wymiana\-Dla0}}
+\index{Wymiana\-Dla0@{Wymiana\-Dla0}!CPU@{C\-P\-U}}
+\subsubsection[{Wymiana\-Dla0}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::\-Wymiana\-Dla0 (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-R\-A} \&}]{Game}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6}
+
+
+Definicja w linii 120 pliku C\-P\-U.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a9eeb4244b31bbdfb59c0ad7f9b51d0e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_p_u_a996ad643815fb962ffc60c543efdb4bd}{\index{C\-P\-U@{C\-P\-U}!Wymiana\-Dla1@{Wymiana\-Dla1}}
+\index{Wymiana\-Dla1@{Wymiana\-Dla1}!CPU@{C\-P\-U}}
+\subsubsection[{Wymiana\-Dla1}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::\-Wymiana\-Dla1 (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-R\-A} \&}]{Game}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_p_u_a996ad643815fb962ffc60c543efdb4bd}
+
+
+Definicja w linii 148 pliku C\-P\-U.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a996ad643815fb962ffc60c543efdb4bd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a996ad643815fb962ffc60c543efdb4bd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94}{\index{C\-P\-U@{C\-P\-U}!Wymiana\-Dla2@{Wymiana\-Dla2}}
+\index{Wymiana\-Dla2@{Wymiana\-Dla2}!CPU@{C\-P\-U}}
+\subsubsection[{Wymiana\-Dla2}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::\-Wymiana\-Dla2 (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-R\-A} \&}]{Game}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94}
+
+
+Definicja w linii 168 pliku C\-P\-U.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_ae0c3f82d98dab6621d5a221b56e9cf94_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_c_p_u_a173d904de6429cec82d21bc47260e73b}{\index{C\-P\-U@{C\-P\-U}!Wymiana\-Dla3@{Wymiana\-Dla3}}
+\index{Wymiana\-Dla3@{Wymiana\-Dla3}!CPU@{C\-P\-U}}
+\subsubsection[{Wymiana\-Dla3}]{\setlength{\rightskip}{0pt plus 5cm}void C\-P\-U\-::\-Wymiana\-Dla3 (
+\begin{DoxyParamCaption}
+\item[{{\bf G\-R\-A} \&}]{Game}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_p_u_a173d904de6429cec82d21bc47260e73b}
+
+
+Definicja w linii 182 pliku C\-P\-U.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a173d904de6429cec82d21bc47260e73b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_p_u_a173d904de6429cec82d21bc47260e73b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_c_p_u_aaa02aad3d7238ef5d8908319c02836f0}{\index{C\-P\-U@{C\-P\-U}!Gierka@{Gierka}}
+\index{Gierka@{Gierka}!CPU@{C\-P\-U}}
+\subsubsection[{Gierka}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-R\-A} C\-P\-U\-::\-Gierka}}\label{class_c_p_u_aaa02aad3d7238ef5d8908319c02836f0}
+
+
+Definicja w linii 81 pliku C\-P\-U.\-h.
+
+\hypertarget{class_c_p_u_a239c611d8bcd010f2b2676f22afb12d8}{\index{C\-P\-U@{C\-P\-U}!iter@{iter}}
+\index{iter@{iter}!CPU@{C\-P\-U}}
+\subsubsection[{iter}]{\setlength{\rightskip}{0pt plus 5cm}int C\-P\-U\-::iter\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_p_u_a239c611d8bcd010f2b2676f22afb12d8}
+
+
+Definicja w linii 55 pliku C\-P\-U.\-h.
+
+\hypertarget{class_c_p_u_a6530a4639d59e54a02ead99b6477f486}{\index{C\-P\-U@{C\-P\-U}!Komputer@{Komputer}}
+\index{Komputer@{Komputer}!CPU@{C\-P\-U}}
+\subsubsection[{Komputer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gracz} C\-P\-U\-::\-Komputer}}\label{class_c_p_u_a6530a4639d59e54a02ead99b6477f486}
+
+
+Definicja w linii 77 pliku C\-P\-U.\-h.
+
+\hypertarget{class_c_p_u_aff66a069827189be5f8c64d32dc1c9d5}{\index{C\-P\-U@{C\-P\-U}!p1@{p1}}
+\index{p1@{p1}!CPU@{C\-P\-U}}
+\subsubsection[{p1}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-P\-U\-::p1\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_p_u_aff66a069827189be5f8c64d32dc1c9d5}
+\begin{DoxyReturn}{Zwraca}
+Zwracaja false lub true. 
+\end{DoxyReturn}
+
+
+Definicja w linii 60 pliku C\-P\-U.\-h.
+
+\hypertarget{class_c_p_u_a7c30767fcadc9d443d4c591c5ea9f905}{\index{C\-P\-U@{C\-P\-U}!p2@{p2}}
+\index{p2@{p2}!CPU@{C\-P\-U}}
+\subsubsection[{p2}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-P\-U\-::p2\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_p_u_a7c30767fcadc9d443d4c591c5ea9f905}
+
+
+Definicja w linii 60 pliku C\-P\-U.\-h.
+
+\hypertarget{class_c_p_u_a10840329e8aaacd30333e5ff973d0abc}{\index{C\-P\-U@{C\-P\-U}!p3@{p3}}
+\index{p3@{p3}!CPU@{C\-P\-U}}
+\subsubsection[{p3}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-P\-U\-::p3\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_p_u_a10840329e8aaacd30333e5ff973d0abc}
+
+
+Definicja w linii 60 pliku C\-P\-U.\-h.
+
+\hypertarget{class_c_p_u_a1e17b85bb84e5e60c45334ea8e409690}{\index{C\-P\-U@{C\-P\-U}!random@{random}}
+\index{random@{random}!CPU@{C\-P\-U}}
+\subsubsection[{random}]{\setlength{\rightskip}{0pt plus 5cm}int C\-P\-U\-::random\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_p_u_a1e17b85bb84e5e60c45334ea8e409690}
+
+
+Definicja w linii 50 pliku C\-P\-U.\-h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/inc/\hyperlink{_c_p_u_8h}{C\-P\-U.\-h}\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/src/\hyperlink{_c_p_u_8cpp}{C\-P\-U.\-cpp}\end{DoxyCompactItemize}

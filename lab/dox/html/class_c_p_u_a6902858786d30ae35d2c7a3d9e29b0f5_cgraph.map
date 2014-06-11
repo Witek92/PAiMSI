@@ -1,0 +1,15 @@
+<map id="CPU::DecyzjaZCzekaniem" name="CPU::DecyzjaZCzekaniem">
+<area shape="rect" id="node3" href="$class_c_p_u.html#a2d619927e12bcf71bbc30ad44ba3fada" title="Metoda liczy uklad kart komputera i decyduje czy komputer bd pasowal,czekal czy podbijal." alt="" coords="236,377,359,407"/>
+<area shape="rect" id="node5" href="$class_g_r_a.html#abfc9b5fdad9fef80496cb5b6ece66ed9" title="Metoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma." alt="" coords="433,192,569,221"/>
+<area shape="rect" id="node23" href="$class_g_r_a.html#a532c7c083060d7c846ac159b1f5c3f81" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="439,377,564,407"/>
+<area shape="rect" id="node29" href="$class_g_r_a.html#aba14465002d4fa6440beca25bf3de2bc" title="Metoda szuka najwyzszej karty w zestawie kart gracza." alt="" coords="408,431,595,460"/>
+<area shape="rect" id="node7" href="$class_g_r_a.html#a7c72639bade47c93f59e4d02344b29de" title="Metoda sprawdza czy jest para w zestawie kart gracza." alt="" coords="656,5,789,35"/>
+<area shape="rect" id="node11" href="$class_g_r_a.html#a83ff1a2e629b7368180f5ac0cc06fcfd" title="Metoda sprawdza czy sa dwie pary w zestawie kart gracza." alt="" coords="645,59,800,88"/>
+<area shape="rect" id="node13" href="$class_g_r_a.html#ab62696649e029ba3adc5876dee3c8fbc" title="Metoda sprawdza czy jest trojka w zestawie kart gracza." alt="" coords="651,112,795,141"/>
+<area shape="rect" id="node15" href="$class_g_r_a.html#a04dd210d0146656fd70e2d10ccdf0065" title="Metoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze)." alt="" coords="653,165,792,195"/>
+<area shape="rect" id="node17" href="$class_g_r_a.html#a3fb6dbd37229ac58c84a0b4f5403a3d6" title="Metoda sprawdza czy jest strit w zestawie kart gracza." alt="" coords="657,219,788,248"/>
+<area shape="rect" id="node19" href="$class_g_r_a.html#a4d6b5d423f0f4761d04bbb59325417fd" title="Metoda sprawdza czy jest ful w zestawie kart gracza." alt="" coords="660,272,785,301"/>
+<area shape="rect" id="node21" href="$class_g_r_a.html#a1be2bb0326db17fde5861adb676224fb" title="Metoda sprawdza czy jest czworka w zestawie kart gracza." alt="" coords="643,325,803,355"/>
+<area shape="rect" id="node9" href="$class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="851,377,1021,407"/>
+<area shape="rect" id="node25" href="$class_g_r_a.html#a2f160ac8a217e52308423ddc950488d5" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="660,429,785,459"/>
+</map>

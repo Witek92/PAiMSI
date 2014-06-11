@@ -1,0 +1,1097 @@
+\hypertarget{class_g_r_a}{\section{Dokumentacja klasy G\-R\-A}
+\label{class_g_r_a}\index{G\-R\-A@{G\-R\-A}}
+}
+
+
+Modeluje pojecie \hyperlink{class_g_r_a}{G\-R\-A}.  
+
+
+
+
+{\ttfamily \#include $<$G\-R\-A.\-h$>$}
+
+
+
+Diagram współpracy dla G\-R\-A\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_g_r_a__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_r_a_a267a2409e7b7144922b2f058fd6e2724}{G\-R\-A} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje konstruktor. \end{DoxyCompactList}\item 
+int \hyperlink{class_g_r_a_a2f160ac8a217e52308423ddc950488d5}{Znajdz\-Pare} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda szuka pary w zestawie kart gracza. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{class_g_r_a_a532c7c083060d7c846ac159b1f5c3f81}{Znajdz\-Pary} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda szuka pary w zestawie kart gracza. \end{DoxyCompactList}\item 
+int \hyperlink{class_g_r_a_a1045d31987634f497e342a4485c7db7b}{Znajdz\-Trojke} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda znajduje trojke w zestawie kart gracza. \end{DoxyCompactList}\item 
+bool \hyperlink{class_g_r_a_a7c72639bade47c93f59e4d02344b29de}{Czy\-Jest\-Para} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy jest para w zestawie kart gracza. \end{DoxyCompactList}\item 
+bool \hyperlink{class_g_r_a_a83ff1a2e629b7368180f5ac0cc06fcfd}{Czy\-Sa\-Dwie\-Pary} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy sa dwie pary w zestawie kart gracza. \end{DoxyCompactList}\item 
+bool \hyperlink{class_g_r_a_ab62696649e029ba3adc5876dee3c8fbc}{Czy\-Jest\-Trojka} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy jest trojka w zestawie kart gracza. \end{DoxyCompactList}\item 
+bool \hyperlink{class_g_r_a_a3fb6dbd37229ac58c84a0b4f5403a3d6}{Czy\-Jest\-Strit} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy jest strit w zestawie kart gracza. \end{DoxyCompactList}\item 
+bool \hyperlink{class_g_r_a_a04dd210d0146656fd70e2d10ccdf0065}{Czy\-Jest\-Kolor} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze). \end{DoxyCompactList}\item 
+bool \hyperlink{class_g_r_a_a1be2bb0326db17fde5861adb676224fb}{Czy\-Jest\-Czworka} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy jest czworka w zestawie kart gracza. \end{DoxyCompactList}\item 
+bool \hyperlink{class_g_r_a_a4d6b5d423f0f4761d04bbb59325417fd}{Czy\-Jest\-Ful} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy jest ful w zestawie kart gracza. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a4ffb4d5d97261a8cd2220a6b59616bb6}{Wymiana} (\hyperlink{class_gracz}{Gracz} \&ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda sluzaca do wymiany kart gracza.\-Gracz zostaje spytany czy chce wymienic karty a potem ma mozliwosc wybrania ktore karty chce wymienic. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a99c72e824c90f1bdbb34626e67d83c15}{Wymien} (\hyperlink{class_karta}{Karta} \&Karteczka)
+\begin{DoxyCompactList}\small\item\em Metoda pobiera nowa karte z talii 52 kart. \end{DoxyCompactList}\item 
+int \hyperlink{class_g_r_a_aba14465002d4fa6440beca25bf3de2bc}{Znajdz\-Najwysza\-Karte} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda szuka najwyzszej karty w zestawie kart gracza. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a0c6db7542b551b1c514f70b3ea9a358c}{Porownaj\-Wyniki} (\hyperlink{class_gracz}{Gracz} \&ziomek1, \hyperlink{class_gracz}{Gracz} \&ziomek2)
+\begin{DoxyCompactList}\small\item\em Metoda liczy uklady kart graczy i decyduje o zwyciestwie gracza\-: zwyciestwo=0 -\/ przegrana zwyciestwo=1 -\/ wygrana zwyciestwo=2 -\/ remis. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a3d86b57e35ee8ff610a056c92dfa325b}{Rozdaj} (\hyperlink{class_gracz}{Gracz} \&gosc)
+\begin{DoxyCompactList}\small\item\em Metoda rozdaje karty z talii dla wszystkich graczy. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_ab18509b806b22568ba97a8ab4f121ae2}{Potasuj} ()
+\begin{DoxyCompactList}\small\item\em Metoda tasuje karty z talii. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a532269809ccd27cde2c8a7822bfc1a43}{Wyswietl\-Instrukcje} ()
+\begin{DoxyCompactList}\small\item\em Metoda wyswietla instrukcje. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_abfc9b5fdad9fef80496cb5b6ece66ed9}{Policz\-Uklady} (\hyperlink{class_gracz}{Gracz} \&ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a28a2c64b762a24b489af437c7eef6040}{Rozdaj\-Kase} (\hyperlink{class_gracz}{Gracz} \&ziomek, int ile)
+\begin{DoxyCompactList}\small\item\em Metoda rozdaje pieniadze dla kazdego z graczy. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a08adc6b506a6fc09f75e0cfbe37a383a}{Decyzja} (\hyperlink{class_gracz}{Gracz} \&ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za decyzje gracza \-: -\/podbija/czeka -\/przebija -\/pasuje. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_af1183dcbde935bdf4f5ee1d6882b6d80}{Decyzja\-Z\-Czekaniem} (\hyperlink{class_gracz}{Gracz} \&ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za decyzje gracza z czekaniem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_g_r_a_aa287e248b282a8f5578e7918f4e1677d}{Aktualna\-Stawka}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowujaca aktualna stawke znajdujaca sie w puli. \end{DoxyCompactList}\item 
+int \hyperlink{class_g_r_a_a4df8e87765364f55e3b0200954c0370a}{pula}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowujaca pule pieniedzy. \end{DoxyCompactList}\item 
+int \hyperlink{class_g_r_a_aebea0ee71fa4cacd63c9bb60dadbf926}{przebicie}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowujaca i ile gracz chce przebic stawke. \end{DoxyCompactList}\item 
+bool \hyperlink{class_g_r_a_a971a7f0bc74fcd858d40c3f530c5ef5f}{Czy\-Jest\-Przebicie}
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy jest przebicie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_g_r_a_a2b8440a2cf458585286161fd46ad1bea}{Porownanie\-W\-Przypadku0} (\hyperlink{class_gracz}{Gracz} \&ziomek1, \hyperlink{class_gracz}{Gracz} \&ziomek2)
+\begin{DoxyCompactList}\small\item\em Metoda porownuje zestawy graczy w przypadku gdy zaden z nich nie ma zadnego ukladu. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_afcde718df260d05688ef36c7cf51de58}{Porownanie\-W\-Przypadku1} (\hyperlink{class_gracz}{Gracz} \&ziomek1, \hyperlink{class_gracz}{Gracz} \&ziomek2)
+\begin{DoxyCompactList}\small\item\em Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma pare w swoim zestawie kart. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a51f60984eea162683d8e831952cceda8}{Porownanie\-W\-Przypadku2} (\hyperlink{class_gracz}{Gracz} \&ziomek1, \hyperlink{class_gracz}{Gracz} \&ziomek2)
+\begin{DoxyCompactList}\small\item\em Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a0f1a4cc74547c599d5b8b808e1613cd0}{Porownanie\-W\-Przypadku3} (\hyperlink{class_gracz}{Gracz} \&ziomek1, \hyperlink{class_gracz}{Gracz} \&ziomek2)
+\begin{DoxyCompactList}\small\item\em Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma trojke w swoim zestawie kart. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a69bc4518f57fe02f9218fc6be253f687}{Porownanie\-W\-Przypadku4} (\hyperlink{class_gracz}{Gracz} \&ziomek1, \hyperlink{class_gracz}{Gracz} \&ziomek2)
+\begin{DoxyCompactList}\small\item\em Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_abd74a787e23a77dc6ccccece977ceef0}{Porownanie\-W\-Przypadku5} (\hyperlink{class_gracz}{Gracz} \&ziomek1, \hyperlink{class_gracz}{Gracz} \&ziomek2)
+\begin{DoxyCompactList}\small\item\em Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a58fe652c31046c129a81ec7d3f8755d0}{Porownanie\-W\-Przypadku6} (\hyperlink{class_gracz}{Gracz} \&ziomek1, \hyperlink{class_gracz}{Gracz} \&ziomek2)
+\begin{DoxyCompactList}\small\item\em Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po fullu. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a4a73ac7324002fe6f1d1c49cc447527e}{Porownanie\-W\-Przypadku7} (\hyperlink{class_gracz}{Gracz} \&ziomek1, \hyperlink{class_gracz}{Gracz} \&ziomek2)
+\begin{DoxyCompactList}\small\item\em Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_r_a_a08ecbfc2389ce156e7e4cbb7a4bfbbcb}{Porownanie\-W\-Przypadku8} (\hyperlink{class_gracz}{Gracz} \&ziomek1, \hyperlink{class_gracz}{Gracz} \&ziomek2)
+\begin{DoxyCompactList}\small\item\em Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma pokera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_talia}{Talia} \hyperlink{class_g_r_a_a0432480fcbb139f19b413a1bd627b9ce}{G\-L\-O\-W\-N\-A}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_talia}{Talia} kart. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa modeluje pojecie \hyperlink{class_g_r_a}{G\-R\-A}. Jej atrybutem jest pole zawierajace talie. 
+
+Definicja w linii 21 pliku G\-R\-A.\-h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_g_r_a_a267a2409e7b7144922b2f058fd6e2724}{\index{G\-R\-A@{G\-R\-A}!G\-R\-A@{G\-R\-A}}
+\index{G\-R\-A@{G\-R\-A}!GRA@{G\-R\-A}}
+\subsubsection[{G\-R\-A}]{\setlength{\rightskip}{0pt plus 5cm}G\-R\-A\-::\-G\-R\-A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a267a2409e7b7144922b2f058fd6e2724}
+
+
+Definicja w linii 1162 pliku G\-R\-A.\-cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_g_r_a_a1be2bb0326db17fde5861adb676224fb}{\index{G\-R\-A@{G\-R\-A}!Czy\-Jest\-Czworka@{Czy\-Jest\-Czworka}}
+\index{Czy\-Jest\-Czworka@{Czy\-Jest\-Czworka}!GRA@{G\-R\-A}}
+\subsubsection[{Czy\-Jest\-Czworka}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-R\-A\-::\-Czy\-Jest\-Czworka (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a1be2bb0326db17fde5861adb676224fb}
+\begin{DoxyReturn}{Zwraca}
+Zwraca false lub true. 
+\end{DoxyReturn}
+
+
+Definicja w linii 531 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a1be2bb0326db17fde5861adb676224fb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a4d6b5d423f0f4761d04bbb59325417fd}{\index{G\-R\-A@{G\-R\-A}!Czy\-Jest\-Ful@{Czy\-Jest\-Ful}}
+\index{Czy\-Jest\-Ful@{Czy\-Jest\-Ful}!GRA@{G\-R\-A}}
+\subsubsection[{Czy\-Jest\-Ful}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-R\-A\-::\-Czy\-Jest\-Ful (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a4d6b5d423f0f4761d04bbb59325417fd}
+\begin{DoxyReturn}{Zwraca}
+Zwraca false lub true. 
+\end{DoxyReturn}
+
+
+Definicja w linii 609 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a4d6b5d423f0f4761d04bbb59325417fd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a04dd210d0146656fd70e2d10ccdf0065}{\index{G\-R\-A@{G\-R\-A}!Czy\-Jest\-Kolor@{Czy\-Jest\-Kolor}}
+\index{Czy\-Jest\-Kolor@{Czy\-Jest\-Kolor}!GRA@{G\-R\-A}}
+\subsubsection[{Czy\-Jest\-Kolor}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-R\-A\-::\-Czy\-Jest\-Kolor (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a04dd210d0146656fd70e2d10ccdf0065}
+\begin{DoxyReturn}{Zwraca}
+Zwraca false lub true. 
+\end{DoxyReturn}
+
+
+Definicja w linii 505 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a04dd210d0146656fd70e2d10ccdf0065_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a7c72639bade47c93f59e4d02344b29de}{\index{G\-R\-A@{G\-R\-A}!Czy\-Jest\-Para@{Czy\-Jest\-Para}}
+\index{Czy\-Jest\-Para@{Czy\-Jest\-Para}!GRA@{G\-R\-A}}
+\subsubsection[{Czy\-Jest\-Para}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-R\-A\-::\-Czy\-Jest\-Para (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a7c72639bade47c93f59e4d02344b29de}
+\begin{DoxyReturn}{Zwraca}
+Zwraca false lub true. 
+\end{DoxyReturn}
+
+
+Definicja w linii 298 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_g_r_a_a7c72639bade47c93f59e4d02344b29de_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a7c72639bade47c93f59e4d02344b29de_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a3fb6dbd37229ac58c84a0b4f5403a3d6}{\index{G\-R\-A@{G\-R\-A}!Czy\-Jest\-Strit@{Czy\-Jest\-Strit}}
+\index{Czy\-Jest\-Strit@{Czy\-Jest\-Strit}!GRA@{G\-R\-A}}
+\subsubsection[{Czy\-Jest\-Strit}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-R\-A\-::\-Czy\-Jest\-Strit (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a3fb6dbd37229ac58c84a0b4f5403a3d6}
+\begin{DoxyReturn}{Zwraca}
+Zwraca false lub true. 
+\end{DoxyReturn}
+
+
+Definicja w linii 462 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a3fb6dbd37229ac58c84a0b4f5403a3d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_ab62696649e029ba3adc5876dee3c8fbc}{\index{G\-R\-A@{G\-R\-A}!Czy\-Jest\-Trojka@{Czy\-Jest\-Trojka}}
+\index{Czy\-Jest\-Trojka@{Czy\-Jest\-Trojka}!GRA@{G\-R\-A}}
+\subsubsection[{Czy\-Jest\-Trojka}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-R\-A\-::\-Czy\-Jest\-Trojka (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_ab62696649e029ba3adc5876dee3c8fbc}
+\begin{DoxyReturn}{Zwraca}
+Zwraca false lub true. 
+\end{DoxyReturn}
+
+
+Definicja w linii 366 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_ab62696649e029ba3adc5876dee3c8fbc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a83ff1a2e629b7368180f5ac0cc06fcfd}{\index{G\-R\-A@{G\-R\-A}!Czy\-Sa\-Dwie\-Pary@{Czy\-Sa\-Dwie\-Pary}}
+\index{Czy\-Sa\-Dwie\-Pary@{Czy\-Sa\-Dwie\-Pary}!GRA@{G\-R\-A}}
+\subsubsection[{Czy\-Sa\-Dwie\-Pary}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-R\-A\-::\-Czy\-Sa\-Dwie\-Pary (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a83ff1a2e629b7368180f5ac0cc06fcfd}
+\begin{DoxyReturn}{Zwraca}
+Zwraca false lub true. 
+\end{DoxyReturn}
+
+
+Definicja w linii 316 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a83ff1a2e629b7368180f5ac0cc06fcfd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a08adc6b506a6fc09f75e0cfbe37a383a}{\index{G\-R\-A@{G\-R\-A}!Decyzja@{Decyzja}}
+\index{Decyzja@{Decyzja}!GRA@{G\-R\-A}}
+\subsubsection[{Decyzja}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Decyzja (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a08adc6b506a6fc09f75e0cfbe37a383a}
+
+
+Definicja w linii 1084 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a08adc6b506a6fc09f75e0cfbe37a383a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_af1183dcbde935bdf4f5ee1d6882b6d80}{\index{G\-R\-A@{G\-R\-A}!Decyzja\-Z\-Czekaniem@{Decyzja\-Z\-Czekaniem}}
+\index{Decyzja\-Z\-Czekaniem@{Decyzja\-Z\-Czekaniem}!GRA@{G\-R\-A}}
+\subsubsection[{Decyzja\-Z\-Czekaniem}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Decyzja\-Z\-Czekaniem (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_af1183dcbde935bdf4f5ee1d6882b6d80}
+
+
+Definicja w linii 1171 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_af1183dcbde935bdf4f5ee1d6882b6d80_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_abfc9b5fdad9fef80496cb5b6ece66ed9}{\index{G\-R\-A@{G\-R\-A}!Policz\-Uklady@{Policz\-Uklady}}
+\index{Policz\-Uklady@{Policz\-Uklady}!GRA@{G\-R\-A}}
+\subsubsection[{Policz\-Uklady}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Policz\-Uklady (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_abfc9b5fdad9fef80496cb5b6ece66ed9}
+
+
+Definicja w linii 255 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_abfc9b5fdad9fef80496cb5b6ece66ed9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_abfc9b5fdad9fef80496cb5b6ece66ed9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a0c6db7542b551b1c514f70b3ea9a358c}{\index{G\-R\-A@{G\-R\-A}!Porownaj\-Wyniki@{Porownaj\-Wyniki}}
+\index{Porownaj\-Wyniki@{Porownaj\-Wyniki}!GRA@{G\-R\-A}}
+\subsubsection[{Porownaj\-Wyniki}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Porownaj\-Wyniki (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek1, }
+\item[{{\bf Gracz} \&}]{ziomek2}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a0c6db7542b551b1c514f70b3ea9a358c}
+
+
+Definicja w linii 972 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a0c6db7542b551b1c514f70b3ea9a358c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a0c6db7542b551b1c514f70b3ea9a358c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a2b8440a2cf458585286161fd46ad1bea}{\index{G\-R\-A@{G\-R\-A}!Porownanie\-W\-Przypadku0@{Porownanie\-W\-Przypadku0}}
+\index{Porownanie\-W\-Przypadku0@{Porownanie\-W\-Przypadku0}!GRA@{G\-R\-A}}
+\subsubsection[{Porownanie\-W\-Przypadku0}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Porownanie\-W\-Przypadku0 (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek1, }
+\item[{{\bf Gracz} \&}]{ziomek2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_g_r_a_a2b8440a2cf458585286161fd46ad1bea}
+
+
+Definicja w linii 677 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a2b8440a2cf458585286161fd46ad1bea_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a2b8440a2cf458585286161fd46ad1bea_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_afcde718df260d05688ef36c7cf51de58}{\index{G\-R\-A@{G\-R\-A}!Porownanie\-W\-Przypadku1@{Porownanie\-W\-Przypadku1}}
+\index{Porownanie\-W\-Przypadku1@{Porownanie\-W\-Przypadku1}!GRA@{G\-R\-A}}
+\subsubsection[{Porownanie\-W\-Przypadku1}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Porownanie\-W\-Przypadku1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek1, }
+\item[{{\bf Gracz} \&}]{ziomek2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_g_r_a_afcde718df260d05688ef36c7cf51de58}
+
+
+Definicja w linii 700 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_afcde718df260d05688ef36c7cf51de58_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_afcde718df260d05688ef36c7cf51de58_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a51f60984eea162683d8e831952cceda8}{\index{G\-R\-A@{G\-R\-A}!Porownanie\-W\-Przypadku2@{Porownanie\-W\-Przypadku2}}
+\index{Porownanie\-W\-Przypadku2@{Porownanie\-W\-Przypadku2}!GRA@{G\-R\-A}}
+\subsubsection[{Porownanie\-W\-Przypadku2}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Porownanie\-W\-Przypadku2 (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek1, }
+\item[{{\bf Gracz} \&}]{ziomek2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_g_r_a_a51f60984eea162683d8e831952cceda8}
+
+
+Definicja w linii 723 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a51f60984eea162683d8e831952cceda8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a51f60984eea162683d8e831952cceda8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a0f1a4cc74547c599d5b8b808e1613cd0}{\index{G\-R\-A@{G\-R\-A}!Porownanie\-W\-Przypadku3@{Porownanie\-W\-Przypadku3}}
+\index{Porownanie\-W\-Przypadku3@{Porownanie\-W\-Przypadku3}!GRA@{G\-R\-A}}
+\subsubsection[{Porownanie\-W\-Przypadku3}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Porownanie\-W\-Przypadku3 (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek1, }
+\item[{{\bf Gracz} \&}]{ziomek2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_g_r_a_a0f1a4cc74547c599d5b8b808e1613cd0}
+
+
+Definicja w linii 768 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a0f1a4cc74547c599d5b8b808e1613cd0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a0f1a4cc74547c599d5b8b808e1613cd0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a69bc4518f57fe02f9218fc6be253f687}{\index{G\-R\-A@{G\-R\-A}!Porownanie\-W\-Przypadku4@{Porownanie\-W\-Przypadku4}}
+\index{Porownanie\-W\-Przypadku4@{Porownanie\-W\-Przypadku4}!GRA@{G\-R\-A}}
+\subsubsection[{Porownanie\-W\-Przypadku4}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Porownanie\-W\-Przypadku4 (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek1, }
+\item[{{\bf Gracz} \&}]{ziomek2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_g_r_a_a69bc4518f57fe02f9218fc6be253f687}
+
+
+Definicja w linii 792 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a69bc4518f57fe02f9218fc6be253f687_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a69bc4518f57fe02f9218fc6be253f687_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_abd74a787e23a77dc6ccccece977ceef0}{\index{G\-R\-A@{G\-R\-A}!Porownanie\-W\-Przypadku5@{Porownanie\-W\-Przypadku5}}
+\index{Porownanie\-W\-Przypadku5@{Porownanie\-W\-Przypadku5}!GRA@{G\-R\-A}}
+\subsubsection[{Porownanie\-W\-Przypadku5}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Porownanie\-W\-Przypadku5 (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek1, }
+\item[{{\bf Gracz} \&}]{ziomek2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_g_r_a_abd74a787e23a77dc6ccccece977ceef0}
+
+
+Definicja w linii 815 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_abd74a787e23a77dc6ccccece977ceef0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_abd74a787e23a77dc6ccccece977ceef0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a58fe652c31046c129a81ec7d3f8755d0}{\index{G\-R\-A@{G\-R\-A}!Porownanie\-W\-Przypadku6@{Porownanie\-W\-Przypadku6}}
+\index{Porownanie\-W\-Przypadku6@{Porownanie\-W\-Przypadku6}!GRA@{G\-R\-A}}
+\subsubsection[{Porownanie\-W\-Przypadku6}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Porownanie\-W\-Przypadku6 (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek1, }
+\item[{{\bf Gracz} \&}]{ziomek2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_g_r_a_a58fe652c31046c129a81ec7d3f8755d0}
+
+
+Definicja w linii 820 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a58fe652c31046c129a81ec7d3f8755d0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a4a73ac7324002fe6f1d1c49cc447527e}{\index{G\-R\-A@{G\-R\-A}!Porownanie\-W\-Przypadku7@{Porownanie\-W\-Przypadku7}}
+\index{Porownanie\-W\-Przypadku7@{Porownanie\-W\-Przypadku7}!GRA@{G\-R\-A}}
+\subsubsection[{Porownanie\-W\-Przypadku7}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Porownanie\-W\-Przypadku7 (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek1, }
+\item[{{\bf Gracz} \&}]{ziomek2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_g_r_a_a4a73ac7324002fe6f1d1c49cc447527e}
+
+
+Definicja w linii 827 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a4a73ac7324002fe6f1d1c49cc447527e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a4a73ac7324002fe6f1d1c49cc447527e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a08ecbfc2389ce156e7e4cbb7a4bfbbcb}{\index{G\-R\-A@{G\-R\-A}!Porownanie\-W\-Przypadku8@{Porownanie\-W\-Przypadku8}}
+\index{Porownanie\-W\-Przypadku8@{Porownanie\-W\-Przypadku8}!GRA@{G\-R\-A}}
+\subsubsection[{Porownanie\-W\-Przypadku8}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Porownanie\-W\-Przypadku8 (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek1, }
+\item[{{\bf Gracz} \&}]{ziomek2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_g_r_a_a08ecbfc2389ce156e7e4cbb7a4bfbbcb}
+
+
+Definicja w linii 849 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a08ecbfc2389ce156e7e4cbb7a4bfbbcb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_ab18509b806b22568ba97a8ab4f121ae2}{\index{G\-R\-A@{G\-R\-A}!Potasuj@{Potasuj}}
+\index{Potasuj@{Potasuj}!GRA@{G\-R\-A}}
+\subsubsection[{Potasuj}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Potasuj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_ab18509b806b22568ba97a8ab4f121ae2}
+
+
+Definicja w linii 1073 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_g_r_a_ab18509b806b22568ba97a8ab4f121ae2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_ab18509b806b22568ba97a8ab4f121ae2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a3d86b57e35ee8ff610a056c92dfa325b}{\index{G\-R\-A@{G\-R\-A}!Rozdaj@{Rozdaj}}
+\index{Rozdaj@{Rozdaj}!GRA@{G\-R\-A}}
+\subsubsection[{Rozdaj}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Rozdaj (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{gosc}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a3d86b57e35ee8ff610a056c92dfa325b}
+
+
+Definicja w linii 1055 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_g_r_a_a3d86b57e35ee8ff610a056c92dfa325b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a3d86b57e35ee8ff610a056c92dfa325b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a28a2c64b762a24b489af437c7eef6040}{\index{G\-R\-A@{G\-R\-A}!Rozdaj\-Kase@{Rozdaj\-Kase}}
+\index{Rozdaj\-Kase@{Rozdaj\-Kase}!GRA@{G\-R\-A}}
+\subsubsection[{Rozdaj\-Kase}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Rozdaj\-Kase (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek, }
+\item[{int}]{ile}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a28a2c64b762a24b489af437c7eef6040}
+
+
+Definicja w linii 1079 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a28a2c64b762a24b489af437c7eef6040_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a4ffb4d5d97261a8cd2220a6b59616bb6}{\index{G\-R\-A@{G\-R\-A}!Wymiana@{Wymiana}}
+\index{Wymiana@{Wymiana}!GRA@{G\-R\-A}}
+\subsubsection[{Wymiana}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Wymiana (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a4ffb4d5d97261a8cd2220a6b59616bb6}
+
+
+Definicja w linii 9 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a4ffb4d5d97261a8cd2220a6b59616bb6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a4ffb4d5d97261a8cd2220a6b59616bb6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a99c72e824c90f1bdbb34626e67d83c15}{\index{G\-R\-A@{G\-R\-A}!Wymien@{Wymien}}
+\index{Wymien@{Wymien}!GRA@{G\-R\-A}}
+\subsubsection[{Wymien}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Wymien (
+\begin{DoxyParamCaption}
+\item[{{\bf Karta} \&}]{Karteczka}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a99c72e824c90f1bdbb34626e67d83c15}
+
+
+Definicja w linii 238 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_g_r_a_a99c72e824c90f1bdbb34626e67d83c15_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a99c72e824c90f1bdbb34626e67d83c15_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a532269809ccd27cde2c8a7822bfc1a43}{\index{G\-R\-A@{G\-R\-A}!Wyswietl\-Instrukcje@{Wyswietl\-Instrukcje}}
+\index{Wyswietl\-Instrukcje@{Wyswietl\-Instrukcje}!GRA@{G\-R\-A}}
+\subsubsection[{Wyswietl\-Instrukcje}]{\setlength{\rightskip}{0pt plus 5cm}void G\-R\-A\-::\-Wyswietl\-Instrukcje (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a532269809ccd27cde2c8a7822bfc1a43}
+
+
+Definicja w linii 246 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a532269809ccd27cde2c8a7822bfc1a43_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_aba14465002d4fa6440beca25bf3de2bc}{\index{G\-R\-A@{G\-R\-A}!Znajdz\-Najwysza\-Karte@{Znajdz\-Najwysza\-Karte}}
+\index{Znajdz\-Najwysza\-Karte@{Znajdz\-Najwysza\-Karte}!GRA@{G\-R\-A}}
+\subsubsection[{Znajdz\-Najwysza\-Karte}]{\setlength{\rightskip}{0pt plus 5cm}int G\-R\-A\-::\-Znajdz\-Najwysza\-Karte (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_aba14465002d4fa6440beca25bf3de2bc}
+\begin{DoxyReturn}{Zwraca}
+Zwraca figure ktora jest najwyzsza w kartach gracza. 
+\end{DoxyReturn}
+
+
+Definicja w linii 859 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_aba14465002d4fa6440beca25bf3de2bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a2f160ac8a217e52308423ddc950488d5}{\index{G\-R\-A@{G\-R\-A}!Znajdz\-Pare@{Znajdz\-Pare}}
+\index{Znajdz\-Pare@{Znajdz\-Pare}!GRA@{G\-R\-A}}
+\subsubsection[{Znajdz\-Pare}]{\setlength{\rightskip}{0pt plus 5cm}int G\-R\-A\-::\-Znajdz\-Pare (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a2f160ac8a217e52308423ddc950488d5}
+\begin{DoxyReturn}{Zwraca}
+Zwraca figure ktora jest w parze. 
+\end{DoxyReturn}
+
+
+Definicja w linii 878 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_g_r_a_a2f160ac8a217e52308423ddc950488d5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a2f160ac8a217e52308423ddc950488d5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a532c7c083060d7c846ac159b1f5c3f81}{\index{G\-R\-A@{G\-R\-A}!Znajdz\-Pary@{Znajdz\-Pary}}
+\index{Znajdz\-Pary@{Znajdz\-Pary}!GRA@{G\-R\-A}}
+\subsubsection[{Znajdz\-Pary}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ G\-R\-A\-::\-Znajdz\-Pary (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a532c7c083060d7c846ac159b1f5c3f81}
+\begin{DoxyReturn}{Zwraca}
+Zwraca wektor , ktory przechowuje figury, ktore sa w parach. 
+\end{DoxyReturn}
+
+
+Definicja w linii 898 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a532c7c083060d7c846ac159b1f5c3f81_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a532c7c083060d7c846ac159b1f5c3f81_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_g_r_a_a1045d31987634f497e342a4485c7db7b}{\index{G\-R\-A@{G\-R\-A}!Znajdz\-Trojke@{Znajdz\-Trojke}}
+\index{Znajdz\-Trojke@{Znajdz\-Trojke}!GRA@{G\-R\-A}}
+\subsubsection[{Znajdz\-Trojke}]{\setlength{\rightskip}{0pt plus 5cm}int G\-R\-A\-::\-Znajdz\-Trojke (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_g_r_a_a1045d31987634f497e342a4485c7db7b}
+\begin{DoxyReturn}{Zwraca}
+Zwraca figure ktora jest w trojce. 
+\end{DoxyReturn}
+
+
+Definicja w linii 922 pliku G\-R\-A.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_g_r_a_a1045d31987634f497e342a4485c7db7b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_g_r_a_a1045d31987634f497e342a4485c7db7b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_g_r_a_aa287e248b282a8f5578e7918f4e1677d}{\index{G\-R\-A@{G\-R\-A}!Aktualna\-Stawka@{Aktualna\-Stawka}}
+\index{Aktualna\-Stawka@{Aktualna\-Stawka}!GRA@{G\-R\-A}}
+\subsubsection[{Aktualna\-Stawka}]{\setlength{\rightskip}{0pt plus 5cm}int G\-R\-A\-::\-Aktualna\-Stawka}}\label{class_g_r_a_aa287e248b282a8f5578e7918f4e1677d}
+
+
+Definicja w linii 179 pliku G\-R\-A.\-h.
+
+\hypertarget{class_g_r_a_a971a7f0bc74fcd858d40c3f530c5ef5f}{\index{G\-R\-A@{G\-R\-A}!Czy\-Jest\-Przebicie@{Czy\-Jest\-Przebicie}}
+\index{Czy\-Jest\-Przebicie@{Czy\-Jest\-Przebicie}!GRA@{G\-R\-A}}
+\subsubsection[{Czy\-Jest\-Przebicie}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-R\-A\-::\-Czy\-Jest\-Przebicie}}\label{class_g_r_a_a971a7f0bc74fcd858d40c3f530c5ef5f}
+\begin{DoxyReturn}{Zwraca}
+Zwraca false lub true. 
+\end{DoxyReturn}
+
+
+Definicja w linii 192 pliku G\-R\-A.\-h.
+
+\hypertarget{class_g_r_a_a0432480fcbb139f19b413a1bd627b9ce}{\index{G\-R\-A@{G\-R\-A}!G\-L\-O\-W\-N\-A@{G\-L\-O\-W\-N\-A}}
+\index{G\-L\-O\-W\-N\-A@{G\-L\-O\-W\-N\-A}!GRA@{G\-R\-A}}
+\subsubsection[{G\-L\-O\-W\-N\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Talia} G\-R\-A\-::\-G\-L\-O\-W\-N\-A\hspace{0.3cm}{\ttfamily [private]}}}\label{class_g_r_a_a0432480fcbb139f19b413a1bd627b9ce}
+
+
+Definicja w linii 26 pliku G\-R\-A.\-h.
+
+\hypertarget{class_g_r_a_aebea0ee71fa4cacd63c9bb60dadbf926}{\index{G\-R\-A@{G\-R\-A}!przebicie@{przebicie}}
+\index{przebicie@{przebicie}!GRA@{G\-R\-A}}
+\subsubsection[{przebicie}]{\setlength{\rightskip}{0pt plus 5cm}int G\-R\-A\-::przebicie}}\label{class_g_r_a_aebea0ee71fa4cacd63c9bb60dadbf926}
+
+
+Definicja w linii 187 pliku G\-R\-A.\-h.
+
+\hypertarget{class_g_r_a_a4df8e87765364f55e3b0200954c0370a}{\index{G\-R\-A@{G\-R\-A}!pula@{pula}}
+\index{pula@{pula}!GRA@{G\-R\-A}}
+\subsubsection[{pula}]{\setlength{\rightskip}{0pt plus 5cm}int G\-R\-A\-::pula}}\label{class_g_r_a_a4df8e87765364f55e3b0200954c0370a}
+
+
+Definicja w linii 183 pliku G\-R\-A.\-h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/inc/\hyperlink{_g_r_a_8h}{G\-R\-A.\-h}\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/src/\hyperlink{_g_r_a_8cpp}{G\-R\-A.\-cpp}\end{DoxyCompactItemize}

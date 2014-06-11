@@ -1,0 +1,24 @@
+<map id="GRA::PorownajWyniki" name="GRA::PorownajWyniki">
+<area shape="rect" id="node3" href="$class_g_r_a.html#abfc9b5fdad9fef80496cb5b6ece66ed9" title="Metoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma." alt="" coords="245,192,381,221"/>
+<area shape="rect" id="node21" href="$class_g_r_a.html#a2b8440a2cf458585286161fd46ad1bea" title="Metoda porownuje zestawy graczy w przypadku gdy zaden z nich nie ma zadnego ukladu." alt="" coords="209,585,417,615"/>
+<area shape="rect" id="node25" href="$class_g_r_a.html#afcde718df260d05688ef36c7cf51de58" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma pare w swoim zestawie kart..." alt="" coords="209,425,417,455"/>
+<area shape="rect" id="node30" href="$class_g_r_a.html#a51f60984eea162683d8e831952cceda8" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart..." alt="" coords="209,532,417,561"/>
+<area shape="rect" id="node36" href="$class_g_r_a.html#a0f1a4cc74547c599d5b8b808e1613cd0" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma trojke w swoim zestawie kart..." alt="" coords="468,376,676,405"/>
+<area shape="rect" id="node41" href="$class_g_r_a.html#a69bc4518f57fe02f9218fc6be253f687" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart..." alt="" coords="468,639,676,668"/>
+<area shape="rect" id="node44" href="$class_g_r_a.html#abd74a787e23a77dc6ccccece977ceef0" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart..." alt="" coords="209,639,417,668"/>
+<area shape="rect" id="node47" href="$class_g_r_a.html#a58fe652c31046c129a81ec7d3f8755d0" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po fullu." alt="" coords="209,692,417,721"/>
+<area shape="rect" id="node49" href="$class_g_r_a.html#a4a73ac7324002fe6f1d1c49cc447527e" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart..." alt="" coords="209,479,417,508"/>
+<area shape="rect" id="node52" href="$class_g_r_a.html#a08ecbfc2389ce156e7e4cbb7a4bfbbcb" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma pokera." alt="" coords="209,796,417,825"/>
+<area shape="rect" id="node5" href="$class_g_r_a.html#a7c72639bade47c93f59e4d02344b29de" title="Metoda sprawdza czy jest para w zestawie kart gracza." alt="" coords="752,328,885,357"/>
+<area shape="rect" id="node9" href="$class_g_r_a.html#a83ff1a2e629b7368180f5ac0cc06fcfd" title="Metoda sprawdza czy sa dwie pary w zestawie kart gracza." alt="" coords="495,5,649,35"/>
+<area shape="rect" id="node11" href="$class_g_r_a.html#ab62696649e029ba3adc5876dee3c8fbc" title="Metoda sprawdza czy jest trojka w zestawie kart gracza." alt="" coords="500,59,644,88"/>
+<area shape="rect" id="node13" href="$class_g_r_a.html#a04dd210d0146656fd70e2d10ccdf0065" title="Metoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze)." alt="" coords="503,112,641,141"/>
+<area shape="rect" id="node15" href="$class_g_r_a.html#a3fb6dbd37229ac58c84a0b4f5403a3d6" title="Metoda sprawdza czy jest strit w zestawie kart gracza." alt="" coords="507,165,637,195"/>
+<area shape="rect" id="node17" href="$class_g_r_a.html#a4d6b5d423f0f4761d04bbb59325417fd" title="Metoda sprawdza czy jest ful w zestawie kart gracza." alt="" coords="509,219,635,248"/>
+<area shape="rect" id="node19" href="$class_g_r_a.html#a1be2bb0326db17fde5861adb676224fb" title="Metoda sprawdza czy jest czworka w zestawie kart gracza." alt="" coords="492,272,652,301"/>
+<area shape="rect" id="node7" href="$class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="960,432,1131,461"/>
+<area shape="rect" id="node23" href="$class_g_r_a.html#aba14465002d4fa6440beca25bf3de2bc" title="Metoda szuka najwyzszej karty w zestawie kart gracza." alt="" coords="725,612,912,641"/>
+<area shape="rect" id="node27" href="$class_g_r_a.html#a2f160ac8a217e52308423ddc950488d5" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="756,471,881,500"/>
+<area shape="rect" id="node32" href="$class_g_r_a.html#a532c7c083060d7c846ac159b1f5c3f81" title="Metoda szuka pary w zestawie kart gracza." alt="" coords="509,531,635,560"/>
+<area shape="rect" id="node38" href="$class_g_r_a.html#a1045d31987634f497e342a4485c7db7b" title="Metoda znajduje trojke w zestawie kart gracza." alt="" coords="752,393,885,423"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="CPU::WymianaDla3" name="CPU::WymianaDla3">
+<area shape="rect" id="node3" href="$class_g_r_a.html#a1045d31987634f497e342a4485c7db7b" title="Metoda znajduje trojke w zestawie kart gracza." alt="" coords="196,5,329,35"/>
+<area shape="rect" id="node7" href="$class_g_r_a.html#a99c72e824c90f1bdbb34626e67d83c15" title="Metoda pobiera nowa karte z talii 52 kart." alt="" coords="209,59,316,88"/>
+<area shape="rect" id="node5" href="$class_karta.html#ab0decbab8d4483bcdde418a868595e4f" title="Metoda sprawdza czy ta sama figura." alt="" coords="379,5,549,35"/>
+<area shape="rect" id="node9" href="$class_talia.html#a7ed9525f83b4260dacc192cffca859d5" title="Metoda pobiera karte z talii." alt="" coords="397,59,531,88"/>
+</map>

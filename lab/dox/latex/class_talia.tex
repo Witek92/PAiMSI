@@ -1,0 +1,204 @@
+\hypertarget{class_talia}{\section{Dokumentacja klasy Talia}
+\label{class_talia}\index{Talia@{Talia}}
+}
+
+
+Modeluje pojecie \hyperlink{class_talia}{Talia}.  
+
+
+
+
+{\ttfamily \#include $<$talia.\-h$>$}
+
+
+
+Diagram współpracy dla Talia\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=122pt]{class_talia__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_talia_aafcb8bcf4110ec648a2bdbfdff7987c1}{Wyswietl} ()
+\begin{DoxyCompactList}\small\item\em Metoda sluzaca do wyswietlania wszystkich kart z talii. \end{DoxyCompactList}\item 
+\hyperlink{class_talia_a4a8993da8a2ac459510086ed77b31edf}{Talia} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{class_talia_a45eec398669ef254f01c5daca8a2dae3}{$\sim$\-Talia} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje destruktor. \end{DoxyCompactList}\item 
+void \hyperlink{class_talia_a6c0e27d70bbbfbbcb14d6f65073bebb8}{Potasuj} ()
+\begin{DoxyCompactList}\small\item\em Metoda ktora losowo tasuje talie. \end{DoxyCompactList}\item 
+void \hyperlink{class_talia_a7ed9525f83b4260dacc192cffca859d5}{Pobierz\-Karte} (\hyperlink{class_karta}{Karta} \&Karteczka)
+\begin{DoxyCompactList}\small\item\em Metoda pobiera karte z talii. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_talia_a6417818a1fa3d920934fb850f4ace4bf}{Ilosc\-Z}
+\begin{DoxyCompactList}\small\item\em Obiekt typu int przechowujacy ilosc kart w talii. \end{DoxyCompactList}\item 
+\hyperlink{class_karta}{Karta} $\ast$ \hyperlink{class_talia_a611bbe0aca740339a6d4c761afe228c2}{talia}
+\begin{DoxyCompactList}\small\item\em Obiekt typu \hyperlink{class_karta}{Karta}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_talia_a579bd5870bc309c893d6580f5a1efd0b}{Wypelnij\-Talie} ()
+\begin{DoxyCompactList}\small\item\em Metoda wypelnia talie dla czterech rodzai kolorow i trzynastu figur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statyczne atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_talia_a7e3a3c92936d56d20b608a402e62f526}{ilosc} =52
+\begin{DoxyCompactList}\small\item\em Zmienna stala statyczna typu int okreslajaca ilosc kart w talii(52). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_talia_af9f6d5c2d02915f152c0e1faac70d011}{operator$<$$<$} (ostream \&Ekran, \hyperlink{class_talia}{Talia} \&\-\_\-\-Talia)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operatora wyjscia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa modeluje pojecie talia. 
+
+Definicja w linii 19 pliku talia.\-h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_talia_a4a8993da8a2ac459510086ed77b31edf}{\index{Talia@{Talia}!Talia@{Talia}}
+\index{Talia@{Talia}!Talia@{Talia}}
+\subsubsection[{Talia}]{\setlength{\rightskip}{0pt plus 5cm}Talia\-::\-Talia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_talia_a4a8993da8a2ac459510086ed77b31edf}
+
+
+Definicja w linii 55 pliku talia.\-cpp.
+
+\hypertarget{class_talia_a45eec398669ef254f01c5daca8a2dae3}{\index{Talia@{Talia}!$\sim$\-Talia@{$\sim$\-Talia}}
+\index{$\sim$\-Talia@{$\sim$\-Talia}!Talia@{Talia}}
+\subsubsection[{$\sim$\-Talia}]{\setlength{\rightskip}{0pt plus 5cm}Talia\-::$\sim$\-Talia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_talia_a45eec398669ef254f01c5daca8a2dae3}
+
+
+Definicja w linii 62 pliku talia.\-cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_talia_a7ed9525f83b4260dacc192cffca859d5}{\index{Talia@{Talia}!Pobierz\-Karte@{Pobierz\-Karte}}
+\index{Pobierz\-Karte@{Pobierz\-Karte}!Talia@{Talia}}
+\subsubsection[{Pobierz\-Karte}]{\setlength{\rightskip}{0pt plus 5cm}void Talia\-::\-Pobierz\-Karte (
+\begin{DoxyParamCaption}
+\item[{{\bf Karta} \&}]{Karteczka}
+\end{DoxyParamCaption}
+)}}\label{class_talia_a7ed9525f83b4260dacc192cffca859d5}
+
+
+Definicja w linii 102 pliku talia.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_talia_a7ed9525f83b4260dacc192cffca859d5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_talia_a6c0e27d70bbbfbbcb14d6f65073bebb8}{\index{Talia@{Talia}!Potasuj@{Potasuj}}
+\index{Potasuj@{Potasuj}!Talia@{Talia}}
+\subsubsection[{Potasuj}]{\setlength{\rightskip}{0pt plus 5cm}void Talia\-::\-Potasuj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_talia_a6c0e27d70bbbfbbcb14d6f65073bebb8}
+
+
+Definicja w linii 68 pliku talia.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_talia_a6c0e27d70bbbfbbcb14d6f65073bebb8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_talia_a579bd5870bc309c893d6580f5a1efd0b}{\index{Talia@{Talia}!Wypelnij\-Talie@{Wypelnij\-Talie}}
+\index{Wypelnij\-Talie@{Wypelnij\-Talie}!Talia@{Talia}}
+\subsubsection[{Wypelnij\-Talie}]{\setlength{\rightskip}{0pt plus 5cm}void Talia\-::\-Wypelnij\-Talie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_talia_a579bd5870bc309c893d6580f5a1efd0b}
+
+
+Definicja w linii 16 pliku talia.\-cpp.
+
+\hypertarget{class_talia_aafcb8bcf4110ec648a2bdbfdff7987c1}{\index{Talia@{Talia}!Wyswietl@{Wyswietl}}
+\index{Wyswietl@{Wyswietl}!Talia@{Talia}}
+\subsubsection[{Wyswietl}]{\setlength{\rightskip}{0pt plus 5cm}void Talia\-::\-Wyswietl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_talia_aafcb8bcf4110ec648a2bdbfdff7987c1}
+
+
+Definicja w linii 35 pliku talia.\-cpp.
+
+
+
+\subsection{Dokumentacja przyjaciół i funkcji związanych}
+\hypertarget{class_talia_af9f6d5c2d02915f152c0e1faac70d011}{\index{Talia@{Talia}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Talia@{Talia}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{Ekran, }
+\item[{{\bf Talia} \&}]{\-\_\-\-Talia}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_talia_af9f6d5c2d02915f152c0e1faac70d011}
+
+
+Definicja w linii 45 pliku talia.\-cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_talia_a7e3a3c92936d56d20b608a402e62f526}{\index{Talia@{Talia}!ilosc@{ilosc}}
+\index{ilosc@{ilosc}!Talia@{Talia}}
+\subsubsection[{ilosc}]{\setlength{\rightskip}{0pt plus 5cm}const int Talia\-::ilosc =52\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_talia_a7e3a3c92936d56d20b608a402e62f526}
+
+
+Definicja w linii 24 pliku talia.\-h.
+
+\hypertarget{class_talia_a6417818a1fa3d920934fb850f4ace4bf}{\index{Talia@{Talia}!Ilosc\-Z@{Ilosc\-Z}}
+\index{Ilosc\-Z@{Ilosc\-Z}!Talia@{Talia}}
+\subsubsection[{Ilosc\-Z}]{\setlength{\rightskip}{0pt plus 5cm}int Talia\-::\-Ilosc\-Z}}\label{class_talia_a6417818a1fa3d920934fb850f4ace4bf}
+
+
+Definicja w linii 34 pliku talia.\-h.
+
+\hypertarget{class_talia_a611bbe0aca740339a6d4c761afe228c2}{\index{Talia@{Talia}!talia@{talia}}
+\index{talia@{talia}!Talia@{Talia}}
+\subsubsection[{talia}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Karta}$\ast$ Talia\-::talia}}\label{class_talia_a611bbe0aca740339a6d4c761afe228c2}
+
+
+Definicja w linii 38 pliku talia.\-h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/inc/\hyperlink{talia_8h}{talia.\-h}\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/src/\hyperlink{talia_8cpp}{talia.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="GRA::PorownanieWPrzypadku5" name="GRA::PorownanieWPrzypadku5">
+<area shape="rect" id="node3" href="$class_g_r_a.html#a69bc4518f57fe02f9218fc6be253f687" title="Metoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart..." alt="" coords="265,5,473,35"/>
+<area shape="rect" id="node5" href="$class_g_r_a.html#aba14465002d4fa6440beca25bf3de2bc" title="Metoda szuka najwyzszej karty w zestawie kart gracza." alt="" coords="523,5,709,35"/>
+</map>

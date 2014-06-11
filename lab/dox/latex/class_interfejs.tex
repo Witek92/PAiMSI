@@ -1,0 +1,414 @@
+\hypertarget{class_interfejs}{\section{Dokumentacja klasy Interfejs}
+\label{class_interfejs}\index{Interfejs@{Interfejs}}
+}
+
+
+Modeluje pojecie \hyperlink{class_interfejs}{Interfejs}.  
+
+
+
+
+{\ttfamily \#include $<$interfejs.\-h$>$}
+
+
+
+Diagram współpracy dla Interfejs\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{class_interfejs__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_interfejs_a3082f4dcf5c041d4a7ddb07e3bee08e6}{Dzialaj} ()
+\begin{DoxyCompactList}\small\item\em Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje. \end{DoxyCompactList}\item 
+\hyperlink{class_gracz}{Gracz} \hyperlink{class_interfejs_a7a91a3e36e13d01ed4ce5a39648a1f44}{Wskaz\-Wygranego} ()
+\begin{DoxyCompactList}\small\item\em Obiekt typu \hyperlink{class_gracz}{Gracz} wskazuje wygranego. \end{DoxyCompactList}\item 
+void \hyperlink{class_interfejs_aac98165513d97397ef3cc37fd3f4cf21}{Proba} ()
+\begin{DoxyCompactList}\small\item\em Metoda pomocnicza dla sprawdzenia poprawnosci dzialania programu. \end{DoxyCompactList}\item 
+void \hyperlink{class_interfejs_a3270c2153791c6e17414246ac021614f}{Wyswietl\-Uklad} (\hyperlink{class_gracz}{Gracz} ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda wyswietla uklad na koncu programu jaki uzyskal kazdy z graczy. \end{DoxyCompactList}\item 
+void \hyperlink{class_interfejs_a4a3271fa03c1187ca79c659da858219f}{Wyswietl\-Instrukcje} ()
+\begin{DoxyCompactList}\small\item\em Metoda wyswietla instrukcje do programu. \end{DoxyCompactList}\item 
+void \hyperlink{class_interfejs_a70ba70fc2dcbf4979e7887e3e8509cbe}{Pobierz\-Hajs\-Poczatkowy} ()
+\begin{DoxyCompactList}\small\item\em Metoda ktora pobiera poczatkowa stawke pieniedzy wpisana przez uzytkownika. \end{DoxyCompactList}\item 
+void \hyperlink{class_interfejs_a6524bbce2125b7fd4ac503b8f872852e}{Przydziel\-Poczatkowe\-Pule0} (\hyperlink{class_gracz}{Gracz} \&ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda przydziela poczatkowa stawke rowna 50. \end{DoxyCompactList}\item 
+void \hyperlink{class_interfejs_a955a24fe86fcb5d2cc80986ef3c57964}{Przydziel\-Poczatkowe\-Pule1} (\hyperlink{class_gracz}{Gracz} \&ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda przydziela poczatkowa stawke rowna 100. \end{DoxyCompactList}\item 
+void \hyperlink{class_interfejs_a8cd58b0d09bab1df3ccc9b8260385ccd}{Przydziel\-Poczatkowe\-Pule} (\hyperlink{class_gracz}{Gracz} \&ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda przydziela poczatkowa stawke wszystkim graczom rowna 100. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gracz}{Gracz} $\ast$ \hyperlink{class_interfejs_ab7dda8ddff87d9cb57f210f427871de8}{Gracze}
+\begin{DoxyCompactList}\small\item\em Obiekt typu \hyperlink{class_gracz}{Gracz}. \end{DoxyCompactList}\item 
+\hyperlink{class_g_r_a}{G\-R\-A} \hyperlink{class_interfejs_a9d2350b90035a0faadcb7b9515821db6}{G\-I\-E\-R\-K\-A}
+\begin{DoxyCompactList}\small\item\em Obiekt typu \hyperlink{class_g_r_a}{G\-R\-A}. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_u}{C\-P\-U} $\ast$ \hyperlink{class_interfejs_a81d63adb225efb2fb0c97f81841156b3}{Komputery}
+\begin{DoxyCompactList}\small\item\em Obiekt typu \hyperlink{class_c_p_u}{C\-P\-U}. \end{DoxyCompactList}\item 
+int \hyperlink{class_interfejs_a4978f16cdd27e1f44580d29a3b80e1f5}{Ilosc\-Graczy}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowuje ilosc graczy. \end{DoxyCompactList}\item 
+int \hyperlink{class_interfejs_ab2e839ed9e43affb8701d89338564e2c}{Ilosc\-Graczy\-C\-P\-U}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowuje ilosc graczy= komputerow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_interfejs_a8ff83444a040a2bd40e2b1a3d2e10e05}{Wyswietl\-Intro} ()
+\begin{DoxyCompactList}\small\item\em Metoda wyswietla ekran startowy programu. \end{DoxyCompactList}\item 
+void \hyperlink{class_interfejs_af26c144e5225856535e91bc51c6edeac}{Nowa\-Gra} ()
+\begin{DoxyCompactList}\small\item\em Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kazdemu z graczy,decyduje o wymianie kart,wyswietla wygranego oraz pokazuje kombinacje ukladow 4 graczy bioracych udzial w grze. \end{DoxyCompactList}\item 
+void \hyperlink{class_interfejs_a65cdf5c6927e442bd60658a9077f751e}{Usun\-Gracza} (\hyperlink{class_gracz}{Gracz} \&ziomek)
+\begin{DoxyCompactList}\small\item\em Metoda po wybraniu przez gracza decyzji o pasowaniu usuwa go z listy graczy. \end{DoxyCompactList}\item 
+void \hyperlink{class_interfejs_ac3f1f271790f6f2f0851b96f4322dbfd}{Usun\-Gracza} (\hyperlink{class_c_p_u}{C\-P\-U} \&Komp)
+\begin{DoxyCompactList}\small\item\em Metoda po wybraniu przez komputer decyzji o pasowaniu usuwa go z listy graczy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_interfejs_a79c7d1ef2820f5d5104ab91b691d6189}{hajspoczatkowy}
+\begin{DoxyCompactList}\small\item\em Zmienna zawierajaca poczatkowa stawke pieniedzy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa modeluje pojecie interfejs. 
+
+Definicja w linii 29 pliku interfejs.\-h.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_interfejs_a3082f4dcf5c041d4a7ddb07e3bee08e6}{\index{Interfejs@{Interfejs}!Dzialaj@{Dzialaj}}
+\index{Dzialaj@{Dzialaj}!Interfejs@{Interfejs}}
+\subsubsection[{Dzialaj}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Dzialaj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_interfejs_a3082f4dcf5c041d4a7ddb07e3bee08e6}
+
+
+Definicja w linii 13 pliku interfejs.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interfejs_a3082f4dcf5c041d4a7ddb07e3bee08e6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_interfejs_a3082f4dcf5c041d4a7ddb07e3bee08e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interfejs_af26c144e5225856535e91bc51c6edeac}{\index{Interfejs@{Interfejs}!Nowa\-Gra@{Nowa\-Gra}}
+\index{Nowa\-Gra@{Nowa\-Gra}!Interfejs@{Interfejs}}
+\subsubsection[{Nowa\-Gra}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Nowa\-Gra (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_interfejs_af26c144e5225856535e91bc51c6edeac}
+
+
+Definicja w linii 59 pliku interfejs.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interfejs_af26c144e5225856535e91bc51c6edeac_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interfejs_af26c144e5225856535e91bc51c6edeac_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interfejs_a70ba70fc2dcbf4979e7887e3e8509cbe}{\index{Interfejs@{Interfejs}!Pobierz\-Hajs\-Poczatkowy@{Pobierz\-Hajs\-Poczatkowy}}
+\index{Pobierz\-Hajs\-Poczatkowy@{Pobierz\-Hajs\-Poczatkowy}!Interfejs@{Interfejs}}
+\subsubsection[{Pobierz\-Hajs\-Poczatkowy}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Pobierz\-Hajs\-Poczatkowy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_interfejs_a70ba70fc2dcbf4979e7887e3e8509cbe}
+
+
+Definicja w linii 767 pliku interfejs.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interfejs_a70ba70fc2dcbf4979e7887e3e8509cbe_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interfejs_aac98165513d97397ef3cc37fd3f4cf21}{\index{Interfejs@{Interfejs}!Proba@{Proba}}
+\index{Proba@{Proba}!Interfejs@{Interfejs}}
+\subsubsection[{Proba}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Proba (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_interfejs_aac98165513d97397ef3cc37fd3f4cf21}
+\hypertarget{class_interfejs_a8cd58b0d09bab1df3ccc9b8260385ccd}{\index{Interfejs@{Interfejs}!Przydziel\-Poczatkowe\-Pule@{Przydziel\-Poczatkowe\-Pule}}
+\index{Przydziel\-Poczatkowe\-Pule@{Przydziel\-Poczatkowe\-Pule}!Interfejs@{Interfejs}}
+\subsubsection[{Przydziel\-Poczatkowe\-Pule}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Przydziel\-Poczatkowe\-Pule (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_interfejs_a8cd58b0d09bab1df3ccc9b8260385ccd}
+
+
+Definicja w linii 838 pliku interfejs.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interfejs_a8cd58b0d09bab1df3ccc9b8260385ccd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interfejs_a6524bbce2125b7fd4ac503b8f872852e}{\index{Interfejs@{Interfejs}!Przydziel\-Poczatkowe\-Pule0@{Przydziel\-Poczatkowe\-Pule0}}
+\index{Przydziel\-Poczatkowe\-Pule0@{Przydziel\-Poczatkowe\-Pule0}!Interfejs@{Interfejs}}
+\subsubsection[{Przydziel\-Poczatkowe\-Pule0}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Przydziel\-Poczatkowe\-Pule0 (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_interfejs_a6524bbce2125b7fd4ac503b8f872852e}
+
+
+Definicja w linii 773 pliku interfejs.\-cpp.
+
+\hypertarget{class_interfejs_a955a24fe86fcb5d2cc80986ef3c57964}{\index{Interfejs@{Interfejs}!Przydziel\-Poczatkowe\-Pule1@{Przydziel\-Poczatkowe\-Pule1}}
+\index{Przydziel\-Poczatkowe\-Pule1@{Przydziel\-Poczatkowe\-Pule1}!Interfejs@{Interfejs}}
+\subsubsection[{Przydziel\-Poczatkowe\-Pule1}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Przydziel\-Poczatkowe\-Pule1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_interfejs_a955a24fe86fcb5d2cc80986ef3c57964}
+
+
+Definicja w linii 780 pliku interfejs.\-cpp.
+
+\hypertarget{class_interfejs_a65cdf5c6927e442bd60658a9077f751e}{\index{Interfejs@{Interfejs}!Usun\-Gracza@{Usun\-Gracza}}
+\index{Usun\-Gracza@{Usun\-Gracza}!Interfejs@{Interfejs}}
+\subsubsection[{Usun\-Gracza}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Usun\-Gracza (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz} \&}]{ziomek}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_interfejs_a65cdf5c6927e442bd60658a9077f751e}
+
+
+Definicja w linii 789 pliku interfejs.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interfejs_a65cdf5c6927e442bd60658a9077f751e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interfejs_ac3f1f271790f6f2f0851b96f4322dbfd}{\index{Interfejs@{Interfejs}!Usun\-Gracza@{Usun\-Gracza}}
+\index{Usun\-Gracza@{Usun\-Gracza}!Interfejs@{Interfejs}}
+\subsubsection[{Usun\-Gracza}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Usun\-Gracza (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-P\-U} \&}]{Komp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_interfejs_ac3f1f271790f6f2f0851b96f4322dbfd}
+
+
+Definicja w linii 813 pliku interfejs.\-cpp.
+
+\hypertarget{class_interfejs_a7a91a3e36e13d01ed4ce5a39648a1f44}{\index{Interfejs@{Interfejs}!Wskaz\-Wygranego@{Wskaz\-Wygranego}}
+\index{Wskaz\-Wygranego@{Wskaz\-Wygranego}!Interfejs@{Interfejs}}
+\subsubsection[{Wskaz\-Wygranego}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gracz} Interfejs\-::\-Wskaz\-Wygranego (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_interfejs_a7a91a3e36e13d01ed4ce5a39648a1f44}
+
+
+Definicja w linii 596 pliku interfejs.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interfejs_a7a91a3e36e13d01ed4ce5a39648a1f44_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interfejs_a7a91a3e36e13d01ed4ce5a39648a1f44_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interfejs_a4a3271fa03c1187ca79c659da858219f}{\index{Interfejs@{Interfejs}!Wyswietl\-Instrukcje@{Wyswietl\-Instrukcje}}
+\index{Wyswietl\-Instrukcje@{Wyswietl\-Instrukcje}!Interfejs@{Interfejs}}
+\subsubsection[{Wyswietl\-Instrukcje}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Wyswietl\-Instrukcje (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_interfejs_a4a3271fa03c1187ca79c659da858219f}
+
+
+Definicja w linii 758 pliku interfejs.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interfejs_a4a3271fa03c1187ca79c659da858219f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interfejs_a8ff83444a040a2bd40e2b1a3d2e10e05}{\index{Interfejs@{Interfejs}!Wyswietl\-Intro@{Wyswietl\-Intro}}
+\index{Wyswietl\-Intro@{Wyswietl\-Intro}!Interfejs@{Interfejs}}
+\subsubsection[{Wyswietl\-Intro}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Wyswietl\-Intro (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_interfejs_a8ff83444a040a2bd40e2b1a3d2e10e05}
+
+
+Definicja w linii 747 pliku interfejs.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interfejs_a8ff83444a040a2bd40e2b1a3d2e10e05_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interfejs_a3270c2153791c6e17414246ac021614f}{\index{Interfejs@{Interfejs}!Wyswietl\-Uklad@{Wyswietl\-Uklad}}
+\index{Wyswietl\-Uklad@{Wyswietl\-Uklad}!Interfejs@{Interfejs}}
+\subsubsection[{Wyswietl\-Uklad}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Wyswietl\-Uklad (
+\begin{DoxyParamCaption}
+\item[{{\bf Gracz}}]{ziomek}
+\end{DoxyParamCaption}
+)}}\label{class_interfejs_a3270c2153791c6e17414246ac021614f}
+
+
+Definicja w linii 677 pliku interfejs.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interfejs_a3270c2153791c6e17414246ac021614f_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_interfejs_a9d2350b90035a0faadcb7b9515821db6}{\index{Interfejs@{Interfejs}!G\-I\-E\-R\-K\-A@{G\-I\-E\-R\-K\-A}}
+\index{G\-I\-E\-R\-K\-A@{G\-I\-E\-R\-K\-A}!Interfejs@{Interfejs}}
+\subsubsection[{G\-I\-E\-R\-K\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-R\-A} Interfejs\-::\-G\-I\-E\-R\-K\-A}}\label{class_interfejs_a9d2350b90035a0faadcb7b9515821db6}
+
+
+Definicja w linii 64 pliku interfejs.\-h.
+
+\hypertarget{class_interfejs_ab7dda8ddff87d9cb57f210f427871de8}{\index{Interfejs@{Interfejs}!Gracze@{Gracze}}
+\index{Gracze@{Gracze}!Interfejs@{Interfejs}}
+\subsubsection[{Gracze}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gracz}$\ast$ Interfejs\-::\-Gracze}}\label{class_interfejs_ab7dda8ddff87d9cb57f210f427871de8}
+
+
+Definicja w linii 60 pliku interfejs.\-h.
+
+\hypertarget{class_interfejs_a79c7d1ef2820f5d5104ab91b691d6189}{\index{Interfejs@{Interfejs}!hajspoczatkowy@{hajspoczatkowy}}
+\index{hajspoczatkowy@{hajspoczatkowy}!Interfejs@{Interfejs}}
+\subsubsection[{hajspoczatkowy}]{\setlength{\rightskip}{0pt plus 5cm}int Interfejs\-::hajspoczatkowy\hspace{0.3cm}{\ttfamily [private]}}}\label{class_interfejs_a79c7d1ef2820f5d5104ab91b691d6189}
+
+
+Definicja w linii 46 pliku interfejs.\-h.
+
+\hypertarget{class_interfejs_a4978f16cdd27e1f44580d29a3b80e1f5}{\index{Interfejs@{Interfejs}!Ilosc\-Graczy@{Ilosc\-Graczy}}
+\index{Ilosc\-Graczy@{Ilosc\-Graczy}!Interfejs@{Interfejs}}
+\subsubsection[{Ilosc\-Graczy}]{\setlength{\rightskip}{0pt plus 5cm}int Interfejs\-::\-Ilosc\-Graczy}}\label{class_interfejs_a4978f16cdd27e1f44580d29a3b80e1f5}
+
+
+Definicja w linii 72 pliku interfejs.\-h.
+
+\hypertarget{class_interfejs_ab2e839ed9e43affb8701d89338564e2c}{\index{Interfejs@{Interfejs}!Ilosc\-Graczy\-C\-P\-U@{Ilosc\-Graczy\-C\-P\-U}}
+\index{Ilosc\-Graczy\-C\-P\-U@{Ilosc\-Graczy\-C\-P\-U}!Interfejs@{Interfejs}}
+\subsubsection[{Ilosc\-Graczy\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}int Interfejs\-::\-Ilosc\-Graczy\-C\-P\-U}}\label{class_interfejs_ab2e839ed9e43affb8701d89338564e2c}
+
+
+Definicja w linii 76 pliku interfejs.\-h.
+
+\hypertarget{class_interfejs_a81d63adb225efb2fb0c97f81841156b3}{\index{Interfejs@{Interfejs}!Komputery@{Komputery}}
+\index{Komputery@{Komputery}!Interfejs@{Interfejs}}
+\subsubsection[{Komputery}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-P\-U}$\ast$ Interfejs\-::\-Komputery}}\label{class_interfejs_a81d63adb225efb2fb0c97f81841156b3}
+
+
+Definicja w linii 68 pliku interfejs.\-h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/inc/\hyperlink{interfejs_8h}{interfejs.\-h}\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/src/\hyperlink{interfejs_8cpp}{interfejs.\-cpp}\end{DoxyCompactItemize}

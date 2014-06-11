@@ -1,0 +1,7 @@
+<map id="CPU::WymianaDla1" name="CPU::WymianaDla1">
+<area shape="rect" id="node3" href="$class_c_p_u.html#a400f9910fc72454497684731380621bd" title="Metoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart..." alt="" coords="196,5,372,35"/>
+<area shape="rect" id="node5" href="$class_c_p_u.html#aca73986a06413986e1569e81ae475913" title="Metoda wymiany kart dla komputera.Jesli bd wymienial to co bd wymienial." alt="" coords="421,5,536,35"/>
+<area shape="rect" id="node7" href="$class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="585,5,716,35"/>
+<area shape="rect" id="node9" href="$class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="765,5,883,35"/>
+<area shape="rect" id="node11" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="931,5,981,35"/>
+</map>

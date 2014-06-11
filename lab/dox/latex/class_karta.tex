@@ -1,0 +1,337 @@
+\hypertarget{class_karta}{\section{Dokumentacja klasy Karta}
+\label{class_karta}\index{Karta@{Karta}}
+}
+
+
+Modeluje pojecie \hyperlink{class_karta}{Karta}.  
+
+
+
+
+{\ttfamily \#include $<$karta.\-h$>$}
+
+\subsection*{Typy publiczne}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_karta_ab4fee277728f803ca6687783572b2416}{Kolor} \{ \hyperlink{class_karta_ab4fee277728f803ca6687783572b2416af4349610dc5f4a2de2cfebb0fd4404cd}{Serce}, 
+\hyperlink{class_karta_ab4fee277728f803ca6687783572b2416a3c8872fc51c8b298d16fce095c922c43}{Karo}, 
+\hyperlink{class_karta_ab4fee277728f803ca6687783572b2416ac0cfc341f21d15a967e2d34af90fcc16}{Pik}, 
+\hyperlink{class_karta_ab4fee277728f803ca6687783572b2416a72acc44934faa1dd17c5c7251c898449}{Trefl}
+ \}
+\begin{DoxyCompactList}\small\item\em Rodzaj koloru definiowany przez dana klase. \end{DoxyCompactList}\item 
+enum \hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1b}{Figura} \{ \\*
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bad989d3d518460ecaebbe45da9505d200}{dwa}, 
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba09dcdacd37c336e9ba89f46df55962a4}{trzy}, 
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba69e7bf2f0d9d920eb48334d74c83ffbf}{cztery}, 
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba966c6a6216d9801f9054d9b30c5d12f4}{piec}, 
+\\*
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba365ed06e290993e55f2e2fdbbcc301fc}{szesc}, 
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bae3fde40299c4c2e221a86cd5398ea420}{siedem}, 
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba177b4e9c585d347e8f55f4823ced29d9}{osiem}, 
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba77e694d8d21ecffcff103a18da68fe3d}{dziewiec}, 
+\\*
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bae9a724460b40cc4350fe86a8c49158bc}{dziesiec}, 
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bafab91ae991271df7b8a10493f2dbf8ca}{jopek}, 
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba6bfc4dcc0142d6af035035bc829ed7dd}{dama}, 
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bacab291fdab9436f2c9f66c953b348184}{krol}, 
+\\*
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba1b587d6134aad8a4671ee38325450d7e}{as}
+ \}
+\begin{DoxyCompactList}\small\item\em Rodzaj figury definiowany przez dana klase. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_karta_a63932699b9420202b73dc91e1459f860}{Karta} (int kolor, int figura)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje konstruktor. \end{DoxyCompactList}\item 
+\hyperlink{class_karta_ac2543022058bafb6434d37e3b57bf1dd}{Karta} ()
+\item 
+int \hyperlink{class_karta_a1644c9f78f572ecb3db7baf07aca4602}{Udostepnij\-Kolor} ()
+\begin{DoxyCompactList}\small\item\em Metoda udostepnia kolor. \end{DoxyCompactList}\item 
+int \hyperlink{class_karta_ad0dd49c878e587936262fb5ce00abc24}{Udostepnij\-Figure} ()
+\begin{DoxyCompactList}\small\item\em Metoda udostepnia figure. \end{DoxyCompactList}\item 
+bool \hyperlink{class_karta_a4aaa394b2347d25b74310265d844b0b7}{Czy\-Ten\-Sam\-Kolor} (\hyperlink{class_karta}{Karta} k1)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy tego samego koloru. \end{DoxyCompactList}\item 
+bool \hyperlink{class_karta_ab0decbab8d4483bcdde418a868595e4f}{Czy\-Ta\-Sama\-Figura} (\hyperlink{class_karta}{Karta} k1)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy ta sama figura. \end{DoxyCompactList}\item 
+bool \hyperlink{class_karta_a93f10992203fb64e034846cc87669a43}{Czy\-Ta\-Sama\-Karta} (\hyperlink{class_karta}{Karta} k1)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdza czy ta sama karta. \end{DoxyCompactList}\item 
+bool \hyperlink{class_karta_a050540cbbf27cbce25d69f318899322b}{operator==} (\hyperlink{class_karta}{Karta} k1)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operatora porownania ==. \end{DoxyCompactList}\item 
+bool \hyperlink{class_karta_a311524f97ea1b838589a9be5c01d0b8e}{operator!=} (\hyperlink{class_karta}{Karta} k1)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operatora !=. \end{DoxyCompactList}\item 
+void \hyperlink{class_karta_a259111232953dbf3159dcc817676a52d}{Przypisz\-Karcie\-Wartosc} (int kolor, int figura)
+\begin{DoxyCompactList}\small\item\em Metoda przypisuje karcie wartosc. \end{DoxyCompactList}\item 
+\hyperlink{class_karta}{Karta} \& \hyperlink{class_karta_a81c5e69f8365fe48b51f8e9e77555b3f}{operator=} (\hyperlink{class_karta}{Karta} k1)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operatora =. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_karta_ab4fee277728f803ca6687783572b2416}{Kolor} \hyperlink{class_karta_a1d16b54a6d9d8f18ed2905eef20d3c58}{kol}
+\begin{DoxyCompactList}\small\item\em Obiekt typu Kolor. \end{DoxyCompactList}\item 
+\hyperlink{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1b}{Figura} \hyperlink{class_karta_abed8c8f7d00c0728e561b1c863fe9606}{fig}
+\begin{DoxyCompactList}\small\item\em Obiekt typu Figura. \end{DoxyCompactList}\item 
+int \hyperlink{class_karta_ad81428e13c07b3c6bad8c4c79066af05}{\-\_\-\-Kolor}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowujaca kolor karty. \end{DoxyCompactList}\item 
+int \hyperlink{class_karta_a556ff424e7a67c3e54ee275961163636}{\-\_\-\-Figura}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowujaca figure karty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa modeluje pojecie karta. 
+
+Definicja w linii 23 pliku karta.\-h.
+
+
+
+\subsection{Dokumentacja składowych wyliczanych}
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1b}{\index{Karta@{Karta}!Figura@{Figura}}
+\index{Figura@{Figura}!Karta@{Karta}}
+\subsubsection[{Figura}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Karta\-::\-Figura}}}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1b}
+\begin{Desc}
+\item[Wartości wyliczeń]\par
+\begin{description}
+\index{dwa@{dwa}!Karta@{Karta}}\index{Karta@{Karta}!dwa@{dwa}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bad989d3d518460ecaebbe45da9505d200}{dwa}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bad989d3d518460ecaebbe45da9505d200}
+}]\index{trzy@{trzy}!Karta@{Karta}}\index{Karta@{Karta}!trzy@{trzy}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba09dcdacd37c336e9ba89f46df55962a4}{trzy}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba09dcdacd37c336e9ba89f46df55962a4}
+}]\index{cztery@{cztery}!Karta@{Karta}}\index{Karta@{Karta}!cztery@{cztery}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba69e7bf2f0d9d920eb48334d74c83ffbf}{cztery}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba69e7bf2f0d9d920eb48334d74c83ffbf}
+}]\index{piec@{piec}!Karta@{Karta}}\index{Karta@{Karta}!piec@{piec}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba966c6a6216d9801f9054d9b30c5d12f4}{piec}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba966c6a6216d9801f9054d9b30c5d12f4}
+}]\index{szesc@{szesc}!Karta@{Karta}}\index{Karta@{Karta}!szesc@{szesc}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba365ed06e290993e55f2e2fdbbcc301fc}{szesc}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba365ed06e290993e55f2e2fdbbcc301fc}
+}]\index{siedem@{siedem}!Karta@{Karta}}\index{Karta@{Karta}!siedem@{siedem}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bae3fde40299c4c2e221a86cd5398ea420}{siedem}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bae3fde40299c4c2e221a86cd5398ea420}
+}]\index{osiem@{osiem}!Karta@{Karta}}\index{Karta@{Karta}!osiem@{osiem}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba177b4e9c585d347e8f55f4823ced29d9}{osiem}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba177b4e9c585d347e8f55f4823ced29d9}
+}]\index{dziewiec@{dziewiec}!Karta@{Karta}}\index{Karta@{Karta}!dziewiec@{dziewiec}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba77e694d8d21ecffcff103a18da68fe3d}{dziewiec}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba77e694d8d21ecffcff103a18da68fe3d}
+}]\index{dziesiec@{dziesiec}!Karta@{Karta}}\index{Karta@{Karta}!dziesiec@{dziesiec}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bae9a724460b40cc4350fe86a8c49158bc}{dziesiec}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bae9a724460b40cc4350fe86a8c49158bc}
+}]\index{jopek@{jopek}!Karta@{Karta}}\index{Karta@{Karta}!jopek@{jopek}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bafab91ae991271df7b8a10493f2dbf8ca}{jopek}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bafab91ae991271df7b8a10493f2dbf8ca}
+}]\index{dama@{dama}!Karta@{Karta}}\index{Karta@{Karta}!dama@{dama}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba6bfc4dcc0142d6af035035bc829ed7dd}{dama}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba6bfc4dcc0142d6af035035bc829ed7dd}
+}]\index{krol@{krol}!Karta@{Karta}}\index{Karta@{Karta}!krol@{krol}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bacab291fdab9436f2c9f66c953b348184}{krol}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1bacab291fdab9436f2c9f66c953b348184}
+}]\index{as@{as}!Karta@{Karta}}\index{Karta@{Karta}!as@{as}}\item[{\em 
+\hypertarget{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba1b587d6134aad8a4671ee38325450d7e}{as}\label{class_karta_a7f71c15a03e9b8d4103c8734f2ec1f1ba1b587d6134aad8a4671ee38325450d7e}
+}]\end{description}
+\end{Desc}
+
+
+Definicja w linii 35 pliku karta.\-h.
+
+\hypertarget{class_karta_ab4fee277728f803ca6687783572b2416}{\index{Karta@{Karta}!Kolor@{Kolor}}
+\index{Kolor@{Kolor}!Karta@{Karta}}
+\subsubsection[{Kolor}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Karta\-::\-Kolor}}}\label{class_karta_ab4fee277728f803ca6687783572b2416}
+\begin{Desc}
+\item[Wartości wyliczeń]\par
+\begin{description}
+\index{Serce@{Serce}!Karta@{Karta}}\index{Karta@{Karta}!Serce@{Serce}}\item[{\em 
+\hypertarget{class_karta_ab4fee277728f803ca6687783572b2416af4349610dc5f4a2de2cfebb0fd4404cd}{Serce}\label{class_karta_ab4fee277728f803ca6687783572b2416af4349610dc5f4a2de2cfebb0fd4404cd}
+}]\index{Karo@{Karo}!Karta@{Karta}}\index{Karta@{Karta}!Karo@{Karo}}\item[{\em 
+\hypertarget{class_karta_ab4fee277728f803ca6687783572b2416a3c8872fc51c8b298d16fce095c922c43}{Karo}\label{class_karta_ab4fee277728f803ca6687783572b2416a3c8872fc51c8b298d16fce095c922c43}
+}]\index{Pik@{Pik}!Karta@{Karta}}\index{Karta@{Karta}!Pik@{Pik}}\item[{\em 
+\hypertarget{class_karta_ab4fee277728f803ca6687783572b2416ac0cfc341f21d15a967e2d34af90fcc16}{Pik}\label{class_karta_ab4fee277728f803ca6687783572b2416ac0cfc341f21d15a967e2d34af90fcc16}
+}]\index{Trefl@{Trefl}!Karta@{Karta}}\index{Karta@{Karta}!Trefl@{Trefl}}\item[{\em 
+\hypertarget{class_karta_ab4fee277728f803ca6687783572b2416a72acc44934faa1dd17c5c7251c898449}{Trefl}\label{class_karta_ab4fee277728f803ca6687783572b2416a72acc44934faa1dd17c5c7251c898449}
+}]\end{description}
+\end{Desc}
+
+
+Definicja w linii 31 pliku karta.\-h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_karta_a63932699b9420202b73dc91e1459f860}{\index{Karta@{Karta}!Karta@{Karta}}
+\index{Karta@{Karta}!Karta@{Karta}}
+\subsubsection[{Karta}]{\setlength{\rightskip}{0pt plus 5cm}Karta\-::\-Karta (
+\begin{DoxyParamCaption}
+\item[{int}]{kolor, }
+\item[{int}]{figura}
+\end{DoxyParamCaption}
+)}}\label{class_karta_a63932699b9420202b73dc91e1459f860}
+
+
+Definicja w linii 173 pliku karta.\-cpp.
+
+\hypertarget{class_karta_ac2543022058bafb6434d37e3b57bf1dd}{\index{Karta@{Karta}!Karta@{Karta}}
+\index{Karta@{Karta}!Karta@{Karta}}
+\subsubsection[{Karta}]{\setlength{\rightskip}{0pt plus 5cm}Karta\-::\-Karta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_karta_ac2543022058bafb6434d37e3b57bf1dd}
+
+
+Definicja w linii 287 pliku karta.\-cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_karta_ab0decbab8d4483bcdde418a868595e4f}{\index{Karta@{Karta}!Czy\-Ta\-Sama\-Figura@{Czy\-Ta\-Sama\-Figura}}
+\index{Czy\-Ta\-Sama\-Figura@{Czy\-Ta\-Sama\-Figura}!Karta@{Karta}}
+\subsubsection[{Czy\-Ta\-Sama\-Figura}]{\setlength{\rightskip}{0pt plus 5cm}bool Karta\-::\-Czy\-Ta\-Sama\-Figura (
+\begin{DoxyParamCaption}
+\item[{{\bf Karta}}]{k1}
+\end{DoxyParamCaption}
+)}}\label{class_karta_ab0decbab8d4483bcdde418a868595e4f}
+\begin{DoxyReturn}{Zwraca}
+Zwraca true lub false. 
+\end{DoxyReturn}
+
+
+Definicja w linii 35 pliku karta.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_karta_ab0decbab8d4483bcdde418a868595e4f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_karta_a93f10992203fb64e034846cc87669a43}{\index{Karta@{Karta}!Czy\-Ta\-Sama\-Karta@{Czy\-Ta\-Sama\-Karta}}
+\index{Czy\-Ta\-Sama\-Karta@{Czy\-Ta\-Sama\-Karta}!Karta@{Karta}}
+\subsubsection[{Czy\-Ta\-Sama\-Karta}]{\setlength{\rightskip}{0pt plus 5cm}bool Karta\-::\-Czy\-Ta\-Sama\-Karta (
+\begin{DoxyParamCaption}
+\item[{{\bf Karta}}]{k1}
+\end{DoxyParamCaption}
+)}}\label{class_karta_a93f10992203fb64e034846cc87669a43}
+\begin{DoxyReturn}{Zwraca}
+Zwraca true lub false. 
+\end{DoxyReturn}
+
+
+Definicja w linii 159 pliku karta.\-cpp.
+
+\hypertarget{class_karta_a4aaa394b2347d25b74310265d844b0b7}{\index{Karta@{Karta}!Czy\-Ten\-Sam\-Kolor@{Czy\-Ten\-Sam\-Kolor}}
+\index{Czy\-Ten\-Sam\-Kolor@{Czy\-Ten\-Sam\-Kolor}!Karta@{Karta}}
+\subsubsection[{Czy\-Ten\-Sam\-Kolor}]{\setlength{\rightskip}{0pt plus 5cm}bool Karta\-::\-Czy\-Ten\-Sam\-Kolor (
+\begin{DoxyParamCaption}
+\item[{{\bf Karta}}]{k1}
+\end{DoxyParamCaption}
+)}}\label{class_karta_a4aaa394b2347d25b74310265d844b0b7}
+\begin{DoxyReturn}{Zwraca}
+Zwraca true lub false. 
+\end{DoxyReturn}
+
+
+Definicja w linii 24 pliku karta.\-cpp.
+
+\hypertarget{class_karta_a311524f97ea1b838589a9be5c01d0b8e}{\index{Karta@{Karta}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Karta@{Karta}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Karta\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Karta}}]{k1}
+\end{DoxyParamCaption}
+)}}\label{class_karta_a311524f97ea1b838589a9be5c01d0b8e}
+
+
+Definicja w linii 311 pliku karta.\-cpp.
+
+\hypertarget{class_karta_a81c5e69f8365fe48b51f8e9e77555b3f}{\index{Karta@{Karta}!operator=@{operator=}}
+\index{operator=@{operator=}!Karta@{Karta}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Karta} \& Karta\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Karta}}]{k1}
+\end{DoxyParamCaption}
+)}}\label{class_karta_a81c5e69f8365fe48b51f8e9e77555b3f}
+
+
+Definicja w linii 324 pliku karta.\-cpp.
+
+\hypertarget{class_karta_a050540cbbf27cbce25d69f318899322b}{\index{Karta@{Karta}!operator==@{operator==}}
+\index{operator==@{operator==}!Karta@{Karta}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Karta\-::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Karta}}]{k1}
+\end{DoxyParamCaption}
+)}}\label{class_karta_a050540cbbf27cbce25d69f318899322b}
+
+
+Definicja w linii 298 pliku karta.\-cpp.
+
+\hypertarget{class_karta_a259111232953dbf3159dcc817676a52d}{\index{Karta@{Karta}!Przypisz\-Karcie\-Wartosc@{Przypisz\-Karcie\-Wartosc}}
+\index{Przypisz\-Karcie\-Wartosc@{Przypisz\-Karcie\-Wartosc}!Karta@{Karta}}
+\subsubsection[{Przypisz\-Karcie\-Wartosc}]{\setlength{\rightskip}{0pt plus 5cm}void Karta\-::\-Przypisz\-Karcie\-Wartosc (
+\begin{DoxyParamCaption}
+\item[{int}]{kolor, }
+\item[{int}]{figura}
+\end{DoxyParamCaption}
+)}}\label{class_karta_a259111232953dbf3159dcc817676a52d}
+
+
+Definicja w linii 348 pliku karta.\-cpp.
+
+\hypertarget{class_karta_ad0dd49c878e587936262fb5ce00abc24}{\index{Karta@{Karta}!Udostepnij\-Figure@{Udostepnij\-Figure}}
+\index{Udostepnij\-Figure@{Udostepnij\-Figure}!Karta@{Karta}}
+\subsubsection[{Udostepnij\-Figure}]{\setlength{\rightskip}{0pt plus 5cm}int Karta\-::\-Udostepnij\-Figure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_karta_ad0dd49c878e587936262fb5ce00abc24}
+\begin{DoxyReturn}{Zwraca}
+Zwraca figure karty. 
+\end{DoxyReturn}
+
+
+Definicja w linii 19 pliku karta.\-cpp.
+
+\hypertarget{class_karta_a1644c9f78f572ecb3db7baf07aca4602}{\index{Karta@{Karta}!Udostepnij\-Kolor@{Udostepnij\-Kolor}}
+\index{Udostepnij\-Kolor@{Udostepnij\-Kolor}!Karta@{Karta}}
+\subsubsection[{Udostepnij\-Kolor}]{\setlength{\rightskip}{0pt plus 5cm}int Karta\-::\-Udostepnij\-Kolor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_karta_a1644c9f78f572ecb3db7baf07aca4602}
+\begin{DoxyReturn}{Zwraca}
+Zwraca kolor karty. 
+\end{DoxyReturn}
+
+
+Definicja w linii 14 pliku karta.\-cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_karta_a556ff424e7a67c3e54ee275961163636}{\index{Karta@{Karta}!\-\_\-\-Figura@{\-\_\-\-Figura}}
+\index{\-\_\-\-Figura@{\-\_\-\-Figura}!Karta@{Karta}}
+\subsubsection[{\-\_\-\-Figura}]{\setlength{\rightskip}{0pt plus 5cm}int Karta\-::\-\_\-\-Figura}}\label{class_karta_a556ff424e7a67c3e54ee275961163636}
+
+
+Definicja w linii 51 pliku karta.\-h.
+
+\hypertarget{class_karta_ad81428e13c07b3c6bad8c4c79066af05}{\index{Karta@{Karta}!\-\_\-\-Kolor@{\-\_\-\-Kolor}}
+\index{\-\_\-\-Kolor@{\-\_\-\-Kolor}!Karta@{Karta}}
+\subsubsection[{\-\_\-\-Kolor}]{\setlength{\rightskip}{0pt plus 5cm}int Karta\-::\-\_\-\-Kolor}}\label{class_karta_ad81428e13c07b3c6bad8c4c79066af05}
+
+
+Definicja w linii 47 pliku karta.\-h.
+
+\hypertarget{class_karta_abed8c8f7d00c0728e561b1c863fe9606}{\index{Karta@{Karta}!fig@{fig}}
+\index{fig@{fig}!Karta@{Karta}}
+\subsubsection[{fig}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Figura} Karta\-::fig}}\label{class_karta_abed8c8f7d00c0728e561b1c863fe9606}
+
+
+Definicja w linii 43 pliku karta.\-h.
+
+\hypertarget{class_karta_a1d16b54a6d9d8f18ed2905eef20d3c58}{\index{Karta@{Karta}!kol@{kol}}
+\index{kol@{kol}!Karta@{Karta}}
+\subsubsection[{kol}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kolor} Karta\-::kol}}\label{class_karta_a1d16b54a6d9d8f18ed2905eef20d3c58}
+
+
+Definicja w linii 39 pliku karta.\-h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/inc/\hyperlink{karta_8h}{karta.\-h}\item 
+/home/karolina/\-Pulpit/\-Project41\-Poker(1)/\-Project41\-Poker/\-Project41\-Poker/prj/src/\hyperlink{karta_8cpp}{karta.\-cpp}\end{DoxyCompactItemize}

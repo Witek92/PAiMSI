@@ -1,0 +1,6 @@
+<map id="GRA::PorownajWyniki" name="GRA::PorownajWyniki">
+<area shape="rect" id="node3" href="$class_interfejs.html#a7a91a3e36e13d01ed4ce5a39648a1f44" title="Obiekt typu Gracz wskazuje wygranego." alt="" coords="208,5,392,35"/>
+<area shape="rect" id="node5" href="$class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="441,5,572,35"/>
+<area shape="rect" id="node7" href="$class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="621,5,739,35"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="787,5,837,35"/>
+</map>

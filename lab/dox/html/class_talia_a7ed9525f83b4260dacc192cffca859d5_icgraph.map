@@ -1,0 +1,14 @@
+<map id="Talia::PobierzKarte" name="Talia::PobierzKarte">
+<area shape="rect" id="node3" href="$class_g_r_a.html#a99c72e824c90f1bdbb34626e67d83c15" title="Metoda pobiera nowa karte z talii 52 kart." alt="" coords="187,139,293,168"/>
+<area shape="rect" id="node29" href="$class_g_r_a.html#a3d86b57e35ee8ff610a056c92dfa325b" title="Metoda rozdaje karty z talii dla wszystkich graczy." alt="" coords="765,268,864,297"/>
+<area shape="rect" id="node5" href="$class_c_p_u.html#a9eeb4244b31bbdfb59c0ad7f9b51d0e6" title="Metoda wymiany kart dla komputera z ukladem 0 ( nie ma par ,trojek ,fulla, strita itd..." alt="" coords="341,5,483,35"/>
+<area shape="rect" id="node17" href="$class_c_p_u.html#a996ad643815fb962ffc60c543efdb4bd" title="Metoda wymiany kart dla komputera z ukladem 1(czyli dla jednej pary)" alt="" coords="341,59,483,88"/>
+<area shape="rect" id="node20" href="$class_c_p_u.html#ae0c3f82d98dab6621d5a221b56e9cf94" title="Metoda wymiany kart dla komputera z ukladem 2 (czyli dla dwóch par)" alt="" coords="341,112,483,141"/>
+<area shape="rect" id="node23" href="$class_c_p_u.html#a173d904de6429cec82d21bc47260e73b" title="Metoda wymiany kart dla komputera z ukladem 3(czyli dla trojki)" alt="" coords="341,165,483,195"/>
+<area shape="rect" id="node26" href="$class_g_r_a.html#a4ffb4d5d97261a8cd2220a6b59616bb6" title="Metoda sluzaca do wymiany kart gracza.Gracz zostaje spytany czy chce wymienic karty a potem ma mozliw..." alt="" coords="563,216,677,245"/>
+<area shape="rect" id="node7" href="$class_c_p_u.html#a400f9910fc72454497684731380621bd" title="Metoda liczy uklad kart komputera i wywoluje odpowiednie funckje wymiany w zaleznosci od ukladu kart..." alt="" coords="532,112,708,141"/>
+<area shape="rect" id="node9" href="$class_c_p_u.html#aca73986a06413986e1569e81ae475913" title="Metoda wymiany kart dla komputera.Jesli bd wymienial to co bd wymienial." alt="" coords="757,139,872,168"/>
+<area shape="rect" id="node11" href="$class_interfejs.html#af26c144e5225856535e91bc51c6edeac" title="Metoda pozwala na wybor ilosci graczy ludzi i komputerow + nadanie nazw tym graczom rozdaje karty kaz..." alt="" coords="921,216,1052,245"/>
+<area shape="rect" id="node13" href="$class_interfejs.html#a3082f4dcf5c041d4a7ddb07e3bee08e6" title="Metoda dzialaj w ktorej zawarte sa wszystkie kombinacje przyciskow z instrukcji oraz ich funkcje..." alt="" coords="1101,216,1219,245"/>
+<area shape="rect" id="node15" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1267,216,1317,245"/>
+</map>

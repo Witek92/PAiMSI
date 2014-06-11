@@ -1,0 +1,399 @@
+.TH "GRA" 3 "Śr, 11 cze 2014" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GRA \- 
+.PP
+Modeluje pojecie \fBGRA\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GRA\&.h>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBGRA\fP ()"
+.br
+.RI "\fIInicjalizuje konstruktor\&. \fP"
+.ti -1c
+.RI "int \fBZnajdzPare\fP (\fBGracz\fP ziomek)"
+.br
+.RI "\fIMetoda szuka pary w zestawie kart gracza\&. \fP"
+.ti -1c
+.RI "vector< int > \fBZnajdzPary\fP (\fBGracz\fP ziomek)"
+.br
+.RI "\fIMetoda szuka pary w zestawie kart gracza\&. \fP"
+.ti -1c
+.RI "int \fBZnajdzTrojke\fP (\fBGracz\fP ziomek)"
+.br
+.RI "\fIMetoda znajduje trojke w zestawie kart gracza\&. \fP"
+.ti -1c
+.RI "bool \fBCzyJestPara\fP (\fBGracz\fP ziomek)"
+.br
+.RI "\fIMetoda sprawdza czy jest para w zestawie kart gracza\&. \fP"
+.ti -1c
+.RI "bool \fBCzySaDwiePary\fP (\fBGracz\fP ziomek)"
+.br
+.RI "\fIMetoda sprawdza czy sa dwie pary w zestawie kart gracza\&. \fP"
+.ti -1c
+.RI "bool \fBCzyJestTrojka\fP (\fBGracz\fP ziomek)"
+.br
+.RI "\fIMetoda sprawdza czy jest trojka w zestawie kart gracza\&. \fP"
+.ti -1c
+.RI "bool \fBCzyJestStrit\fP (\fBGracz\fP ziomek)"
+.br
+.RI "\fIMetoda sprawdza czy jest strit w zestawie kart gracza\&. \fP"
+.ti -1c
+.RI "bool \fBCzyJestKolor\fP (\fBGracz\fP ziomek)"
+.br
+.RI "\fIMetoda sprawdza czy jest kolor w zestawie kart gracza (piec kart w jednym kolorze)\&. \fP"
+.ti -1c
+.RI "bool \fBCzyJestCzworka\fP (\fBGracz\fP ziomek)"
+.br
+.RI "\fIMetoda sprawdza czy jest czworka w zestawie kart gracza\&. \fP"
+.ti -1c
+.RI "bool \fBCzyJestFul\fP (\fBGracz\fP ziomek)"
+.br
+.RI "\fIMetoda sprawdza czy jest ful w zestawie kart gracza\&. \fP"
+.ti -1c
+.RI "void \fBWymiana\fP (\fBGracz\fP &ziomek)"
+.br
+.RI "\fIMetoda sluzaca do wymiany kart gracza\&.Gracz zostaje spytany czy chce wymienic karty a potem ma mozliwosc wybrania ktore karty chce wymienic\&. \fP"
+.ti -1c
+.RI "void \fBWymien\fP (\fBKarta\fP &Karteczka)"
+.br
+.RI "\fIMetoda pobiera nowa karte z talii 52 kart\&. \fP"
+.ti -1c
+.RI "int \fBZnajdzNajwyszaKarte\fP (\fBGracz\fP ziomek)"
+.br
+.RI "\fIMetoda szuka najwyzszej karty w zestawie kart gracza\&. \fP"
+.ti -1c
+.RI "void \fBPorownajWyniki\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.RI "\fIMetoda liczy uklady kart graczy i decyduje o zwyciestwie gracza: zwyciestwo=0 - przegrana zwyciestwo=1 - wygrana zwyciestwo=2 - remis\&. \fP"
+.ti -1c
+.RI "void \fBRozdaj\fP (\fBGracz\fP &gosc)"
+.br
+.RI "\fIMetoda rozdaje karty z talii dla wszystkich graczy\&. \fP"
+.ti -1c
+.RI "void \fBPorownajWyniki\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.ti -1c
+.RI "void \fBPotasuj\fP ()"
+.br
+.RI "\fIMetoda tasuje karty z talii\&. \fP"
+.ti -1c
+.RI "void \fBPorownajWyniki\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.ti -1c
+.RI "void \fBWyswietlInstrukcje\fP ()"
+.br
+.RI "\fIMetoda wyswietla instrukcje\&. \fP"
+.ti -1c
+.RI "void \fBPorownajWyniki\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.ti -1c
+.RI "void \fBPoliczUklady\fP (\fBGracz\fP &ziomek)"
+.br
+.RI "\fIMetoda liczy uklady, czyli graczowi przyporzadkowuje uklad w zaleznosci co ma\&. \fP"
+.ti -1c
+.RI "void \fBRozdajKase\fP (\fBGracz\fP &ziomek, int ile)"
+.br
+.RI "\fIMetoda rozdaje pieniadze dla kazdego z graczy\&. \fP"
+.ti -1c
+.RI "void \fBDecyzja\fP (\fBGracz\fP &ziomek)"
+.br
+.RI "\fIMetoda odpowiadajaca za decyzje gracza : -podbija/czeka -przebija -pasuje\&. \fP"
+.in -1c
+.SS "Atrybuty publiczne"
+
+.in +1c
+.ti -1c
+.RI "int \fBAktualnaStawka\fP"
+.br
+.RI "\fIZmienna przechowujaca aktualna stawke znajdujaca sie w puli\&. \fP"
+.ti -1c
+.RI "int \fBpula\fP"
+.br
+.RI "\fIZmienna przechowujaca pule pieniedzy\&. \fP"
+.ti -1c
+.RI "int \fBprzebicie\fP"
+.br
+.RI "\fIZmienna przechowujaca i ile gracz chce przebic stawke\&. \fP"
+.ti -1c
+.RI "bool \fBCzyJestPrzebicie\fP"
+.br
+.RI "\fIMetoda sprawdza czy jest przebicie\&. \fP"
+.in -1c
+.SS "Metody prywatne"
+
+.in +1c
+.ti -1c
+.RI "void \fBPorownanieWPrzypadku0\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.RI "\fIMetoda porownuje zestawy graczy w przypadku gdy zaden z nich nie ma zadnego ukladu\&. \fP"
+.ti -1c
+.RI "void \fBPorownanieWPrzypadku1\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.RI "\fIMetoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma pare w swoim zestawie kart\&. \fP"
+.ti -1c
+.RI "void \fBPorownanieWPrzypadku2\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.RI "\fIMetoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart\&. \fP"
+.ti -1c
+.RI "void \fBPorownanieWPrzypadku3\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.RI "\fIMetoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma trojke w swoim zestawie kart\&. \fP"
+.ti -1c
+.RI "void \fBPorownanieWPrzypadku4\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.RI "\fIMetoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart\&. \fP"
+.ti -1c
+.RI "void \fBPorownanieWPrzypadku5\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.RI "\fIMetoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart\&. \fP"
+.ti -1c
+.RI "void \fBPorownanieWPrzypadku6\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.RI "\fIMetoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po fullu\&. \fP"
+.ti -1c
+.RI "void \fBPorownanieWPrzypadku7\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.RI "\fIMetoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma po dwie pary w swoim zestawie kart\&. \fP"
+.ti -1c
+.RI "void \fBPorownanieWPrzypadku8\fP (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+.br
+.RI "\fIMetoda porownuje zestawy graczy w przypadku gdy kazdy z nich ma pokera\&. \fP"
+.in -1c
+.SS "Atrybuty prywatne"
+
+.in +1c
+.ti -1c
+.RI "\fBTalia\fP \fBGLOWNA\fP"
+.br
+.RI "\fI\fBTalia\fP kart\&. \fP"
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa modeluje pojecie \fBGRA\fP\&. Jej atrybutem jest pole zawierajace talie\&. 
+.PP
+Definicja w linii 21 pliku GRA\&.h\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "GRA::GRA ()"
+
+.PP
+Definicja w linii 1133 pliku GRA\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "bool GRA::CzyJestCzworka (\fBGracz\fPziomek)"
+\fBZwraca:\fP
+.RS 4
+Zwraca false lub true\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 531 pliku GRA\&.cpp\&.
+.SS "bool GRA::CzyJestFul (\fBGracz\fPziomek)"
+\fBZwraca:\fP
+.RS 4
+Zwraca false lub true\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 609 pliku GRA\&.cpp\&.
+.SS "bool GRA::CzyJestKolor (\fBGracz\fPziomek)"
+\fBZwraca:\fP
+.RS 4
+Zwraca false lub true\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 505 pliku GRA\&.cpp\&.
+.SS "bool GRA::CzyJestPara (\fBGracz\fPziomek)"
+\fBZwraca:\fP
+.RS 4
+Zwraca false lub true\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 298 pliku GRA\&.cpp\&.
+.SS "bool GRA::CzyJestStrit (\fBGracz\fPziomek)"
+\fBZwraca:\fP
+.RS 4
+Zwraca false lub true\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 462 pliku GRA\&.cpp\&.
+.SS "bool GRA::CzyJestTrojka (\fBGracz\fPziomek)"
+\fBZwraca:\fP
+.RS 4
+Zwraca false lub true\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 366 pliku GRA\&.cpp\&.
+.SS "bool GRA::CzySaDwiePary (\fBGracz\fPziomek)"
+\fBZwraca:\fP
+.RS 4
+Zwraca false lub true\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 316 pliku GRA\&.cpp\&.
+.SS "void GRA::Decyzja (\fBGracz\fP &ziomek)"
+
+.PP
+Definicja w linii 1085 pliku GRA\&.cpp\&.
+.SS "void GRA::PoliczUklady (\fBGracz\fP &ziomek)"
+
+.PP
+Definicja w linii 255 pliku GRA\&.cpp\&.
+.SS "void GRA::PorownajWyniki (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+
+.PP
+Definicja w linii 973 pliku GRA\&.cpp\&.
+.SS "void GRA::PorownajWyniki (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+
+.SS "void GRA::PorownajWyniki (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+
+.SS "void GRA::PorownajWyniki (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)"
+
+.SS "void GRA::PorownanieWPrzypadku0 (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)\fC [private]\fP"
+
+.PP
+Definicja w linii 677 pliku GRA\&.cpp\&.
+.SS "void GRA::PorownanieWPrzypadku1 (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)\fC [private]\fP"
+
+.PP
+Definicja w linii 700 pliku GRA\&.cpp\&.
+.SS "void GRA::PorownanieWPrzypadku2 (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)\fC [private]\fP"
+
+.PP
+Definicja w linii 723 pliku GRA\&.cpp\&.
+.SS "void GRA::PorownanieWPrzypadku3 (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)\fC [private]\fP"
+
+.PP
+Definicja w linii 768 pliku GRA\&.cpp\&.
+.SS "void GRA::PorownanieWPrzypadku4 (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)\fC [private]\fP"
+
+.PP
+Definicja w linii 792 pliku GRA\&.cpp\&.
+.SS "void GRA::PorownanieWPrzypadku5 (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)\fC [private]\fP"
+
+.PP
+Definicja w linii 815 pliku GRA\&.cpp\&.
+.SS "void GRA::PorownanieWPrzypadku6 (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)\fC [private]\fP"
+
+.PP
+Definicja w linii 820 pliku GRA\&.cpp\&.
+.SS "void GRA::PorownanieWPrzypadku7 (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)\fC [private]\fP"
+
+.PP
+Definicja w linii 827 pliku GRA\&.cpp\&.
+.SS "void GRA::PorownanieWPrzypadku8 (\fBGracz\fP &ziomek1, \fBGracz\fP &ziomek2)\fC [private]\fP"
+
+.PP
+Definicja w linii 849 pliku GRA\&.cpp\&.
+.SS "void GRA::Potasuj ()"
+
+.PP
+Definicja w linii 1074 pliku GRA\&.cpp\&.
+.SS "void GRA::Rozdaj (\fBGracz\fP &gosc)"
+
+.PP
+Definicja w linii 1056 pliku GRA\&.cpp\&.
+.SS "void GRA::RozdajKase (\fBGracz\fP &ziomek, intile)"
+
+.PP
+Definicja w linii 1080 pliku GRA\&.cpp\&.
+.SS "void GRA::Wymiana (\fBGracz\fP &ziomek)"
+
+.PP
+Definicja w linii 9 pliku GRA\&.cpp\&.
+.SS "void GRA::Wymien (\fBKarta\fP &Karteczka)"
+
+.PP
+Definicja w linii 238 pliku GRA\&.cpp\&.
+.SS "void GRA::WyswietlInstrukcje ()"
+
+.PP
+Definicja w linii 246 pliku GRA\&.cpp\&.
+.SS "int GRA::ZnajdzNajwyszaKarte (\fBGracz\fPziomek)"
+\fBZwraca:\fP
+.RS 4
+Zwraca figure ktora jest najwyzsza w kartach gracza\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 859 pliku GRA\&.cpp\&.
+.SS "int GRA::ZnajdzPare (\fBGracz\fPziomek)"
+\fBZwraca:\fP
+.RS 4
+Zwraca figure ktora jest w parze\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 879 pliku GRA\&.cpp\&.
+.SS "vector< int > GRA::ZnajdzPary (\fBGracz\fPziomek)"
+\fBZwraca:\fP
+.RS 4
+Zwraca wektor , ktory przechowuje figury, ktore sa w parach\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 899 pliku GRA\&.cpp\&.
+.SS "int GRA::ZnajdzTrojke (\fBGracz\fPziomek)"
+\fBZwraca:\fP
+.RS 4
+Zwraca figure ktora jest w trojce\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 923 pliku GRA\&.cpp\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "int GRA::AktualnaStawka"
+
+.PP
+Definicja w linii 176 pliku GRA\&.h\&.
+.SS "bool GRA::CzyJestPrzebicie"
+\fBZwraca:\fP
+.RS 4
+Zwraca false lub true\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 189 pliku GRA\&.h\&.
+.SS "\fBTalia\fP GRA::GLOWNA\fC [private]\fP"
+
+.PP
+Definicja w linii 26 pliku GRA\&.h\&.
+.SS "int GRA::przebicie"
+
+.PP
+Definicja w linii 184 pliku GRA\&.h\&.
+.SS "int GRA::pula"
+
+.PP
+Definicja w linii 180 pliku GRA\&.h\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla My Project\&.

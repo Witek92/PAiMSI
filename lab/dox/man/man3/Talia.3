@@ -1,0 +1,130 @@
+.TH "Talia" 3 "Śr, 11 cze 2014" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Talia \- 
+.PP
+Modeluje pojecie \fBTalia\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <talia\&.h>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "void \fBWyswietl\fP ()"
+.br
+.RI "\fIMetoda sluzaca do wyswietlania wszystkich kart z talii\&. \fP"
+.ti -1c
+.RI "\fBTalia\fP ()"
+.br
+.RI "\fIInicjalizuje konstruktor\&. \fP"
+.ti -1c
+.RI "\fB~Talia\fP ()"
+.br
+.RI "\fIInicjalizuje destruktor\&. \fP"
+.ti -1c
+.RI "void \fBPotasuj\fP ()"
+.br
+.RI "\fIMetoda ktora losowo tasuje talie\&. \fP"
+.ti -1c
+.RI "void \fBPobierzKarte\fP (\fBKarta\fP &Karteczka)"
+.br
+.RI "\fIMetoda pobiera karte z talii\&. \fP"
+.in -1c
+.SS "Atrybuty publiczne"
+
+.in +1c
+.ti -1c
+.RI "int \fBIloscZ\fP"
+.br
+.RI "\fIObiekt typu int przechowujacy ilosc kart w talii\&. \fP"
+.ti -1c
+.RI "\fBKarta\fP * \fBtalia\fP"
+.br
+.RI "\fIObiekt typu \fBKarta\fP\&. \fP"
+.in -1c
+.SS "Metody prywatne"
+
+.in +1c
+.ti -1c
+.RI "void \fBWypelnijTalie\fP ()"
+.br
+.RI "\fIMetoda wypelnia talie dla czterech rodzai kolorow i trzynastu figur\&. \fP"
+.in -1c
+.SS "Statyczne atrybuty prywatne"
+
+.in +1c
+.ti -1c
+.RI "static const int \fBilosc\fP =52"
+.br
+.RI "\fIZmienna stala statyczna typu int okreslajaca ilosc kart w talii(52)\&. \fP"
+.in -1c
+.SS "Przyjaciele"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &Ekran, \fBTalia\fP &_Talia)"
+.br
+.RI "\fIPrzeciazenie operatora wyjscia\&. \fP"
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Klasa modeluje pojecie talia\&. 
+.PP
+Definicja w linii 19 pliku talia\&.h\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "Talia::Talia ()"
+
+.PP
+Definicja w linii 55 pliku talia\&.cpp\&.
+.SS "Talia::~Talia ()"
+
+.PP
+Definicja w linii 62 pliku talia\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void Talia::PobierzKarte (\fBKarta\fP &Karteczka)"
+
+.PP
+Definicja w linii 102 pliku talia\&.cpp\&.
+.SS "void Talia::Potasuj ()"
+
+.PP
+Definicja w linii 68 pliku talia\&.cpp\&.
+.SS "void Talia::WypelnijTalie ()\fC [private]\fP"
+
+.PP
+Definicja w linii 16 pliku talia\&.cpp\&.
+.SS "void Talia::Wyswietl ()"
+
+.PP
+Definicja w linii 35 pliku talia\&.cpp\&.
+.SH "Dokumentacja przyjaciół i funkcji związanych"
+.PP 
+.SS "ostream& operator<< (ostream &Ekran, \fBTalia\fP &_Talia)\fC [friend]\fP"
+
+.PP
+Definicja w linii 45 pliku talia\&.cpp\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "const int Talia::ilosc =52\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definicja w linii 24 pliku talia\&.h\&.
+.SS "int Talia::IloscZ"
+
+.PP
+Definicja w linii 34 pliku talia\&.h\&.
+.SS "\fBKarta\fP* Talia::talia"
+
+.PP
+Definicja w linii 38 pliku talia\&.h\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla My Project\&.
